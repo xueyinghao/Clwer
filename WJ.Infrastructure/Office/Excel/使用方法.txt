@@ -1,0 +1,19 @@
+﻿ 1        ExcelWorkbook  excel= new ExcelWorkbook();
+ 2        excel.FileName = "导出文件名称";
+ 3
+ 4        Worksheet  w= new Worksheet();
+ 5        w.DataSource = GetDt();//设置数据源DataTable类型
+ 6        w.SheetName = "表单名称";
+ 7        w.ColumnFilter = true; //是否给每一列加上条件过滤
+ 8
+ 9        //w.WriteHeaders = true; 是否导出标头
+10
+11         /**//* 自定义每一列的标头
+12         w.ColumnName.Add("标头1");
+13        w.ColumnName.Add("标头1");
+14        w.ColumnName.Add("标头1");
+15        ..
+16        */
+17
+18        excel.WorkSheets.Add(w);
+19        excel.OutPut(); //导出
