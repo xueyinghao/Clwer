@@ -1,0 +1,212 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+<title>单位登录</title>
+<link href="/rec/styles/CompLoginStyle.css" type="text/css" rel="stylesheet" />
+<script src="http://file.ncss.org.cn/ncsFile/scripts/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://file.ncss.org.cn/ncsFile/scripts/jquery.validate.js"></script>
+<script type="text/javascript">
+	//设为首页
+	function SetHome(obj,vrl){
+
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+                        }  
+                        catch (e)  { 
+                                alert("此操作被浏览器拒绝！");  
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+    }
+    //加入收藏
+    	function AddFavorite(vrl,name){
+
+        try{
+                window.external.addfavorite(vrl,name);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+                        }  
+                        catch (e)  { 
+                                alert("此操作被浏览器拒绝！");  
+                        }
+                 }
+        }
+    }
+    
+    </script>
+<script type="text/javascript">
+		$().ready(function(){
+		//    $('#stat').hide();
+		    var validator = $("#loginform").validate({
+		            onclick: function() {var mvalue=$('#username').val();
+    			                             mvalue = mvalue.replace(" ","");
+    			                             $('#username').val(mvalue);},
+    			    onkeyup: function() {var mvalue=$('#username').val();
+    			                             mvalue = mvalue.replace(" ","");
+    			                             $('#username').val(mvalue);},
+		    		errorElement: "em",
+					errorPlacement: function(error, element) {
+					error.appendTo("#error");
+					},
+		    		rules:{
+		    			username:{required:true,email:true},
+		    			password:{required:true,minlength: 6}
+		    		},
+		    		messages:{
+		    			username:{required:"请输入用户名！",email:"请输入正确的Email！"},
+		    			password:{required: "请输入密码！",minlength: jQuery.format("密码至少 {0} 位！")}		    			
+					}
+		    	
+		    });
+	}); 	
+  </script>
+
+</head>
+
+<body>
+	<div id="topbar">
+  	<div id="topbar-main">
+  		<div class="L_float"><img id="topbar-logo" src="/rec/images/ncss-osoes-logo.gif" width="163" height="33" border="0" /></div>
+  		<div id="topbar-nav">
+  			
+		    		 <div id="topbar-empl">		    		 	
+		    		 	<a href="/">学生求职 <img src="/rec/images/topbar-employer-arrow.gif;jsessionid=6041F78F9F8ABDAC5208581A4A276736" /></a>
+		    		 </div>
+		    		 <span class="R_float">
+		    		 寻找校园英才？<a href="/rec/register;jsessionid=6041F78F9F8ABDAC5208581A4A276736">注册</a> |
+		    		 <a href="/rec/login;jsessionid=6041F78F9F8ABDAC5208581A4A276736">登录</a>
+		    		 </span>
+	    		 
+	    		 
+  		</div>
+  	</div>
+  	</div>
+<div class="clearboth"></div>
+<div id="content">	
+	
+	
+	    <div id="banner">
+        
+    	
+    	
+    	
+    	<div style="float:left; padding-top:15px; line-height:26px;"><span style="font-family:'黑体'; font-size:20px;">河南中医学院一体化系统</span><br /><span style="font-size:12px;">——全国大学生就业一站式服务系统</span></div>
+        <div style="float:right;"><a href="#" onclick="SetHome(this,window.location)">设为首页</a> | <a href="#" onclick="AddFavorite(window.location,'河南中医学院一体化系统')">加入收藏</a> | 
+        <a href="http://file.ncss.org.cn/ncsFile/ncss/guidebook/rec_guide.pdf" target="_blank">帮助中心</a> |
+        <a href="/rec/help;jsessionid=6041F78F9F8ABDAC5208581A4A276736">常见问题</a>
+        </div>
+        </div>
+    
+    <div class="clearboth"></div>
+	<div class="fenge"></div>
+    <div id="main">
+    	<div id="left">
+        	<div id="bigadv"><img src="images/bigadv.jpg" /></div>
+                <div style="clear:both"></div>
+            </div>
+        
+        <div id="right">
+        	<div class="login">
+        	
+        	<form id="loginform" action="login?rul=" method="post">
+        	    <table width="99%" height="120" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td height="37" colspan="2" class="title2"></td></tr>
+                  <tr><td colspan="2"><span id="error"></span></td></tr>
+                  <tr>
+                    <td height="32"><label for="username">用户名：</label></td>
+                    <td>
+                      <input type="text" name="username" maxlength="128" value="" id="username" class="textborder" style="width:110px;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="32"><label for="password">密&nbsp;&nbsp;码：</label></td>
+                    <td>
+                      <input type="password" name="password" maxlength="32" id="password" class="textborder" style="width:110px;"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="32"></td>
+                    <td>
+                      <input type="checkbox" name="isRemember" id="isRemember" value="1" checked/><label for="remember">记住用户名</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40" colspan="2" align="center" class="forgetpsw">
+                    <label>
+                      <input type="submit" name="button" id="btn2" class="btn btn2" value=" "  />
+                    </label>
+                    <a href="/rec/pwd/forget;jsessionid=6041F78F9F8ABDAC5208581A4A276736">忘记密码</a></td>
+                  </tr>
+              </table>
+            </form>
+            
+            
+          </div> 
+            <div class="reg">
+            	<p>还没有注册？马上注册，享受快捷服务！</p>
+                <div><input name="" type="button" id="btn3" class=" btn btn3" onclick="javascript:location.href='register'" /></div>
+            </div>
+            
+        </div>
+        </div>
+        <div style="clear:both"></div> 
+        <div class="login-introduce">
+        	<div class="login-intro1">
+            	<h5>一站式注册与审核，轻松覆盖各站点</h5>
+                <p>教育部、省市和高校就业网真正互联互通，只需在教育部、省市和毕业高校就业网任一站点注册并接受审核，可向任一站点发布招聘信息。</p>
+            </div>
+            <div class="login-intro1">
+            	<h5>信息定向收发，人才锁定准</h5>
+                <p>可指定省市、高校站点，定向发布需求信息，并接收所选站点的求职信息，实现信息一站式全网分发与精准推送，大大提高招聘效率。</p>
+            </div>
+            <div class="login-intro1">
+            	<h5>全面招聘服务，实现高效交互</h5>
+                <p>提供方便、快捷的信息发布和简历筛检功能，提供邮件、站内消息、手机短信、视频面试等及时、多样的互动方式，实现高效交互。</p>
+            </div>
+            <div class="login-intro1">
+            	<h5>权威学生学籍验证，确保真实</h5>
+                <p>依托教育部全国高校学籍数据库和各高校的学籍库，实现学生学籍信息实时验证，确保学生学籍信息真实。</p>
+            </div>
+            <div class="login-intro2">
+            	<h5>独家毕业生生源数据查询</h5>
+                <p>提供全国高校毕业生生源数据库，从用人单位实际需求出发，提供科学有效的毕业生生源检索服务。</p>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        
+		
+		<div class="bottomdiv">
+    		<br />
+                                           版权所有：
+            
+    		
+    			河南中医学院
+    		
+    	</div>
+          	
+  </div>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc4a4df028977b3b8cac92e28249256ea' type='text/javascript'%3E%3C/script%3E"));
+</script>
+  
+ </body>
+</html>
+

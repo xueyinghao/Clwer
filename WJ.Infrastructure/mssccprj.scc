@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[WJ.Infrastructure.csproj]
+SCC_Aux_Path = "\\192.168.1.30\vss"
+SCC_Project_Name = "$/WJ.Infrastructure", CIAAAAAA

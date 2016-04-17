@@ -1,0 +1,258 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+<title>河南中医学院三维校园</title>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="bookmark" href="favicon.ico"/>
+<link rel="stylesheet" href="http://3d.hactcm.edu.cn/map/skin/default/css.css" type="text/css" />
+<link rel="stylesheet" href="http://3d.hactcm.edu.cn/map/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" />
+<link rel="stylesheet" href="http://3d.hactcm.edu.cn/map/openlayers/theme/default/style.css" type="text/css" />
+<link rel="stylesheet" href="http://3d.hactcm.edu.cn/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/map/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/map/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/map/js/layout.js"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/map/openlayers/OpenLayers-min.js"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/map/js/3d.js"></script>
+<script type='text/javascript' src='http://3d.hactcm.edu.cn/dwr/engine.js'></script>
+<script type='text/javascript' src='http://3d.hactcm.edu.cn/dwr/interface/loadData.js'></script>
+<script type='text/javascript' src='http://3d.hactcm.edu.cn/dwr/interface/navigationDwr.js'></script>
+<script type="text/javascript">
+var the_host = "http://3d.hactcm.edu.cn/";
+$(function(){
+	$("#swxy").addClass('focus');
+	$("#accordion" ).accordion();
+	$("#searchresult" ).accordion();
+	//daohang("POINT(114.198104725302 33.692785041971)","POINT(114.2371028 33.68652035)");
+});
+</script>
+</head>
+<body>
+
+
+
+<div class="header">
+	<div class="wrapper">
+    	<div class="logo">
+        	<a href="http://3d.hactcm.edu.cn/"><img src="http://3d.hactcm.edu.cn/map/skin/default/img/logo.png" alt="三维全景河南中医学院" /></a>
+        </div>
+        <div class="searchBox">
+			<div style="height:30px; width:300px; float:left; overflow:hidden">
+				<input type="text" id="input_blur" name="q" size="20" value="例如：教学楼、图书馆、餐厅..." onfocus="glb_searchTextOnfocus(this);"  onblur="glb_searchTextOnBlur(this);" maxlength="40" />
+			</div>
+			<div style=" height:30px; width:34px; float:left; overflow:hidden">
+				<input src="http://3d.hactcm.edu.cn/map/skin/default/img/ss3.gif" type="image" name="s" id="search_button" value="搜索" class="button_style" />
+			</div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+function goIframeFacyBox(url){
+	$.fancybox.open({
+		href : url,
+		type : 'iframe',
+		type : 'iframe',
+		padding : 5,
+		width:1100,
+		height:600
+	});
+}
+
+</script>
+<div class="nav">
+	<div class="wrapper">
+		<ul class="nav_menu">
+			<li id="swxy">
+                <a href="http://3d.hactcm.edu.cn/" title="三维校园">三维校园</a>
+            </li>
+            <li>
+            	<a href="javascript:void(0);" onclick="goIframeFacyBox('http://3d.hactcm.edu.cn/map/qjxy/360.html')">校园漫游</a>
+            </li>
+		</ul>
+	</div>
+</div>
+
+<div class="content">
+	<table width="100%" cellpadding="0" cellspacing="0" style="margin:0px; padding:0px;table-layout: fixed;">
+    	<tr>
+        	<td width="230px" valign="top" align="left" id="sns">
+            	<div class="map-l" style="background-color:#f0f0f0">
+                	<div id="searchresult">
+                    	<h3>搜索结果</h3>
+                        <div>
+                        	<span style="color:#777777; font-size:14px; font-weight:bold;">
+                        	共找到<label style="color:#ff0000" id="c_r">0</label>条相关的记录</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="cursor:pointer; width:60px; height:25px; color:#777777" id="close_btn">关闭</span>
+                            <ul class="searchlist" id="search_r">
+                            </ul>
+                        </div>
+                    </div>
+                	<div id="accordion">
+                		
+                			<h3>党群部门</h3>
+                			<div>
+                				<ul>
+                					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('1','d')">纪委/监察处</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('4','d')">武装保卫部处</a></li>
+	               					
+                				</ul>
+                			</div>
+                		
+                			<h3>行管部门</h3>
+                			<div>
+                				<ul>
+                					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('2','d')">学工部(处)</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('3','d')">招生就业处</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('5','d')">教务处</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('6','d')">学科建设办公室</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('7','d')">后勤管理处</a></li>
+	               					
+                				</ul>
+                			</div>
+                		
+                			<h3>教辅部门</h3>
+                			<div>
+                				<ul>
+                					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('8','d')">科技成果推广中心</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('9','d')">图书馆</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('11','d')">网络信息中心</a></li>
+	               					
+                				</ul>
+                			</div>
+                		
+                			<h3>教学部门</h3>
+                			<div>
+                				<ul>
+                					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('10','d')">思想政治理论教研部</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('12','d')">第一临床医学院/护理学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('13','d')">第二临床医学院/骨伤学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('14','d')">针灸推拿学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('15','d')">基础医学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('16','d')">药学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('17','d')">人文学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('18','d')">外语学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('19','d')">信息技术学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('20','d')">继续教育学院</a></li>
+	               					
+	               					<li><a href="javascript:void(0)" 
+	               						onclick="showDetail('21','d')">国际教育学院</a></li>
+	               					
+                				</ul>
+                			</div>
+                							
+                		
+                	</div>
+            	</div>
+            </td>
+            <td align="left" valign="top">
+            	<div class="bgsns">
+					<span><img id="btnshrink" src="http://3d.hactcm.edu.cn/map/skin/default/img/btn_Shrink.png" title="收起左栏" /></span>
+				</div>
+				<div class="toolbar">
+					<ul class="bar">
+						<li>
+							<input type="checkbox" value="bq" checked="checked" /><label>标签</label>
+							<input type="checkbox" value="sj" checked="checked" /><label>实景</label>
+							<input type="checkbox" value="tcc" /><label>停车场</label>
+							<input type="checkbox" value="yh" /><label>银行</label>							
+							<input type="checkbox" value="gj" /><label>餐厅</label>
+							<input type="checkbox" value="yy" /><label>医院</label>
+							<input type="checkbox" value="ykt" /><label>超市</label>							
+						</li>
+					</ul>
+				</div>
+            	<div class="map-r" id="map" ></div>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- 底部 -->
+
+
+<div class="footer">
+    <p>Copyright ©2013-2013 . All rights Reserved. </p>
+</div>
+﻿<!--IE6 7 浏览器检测提醒 开始-->
+<style>
+body{_background-attachment: fixed; /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/ }
+.ieBrowserInfor{z-index: 99999;overflow: visible; position: fixed; bottom:0;_position: absolute; /*IE6 用absolute模拟fixed*/ _top: expression(documentElement.scrollBottom + 100 + "px"); /*IE6 动态设置top位置*/ _left:expression(documentElement.scrollLeft + "px");  /*IE6 动态设置left位置*/ /* documentElement.scrollTop 设置浮动元素始终在浏览器最顶，可以加一个数值达到排版效果 */  width:100%; height:100px; line-height:100px; background:#000; color:#CCC; font-size:16px; text-align:center; display:none; filter:alpha(opacity=80);-moz-opacity:.8;opacity:.8;}
+</style>
+<div class="ieBrowserInfor">亲～你正在使用的浏览器版本过低，将不能正常浏览和使用全景三维河南中医学院，建议切换到高速模式或<strong><a href="http://www.google.cn/intl/zh-CN/chrome/browser/" target="_blank">&dArr;下载谷歌浏览器&dArr;</a><a href="javascript:void(0);" onclick="$('.ieBrowserInfor').slideUp(400)" style="padding-left:30px;" title="关闭">&times;</a></strong></div>
+<script>
+$(function(){
+	var Sys = {};
+	var ua = navigator.userAgent.toLowerCase();
+	if (window.ActiveXObject)
+	    Sys.ie = ua.match(/msie ([\d.]+)/)[1];
+	else if (document.getBoxObjectFor)
+	    Sys.firefox = ua.match(/firefox\/([\d.]+)/)[1];
+	else if (window.MessageEvent && !document.getBoxObjectFor)
+	    Sys.chrome = ua.match(/chrome\/([\d.]+)/)[1];
+	else if (window.opera)
+	    Sys.opera = ua.match(/opera.([\d.]+)/)[1];
+	else if (window.openDatabase)
+	    Sys.safari = ua.match(/version\/([\d.]+)/)[1];
+	
+	if(Sys.ie == "6.0"){
+		$(".ieBrowserInfor").show(100);
+	}
+	//if(Sys.firefox) alert('Firefox: '+Sys.firefox);
+	//if(Sys.chrome) alert('Chrome: '+Sys.chrome);
+	//if(Sys.opera) alert('Opera: '+Sys.opera);
+	//if(Sys.safari) alert('Safari: '+Sys.safari);
+});
+</script>
+
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/fancybox/source/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="http://3d.hactcm.edu.cn/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+</body>
+</html>
+

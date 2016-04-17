@@ -1,0 +1,16 @@
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\bin\Debug\Spider1.exe.config
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\bin\Debug\Spider1.exe
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\bin\Debug\Spider1.pdb
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.csprojResolveAssemblyReference.cache
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.Form1.resources
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.Properties.Resources.resources
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.csproj.GenerateResource.Cache
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.exe
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\obj\Debug\Spider1.pdb
+c:\users\updatususer\documents\visual studio 2013\Projects\Spider1\Spider1\bin\Debug\HtmlAgilityPack.dll
+C:\Users\UpdatusUser\Desktop\Spider1\Spider1\bin\Debug\Spider1.exe.config
+C:\Users\UpdatusUser\Desktop\Spider1\Spider1\obj\Debug\Spider1.exe
+C:\Users\UpdatusUser\Desktop\Spider1\Spider1\obj\Debug\Spider1.pdb
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\我的爬虫\Spider1\Spider1\bin\Debug\Spider1.exe.config
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\我的爬虫\Spider1\Spider1\obj\Debug\Spider1.exe
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\我的爬虫\Spider1\Spider1\obj\Debug\Spider1.pdb

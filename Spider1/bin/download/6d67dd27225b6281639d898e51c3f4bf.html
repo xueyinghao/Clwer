@@ -1,0 +1,1281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="./images/base_20160310.css" type="text/css" rel="stylesheet" />
+<link href="./images/index_20160310.css" type="text/css" rel="stylesheet" />
+<script src="./images/jquery-1.11.0.min.js" /></script>
+<script src="./images/index_20160310.js" /></script>
+<title>中华人民共和国人力资源和社会保障部</title>
+<style>
+.rsli{height:132px;}
+.hdjl_m_rl{width:53px;}
+.hdjl_m_rr{width: 372px;}
+.erweima_m a div{width:auto;height:auto;}
+.erweima_m a div img{padding:25px;padding-bottom: 10px;  background-color: #fff; box-shadow: 0px 0px 2px #000;}
+.erweima_m a div.img1 span{left: 27px; position: absolute; top: 2px;}
+.erweima_m a div.img2 span{left: 17px; position: absolute; top: 2px;}
+.erweima_m a div.img2{left: -170px;}
+.erweima_m a div.img2 img{padding-top:44px;}
+.main_r1_right_li_t a.right{    float: right; font-size: 14px;   margin-right: 0px;}
+.zcfg_m{margin-top: 10px;}
+.top1 .c{color: #cccccc;}
+</style>
+<script>
+$(function(){
+	$('.foot1 .more1').click(function(){
+		if($('.foot1').css('height')!='30px'){
+			$(this).addClass('a').removeClass('b');
+			$('.foot1').css('height','30px');
+		}else{
+			$(this).addClass('b').removeClass('a');
+			$('.foot1').css('height','auto');
+		}
+		return false;
+	})
+	$('.foot1 .lit').mouseover(function(){
+		$(this).addClass('b').removeClass('a').siblings('.lit').addClass('a').removeClass('b')
+		var i=$(this).index('.lit');
+		$('.link_more').eq(i).show().siblings('.link_more').hide();
+	})
+	$('.link_more').mouseleave(function(){
+		$('.foot1 .lit').addClass('a').removeClass('b')
+		$(this).hide();
+	})
+        
+       $('.foot').mouseleave(function(){
+		$('.foot1 .lit').addClass('a').removeClass('b')
+		$('.link_more').hide();
+	})
+       $('.link_more').eq(0).css('left','40px')
+       $('.link_more').eq(1).css('left','463px')
+       $('.link_more').eq(2).css('left','463px')
+       $('.link_more').eq(3).css('left','663px')
+       $('#idStartDate').val($('#divT').html().replace(/年|月|日/g,'.').substr(0,10))
+})
+function AddFavorite(title, url) {
+ try {
+   window.external.addFavorite(url, title);
+ }
+catch (e) {
+   try {
+    window.sidebar.addPanel(title, url, "");
+  }
+   catch (e) {
+     alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请进入新网站后使用Ctrl+D进行添加");
+   }
+ }
+}
+</script>
+<!--<script type="text/javascript" src='./images/domready.js'></script>-->
+</head>
+<body>
+<!-------------------------------------------------------------头部导航及搜索------------------------------------------------>
+<div class='top'>
+	<div class='top_i'><div class='top1'><span id="divT"></span><a href='http://www.mohrss.gov.cn/' target='_blank'>中文</a><!--<a>｜</a><a href='http://www.mohrss.gov.cn/en/'>English</a><a>!--->｜</a>
+<!--<a class='c'>无障碍通道</a><a>｜</a>-->
+<a onclick="AddFavorite('中华人民共和国人力资源和社会保障部','http://www.mohrss.gov.cn/')" style="cursor:pointer">加入收藏</a></div></div>
+	<div class='head'>
+		<a href='http://www.mohrss.gov.cn/' target='_blank' class='logo'><img src='./images/logo_20160310.png' /></a>
+		<a href='http://www.mohrss.gov.cn/' target='_blank' class='logo1'><img src='./images/logo1_20160310.png' /></a>
+		<div class='search'>
+			<img src='./images/img1_20160310.png' />
+			<div class='search_b'>
+			<form action="http://search.mohrss.gov.cn/was5/web/search" method="get" target="_blank" onsubmit="return submitSearchnew()" id="searchForm">
+				<input type="text" id="loginname" name="searchwordanzhao" />
+				<input name="channelid" value="226064" type="hidden" />
+				<input id="searchId" name="searchword" type="hidden" />
+				<input type='submit' value='' />
+			</form>
+			<script>
+			function submitSearchnew(){
+				var search_input = document.getElementById("loginname").value;				 
+				if(search_input != "")
+				{
+					document.getElementById("searchId").value=('doctitle='+document.getElementById("loginname").value);
+				}
+				else
+				{
+					alert("请输入检索词！");
+					return false;
+				}
+			}
+			</script>
+			</div>
+		</div>
+		<div class='erweima'>
+			<img src='./images/erweima_20160310.jpg' />
+			<div class='erweima_div'>
+				<div class='erweima_t'></div>
+				<div class='erweima_m'>
+					<a href='#' class='a'>人民日报<div class='img1'><span>扫码并关注人力资源和社会保障部</span><img src='./images/20160318_1.png' /></div></a>
+					<a href='http://toutiao.com/m6203955792/' target='_blank' class='b'>今日头条<div class='img2'><span>扫码并关注人力资<br>&nbsp&nbsp源和社会保障部</span><img src='./images/20160331.png' /></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-------------------------------------------------------------左侧导航 ---------------------------------------------------->
+<div class='main'>
+	<div class='main_m'>
+		<div class='nav'>
+			<li class='hover'><a>新闻中心</a></li>
+			<li><a>政务公开</a></li>
+			<li><a>服务之窗</a></li>
+			<li><a>互动交流</a></li>
+			<li><a>专题专栏</a></li>
+			<li><a>政策法规</a></li>
+		</div>
+<!-------------------------------------------------------------新闻中心----------------------------------------------------->
+
+		<div class='main_r'>
+			<div class='main_r1'>
+				<div class='main_r1_left'>
+					<ul class='ul'>
+					
+						<li><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160331_236880.html' target="_blank"><img src='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/W020160410408736694854.jpg' /></a><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160331_236880.html' target="_blank" class='ceng'>全国人社宣传工作座谈会召开</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160329_236749.html' target="_blank"><img src='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/W020160410466027905114.jpg' /></a><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160329_236749.html' target="_blank" class='ceng'>12333全国统一咨询日活动拉开帷幕</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160324_236352.html' target="_blank"><img src='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/W020160410409321845621.jpg' /></a><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160324_236352.html' target="_blank" class='ceng'>2016年留学人员回国服务工作部际联席会...</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160323_236285.html' target="_blank"><img src='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/W020160410409571528010.jpg' /></a><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160323_236285.html' target="_blank" class='ceng'>全国劳动关系工作座谈会在北京召开</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160322_236146.html' target="_blank"><img src='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/W020160410409728413690.jpg' /></a><a href='./SYrlzyhshbzb/dongtaixinwen/SYtupianxinwen/201603/t20160322_236146.html' target="_blank" class='ceng'>全国就业工作座谈会在北京召开</a></li>
+					
+					</ul>
+					<div class='nav_li'>
+						<li class='hover'></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</div>
+				</div>
+				<div class='main_r1_right'>
+					<div class='main_r1_right_li'>
+						<div class='main_r1_right_li_t'>
+							<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/' target="_blank" class='a'>时政要闻</a><a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/' target="_blank" class='hover a'>新闻</a><a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/' target="_blank" class='a'>地方动态</a><a href='./SYrlzyhshbzb/dongtaixinwen/fbh/' target="_blank"  class='a'>发布会</a>
+						</div>
+						<div class='main_r1_right_li_m'>
+							<div class='main_r1_right_li_m1 rsli' hidden>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160410_237745.html' target="_blank">李克强会见瑞士联邦主席施奈德－阿曼</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160410_237744.html' target="_blank">李克强：推动中斯战略合作伙伴关系迈上新台阶</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160407_237497.html' target="_blank">李克强主持召开国务院常务会议决定 实施《装备制造...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160406_237418.html' target="_blank">李克强向第二十届太平洋地区核能大会致贺信</a>
+							
+								<a href='http://www.gov.cn/zhengce/content/2016-04/06/content_5061542.htm' target="_blank">国务院关于同意建立国务院贸易便利化工作部际联席...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160406_237416.html' target="_blank">27部门就农村留守儿童关爱保护工作建立部际联席会...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160405_237316.html' target="_blank">李克强：扎实做好全面实施营改增各项工作 在深化改...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160405_237315.html' target="_blank">国务院办公厅印发《关于完善国家级经济技术开发区...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160401_237047.html' target="_blank">李克强会见美国国会议员代表团</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201604/t20160401_237046.html' target="_blank">国务院批转《关于2016年深化经济体制改革重点工作...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/shizhengyaowen/201603/t20160331_236949.html' target="_blank">李克强主持召开国务院常务会议</a>
+							
+							</div>
+							<div class='main_r1_right_li_m1 rsli'>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237757.html' target="_blank">扎实开展“两学一做”学习教育  切实履行全面从严...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237755.html' target="_blank">人社部部署2016年窗口单位作风建设工作</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237753.html' target="_blank">四部门印发意见部署完善国家工作人员学法用法制度</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237751.html' target="_blank">国家协调劳动关系三方会议第二十一次会议在京召开</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237750.html' target="_blank">全国工伤保险工作座谈会召开</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237749.html' target="_blank">超退休年龄工伤有望获得保障</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237748.html' target="_blank">人社部组织开展2016年中国技能大赛</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160410_237747.html' target="_blank">2016年“工伤保险知识微信竞答”正式启动</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160407_237498.html' target="_blank">国务院常务会议确定2016年深化医药卫生体制改革重...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160406_237413.html' target="_blank">切实增强五个意识  大力推动人社宣传工作创新发展</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/buneiyaowen/201604/t20160405_237308.html' target="_blank">人社部印发通知继续实施专技人才知识更新工程高级...</a>
+							
+							</div>
+							<div class='main_r1_right_li_m1 rsli' hidden>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160410_237746.html' target="_blank">江苏将培训50万新生代农民工</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160407_237503.html' target="_blank">广东深化高校人事制度改革 支持高水平大学建设</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160406_237415.html' target="_blank">云南社保卡持卡人数今年将达3300万</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160405_237314.html' target="_blank">辽宁劳动者可享终身职业培训</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160405_237313.html' target="_blank">天津发布2016年高层次人才引进计划</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160405_237311.html' target="_blank">济南鼓励科研人员携带项目留职创业</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160405_237310.html' target="_blank">广西技工院校与贫困县开展结对帮扶职业培训</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160405_237309.html' target="_blank">西安4月1日起调整医疗生育保险待遇</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201604/t20160401_237048.html' target="_blank">2016年第一季度地方新闻信息报送及使用情况通报</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201603/t20160331_236962.html' target="_blank">新疆贵州在工程建设领域探索农民工实名制防治“欠薪”</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/dfdt/gzdt/201603/t20160331_236960.html' target="_blank">江西南昌将启动刷脸认领养老金</a>
+							
+							</div>
+							<div class='main_r1_right_li_m1 rsli' hidden>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201602/t20160229_234113.html' target="_blank">尹蔚民部长、游钧副部长出席国新办新闻发布会 介绍...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201601/t20160122_232324.html' target="_blank">人社部举行第四季度新闻发布会</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201601/t20160115_231918.html' target="_blank">汤涛副部长出席国务院政策吹风会 介绍简政放权有关...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201510/t20151027_223889.html' target="_blank">人社部举行第三季度新闻发布会</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201510/t20151014_222764.html' target="_blank">尹蔚民部长介绍“十二五”以来就业和社会保障工作成就</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201509/t20150914_220541.html' target="_blank">张义珍副部长出席国新办吹风会 介绍深化国企改革有...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201508/t20150828_219147.html' target="_blank">游钧副部长出席国务院政策吹风会 介绍基本养老基金...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201507/t20150729_216257.html' target="_blank">人社部举行上半年就业形势专题新闻发布会</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201507/t20150724_215701.html' target="_blank">人社部举行2015年度第二季度新闻发布会</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201506/t20150630_212955.html' target="_blank">人社部举行中国社会保险发展年度报告（2014）新闻...</a>
+							
+								<a href='./SYrlzyhshbzb/dongtaixinwen/fbh/201506/t20150612_211109.html' target="_blank">信长星副部长在国务院政策吹风会介绍支持农民工等...</a>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------政务公开----------------------------------------------------->
+			<div class='main_r1 zwgk' hidden>
+				<div class='zwgk_left'>
+					<div class='zwgk_left_1'>
+						<div class='zwgk_left_1l'>
+							信息公开
+						</div>
+						<div class='zwgk_left_1r'>
+							<a href='http://www.mohrss.gov.cn/gkml/index2.html' target="_blank">公开目录</a>
+							<a href='./gkml/gkgd/' target="_blank">公开规定</a>
+							<a href='./gkml/gkzn/' target="_blank">公开指南</a>
+							<a href='./gkml/gkbg/' target="_blank">公开报告</a>
+							<a href='./gkml/gksq/' target="_blank">公开申请</a>
+							<a href='./gkml/gklxfs/' target="_blank">公开窗口</a>
+						</div>
+						<div class='clear'></div>
+					</div>
+					<div class='zwgk_left_1 mart30'>
+						<div class='zwgk_left_1l'>
+							数字人社
+						</div>
+						<div class='zwgk_left_1r'>
+                                                        <a href='./SYrlzyhshbzb/zwgk/szrs/tjgb/' target="_blank">统计公报</a>
+                                                        <a href='./SYrlzyhshbzb/zwgk/szrs/tongjinianjian/' target="_blank">统计年鉴</a>
+							<a href='./SYrlzyhshbzb/zwgk/szrs/ndtjsj/' target="_blank">年度统计数据</a>
+							<a href='./SYrlzyhshbzb/zwgk/szrs/sjfx/' target="_blank">数据分析</a>
+							<a href='./SYrlzyhshbzb/zwgk/szrs/dtyjsu/' target="_blank">动态统计数据</a>
+							<a href='./SYrlzyhshbzb/zwgk/szrs/qttjcl/' target="_blank">其他统计资料</a>
+						</div>
+						<div class='clear'></div>
+					</div>
+					<div class='zwgk_left_1 mart30'>
+						<div class='zwgk_left_1l'>
+							规划财务
+						</div>
+						<div class='zwgk_left_1r'>
+							<a href='./SYrlzyhshbzb/zwgk/ghcw/ghjh/' target="_blank">规划计划   </a>
+							<a href='./SYrlzyhshbzb/zwgk/ghcw/zfcg/' target="_blank">政府采购</a>
+							<a href='./SYrlzyhshbzb/zwgk/ghcw/bmysgl/' target="_blank">部门预算管理 </a>
+						</div>
+						<div class='clear'></div>
+					</div>
+				</div>
+				<div class='zwgk_left1'>
+					<div class="main_r1_right_li_t bcc3d4e1">
+						<a class="hover">公告公示</a>
+					</div>
+					<div class="rsli mart20">
+						<a href='./SYrlzyhshbzb/zwgk/gggs/tg/' target="_blank">通告  </a>
+						<a href='./SYrlzyhshbzb/zwgk/gggs/hyjyta/' target="_blank">回音（建议提案）    </a>
+						<a href='./SYrlzyhshbzb/zwgk/gggs/bjggwykl/' target="_blank">部机关公务员考录  </a>
+						<a href='./SYrlzyhshbzb/zwgk/gggs/2012_1878/' target="_blank">部属事业单位招聘  </a>
+					</div>
+					<div class="main_r1_right_li_t bcc3d4e1 mart20">
+						<a  class="hover">机构职能</a>
+					</div>
+					<div class="rsli mart20">
+                                                 <a href='./SYrlzyhshbzb/zwgk/jgzn/bzyzz/' target="_blank">主要职责  </a>
+						<a href='./SYrlzyhshbzb/zwgk/jgzn/bjg/' target="_blank">部机关  </a>
+						<a href='./SYrlzyhshbzb/zwgk/jgzn/sydw/' target="_blank">部属单位    </a>
+						
+					</div>
+				</div>
+				<div class='zwgk_left2'>
+					<div class='zwgk_left_1l'>
+						部长之窗
+					</div>
+					<div class='zwgk_left2_r'>
+						<div class='zwgk_left2_r1'>
+							<div class='img'></div>
+							
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/ywm/' target="_blank"><img src='./SYrlzyhshbzb/zwgk/bld/ywm/grjl/201301/W020130129575188921563.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/ywm/">尹蔚民</a></a></div>
+							
+							<div class='img'></div>
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/plg/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/plg/grjl/201306/W020130603397166178501.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/plg/">潘立刚</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/lead_gwq/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/lead_gwq/grjlgwq/201508/W020150825390009621011.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/lead_gwq/">耿文清</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/xcx/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/xcx/grjl/201301/W020130321720856423036.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/xcx/">信长星</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/zjg/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/zjg/grjl/201301/W020160410410512205434.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/zjg/">张建国</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/qxp/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/qxp/grjl/201301/W020130129579047433140.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/qxp/">邱小平</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/tt/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/tt/grjl/201409/W020140905326175438792.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/tt/">汤　涛</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/kcs/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/kcs/grjl/201409/W020160410410307042535.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/kcs/">孔昌生</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/youjun/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/youjun/grjl/201507/W020150710589987622920.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/youjun/">游　钧</a></a></div>        
+							
+							
+							                    
+							<div class='img'><a href='./SYrlzyhshbzb/zwgk/bld/zhangyz/' target="_blank">    <img src='./SYrlzyhshbzb/zwgk/bld/zhangyz/grjl/201507/W020150710591253850765.jpg' /><a href="./SYrlzyhshbzb/zwgk/bld/zhangyz/">张义珍</a></a></div>        
+							
+							
+							<div class='clear'></div>
+						</div>
+					</div>
+					<div class='clear'></div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------服务之窗----------------------------------------------------->
+			<div class='main_r1 fwzc' hidden>
+				<div class='fwzc1'>
+					<a href='./SYrlzyhshbzb/fwyd/zxfudh/' target="_blank" class='fwzc_t'>服务电话</a>
+					<ul class='rsli mart10'>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/zxfudh/201301/t20130125_10459.html' target="_blank">全国统一咨询服务专用电话</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/zxfudh/201604/t20160407_237560.html' target="_blank">人社部信访电话</a></li>
+					
+					</ul>
+				</div>
+				<div class='fwzc2'>
+					<a href='./SYrlzyhshbzb/fwyd/SYkaoshizhaopin/' target="_blank" class='fwzc_t'>招聘</a>
+					<ul class='rsli mart10'>
+					
+						<li><a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/sykaoshi/zyhgjjgsydwgkzp/' target="_blank">中央和国家机关事业单位公开招聘</a></li>
+					
+						<li><a href='/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyqyzpyjgxbys/' target="_blank">中央企业招聘应届高校毕业生信息公开</a></li>
+					
+						<li><a href='http://www.cjob.gov.cn/' target="_blank">中国公共招聘网</a></li>
+					
+					</ul>
+				</div>
+				<div class='fwzc3'>
+					<a href='./SYrlzyhshbzb/fwyd/sykaoshi/' target="_blank" class='fwzc_t'>考试</a>
+					<ul class='rsli mart10'>
+					
+						<li><a href='http://www.cpta.com.cn' target="_blank">专业技术人员资格考试</a></li>
+					
+						<li><a href='/SYrlzyhshbzb/fwyd/sykaoshi/zyjnjd/' target="_blank">职业技能鉴定考试</a></li>
+					
+						<li><a href='http://bm.scs.gov.cn/2016/UserControl/Student/StudentIndex.aspx' target="_blank">中央机关及其直属...</a></li>
+					
+					</ul>
+				</div>
+				<div class='fwzc4'>
+					<a href='./SYrlzyhshbzb/fwyd/bgxz/' target="_blank" class='fwzc_t'>表格下载</a>
+					<ul class='rsli mart10'>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bgxz/201308/t20130820_110931.html' target="_blank">永久居留人才登记表</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bgxz/201309/t20130916_113606.html' target="_blank">人力资源社会保障系统政府信息公开基础数据统计表</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bgxz/201308/t20130820_110928.html' target="_blank">高层次外国专家登记表</a></li>
+					
+					</ul>
+				</div>
+				<div class='fwzc5'>
+					<a href='./SYrlzyhshbzb/fwyd/gzpt/' target="_blank" class='fwzc_t'>工作平台</a>
+				</div>
+				<div class='fwzc6'>
+					<a href='./SYrlzyhshbzb/fwyd/zaixianchaxun/' target="_blank" class='fwzc_t'>查询</a>
+					<ul class='rsli mart10'>
+						<li class='left'><a href='./SYrlzyhshbzb/fwyd/zaixianchaxun/zscx/' target="_blank" class='left'>证书查询</a></li>
+						<li class='left marl20'><a href='./SYrlzyhshbzb/fwyd/zaixianchaxun/xxcx/' target="_blank" class='left'>信息查询</a></li>
+					</ul>
+				</div>
+				<div class='fwzc7'>
+					<a href='./SYrlzyhshbzb/fwyd/bszn/' target="_blank" class='fwzc_t'>办事指南</a>
+					<ul class='rsli mart10'>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bszn/201506/t20150615_211289.html' target="_blank">以技能为主的国外职业资格证...</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bszn/201506/t20150603_210382.html' target="_blank">列入政府管理范围的专业技术...</a></li>
+					
+						<li><a href='./SYrlzyhshbzb/fwyd/bszn/201505/t20150529_162077.html' target="_blank">企业年金基金管理机构资格认...</a></li>
+					
+					</ul>
+				</div>
+			</div>
+<!-------------------------------------------------------------互动交流----------------------------------------------------->
+			<div class='main_r1 hdjl' hidden>
+				<div class='hdjl_left'>
+					<div class="main_r1_right_li_t">
+						<a href='./SYrlzyhshbzb/zxhd/SYzaixianfangtan/' target="_blank" class="hover">在线访谈</a>
+					</div>
+					<div class='hdjl_m'>
+					
+						<div class='hdjl_m_i'><a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/zxhd/SYzaixianfangtan/201506/' target="_blank"><img src='./SYrlzyhshbzb/zxhd/SYzaixianfangtan/201604/W020160410399642195034.jpg' /></a></div>
+						<div class='hdjl_m_r'>
+							<div class='hdjl_m_rl f_b f_16 c002558 line28'>主题：</div>
+							<a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/zxhd/SYzaixianfangtan/201506/' target="_blank"><div class='hdjl_m_rr f_b f_16 c002558 line28'>人社部信息中心主任贾怀斌谈12333全国统一...</div></a>
+							<div class='clear'></div>
+							<div class='hdjl_m_rl f_b f_16 c255aa1 mart10'>时间：</div>
+							<div class='hdjl_m_rr c255aa1 f_16 mart10'>2016年4月1日</div>
+							<div class='clear'></div>
+							<div class='hdjl_m_rl f_b f_16 c255aa1 mart10'>嘉宾：</div>
+							<div class='hdjl_m_rr c255aa1 f_16 mart10 line28'>人社部信息中心主任 贾怀斌</div>
+							<div class='clear'></div>
+						</div>
+						<div class='clear'></div>
+					
+					</div>
+					<div class="main_r1_right_li_t mart10">
+						<a href='./SYrlzyhshbzb/zxhd/zaixianzhibo/' target="_blank" class="hover">在线直播</a>
+					</div>
+					<div class='hdjl_m'>
+					
+						<div class='hdjl_m_i'><a href='./SYrlzyhshbzb/zxhd/zaixianzhibo/201602/t20160229_234113.html' target="_blank"><img src='./SYrlzyhshbzb/zxhd/zaixianzhibo/201602/W020160410485662078290.jpg' /></a></div>
+						<div class='hdjl_m_r'>
+							<div class='hdjl_m_rl f_b f_16 c002558 line28'>主题：</div>
+							<a href='./SYrlzyhshbzb/zxhd/zaixianzhibo/201602/t20160229_234113.html' target="_blank"><div class='hdjl_m_rr f_b f_16 c002558 line28'>尹蔚民部长、游钧副部长出席国新办新闻发布会 介绍就业和社会保障有关情况 </div></a>
+							<div class='clear'></div>
+							<div class='hdjl_m_rl f_16 c255aa1 f_b line28'>简介：</div>
+							<div class='hdjl_m_rr f_16 c255aa1 line28'>2月29日，国务院新闻办举行新闻发布会，介绍就业和社会保障有关情况并答记者问。
+</div>
+							<div class='clear'></div>
+						</div>
+						<div class='clear'></div>
+					
+					</div>
+				</div>
+				<div class='hdjl_right'>
+					<a href='./SYrlzyhshbzb/zxhd/buzhangxinxiang/' target="_blank" class='hdjl_right1'>部长信箱</a>
+					<a href='./SYrlzyhshbzb/zxhd/spjc/' target="_blank" class='a1'>视频集萃</a>
+					<a href='./SYrlzyhshbzb/zxhd/RSS/' target="_blank" class='a2'>信息直通车</a>
+					<a href='./SYrlzyhshbzb/zxhd/wzjs/' target="_blank" class='a3'>网站查验</a>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------专题专栏----------------------------------------------------->
+			<div class='main_r1 ztzl' hidden>
+				
+				
+				<div class='ztzl1'>
+					<div class='ztzl1_img'><a href='http://www.newjobs.com.cn/zhuanti/jycjjh.html' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201508/W020160408031882910457.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.newjobs.com.cn/zhuanti/jycjjh.html' target="_blank">离校未就业高校毕业生就业促进计划</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl2'>
+					<div class='ztzl1_img'><a href='http://www.chinajob.gov.cn/TrainingSkillAccrenitaTion/node_304.htm' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201301/W020160408032021562184.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.chinajob.gov.cn/TrainingSkillAccrenitaTion/node_304.htm' target="_blank">技工院校</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl3'>
+					<div class='ztzl1_img'><a href='http://www.g20ewg.org' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201604/W020160408032129444084.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.g20ewg.org' target="_blank">G20就业工作组</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl4'>
+					<div class='ztzl1_img'><a href='/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcshehuibaozhangka/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201302/W020160409523528606803.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcshehuibaozhangka/' target="_blank">社会保障卡</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl5'>
+					<div class='ztzl1_img'><a href='/SYrlzyhshbzb/zhuanti/jinbaogongcheng/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201301/W020160408032462493307.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='/SYrlzyhshbzb/zhuanti/jinbaogongcheng/' target="_blank">金保工程</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl6'>
+					<div class='ztzl1_img'><a href='/SYrlzyhshbzb/ztzl/sjjnds/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201604/W020160408032607513499.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='/SYrlzyhshbzb/ztzl/sjjnds/' target="_blank">世界技能大赛</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl7'>
+					<div class='ztzl1_img'><a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/sykaoshi/zyhgjjgsydwgkzp/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201301/W020160408032762583157.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/sykaoshi/zyhgjjgsydwgkzp/' target="_blank">中央和国家机关事业单位公开招聘</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl8'>
+					<div class='ztzl1_img'><a href='/SYrlzyhshbzb/rdzt/ZYNLJSSgaojinengrencaibiaozhang/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201502/W020160408032887818843.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='/SYrlzyhshbzb/rdzt/ZYNLJSSgaojinengrencaibiaozhang/' target="_blank">高技能人才表彰</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl9'>
+					<div class='ztzl1_img'><a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/rdzt/zt_dwgjzfzxxd/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201502/W020160408033035698200.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/rdzt/zt_dwgjzfzxxd/' target="_blank">窗口单位改进作风专项行动</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl10'>
+					<div class='ztzl1_img'><a href='http://www.cjob.gov.cn/' target="_blank"><img src='./SYrlzyhshbzb/ztzl/201301/W020160408033204583740.jpg' /></a></div>
+					<div class='ztzl1_p'>
+						<a href='http://www.cjob.gov.cn/' target="_blank">中国公共招聘网</a>
+					</div>
+					<div class='clear'></div>
+				</div>
+				
+				
+				<div class='ztzl11'><a href='./SYrlzyhshbzb/ztzl/' target="_blank">更多>></a></div>
+			</div>
+<!-------------------------------------------------------------政策法规----------------------------------------------------->
+			<div class='main_r1 zcfg' hidden>
+				<div class='left w450'>
+					<div class="main_r1_right_li_t">
+<a href='./SYrlzyhshbzb/zcfg/flfg/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/zcfg/flfg/' target="_blank" class="hover">法律法规</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/flfg/201603/t20160309_234992.html" target="_blank">工伤保险辅助器具配置管理办法</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/flfg/201601/t20160119_232110.html" target="_blank">中华人民共和国劳动法</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/flfg/201601/t20160119_232107.html" target="_blank">中华人民共和国公务员法</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/flfg/201601/t20160119_232078.html" target="_blank">中华人民共和国就业促进法</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10">
+						<a href='./SYrlzyhshbzb/zcfg/SYzhengcejiedu/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/zcfg/SYzhengcejiedu/' target="_blank" class="hover">权威解读</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengcejiedu/201604/t20160410_237752.html" target="_blank">超退休年龄工伤有望获得保障</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengcejiedu/201603/t20160329_236744.html" target="_blank">有效防控风险 实现保值增值</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengcejiedu/201603/t20160329_236743.html" target="_blank">保值增值·控制风险·强化监管</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengcejiedu/201603/t20160329_236742.html" target="_blank">为人才培养和发展造就良好环境</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w450 marl40'>
+					<div class="main_r1_right_li_t">
+
+						<a href='http://www.mohrss.gov.cn/gkml/index3.htm' target="_blank" class="hover">政策文件</a>
+					</div>
+					<div class="zcfg_m">
+
+					<form id="AdvSMe" name="AdvSMe" onsubmit="" action="http://search.mohrss.gov.cn/govsearch/gov_list_ad1.jsp" target="_blank">
+					
+					<input type="hidden" name="pubURL" value="" />
+					<input type="hidden" name="SType" value="3" />					
+						<div class='mart10'>
+							<div class='zcfg_m_left'>标题：</div>
+							<input type="text" size="55" name="Title" maxlength=100 />
+							<div class='clear'></div>
+						</div>
+						<div class='mart10'>
+							<div class='zcfg_m_left'>发文字号：</div>
+							<input type="text" name="fileNum" id="fileNum" size="55" />	
+							<div class='clear'></div>
+						</div>
+						<div class='mart10'>
+							<div class='zcfg_m_left'>发文日期：</div>
+							<input type="text" name="dc1" id="idStartDate" size="55" method='get' value='20XX.XX.XX' />
+							<input type="hidden" name="dc2" id="idEndDate" size="55" />	
+							
+							<div class='clear'></div>
+						</div>
+						<div class='mart10'>
+							<input type='submit' value='查 询' />
+							
+						</div>
+					</form>
+					<!--<script type="text/javascript">
+					onload = function ()
+					{
+						setInterval (function ()
+						{
+							var date = new Date ();
+							d = new Date(),
+							nowYear = +d.getFullYear();
+							var y = nowYear;
+							var m = date.getMonth () + 1;
+							m = m < 10 ? "0" + m : m;
+							var d = date.getDate ();
+							d = d < 10 ? "0" + d : d;
+							idStartDate.value = y + "." + m + "." + d ;
+						}, 1000);
+					}
+					</script>-->
+					<script>
+					var a=document.getElementById('idStartDate');
+					var b=document.getElementById('idEndDate');
+					var form=document.getElementsByTagName('form')[1];
+					form.onsubmit=function(){
+						b.value=a.value;
+					}
+					</script>
+					</div>
+					<div class="main_r1_right_li_t mart10">
+<a href='./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/' target="_blank" class="hover">征求意见</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/201603/t20160330_236844.html" target="_blank">关于对《人力资源服务术语》等六项国家标准草案征求意见的函</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/zq_fgs/201601/t20160129_232714.html" target="_blank">人力资源社会保障部关于《公务员录用考试违纪违规行为处...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/201601/t20160119_232083.html" target="_blank">关于《关于执行<工伤保险条例>若干问题意见（二）（征求...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/zcfg/SYzhengqiuyijian/zqyjjjjds/201506/t20150629_212688.html" target="_blank">关于对《基本养老保险基金投资管理办法》公开征求意见的通知</a></li>
+					
+					</ul>
+				</div>
+			</div>
+<!-------------------------------------------------------------就业创业----------------------------------------------------->
+			<div class='main_r1 jycy' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/gaoxiaobiyesheng/' target="_blank">高校毕业生</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/nongmingong/' target="_blank">农民工</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/jiuyekunnanrenyuan/' target="_blank">就业困难人员</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/chuangye/' target="_blank">创业</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/renliziyuanshichang/' target="_blank">人力资源市场</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/jiuye/zcwj/JYzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/jiuye/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/zcwj/JYzonghe/201412/t20141229_147451.html" target="_blank">关于修改《就业服务与就业管理规定》的决定</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/zcwj/jiuyekunnanrenyuan/201312/t20131216_119638.html" target="_blank">人力资源社会保障部 中国残疾人联合会关于开展2014年就业援助月专项活动的通知</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/zcwj/jiuyekunnanrenyuan/201304/t20130417_98518.html" target="_blank">人力资源和社会保障部关于建立31个大中城市就业形势分析月报制度的通知</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/zcwj/JYzonghe/201302/t20130219_86772.html" target="_blank">人力资源社会保障部关于印发就业专项资金管理纪律规定的通知</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/jiuye/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/jiuye/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/gzdt/201603/t20160329_236718.html" target="_blank">河南新密市：引导人力资源服务机构规范运行</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/gzdt/201603/t20160329_236717.html" target="_blank">立足就业创业 打造服务品牌​——吉林大安市人力资源市场提升窗口服务质量</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/gzdt/201603/t20160329_236716.html" target="_blank">第七批援藏干部：用真诚书写援藏情怀</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/jiuye/gzdt/201603/t20160303_234410.html" target="_blank">福建15项举措加快人力资源服务业发展</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/jiuye/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/jiuye/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="/jycjs/JIUYEFUWUXILIEHUODON/JYCJmyqyzhaopinzhou/" target="_blank">民营企业招聘周</a></li>
+					
+						<li><a href="/jycjs/JIUYEFUWUXILIEHUODON/JYCJchunfengxingdong/" target="_blank">春风行动</a></li>
+					
+						<li><a href="/jycjs/JIUYEFUWUXILIEHUODON/JYCJjiuyeyuanzhuyue/" target="_blank">就业援助月</a></li>
+					
+						<li><a href="/jycjs/JIUYEFUWUXILIEHUODON/gxbysjyfwhd/" target="_blank">高校毕业生就业服务活动</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/jiuye/tpjj/201404/t20140404_127831.html" target="_blank"><img src='./SYrlzyhshbzb/jiuye/tpjj/201404/W020160410461610542721.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/jiuye/tpjj/201506/t20150624_212165.html" target="_blank"><img src='./SYrlzyhshbzb/jiuye/tpjj/201506/W020160410482922575088.jpg' /></a></div>
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/jiuye/tpjj/201505/t20150518_161267.html" target="_blank"><img src='./SYrlzyhshbzb/jiuye/tpjj/201505/W020160410387791036053.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------社会保障----------------------------------------------------->
+			<div class='main_r1 shbz' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/yanglao/' target="_blank">养老</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/shiye/' target="_blank">失业</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/yiliao/' target="_blank">医疗</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/gongshang/' target="_blank"'>工伤</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/shengyu/' target="_blank">生育</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/jijinjiandu/' target="_blank">基金监督</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/SHBZzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/shehuibaozhang/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/zcwj/jijinjiandu/201502/t20150202_150962.html" target="_blank">进一步规范企业年金基金管理有关问题的通知</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/zcwj/SHBZzonghe/201301/t20130110_86924.html" target="_blank">人力资源社会保障部办公厅关于实施中韩社会保险协定和议定书的通知</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/zcwj/jijinjiandu/201301/t20130104_86908.html" target="_blank">人力资源社会保障部关于开展社会保险基金社会监督试点的意见</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/zcwj/jijinjiandu/201301/t20130104_86909.html" target="_blank">关于印发《2013年社会保险基金监督工作要点》的通知</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/shehuibaozhang/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/shehuibaozhang/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/gzdt/201603/t20160331_236995.html" target="_blank">落实政策 简化流程 服务提速为建筑业农民工筑牢工伤保险安全网</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/gzdt/201603/t20160331_236968.html" target="_blank">2015年度企业年金养老金产品信息一览表</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/gzdt/201603/t20160331_236972.html" target="_blank">2015年度全国企业年金基金业务数据摘要</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/shehuibaozhang/gzdt/201602/t20160226_233969.html" target="_blank">依法为农民工撑起保护伞</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/shehuibaozhang/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/shehuibaozhang/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcshehuibaozhangka/" target="_blank">社会保障卡</a></li>
+					
+						<li><a href="http://www.mohrss.gov.cn/SYrlzyhshbzb/zhuanti/waiguorencanbao/" target="_blank">外国人参保</a></li>
+					
+						<li><a href="http://59.252.162.99" target="_blank">社保基金监督检查证查询</a></li>
+					
+						<li><a href="http://www.mohrss.gov.cn/SYrlzyhshbzb/rdzt/sygjjbbxml/" target="_blank">国家基本医疗保险、工伤保险和生育保险...</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/shehuibaozhang/tpjj/201509/t20150930_221916.html" target="_blank"><img src='./SYrlzyhshbzb/shehuibaozhang/tpjj/201509/W020160410460244126770.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/shehuibaozhang/tpjj/201509/t20150917_220831.html" target="_blank"><img src='./SYrlzyhshbzb/shehuibaozhang/tpjj/201509/W020160410402173719650.jpg' /></a></div>
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/shehuibaozhang/tpjj/201506/t20150625_212362.html" target="_blank"><img src='./SYrlzyhshbzb/shehuibaozhang/tpjj/201506/W020160410458370417709.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------人才队伍建设-------------------------------------------------->
+			<div class='main_r1 rcdw' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/jinengrencai/' target="_blank">技能人才</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/zhuanyejishurenyuan/' target="_blank">专业技术人才</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/RCDWJSzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/jinengrencai/201509/t20150901_219445.html" target="_blank">人力资源社会保障部办公厅关于开展技工院校安全大检查活动的紧急通知</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/jinengrencai/201509/t20150901_219442.html" target="_blank">人力资源社会保障部办公厅关于启用新版职业资格证书及加强证书核发管理工作有...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/zhuanyejishurenyuan/201508/t20150821_218605.html" target="_blank">专业技术人员继续教育规定</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/zcwj/jinengrencai/201505/t20150505_160232.html" target="_blank">教育部 人力资源社会保障部关于做好首届职业教育活动周相关工作的通知</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/201603/t20160328_236694.html" target="_blank">2016年“百千万人才工程”人选专题研修班专家登记表</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/201603/t20160321_235974.html" target="_blank">人力资源社会保障部办公厅关于印发专业技术人才知识更新工程2016年高级研修项...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/201603/t20160322_236138.html" target="_blank">人力资源社会保障部办公厅关于2015年度一级注册消防工程师资格考试合格标准有...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/rencaiduiwujianshe/gzdt/201602/t20160226_233998.html" target="_blank">尹蔚民慰问专家和高技能人才</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/rencaiduiwujianshe/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/rencaiduiwujianshe/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="http://www.cpta.com.cn" target="_blank">专业技术人员资格考试</a></li>
+					
+						<li><a href="/SYrlzyhshbzb/fwyd/sykaoshi/zyjnjd/" target="_blank">职业技能鉴定考试</a></li>
+					
+						<li><a href="/SYrlzyhshbzb/ztzl/sjjnds/" target="_blank">世界技能大赛</a></li>
+					
+						<li><a href="http://www.jxzs.mohrss.gov.cn" target="_blank">全国技工院校毕业证书查询</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201505/t20150515_161093.html" target="_blank"><img src='./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201505/W020160410462845851627.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201504/t20150422_156767.html" target="_blank"><img src='./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201504/W020150422599129263225.jpg' /></a></div>
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201504/t20150414_156225.html" target="_blank"><img src='./SYrlzyhshbzb/rencaiduiwujianshe/tpjj/201504/W020150414608568195928.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------人事制度改革-------------------------------------------------->
+			<div class='main_r1 rszd' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/renshizhidugaige/zcwj/gongwuyuanguanli/' target="_blank">公务员管理</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/renshizhidugaige/zcwj/shiyedanweirenshiguanli/' target="_blank">事业单位人事管理</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/renshizhidugaige/zcwj/junzhuananzhi/' target="_blank">军转安置</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/renshizhidugaige/zcwj/RSZDGGzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/renshizhidugaige/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/zcwj/gongwuyuanguanli/201601/t20160128_232599.html" target="_blank">人力资源社会保障部公安部国家公务员局等部门印发《关于加强公安机关人民警察...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/zcwj/gongwuyuanguanli/201601/t20160115_231913.html" target="_blank">关于表彰中国科学院先进集体和先进工作者的决定</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/zcwj/shiyedanweirenshiguanli/201501/t20150121_149728.html" target="_blank">人力资源社会保障部办公厅关于印发中央部门和地方治理“吃空饷”问题情况统计...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/zcwj/shiyedanweirenshiguanli/201405/t20140529_131167.html" target="_blank">李克强签署国务院令 公布《事业单位人事管理条例》</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/renshizhidugaige/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/renshizhidugaige/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/gzdt/201512/t20151203_227515.html" target="_blank">新疆自治区军转干部安置双选会召开</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/gzdt/201512/t20151203_227513.html" target="_blank">陕西省组织自主择业军转干部就业专场招聘会</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/gzdt/201512/t20151203_227512.html" target="_blank">河南省举办自主择业军转干部适应性培训</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/renshizhidugaige/gzdt/201510/t20151028_224009.html" target="_blank">湖北省出台自主择业军转干部创业就业扶持政策</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/renshizhidugaige/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/renshizhidugaige/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="http://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/sykaoshi/zyhgjjgsydwgkzp/" target="_blank">中央和国家机关事业单位公开招聘</a></li>
+					
+						<li><a href="http://bm.scs.gov.cn/2016/UserControl/Student/StudentIndex.aspx" target="_blank">中央机关及其直属机构考试录用公务员</a></li>
+					
+						<li><a href="http://subb.scs.gov.cn/gklx2015/UserControl/Student/StudentIndex.aspx" target="_blank">中央机关公开遴选和公开选调公务员考试</a></li>
+					
+						<li><a href="http://www.scs.gov.cn/gwygl/" target="_blank">公务员管理</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/t20150630_213026.html" target="_blank"><img src='./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/W020160410401046883466.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/t20150624_212260.html" target="_blank"><img src='./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/W020160409495317168373.jpg' /></a></div>
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/t20150624_212265.html" target="_blank"><img src='./SYrlzyhshbzb/renshizhidugaige/tpjj/201506/W020160409496178025706.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------工资收入分配-------------------------------------------------->
+			<div class='main_r1 gzsr' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/gongzishourufenpei/zcwj/zuidigongzi/' target="_blank">最低工资</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/gongzishourufenpei/zcwj/gongzizhidaoxian/' target="_blank">工资指导线</a>
+							<a>|</a>
+							
+							<a href='./SYrlzyhshbzb/gongzishourufenpei/zcwj/gzzfbz/' target="_blank">工资支付保障</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/gongzishourufenpei/zcwj/GZSRFPzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/gongzishourufenpei/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/zcwj/gzzfbz/201601/t20160121_232282.html" target="_blank">国务院办公厅关于全面治理拖欠农民工工资问题的意见</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/zcwj/zuidigongzi/201205/t20120522_87291.html" target="_blank">关于云南省最低工资标准调整方案的函</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/zcwj/zuidigongzi/201202/t20120229_87290.html" target="_blank">关于上海市最低工资标准调整方案的函</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/zcwj/zuidigongzi/201201/t20120119_87284.html" target="_blank">关于江西省最低工资标准调整方案的函</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/gongzishourufenpei/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/gongzishourufenpei/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/gzdt/201506/t20150629_212614.html" target="_blank">工资福利司举办机关事业单位工资统计工作会审会</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/gzdt/201502/t20150227_152679.html" target="_blank">全国实施完善机关事业单位工资制度工作座谈会在成都召开</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/gzdt/201406/t20140606_131576.html" target="_blank">人社部工资司和财政部综合司召开座谈会听取意见建议</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/gzdt/201207/t20120702_82805.html" target="_blank">工资福利司党支部赴井冈山开展主题党日活动</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/gongzishourufenpei/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/gongzishourufenpei/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/fwyd/201509/t20150929_221690.html" target="_blank">全国各地区月最低工资标准情况(截至9月2...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/fwyd/201509/t20150929_221691.html" target="_blank">全国各地区小时最低工资标准情况（截至9...</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/gongzishourufenpei/fwyd/201509/t20150929_221692.html" target="_blank">2015年工资指导线调整情况（截至9月28日）</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/gongzishourufenpei/tpjj/201201/t20120118_82810.html" target="_blank"><img src='./SYrlzyhshbzb/gongzishourufenpei/tpjj/201201/W020130309632044694231.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/gongzishourufenpei/tpjj/201107/t20110727_82809.html" target="_blank"><img src='./SYrlzyhshbzb/gongzishourufenpei/tpjj/201107/W020160410489289148408.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+<!-------------------------------------------------------------劳动关系-------------------------------------------------->
+			<div class='main_r1 ndgx' hidden>
+				<div class='left w610'>
+					<div class="main_r1_right_li_t bc3d4e1">
+						<div class='right'>
+							<a href='./SYrlzyhshbzb/laodongguanxi/zcwj/laodongguanxixiediao/' target="_blank">劳动关系协调</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/laodongguanxi/zcwj/diaojiezhongcai/' target="_blank">调解仲裁</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/laodongguanxi/zcwj/laodongbaozhangjiancha/' target="_blank">劳动保障监察</a>
+							<a>|</a>
+							<a href='./SYrlzyhshbzb/laodongguanxi/zcwj/LDGXzonghe/' target="_blank">综合</a>
+						</div>
+						<a href='./SYrlzyhshbzb/laodongguanxi/zcwj/' target="_blank" class="hover">政策文件</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/zcwj/LDGXzonghe/201506/t20150625_212391.html" target="_blank">中共中央   国务院关于构建和谐劳动关系的意见</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/zcwj/diaojiezhongcai/201506/t20150611_211025.html" target="_blank">人力资源社会保障部  中央综治办关于加强专业性劳动争议调解工作的意见</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/zcwj/laodongbaozhangjiancha/201412/t20141231_147759.html" target="_blank">关于加强涉嫌拒不支付劳动报酬犯罪案件查处衔接工作的通知</a></li>
+					
+					</ul>
+					<div class="main_r1_right_li_t mart10 bc3d4e1">
+<a href='./SYrlzyhshbzb/laodongguanxi/gzdt/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/laodongguanxi/gzdt/' target="_blank" class="hover">工作动态</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/gzdt/201603/t20160331_236998.html" target="_blank">广西柳州市仲裁院设立法律援助工作站</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/gzdt/201603/t20160331_236958.html" target="_blank">全国劳动关系工作座谈会召开</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/gzdt/201603/t20160331_236896.html" target="_blank">云南省召开省级协调劳动关系三方联席会议</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/gzdt/201603/t20160331_236893.html" target="_blank">江苏省启动集体协商“春季要约”行动</a></li>
+					
+					</ul>
+				</div>
+				<div class='left w300 marl40'>
+					<div class="main_r1_right_li_t bc3d4e1">
+<a style="margin-right: 10px;" href='./SYrlzyhshbzb/laodongguanxi/fwyd/' target="_blank" class="right">更多>></a>
+						<a href='./SYrlzyhshbzb/laodongguanxi/fwyd/' target="_blank" class="hover">服务园地</a>
+					</div>
+					<ul class="rsli mart10">
+					
+						<li><a href="http://www.mohrss.gov.cn/ldgxs/LDGXsanfangjizhi/" target="_blank">三方机制</a></li>
+					
+						<li><a href="http://www.mohrss.gov.cn/ldgxs/LDGXlaodongbiaozhun/" target="_blank">劳动标准</a></li>
+					
+						<li><a href="http://www.mohrss.gov.cn/ldgxs/LDGXhetong/" target="_blank">合同管理</a></li>
+					
+						<li><a href="./SYrlzyhshbzb/laodongguanxi/fwyd/201505/t20150529_162076.html" target="_blank">中央企业实行特殊工时制度审批办事指南</a></li>
+					
+					</ul>
+					<div class='jycy_img'>
+						
+						
+						<div class='img k'><a href="./SYrlzyhshbzb/laodongguanxi/tpjj/201603/t20160311_235233.html" target="_blank"><img src='./SYrlzyhshbzb/laodongguanxi/tpjj/201603/W020160408152209424129.jpg' /></a></div>
+						
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/laodongguanxi/tpjj/201602/t20160201_232854.html" target="_blank"><img src='./SYrlzyhshbzb/laodongguanxi/tpjj/201602/W020160408152326451075.jpg' /></a></div>
+						
+						<div class='img' hidden><a href="./SYrlzyhshbzb/laodongguanxi/tpjj/201305/t20130521_103462.html" target="_blank"><img src='./SYrlzyhshbzb/laodongguanxi/tpjj/201305/W020160408152439904217.jpg' /></a></div>
+						
+						
+						<img src='./images/tupianjingji_20160310.png' class='tu' />
+						<div class='img_i'>
+							<div class='img_l'></div>
+							<div class='img_r'></div>
+						</div>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<div class='clear'></div>
+		<div class='main_f'>
+			<div class='left'>
+			<li><a  class='a1'>就业创业</a></li>
+			<li><a  class='a2'>社会保障</a></li>
+			<li class='w'><a class='a3'>人才队伍建设</a></li>
+			<li class='w'><a  class='a4'>人事制度改革</a></li>
+			<li class='w'><a class='a5'>工资收入分配</a></li>
+			<li><a  class='a6'>劳动关系</a></li>
+			</div>
+			<div class='n1'>
+                                
+				<a href='/SYrlzyhshbzb/sydqjdxs/SYguowuyuanrenmian/' target="_blank"><P>国务院</P><P>任免</P></a>
+                                
+			</div>
+			<div class='n2'>
+                                
+				<a href='http://www.newjobs.com.cn/zhuanti/jycjjh.html' target="_blank"><P>就业促进</P><P>计划</P></a>
+                                
+			</div>
+ 			<div class='n3'>
+                                
+				<a href='http://www.mohrss.gov.cn/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcshehuibaozhangka/' target="_blank"><P>社会</P><P>保障卡</P></a>
+                                
+			</div>
+			<div class='clear'></div>
+		</div>
+	</div>
+	<div class='foot'>
+		<div class='foot1'>
+			<a href='#' class='a lit'>国务院部门</a>
+			<a href='http://www.gov.cn' target="_blank" >中国政府网</a>
+			<a href='http://www.safea.gov.cn'  target="_blank" >国家外国专家局</a>
+			<a href='http://www.scs.gov.cn'  target="_blank">国家公务员局</a>
+			<a href='#' class='a  lit'>机关司局</a>
+			<a href='#' class='a lit'>地方人社部门</a>
+			<a href='#' class='a lit'>部属网站</a>
+			<a href='http://www.chinajob.gov.cn'  target="_blank">中国就业网</a>
+			<!--<a href='http://www.newjobs.com..cn'  target="_blank">中国国家人才网</a>-->
+                           <a href='http://www.cjob.gov.cn/'  target="_blank">中国公共招聘网</a>
+                        <!---<a href='#' class='a more1'>更多</a>---->
+					</div>
+                <div class='link'><div class='link_more gwybm'><a href="http://www.mfa.gov.cn/" target="_blank">中华人民共和国外交部</a><a href="http://www.mod.gov.cn/" target="_blank">中华人民共和国国防部</a><a href="http://www.ndrc.gov.cn" target="_blank">中华人民共和国国家发展和改革委员会</a><a href="http://www.moe.gov.cn" target="_blank">中华人民共和国教育部</a><a href="http://www.most.gov.cn" target="_blank">中华人民共和国科学技术部</a><a href="http://www.miit.gov.cn" target="_blank">中华人民共和国工业和信息化部</a><a href="http://www.seac.gov.cn" target="_blank">中华人民共和国国家民族事务委员会</a><a href="http://www.mps.gov.cn" target="_blank">中华人民共和国公安部</a><a href="http://www.mos.gov.cn" target="_blank">中华人民共和国监察部</a><a href="http://www.mca.gov.cn" target="_blank">中华人民共和国民政部</a><a href="http://www.moj.gov.cn" target="_blank">中华人民共和国司法部</a><a href="http://www.mof.gov.cn" target="_blank">中华人民共和国财政部</a><a href="http://www.mohrss.gov.cn" target="_blank">中华人民共和国人力资源和社会保障部</a><a href="http://www.mlr.gov.cn" target="_blank">中华人民共和国国土资源部</a><a href="http://www.mep.gov.cn" target="_blank">中华人民共和国环境保护部</a><a href="http://www.mohurd.gov.cn" target="_blank">中华人民共和国住房和城乡建设部</a><a href="http://www.moc.gov.cn" target="_blank">中华人民共和国交通运输部</a><a href="http://www.mwr.gov.cn" target="_blank">中华人民共和国水利部</a><a href="http://www.moa.gov.cn/" target="_blank">中华人民共和国农业部</a><a href="http://www.mofcom.gov.cn" target="_blank">中华人民共和国商务部</a><a href="http://www.mcprc.gov.cn" target="_blank">中华人民共和国文化部</a><a href="http://www.nhfpc.gov.cn/" target="_blank">中华人民共和国卫生和计划生育委员会</a><a href="http://www.pbc.gov.cn" target="_blank">中国人民银行</a><a href="http://www.audit.gov.cn" target="_blank">中华人民共和国审计署</a><a href="http://www.sasac.gov.cn" target="_blank">国务院国有资产监督管理委员会</a><a href="http://www.customs.gov.cn" target="_blank">中华人民共和国海关总署</a><a href="http://www.chinatax.gov.cn" target="_blank">国家税务总局</a><a href="http://www.saic.gov.cn" target="_blank">国家工商行政管理总局</a><a href="http://www.aqsiq.gov.cn" target="_blank">国家质量监督检验检疫总局</a><a href="http://www.国家新闻出版广电总局.com" target="_blank">国家新闻出版广电总局</a><a href="http://www.sport.gov.cn" target="_blank">国家体育总局</a><a href="http://www.chinasafety.gov.cn" target="_blank">国家安全生产监督管理总局</a><a href="http://www.sda.gov.cn/WS01/CL0001" target="_blank">国家食品药品监督管理总局</a><a href="http://www.stats.gov.cn" target="_blank">国家统计局</a><a href="http://www.forestry.gov.cn" target="_blank">国家林业局</a><a href="http://www.sipo.gov.cn" target="_blank">国家知识产权局</a><a href="http://www.cnta.gov.cn" target="_blank">国家旅游局</a><a href="http://www.sara.gov.cn" target="_blank">国家宗教事务局</a><a href="http://www.counsellor.gov.cn" target="_blank">国务院参事室</a><a href="http://www.ggj.gov.cn" target="_blank">国家机关事务管理局</a><a href="http://www.gqb.gov.cn" target="_blank">国务院侨务办办公室</a><a href="http://www.hmo.gov.cn" target="_blank">国务院港澳事务办公室</a><a href="http://www.chinalaw.gov.cn" target="_blank">国务院法制办公室</a><a href="http://www.gwytb.gov.cn" target="_blank">国务院台湾事务办公室</a><a href="http://www.scio.gov.cn" target="_blank">国务院新闻办公室</a><a href="http://www.xinhuanet.com" target="_blank">新华社</a><a href="http://www.cas.cn" target="_blank">中国科学院</a><a href="http://www.cssn.cn" target="_blank">中国社会科学院</a><a href="http://www.cae.cn" target="_blank">中国工程院</a><a href="http://www.drc.gov.cn" target="_blank">国务院发展研究中心</a><a href="http://www.nsa.gov.cn" target="_blank">国家行政学院</a><a href="http://www.cea.gov.cn" target="_blank">中国地震局</a><a href="http://www.cma.gov.cn" target="_blank">中国气象局</a><a href="http://www.cbrc.gov.cn" target="_blank">中国银行业监督管理委员会</a><a href="http://www.csrc.gov.cn" target="_blank">中国证券监督管理委员会</a><a href="http://www.circ.gov.cn" target="_blank">中国保险监督委员会</a><a href="http://www.serc.gov.cn" target="_blank">国家电力监管委员会</a><a href="http://www.ssf.gov.cn" target="_blank">全国社会保障基金理事会</a><a href="http://www.nsfc.gov.cn" target="_blank">国家自然科学基金委员会</a><a href="http://www.gjxfj.gov.cn" target="_blank">国家信访局</a><a href="http://www.chinagrain.gov.cn" target="_blank">国家粮食局</a><a href="http://www.tobacco.gov.cn" target="_blank">国家烟草专卖局</a><a href="http://www.safea.gov.cn" target="_blank">国家外国专家局</a><a href="http://www.scs.gov.cn" target="_blank">国家公务员局</a><a href="http://www.soa.gov.cn" target="_blank">国家海洋局</a><a href="http://www.sbsm.gov.cn" target="_blank">国家测绘地理信息局</a><a href="http://www.post.gov.cn" target="_blank">国家邮政局</a><a href="http://www.sach.gov.cn" target="_blank">国家文物局</a><a href="http://www.satcm.gov.cn" target="_blank">国家中医药管理局</a><a href="http://www.safe.gov.cn/" target="_blank">国家外汇管理局</a><a href="http://www.chinasafety.gov.cn/zhuantipindao/meikuanganquan.htm" target="_blank">国家煤矿安全监察局</a><a href="http://www.saac.gov.cn/index.htm" target="_blank">国家档案局</a><a href="http://www.3g.gov.cn" target="_blank">国务院三峡工程建设委员会办公室</a><a href="http://www.cpad.gov.cn" target="_blank">国务院扶贫开发领导小组办公室</a><a href="http://www.cdpf.org.cn" target="_blank">中国残疾人联合会</a></div>
+                <div class='link_more jgsj'><a href="./bgt/" target="_blank">办公厅</a><a href="./zcyjs/" target="_blank">政策研究司</a><a href="./fgs/" target="_blank">法规司</a><a href="./ghcws/" target="_blank">规划财务司</a><a href="./jycjs/" target="_blank">就业促进司</a><a href="./rlzyscs/" target="_blank">人力资源市场司</a><a href="./jgzyzzs/" target="_blank">军官转业安置司</a><a href="./zynljss/" target="_blank">职业能力建设司</a><a href="./zyjsrygls/" target="_blank">专业技术人员管理司</a><a href="./rydwrsgls/" target="_blank">事业单位人事管理司</a><a href="./nmggzs/" target="_blank">农民工工作司</a><a href="./ldgxs/" target="_blank">劳动关系司</a><a href="./gzfls/" target="_blank">工资福利司</a><a href="./yanglaobxs/" target="_blank">养老保险司</a><a href="./sybxs/" target="_blank">失业保险司</a><a href="./yiliaobxs/" target="_blank">医疗保险司</a><a href="./gsbxs/" target="_blank">工伤保险司</a><a href="./ncshbxs/" target="_blank">农村社会保险司</a><a href="./shbxjjjds/" target="_blank">社会保险基金监督司</a><a href="./tjzcgls/" target="_blank">调解仲裁管理司</a><a href="./ldjcj/" target="_blank">劳动监察局</a><a href="./gjhzs/" target="_blank">国际合作司</a><a href="./rss/" target="_blank">人事司</a><a href="./jgdw/" target="_blank">机关党委</a><a href="./ltxgbj/" target="_blank">离退休干部局</a><a href="./zbjcj/" target="_blank">驻部监察局</a></div>
+                <div class='link_more adree'><a href="http://www.bjrbj.gov.cn/" target="_blank">北京</a><a href="http://www.tj.lss.gov.cn/ecdomain/framework/tj/index.jsp" target="_blank">天津</a><a href="http://www.he.lss.gov.cn/" target="_blank">河北</a><a href="http://www.sx.hrss.gov.cn/" target="_blank">山西</a><a href="http://www.nm12333.cn/" target="_blank">内蒙古</a><a href="http://www.ln.lss.gov.cn/" target="_blank">辽宁</a><a href="http://hrss.jl.gov.cn/" target="_blank">吉林</a><a href="http://www.hl.lss.gov.cn" target="_blank">黑龙江</a><a href="http://www.12333sh.gov.cn/" target="_blank">上海</a><a href="http://www.jshrss.gov.cn" target="_blank">江苏</a><a href="http://www.zjhrss.gov.cn/" target="_blank">浙江</a><a href="http://www.ah.hrss.gov.cn/" target="_blank">安徽</a><a href="http://www.fjlss.gov.cn" target="_blank">福建</a><a href="http://hrss.jiangxi.gov.cn/" target="_blank">江西</a><a href="http://www.sdhrss.gov.cn" target="_blank">山东</a><a href="http://www.ha.hrss.gov.cn/" target="_blank">河南</a><a href="http://www.hb.hrss.gov.cn/" target="_blank">湖北</a><a href="http://www.hnrst.gov.cn/web/rltzww/index.html" target="_blank">湖南</a><a href="http://www.gdhrss.gov.cn/" target="_blank">广东</a><a href="http://www.gxhrss.gov.cn" target="_blank">广西</a><a href="http://hi.lss.gov.cn/" target="_blank">海南</a><a href="http://www.cqhrss.gov.cn/" target="_blank">重庆</a><a href="http://www.sc.hrss.gov.cn/" target="_blank">四川</a><a href="http://gz.hrss.gov.cn/" target="_blank">贵州</a><a href="http://www.ynhrss.gov.cn/" target="_blank">云南</a><a href="http://www.xz.hrss.gov.cn/" target="_blank">西藏</a><a href="http://www.shaanxihrss.gov.cn/" target="_blank">陕西</a><a href="http://www.rst.gansu.gov.cn" target="_blank">甘肃</a><a href="http://www.qhhrss.gov.cn/" target="_blank">青海</a><a href="http://www.nxhrss.gov.cn/" target="_blank">宁夏</a><a href="http://www.xjrs.gov.cn/" target="_blank">新疆</a></div>
+                <div class='link_more bswz'><a href="http://gp.chinanet.gov.cn" target="_blank">中国高级公务员培训中心</a><a href="http://www.zsgxgc.gov.cn" target="_blank">国家专业技术人才知识更新工程</a><a href="http://www.ilss.net.cn/" target="_blank">劳动科学研究所</a><a href="http://osta.org.cn/" target="_blank">国家职业资格工作网</a><a href="http://edu.mohrss.gov.cn/" target="_blank">教育培训网</a><a href="http://www.cals.net.cn" target="_blank">中国劳动学会</a><a href="http://www.iilis.net.cn" target="_blank">国际劳动保障研究所</a><a href="http://www.issr.com.cn" target="_blank">社会保障研究所</a><a href="http://www.chinassr.com.cn" target="_blank">中国社会保障研究网</a><a href="http://www.ilws.net.cn" target="_blank">劳动工资研究所</a><a href="http://www.cott.org.cn" target="_blank">全国职业培训教材网</a><a href="http://www.chrm.gov.cn" target="_blank">中国人力资源市场网</a><a href="http://www.cpta.com.cn" target="_blank">中国人事考试网</a><a href="http://www.clssn.com" target="_blank">中国劳动保障新闻网</a><a href="http://www.zuzhirenshi.com/dianzibao/2016-03-30/1/index.htm" target="_blank">中国组织人事报</a><a href="http://www.class.com.cn" target="_blank">中国人力资源和社会保障出版集团</a><a href="http://www.zgjy.org" target="_blank">中国就业促进会</a><a href="http://www.chinanet.gov.cn" target="_blank">中国国家人事人才培训网</a><a href="http://www.calss.net.cn" target="_blank">中国劳动保障科研网</a><a href="http://www.zhongguozhixie.com.cn" target="_blank">中国职工教育和职业培训协会</a><a href="http://www.rky.org.cn" target="_blank">中国人事科学研究网</a><a href="http://www.chinapostdoctor.org.cn" target="_blank">中国博士后</a><a href="http://www.zjzx.org.cn" target="_blank">留学人员和专家服务中心</a><a href="http://www.cacee.org.cn" target="_blank">中国继续工程教育协会网</a><a href="http://www.chira.org.cn" target="_blank">中国医疗保险研究会</a><a href="http://www.zgylbx.com" target="_blank">《中国医疗保险》杂志社</a><a href="http://www.lm.gov.cn" target="_blank">中国就业</a><a href="http://www.cettic.gov.cn" target="_blank">中国就业培训技术指导中心</a><a href="http://www.chinatraining.com.cn" target="_blank">中国国家培训网</a><a href="http://mohrss.chinahrt.com/" target="_blank">全国人社系统干部在线学习平台</a></div></div>
+		<div class='foot2'><a href='./SYrlzyhshbzb/dbdh/wzsm/' target="_blank">网站声明</a><span>|</span><a href='./SYrlzyhshbzb/dbdh/wzgl/' target="_blank">网站管理</a><span>|</span><a href='./SYrlzyhshbzb/dbdh/wzbz/' target="_blank" >网站地图</a><span>|</span><a href='./SYrlzyhshbzb/dbdh/lxfs/' target="_blank">联系我们</a><span>|</span><a href='./SYrlzyhshbzb/dbdh/wzzb/' target="_blank">网站值班</a><span>|</span><a href='./SYrlzyhshbzb/dbdh/fwpx/' target="_blank">访问排行</a></div>
+		<div class='foot3'>
+			<script type="text/javascript">
+document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60425154/CA330000000604251540008.js' type='text/javascript'%3E%3C/script%3E"));</script>
+			主办单位：中华人民共和国人力资源和社会保障部<br>京ICP备09079694号     京公网安备110401200230
+		</div>
+	</div>
+</div>
+<style>
+.xuanfu{width:229px;height:146px;position: absolute;left: 0px;  top: 0px;z-index:2;}
+</style>
+<div class='xuanfu' id='ad'>
+   <span></span>
+   <h2>公  告</h2>
+   <p>新版网站调试运行，有问题请联系wzzb@mohrss.gov.cn 。感谢您的关注和支持。</p>
+</div>
+<script>
+$(function(){
+			var x = 0,y = 0
+			var xin = true, yin = true
+			var step = 1
+			var delay = 20
+			var obj=document.getElementById("ad");
+			function floatAD() {
+			var L=T=0
+			var R= document.body.clientWidth-obj.offsetWidth;
+			var B = (window.innerHeight||document.documentElement.clientHeight)-obj.offsetHeight;
+			obj.style.left = x + document.body.scrollLeft+'px';
+			obj.style.top = y + document.body.scrollTop+'px';
+			x = x + step*(xin?1:-1)
+			if (x < L) { xin = true; x = L}
+			if (x > R){ xin = false; x = R}
+			y = y + step*(yin?1:-1)
+			if (y < T) { yin = true; y = T }
+
+			if (y > B) { yin = false; y = B;}
+			}
+			var itl= setInterval(floatAD, delay)
+			obj.onmouseover=function(){clearInterval(itl)}
+			obj.onmouseout=function(){itl=setInterval(floatAD, delay)
+			}
+                       $('#ad span').click(function(){$('#ad').hide()})
+})
+		</script>
+</body>
+</html>
+<!--<script>
+	var pubURL = top.getPubURL();
+	document.AdvSearchContainerOfContent.pubURL.value=pubURL;
+	document.AdvSMe.pubURL.value=pubURL;
+</script>--->

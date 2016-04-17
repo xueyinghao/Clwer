@@ -1,0 +1,1792 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="河南中医药大学第三附属医院以医疗为中心，以教学为基础、以科研为动力，医、教、研协调发展，相互促进。已成为以脊柱关节及相关疾病为龙头、以针灸推拿为依托、中医专科特色突出、服务水平优良、环境优美的综合性中医医院。十多年来，在学院领导和卫生主管部门的关心下，三附院依托学院强大的人才、科研优势，群策群力，艰苦创业，在打造&quot;名院、名科、名医、名药&quot;品牌的过程中，逐渐形成了医院独特的优势和特色" name="description" />
+<title>首页—河南中医药大学第三附属医院</title>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<!--上部四屏部分的代码,它的代码写在了index.css中-->
+<script type="text/javascript" src="top_scroll/js/jquery.1.3.2.min.js" ></script>
+<script type="text/javascript" src="top_scroll/js/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 8000, true);
+	});
+</script>
+<!--上部四屏部分的代码结束-->
+
+<!--医院新闻部分开始-->
+<STYLE type=text/css>
+	.hotL {
+		PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #000; PADDING-BOTTOM: 0px; WIDTH: 205px; PADDING-TOP: 0px; HEIGHT:155px
+	}
+</STYLE>
+<SCRIPT language=javascript src="js/swfobject.js" type=text/javascript></SCRIPT>
+<!--医院新闻部分结束-->
+
+<!--通知公告部分开始，如果单独使用，要引用jquery.1.3.2.min.js-->
+<style type="text/css">
+ul,li{margin:0;padding:0}
+#scrollDiv{width:240px;height:180px;min-height:1.7em;line-height:1.7em;overflow:hidden}
+#scrollDiv li{height:1.7em;padding-left:10px;}
+</style>
+<script type="text/javascript">
+//滚动插件
+(function($){
+$.fn.extend({
+	Scroll:function(opt,callback){
+			//参数初始化
+			if(!opt) var opt={};
+			var _this=this.eq(0).find("ul:first");
+			var lineH=_this.find("li:first").height(), //获取行高
+					line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+					speed=opt.speed?parseInt(opt.speed,13):1000, //卷动速度，数值越大，速度越慢（毫秒）
+					timer=opt.timer?parseInt(opt.timer,13):2500; //滚动的时间间隔（毫秒）
+			if(line==0) line=1;
+			var upHeight=0-line*lineH;
+			//滚动函数
+			scrollUp=function(){
+					_this.animate({
+							marginTop:upHeight
+					},speed,function(){
+							for(i=1;i<=line;i++){
+									_this.find("li:first").appendTo(_this);
+							}
+							_this.css({marginTop:0});
+					});
+			}
+			//鼠标事件绑定
+			_this.hover(function(){
+					clearInterval(timerID);
+			},function(){
+					timerID=setInterval("scrollUp()",timer);
+			}).mouseout();
+	}        
+})
+})(jQuery);
+
+$(document).ready(function(){
+        $("#scrollDiv").Scroll({line:2,speed:1000,timer:3000});
+});
+</script>
+<!--通知公告部分结束-->
+
+<!--名医名家部分开始,如果单独使用，要引用jquery.1.3.2.min.js-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/startstop-slider.js"></script>
+
+<style type="text/css">
+/* common styling */
+/* set up the overall width of the menu div, the font and the margins */
+.menu {
+font-family: arial, sans-serif; 
+width:1000px;
+height:35px;
+margin:0;
+background:url(images/nav_bg.png) repeat-x 0 0;
+}
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+.menu ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+}
+/* float the list so that the items are in a line and their position relative so that the drop down list will appear in the right place underneath each list item */
+.menu ul li {
+float:left; 
+position:relative;
+}
+.menu ul li a:hover{
+text-decoration:none;
+line-height:35px;
+}
+/* style the links to be 104px wide by 35px high with a top and right border 1px solid white. Set the background color and the font size. */
+.menu ul li a, .menu ul li a:visited {
+display:block;
+text-align:center; 
+text-decoration:none; 
+width:100px;
+height:35px;
+color:rgb(217,230,210);
+border-width:1px 1px 0 0;
+background:url(images/nav_bg.png) repeat-x 0 0;
+line-height:35px; 
+font-size:13px;
+font-weight:900;
+}
+/* make the dropdown ul invisible */
+.menu ul li ul {
+display: none;
+}
+/* specific to non IE browsers */
+/* set the background and foreground color of the main menu li on hover */
+.menu ul li:hover a {
+color:rgb(217,230,210);
+text-decoration:none; 
+background:rgb(25,124,102);
+}
+/* make the sub menu ul visible and position it beneath the main menu list item */
+.menu ul li:hover ul {
+display:block; 
+position:absolute; 
+top:35px;
+left:0; 
+text-decoration:none; 
+width:100px;
+}
+/* style the background and foreground color of the submenu links */
+.menu ul li:hover ul li a {
+display:block; 
+background:#1C8A72;
+text-decoration:none;
+color:rgb(217,230,210);
+}
+/* style the background and forground colors of the links on hover */
+.menu ul li:hover ul li a:hover {
+background:rgb(16,86,69);
+text-decoration:none;
+color:rgb(217,230,210);
+}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+/* styling specific to Internet Explorer IE5.5 and IE6. Yet to see if IE7 handles li:hover */
+/* Get rid of any default table style */
+table {
+border-collapse:collapse;
+margin:0; 
+padding:0;
+}
+/* ignore the link used by 'other browsers' */
+.menu ul li a.hide, .menu ul li a:visited.hide {
+display:none;
+}
+/* set the background and foreground color of the main menu link on hover */
+.menu ul li a:hover {
+color:rgb(217,230,210);
+background:rgb(25,124,102);
+}
+/* make the sub menu ul visible and position it beneath the main menu list item */
+.menu ul li a:hover ul {
+display:block; 
+position:absolute; 
+top:35px; 
+left:0; 
+width:91px;
+}
+/* style the background and foreground color of the submenu links */
+.menu ul li a:hover ul li a {
+background:#1C8A72;
+text-decoration:none;
+color:rgb(217,230,210);
+}
+/* style the background and forground colors of the links on hover */
+.menu ul li a:hover ul li a:hover {
+background:rgb(16,86,69);
+text-decoration:none;
+color:rgb(217,230,210);
+}
+</style>
+<![endif]-->
+</head>
+<body>
+	<center>
+		<div id="main_pannel">	
+			<!--页面Banner部分开始-->
+			<div id="banner"><img src="images/banner.png"/></div>
+			<!--页面Banner部分结束-->
+            <!--页面导航部分开始-->
+			<!--页面导航部分开始-->
+			<div id="navigator">
+				<div class="menu">
+					<ul>
+						<li><a class="hide" href="index.html">医院首页</a>
+						<!--[if lte IE 6]>
+						<a href="index.html">医院首页
+						<table><tr><td>
+						<![endif]-->						
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="menu_list-1.html">医院概况</a>
+						<!--[if lte IE 6]>
+						<a href="menu_list-1.html">医院概况
+						<table><tr><td>
+						﻿						<![endif]-->
+							<ul>
+							<li><a href=menu_view-1-1.html>医院简介</a></li><li><a href=menu_view-3-1.html>医院历史</a></li><li><a href=menu_view-4-1.html>所获荣誉</a></li>							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="news_sum-2.html">医院动态</a>
+						<!--[if lte IE 6]>
+						<a href="news_sum-2.html">医院动态
+						<table><tr><td>
+						<![endif]-->
+							<ul>
+                            	<li><a href="news_list-5.html">新闻中心</a></li>
+                                <li><a href="notice_sum-2.html">通知公告</a></li>
+                                <li><a href="news_list-37.html">媒体看我院</a></li>
+								
+							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="department_sum.html">科室简介</a>
+						<!--[if lte IE 6]>
+						<a href="department_sum.html">科室简介
+						<table><tr><td>
+						<![endif]-->
+							<ul>
+								<li><a href=department_list-7.html>科室导航</a></li><li><a href=department_list-8.html>重点学科与专科</a></li>							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="experts_list.html">专家团队</a>
+						<!--[if lte IE 6]>
+						<a href="experts_list.html">专家团队
+						<table><tr><td>
+						<![endif]-->
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="news_sum-5.html">教学科研</a>
+						<!--[if lte IE 6]>
+						<a href="news_sum-5.html">教学科研
+						<table><tr><td>
+						<![endif]-->
+							<ul>
+								<li><a href=news_list-9.html>科研信息</a></li><li><a href=news_list-13.html>成果展示</a></li>							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="communication_list-6.html">对外交流</a>
+						<!--[if lte IE 6]>
+						<a href="communication_list-6.html">对外交流
+						<table><tr><td>
+						<![endif]-->
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="communication_list-7.html">党团工作</a>
+						<!--[if lte IE 6]>
+						<a href="communication_list-7.html">党团工作
+						<table><tr><td>
+						<![endif]-->
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="news_sum-8.html">健康园地</a>
+						<!--[if lte IE 6]>
+						<a href="news_sum-8.html">健康园地
+						<table><tr><td>
+						<![endif]-->
+							<ul>
+								<li><a href=news_list-19.html>中医养生</a></li><li><a href=news_list-21.html>百草园</a></li>							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+						<li><a class="hide" href="menu_list-9.html">就诊指南</a>
+						<!--[if lte IE 6]>
+						<a href="menu_list-9.html">就诊指南
+						<table><tr><td>
+						<![endif]-->
+							<ul>
+								<li><a href=menu_view-35-9.html>住院须知</a></li><li><a href=menu_view-36-9.html>预约须知</a></li><li><a href=menu_view-23-9.html>就诊流程</a></li><li><a href=menu_view-24-9.html>入院须知</a></li><li><a href=menu_view-25-9.html>医院地理位置</a></li><li><a href=menu_view-26-9.html>乘车路线</a></li><li><a href=menu_view-27-9.html>常规检查须知</a></li><li><a href=menu_view-29-9.html>急诊须知</a></li><li><a href=menu_view-30-9.html>体检指南</a></li>							</ul>
+						<!--[if lte IE 6]>
+						</td></tr></table>
+						</a>
+						<![endif]-->
+						</li>
+					</ul>
+					<!-- clear the floats if required -->
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--页面导航部分结束-->			<!--页面导航部分结束-->
+            			
+			<!--页面上部滚动的四屏代码开始-->
+			<div id="scroll_pic1">
+				<div id="featured">
+				  <ul class="ui-tabs-nav">
+					<li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3" target="_blank"><img src="pic_file/20120928101046.jpg" width="80" height="50" alt="医疗设备" /></a><a href="equipment.html#fragment-3" target="_blank"><span>医疗设备</span></a></li>
+					<li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2" target="_blank"><img src="pic_file/20120928101121.jpg" width="80" height="50" alt="护理园地" /></a><a href="attendance.html#fragment-3" target="_blank"><span>护理园地</span></a></li>
+					<li class="ui-tabs-nav-item" id="nav-fragment-1"><a href="#fragment-1" target="_blank"><img src="pic_file/20150515092111.jpg"  width="80" height="50" alt="医院文化" /></a><a href="culture.html#fragment-3" target="_blank"><span>医院文化</span></a></li>
+					<li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4" target="_blank"><img src="pic_file/20120928101215.jpg" width="80" height="50" alt="特色治疗" /></a><a href="treatment.html#fragment-3" target="_blank"><span>特色治疗</span></a></li>
+				  </ul>
+				  <!-- First Content -->
+				<div id="fragment-1" class="ui-tabs-panel">
+				  <a href="culture.html" target="_blank"><img src="pic_file/20150515092111.jpg" width="726" height="250" alt="医院文化" /></a>
+				  <div class="info">
+						<h2 align="left"><a href="culture.html" target="_parent">医院文化</a></h2>
+						<p>河南中医学院第三附属医院历经十年风雨，终于通过国家中医药管理局三级甲等医院验收评<a href="culture.html">更过&gt;&gt;</a></p>
+	         	  </div>
+				</div>
+				<!-- Second Content -->
+				<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
+					<a href="attendance.html" target="_blank"><img src="pic_file/20120928101121.jpg" width="726" height="250" alt="护理园地" /></a>
+					<div class="info">
+						<h2 align="left"><a href="attendance.html" target="_parent">护理园地</a></h2>
+						<p><p>
+	患者贴心的护理人员
+</p><a href="attendance.html">更过&gt;&gt;</a></p>
+	         	    </div>
+				</div>
+				<!-- Third Content -->
+				<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide">
+					<a href="equipment.html" target="_blank"><img src="pic_file/20120928101046.jpg" width="726" height="250" alt="医院设备" /></a>
+					<div class="info">
+						<h2 align="left"><a href="equipment.html" target="_parent">医院设备</a></h2>
+						<p><p>
+	先进的医疗设备
+</p><a href="equipment.html">更过&gt;&gt;</a></p>
+	         	    </div>
+				</div>
+				<!-- Fourth Content -->
+				<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide">
+					<a href="treatment.html" target="_blank"><img src="pic_file/20120928101215.jpg" width="726" height="250" alt="特色治疗" /></a>
+					<div class="info">
+						<h2 align="left"><a href="treatment.html" target="_parent">特色治疗</a></h2>
+						<p><p>
+	特色的治疗方法
+</p><a href="treatment.html">更过&gt;&gt;</a></p>
+	         	    </div>
+				</div>
+			  </div> 
+			</div>
+			<!--页面上部滚动的四屏代码开始-->
+			
+			<!--页面主体部分开始-->
+			<div id="container">
+				<div id="row1">
+					<div class="left">
+						<div class="commontop">
+							<p class="title">快捷通道</p><p class="more"></p>
+						</div>
+						<div class="bottom">
+							<div class="icon">
+								<p><a href="menu_view-26-9.html"><img src="images/tongdao3.png" alt="乘车路线"/></a></p>
+								<p><a href="menu_view-26-9.html">乘车路线</a></p>
+							</div>
+							<div class="icon">
+								<p class="p1"><a href="menu_view-23-9.html"><img src="images/tongdao1.png" alt="就诊流程"/></a></p>
+								<p><a href="menu_view-23-9.html">就诊流程</a></p>
+							</div>
+							<div class="icon">
+								<p><a href="menu_view-29-9.html"><img src="images/tongdao6.png" alt="急诊须知"/></a></p>
+								<p><a href="menu_view-29-9.html">急诊须知</a></p>
+							</div>
+							<div class="icon">
+								<p><a href="menu_view-35-9.html"><img src="images/tongdao4.png" alt="住院须知"/></a></p>
+								<p><a href="menu_view-35-9.html">住院须知</a></p>
+							</div>
+							<div class="icon">
+								<p class="p1"><a href="menu_view-30-9.html"><img src="images/tongdao2.png" alt="体检指南"/></a></p>
+								<p><a href="menu_view-30-9.html">体检指南</a></p>
+							</div>
+							<div class="icon">
+								<p><a href="menu_view-36-9.html"><img src="images/tongdao7.png" alt="预约须知"/></a></p>
+								<p><a href="menu_view-36-9.html">预约须知</a></p>
+							</div>
+							<div class="icon">
+								<p><a href="http://jkgw.myzone.cn/"><img src="images/tongdao8.png" alt="预约挂号"/></a></p>
+								<p><a href="http://jkgw.myzone.cn/">预约挂号</a></p>
+							</div>
+							<div class="icon">
+								<p><a href="communication_list-10.html"><img src="images/tongdao5.png" alt="患者心声"/></a></p>
+								<p><a href="communication_list-10.html">患者心声</a></p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="right">
+						<div class="news">
+                        
+							<div class="commontop">
+								<p class="title2">新闻中心</p><p class="more"><a href="news_list-5.html">更多&gt;&gt;</a></p>
+							</div>
+							<div class="bottom">
+                            		
+								<div class="news_left">
+									 <DIV class=hotL>
+										<DIV class=pl5 id=FocusObj></DIV>
+										<SCRIPT type=text/javascript>
+											var focus_width=205;
+											var focus_height=155;
+											var text_height=18;
+											var swf_height=focus_height + text_height;
+											var pics="http://wzgl.hactcm.edu.cn/_mediafile/i/2016/04/01/1ep1o7d6jq.jpg|/kindeditor/attached/image/20160401/20160401174334_57969.png|http://wzgl.hactcm.edu.cn/_mediafile/i/2016/03/24/2ahapfhib3.jpg|/kindeditor/attached/image/20160323/20160323163307_81276.jpg|/kindeditor/attached/image/20160323/20160323163119_13719.jpg|/kindeditor/attached/image/20160322/20160322134509_74574.jpg";
+											var links="news_view-1349.html|news_view-1348.html|news_view-1345.html|news_view-1343.html|news_view-1342.html|news_view-1341.html";
+											var texts="三附院工会开展女职工权益保护法律法规知识竞赛|河南中医药大学徐玉芳教授莅临我院开展病理诊断专题讲座|我院召开“十三五”发展规划座谈会|我院开展义务植树活动|春光无限好  正是踏青时——我院组织职工踏青活动|关爱健康，你我同行                 -义诊进社区";
+											var fo = new SWFObject("flash/pix.swf", "_FocusObj", focus_width, swf_height, "7","F6F8FA");
+											fo.addVariable("pics", pics);
+											fo.addVariable("links", links);
+											fo.addVariable("texts", texts); 
+											fo.addVariable("borderwidth", focus_width);
+											fo.addVariable("borderheight", focus_height);
+											fo.addVariable("textheight", text_height);
+											fo.addVariable("border_color", "0x000000"); 
+											fo.addVariable("fontsize", "14"); 
+											fo.addVariable("fontcolor", "5d5d5d");
+											fo.addVariable("is_border", "");
+											fo.addVariable("is_text", "1");
+											fo.addParam("wmode", "opaque");
+											fo.write("FocusObj");
+										</SCRIPT>
+									 </DIV>
+								</div>
+								<div class="news_right">
+									<ul class="commonul">
+                                    										<li><a href="news_view-1349.html" title="三附院工会开展女职工权益保护法律法规知识竞赛">三附院工会开展女职工权益保护法律法规知识竞赛</a>2016-04-01</li>
+																			<li><a href="news_view-1348.html" title="河南中医药大学徐玉芳教授莅临我院开展病理诊断专题讲座">河南中医药大学徐玉芳教授莅临我院开展病理诊断专题讲座</a>2016-04-01</li>
+																			<li><a href="news_view-1345.html" title="我院召开“十三五”发展规划座谈会">我院召开“十三五”发展规划座谈会</a>2016-03-24</li>
+																			<li><a href="news_view-1344.html" title="学校许二平校长一行到我院调研指导">学校许二平校长一行到我院调研指导</a>2016-03-24</li>
+																			<li><a href="news_view-1343.html" title="我院开展义务植树活动">我院开展义务植树活动</a>2016-03-23</li>
+																			<li><a href="news_view-1342.html" title="春光无限好  正是踏青时——我院组织职工踏青活动">春光无限好  正是踏青时——我院组织职工踏青活动</a>2016-03-23</li>
+																			<li><a href="news_view-1341.html" title="关爱健康，你我同行                 -义诊进社区">关爱健康，你我同行                 -义诊进社区</a>2016-03-22</li>
+																			<li><a href="news_view-1339.html" title="我院召开2016年度党支部书记工作会议">我院召开2016年度党支部书记工作会议</a>2016-03-18</li>
+																		</ul>
+								</div>
+							</div>
+						</div>
+						<div class="notice">
+							<div class="commontop">
+								<p class="title3">通知公告</p><p class="more"><a href="news_list-6.html">更多&gt;&gt;</a></p>
+							</div>
+							<div class="tongzhigonggao">
+								<div id="scrollDiv">
+								  <ul class="commonul">
+                                   										<li>
+											<a href="news_view-1355.html" title="河南中医学院第三附属医院医疗器械采购招标公告">河南中医学院第三附属医院医疗器械采购招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1354.html" title="招标公告">招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1353.html" title="招标公告">招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1352.html" title="招标公告">招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1351.html" title="招标公告">招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1350.html" title="河南中医学院第三附属医院网站建设项目招标公告">河南中医学院第三附属医院网站建设项目招标公告</a>
+											2016-04-05</li>
+																			<li>
+											<a href="news_view-1347.html" title="河南中医药大学第三附属医院关于2016年3月招聘结果公示">河南中医药大学第三附属医院关于2016年3月招聘结果公示</a>
+											2016-03-29</li>
+																			<li>
+											<a href="news_view-1346.html" title="河南中医学院第三附属医院关于2016年3月招聘综合测试通知">河南中医学院第三附属医院关于2016年3月招聘综合测试通知</a>
+											2016-03-25</li>
+																	  </ul>
+								</div>
+							</div>
+						</div>
+						<div class="box"></div>
+						<div class="expert">
+							<div class="commontop">
+								<p class="title3" style="width:80px">名医名家</p>
+								<div style="width:575px;float:left;text-align:left; vertical-align:baseline">
+									<form action="search.php" method="post">
+                                    <table style=" margin-top:3px"><tr>
+										<td><input type="text" name="expert_name" onfocus="this.value=''" value="输入专家姓名搜索" style="color:#ccc; font-size:15px;width:150px;height:20px;background:#FFFFFF url(images/search.png) no-repeat right center;"/></td>
+										<td><input type="submit" value="搜索" style="width:60px;height:20px;border:0px;cursor:hand;background:#FFFFFF;"/>	</td>						</tr>
+                                    </table>
+									</form>
+								</div>
+								<p class="more"><a href="experts_list.html">更多&gt;&gt;</a></p>
+							</div>
+							<div class="outer">
+								<DIV id=demo style="OVERFLOW: hidden; WIDTH: 100%; COLOR: #ffffff">
+								  <TABLE cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
+									<TBODY>
+									<TR>
+									  <TD id=demo1 vAlign=top><table width="753" height="158"  border="0" cellpadding="10" cellspacing="0">
+										<tr>
+                                        										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-1.html"><img src="expert_pic/20120927114017.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-1.html">张磊</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-3.html"><img src="expert_pic/20120928122013.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-3.html">郑建民</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-5.html"><img src="expert_pic/20120927114715.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-5.html">侯士良</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-6.html"><img src="expert_pic/20120927114811.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-6.html">冯明清</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-7.html"><img src="expert_pic/20120927114934.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-7.html">路世才</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-8.html"><img src="expert_pic/20120927114954.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-8.html">刘会生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-16.html"><img src="expert_pic/20120927115015.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-16.html">常玉枝</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-17.html"><img src="expert_pic/20120927115048.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-17.html">张秀华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-10.html"><img src="expert_pic/20120928122819.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-10.html">李振生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-11.html"><img src="expert_pic/20120927115228.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-11.html">李发枝</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-13.html"><img src="expert_pic/20120927115305.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-13.html">马照寰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-14.html"><img src="expert_pic/20120927115325.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-14.html">刘茂林</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-15.html"><img src="expert_pic/20120927115359.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-15.html">袁占盈</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-18.html"><img src="expert_pic/20120927115416.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-18.html">唐宋</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-19.html"><img src="expert_pic/20120927115438.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-19.html">陈瑞芬</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-20.html"><img src="expert_pic/20120927115510.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-20.html">郭继禹</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-21.html"><img src="expert_pic/20120927115554.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-21.html">崔爱竹</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-22.html"><img src="expert_pic/20120928125648.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-22.html">王国斌</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-23.html"><img src="expert_pic/20120928123009.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-23.html">杨兆勤</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-25.html"><img src="expert_pic/20120927115759.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-25.html">王天德</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-59.html"><img src="expert_pic/20120927115818.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-59.html">李庆海</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-26.html"><img src="expert_pic/20120927115910.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-26.html">周继武</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-27.html"><img src="expert_pic/20120927115937.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-27.html">王汝琨</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-28.html"><img src="expert_pic/20120927120016.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-28.html">刘读文</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-29.html"><img src="expert_pic/20120928123043.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-29.html">杜俊生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-31.html"><img src="expert_pic/20120928123101.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-31.html">和贵璋</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-33.html"><img src="expert_pic/20120927120319.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-33.html">席时华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-34.html"><img src="expert_pic/20120927120337.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-34.html">李学斌</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-35.html"><img src="expert_pic/20120927120404.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-35.html">李安民</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-36.html"><img src="expert_pic/20120927120421.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-36.html">张继周</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-37.html"><img src="expert_pic/20120927120439.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-37.html">刘永业</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-38.html"><img src="expert_pic/20120927120532.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-38.html">邵文杰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-39.html"><img src="expert_pic/20120927120601.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-39.html">崔河泉</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-41.html"><img src="expert_pic/20120927120830.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-41.html">赵成鼐</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-42.html"><img src="expert_pic/20120927120849.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-42.html">王新喜</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-43.html"><img src="expert_pic/20120927121100.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-43.html">王启政</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-44.html"><img src="expert_pic/20120927121146.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-44.html">高天旭</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-45.html"><img src="expert_pic/20120927121203.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-45.html">周发祥</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-46.html"><img src="expert_pic/20120927121223.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-46.html">耿新生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-47.html"><img src="expert_pic/20120927121253.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-47.html">蒋士卿</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-48.html"><img src="expert_pic/20120927121314.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-48.html">宋建平</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-50.html"><img src="expert_pic/20120927121400.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-50.html">任汉阳</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-51.html"><img src="expert_pic/20120927121431.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-51.html">王付</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-52.html"><img src="expert_pic/20120927121516.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-52.html">崔应珉</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-53.html"><img src="expert_pic/20120927121535.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-53.html">孙田华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-54.html"><img src="expert_pic/20120927121557.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-54.html">李建生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-55.html"><img src="expert_pic/20120927121616.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-55.html">韦大文</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-56.html"><img src="expert_pic/20120927121637.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-56.html">谢文英</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-57.html"><img src="expert_pic/20120927121656.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-57.html">刘景超</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-61.html"><img src="expert_pic/20120927121807.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-61.html">夏寒星</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-62.html"><img src="expert_pic/20120927121838.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-62.html">崔瑛</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-63.html"><img src="expert_pic/20120927121857.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-63.html">马爱莲</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-64.html"><img src="expert_pic/20120927121918.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-64.html">张丽萍</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-65.html"><img src="expert_pic/20120927121939.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-65.html">洪素兰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-66.html"><img src="expert_pic/20120927121957.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-66.html">李根林</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-68.html"><img src="expert_pic/20120927122044.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-68.html">程延安</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-69.html"><img src="expert_pic/20120927122121.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-69.html">何远征</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-72.html"><img src="expert_pic/20120927122317.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-72.html">王幼立</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-73.html"><img src="expert_pic/20120927122338.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-73.html">梁润英</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-87.html"><img src="expert_pic/20120927122915.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-87.html">郑玉玲</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-88.html"><img src="expert_pic/20120927122957.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-88.html">王祥麒</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-253.html"><img src="expert_pic/20140515170937.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-253.html">李瑞国</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-89.html"><img src="expert_pic/20120927123022.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-89.html">李志刚</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-93.html"><img src="expert_pic/20120927123207.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-93.html">金先红</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-94.html"><img src="expert_pic/20120927123223.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-94.html">周立华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-95.html"><img src="expert_pic/20120927123243.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-95.html">张文娟</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-98.html"><img src="expert_pic/20120927123301.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-98.html">崔维</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-96.html"><img src="expert_pic/20120927123334.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-96.html">张国海</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-97.html"><img src="expert_pic/20120927123358.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-97.html">刘春</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-107.html"><img src="expert_pic/20120927123849.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-107.html">李 广</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-110.html"><img src="expert_pic/20120927123908.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-110.html">崔书克</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-111.html"><img src="expert_pic/20120927123940.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-111.html">王震宇</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-113.html"><img src="expert_pic/20120927124055.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-113.html">孙玉信</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-114.html"><img src="expert_pic/20120927124114.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-114.html">徐亚萍</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-116.html"><img src="expert_pic/20120927124217.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-116.html">刘建平</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-117.html"><img src="expert_pic/20120927124237.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-117.html">高希言</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-118.html"><img src="expert_pic/20120927124301.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-118.html">王民集</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-119.html"><img src="expert_pic/20120927124321.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-119.html">赵喜新</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-120.html"><img src="expert_pic/20120927124349.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-120.html">路玫</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-121.html"><img src="expert_pic/20120927124413.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-121.html">邵素霞</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-122.html"><img src="expert_pic/20120928123632.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-122.html">张淑君</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-123.html"><img src="expert_pic/20120927124437.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-123.html">邵素菊</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-299.html"><img src="expert_pic/20150817170322.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-299.html">李建生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-127.html"><img src="expert_pic/20120928121840.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-127.html">田开宇</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-293.html"><img src="expert_pic/20150107182918.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-293.html">蒋时红</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-292.html"><img src="expert_pic/20150107182638.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-292.html">续海卿</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-136.html"><img src="expert_pic/20120927125320.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-136.html">周友龙</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-137.html"><img src="expert_pic/20120927125342.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-137.html">周淑娟</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-139.html"><img src="expert_pic/20120928123803.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-139.html">刘宜军</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-295.html"><img src="expert_pic/20150401100646.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-295.html">熊秀峰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-287.html"><img src="expert_pic/20150107182210.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-287.html">邓运宗</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-146.html"><img src="expert_pic/20120927125730.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-146.html">孙飞</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-165.html"><img src="expert_pic/20120927130048.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-165.html">杨传英</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-166.html"><img src="expert_pic/20120927130115.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-166.html">刘虹</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-285.html"><img src="expert_pic/20150107182023.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-285.html">张彩丽</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-284.html"><img src="expert_pic/20150107181911.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-284.html">郑攀</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-153.html"><img src="expert_pic/20120927130218.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-153.html">王华兰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-155.html"><img src="expert_pic/20120927130304.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-155.html">郭现辉</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-159.html"><img src="expert_pic/20120927130450.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-159.html">朱桂兰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-160.html"><img src="expert_pic/20120927130513.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-160.html">张爱芳</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-161.html"><img src="expert_pic/20120927130531.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-161.html">庞玉琴</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-162.html"><img src="expert_pic/20120927130604.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-162.html">牛汝贞</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-163.html"><img src="expert_pic/20120927130626.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-163.html">张大伟</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-164.html"><img src="expert_pic/20120927130643.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-164.html">露红</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-167.html"><img src="expert_pic/20120928124010.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-167.html">刘成藏</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-169.html"><img src="expert_pic/20120927130831.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-169.html">刘鸿雁</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-172.html"><img src="expert_pic/20120927130929.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-172.html">卫淑华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-176.html"><img src="expert_pic/20120927130956.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-176.html">汪琳</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-173.html"><img src="expert_pic/20120927131021.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-173.html">吕海江</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-174.html"><img src="expert_pic/20120927131053.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-174.html">张素芳</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-175.html"><img src="expert_pic/20120927131117.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-175.html">卢丙辰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-281.html"><img src="expert_pic/20150107181516.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-281.html">李新华</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-179.html"><img src="expert_pic/20120927131232.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-179.html">李婉丽</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-182.html"><img src="expert_pic/20120927131342.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-182.html">郑春雷</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-184.html"><img src="expert_pic/20120927131429.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-184.html">王辉</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-185.html"><img src="expert_pic/20120927131450.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-185.html">李学慧</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-186.html"><img src="expert_pic/20120927131515.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-186.html">周淼</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-188.html"><img src="expert_pic/20120927131607.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-188.html">樊学忠</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-189.html"><img src="expert_pic/20120927131631.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-189.html">赵瑞钦</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-279.html"><img src="expert_pic/20150107181231.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-279.html">张金生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-198.html"><img src="expert_pic/20120927132026.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-198.html">何延忠</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-199.html"><img src="expert_pic/20120927132100.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-199.html">马玮莉</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-200.html"><img src="expert_pic/20120927132123.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-200.html">尹晓隽</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-201.html"><img src="expert_pic/20120927132138.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-201.html">李康</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-202.html"><img src="expert_pic/20120927132155.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-202.html">朱明喜</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-277.html"><img src="expert_pic/20150107180931.JPG" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-277.html">李郑生</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-276.html"><img src="expert_pic/20150107180841.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-276.html">刘明</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-209.html"><img src="expert_pic/20120927132510.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-209.html">焦纯杰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-210.html"><img src="expert_pic/20120927132534.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-210.html">马超</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-274.html"><img src="expert_pic/20150107180622.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-274.html">辛凯</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-219.html"><img src="expert_pic/20120927132923.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-219.html">郭云协</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-221.html"><img src="expert_pic/20120927133005.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-221.html">杨军</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-223.html"><img src="expert_pic/20120927133049.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-223.html">蔡庆春</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-224.html"><img src="expert_pic/20141120114423." height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-224.html">田力</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-225.html"><img src="expert_pic/20120927133124.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-225.html">王文献</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-270.html"><img src="expert_pic/20150107180215.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-270.html">王慧霞</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-268.html"><img src="expert_pic/20150107175958.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-268.html">华金双</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-239.html"><img src="expert_pic/20140125122701.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-239.html">孙丙军</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-240.html"><img src="expert_pic/20140125122812.JPG" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-240.html">刘佃温</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-294.html"><img src="expert_pic/20150309165318.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-294.html">夏祖昌</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-266.html"><img src="expert_pic/20150107175655.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-266.html">马春芬</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-244.html"><img src="expert_pic/20140226105236.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-244.html">马丽</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-245.html"><img src="expert_pic/20140226105430.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-245.html">秦瑞君</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-243.html"><img src="expert_pic/20140226104854.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-243.html">赵璐</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-252.html"><img src="expert_pic/20140301084737.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-252.html"> 丁丹</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-255.html"><img src="expert_pic/20140818153753.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-255.html">安丽</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-280.html"><img src="expert_pic/20150107181435.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-280.html">师卿杰</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-260.html"><img src="expert_pic/20140929102316.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-260.html">霍根红</a></p>
+											</div>
+										  </td>
+										 										  <td>
+										  	<div class="top">
+												<p class="p3"><a href="experts_view-262.html"><img src="expert_pic/20150107175033.jpg" height="120" width="89"/></a></p>
+												<p class="p4"><a href="experts_view-262.html">蒋曙光</a></p>
+											</div>
+										  </td>
+										 										</tr>
+									  </table></TD>
+									  <TD id=demo2 vAlign=top></TD></TR></TBODY></TABLE>
+								</DIV>
+								  <SCRIPT>
+									var speed3=25//速度数值越大速度越慢
+										demo2.innerHTML=demo1.innerHTML
+									function Marquee(){
+									if(demo2.offsetWidth-demo.scrollLeft<=0)
+										demo.scrollLeft-=demo1.offsetWidth;
+									else{
+										demo.scrollLeft++;
+									}
+									}
+									var MyMar=setInterval(Marquee,speed3)
+										demo.onmouseover=function() {clearInterval(MyMar)}
+										demo.onmouseout=function() {MyMar=setInterval(Marquee,speed3);
+									}
+								  </SCRIPT>
+							</div>
+					  </div>
+					</div>
+				</div>
+				<div class="box2"></div>
+				<div id="pic1">
+				  <center>
+					<div id="top"></div>
+					<div id="center">
+						<div id="left"></div>
+						<div id="right">
+							<div><a href="http://www.hnwst.gov.cn/" target="_blank" class="p1"></a></div>
+							<div><a href="http://www.hactcm.edu.cn/" target="_blank" class="p2"></a></div>
+							<div><a href="http://www.tcm.gov.cn/tcm/" target="_blank" class="p1"></a></div>
+							<div><a href="http://home.hactcm.edu.cn/zjtnxy/" class="p2"></a></div>
+						</div>
+					</div>
+					<div id="bottom"></div>
+				  </center>
+				</div>
+				<div id="row2">
+					<div class="left">
+						<div class="commontop">
+							<p class="title">重点专科</p><p class="more"><a href="department_list-8.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="zhongdianzhuankai">
+														<p class="p1">国家级重点专科</p>
+                                <div class="name">
+                                                                        <span><a href="department_view-38.html">针灸推拿科</a></span>&nbsp;&nbsp;
+                                                                    </div>
+														<p class="p1">国家十二五重点专科建设项目</p>
+                                <div class="name">
+                                                                        <span><a href="department_view-35.html">肝胆脾胃病科</a></span>&nbsp;&nbsp;
+                                                                        <span><a href="department_view-36.html">心血管科</a></span>&nbsp;&nbsp;
+                                                                        <span><a href="department_view-37.html">肿瘤科</a></span>&nbsp;&nbsp;
+                                                                    </div>
+														<p class="p1">河南省重点专科建设单位</p>
+                                <div class="name">
+                                                                        <span><a href="department_view-52.html">骨伤科</a></span>&nbsp;&nbsp;
+                                                                        <span><a href="department_view-80.html">肺病科</a></span>&nbsp;&nbsp;
+                                                                        <span><a href="department_view-81.html">肛肠科</a></span>&nbsp;&nbsp;
+                                                                        <span><a href="department_view-82.html">脑病科</a></span>&nbsp;&nbsp;
+                                                                    </div>
+													</div>
+					</div>
+					<div class="center">
+						<div class="commontop">
+							<p class="title2">科室介绍</p><p class="more"><a href="department_list-7.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="keshijieshao">
+														<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-40.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">推拿科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-41.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">肝胆脾胃科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-42.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">心血管科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-44.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">骨伤科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-45.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">外科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-46.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">妇科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-47.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">生殖中心</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-48.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">口腔科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-54.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">儿科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-55.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">五官科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-56.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">肛肠科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-57.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">肺病科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-58.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">脑病科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-59.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">重症医学科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-60.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">急诊科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            							<div style="float:left; width:123px; height:50px;">
+                            	<table cellpadding="0" cellspacing="0" border="0" style="margin:0px; padding:0px;">
+                                	<tr>
+                                    	<td align="center" valign="middle" width="120" height="48">
+                                        	<a href="department_view-61.html" style="font-size:15px;font-weight:900; color:rgb(16,91,73);">内分泌科</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            						</div>
+					</div>
+					<div class="right">
+						<div class="commontop">
+							<p class="title3">科学研究及成果</p><p class="more"><a href="news_sum-5.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="kexueyuanjiujichengguo">
+							<ul class="commonul">
+																		<li><a href="news_view-1169.html" title="河南中医学院针灸推拿学院、第三附属医院2014年度申请专利统计">河南中医学院针灸推拿学院、第三附属医院2014年度申请专利统计</a>2015-01-03</li>
+																			<li><a href="news_view-1168.html" title="2014年论文统计表">2014年论文统计表</a>2015-01-03</li>
+																			<li><a href="news_view-1167.html" title="2014年教材著作统计">2014年教材著作统计</a>2015-01-03</li>
+																			<li><a href="news_view-1166.html" title="2014年度科研立项项目一览表">2014年度科研立项项目一览表</a>2015-01-03</li>
+																			<li><a href="news_view-1165.html" title="2014年度获奖成果统计">2014年度获奖成果统计</a>2015-01-03</li>
+																			<li><a href="news_view-1164.html" title="河南中医学院针灸推拿学院、第三附属医院2013年度申请专利统计">河南中医学院针灸推拿学院、第三附属医院2013年度申请专利统计</a>2014-01-03</li>
+																			<li><a href="news_view-1163.html" title="河南中医学院针灸推拿学院、第三附属医院2013年度获奖成果统计">河南中医学院针灸推拿学院、第三附属医院2013年度获奖成果统计</a>2014-01-03</li>
+																			<li><a href="news_view-1162.html" title="河南中医学院针灸推拿学院、第三附属医院2013年度科研立项统计">河南中医学院针灸推拿学院、第三附属医院2013年度科研立项统计</a>2014-01-03</li>
+																</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box2"></div>
+				<div id="row2">
+					<div class="left">
+						<div class="commontop">
+							<p class="title">对外交流</p><p class="more"><a href="communication_list-6.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="duiwaijiaoliu">
+							<ul class="commonul">
+																			<li><a href="communication_view-232.html" title="马来西亚管理与科技大学校长一行对我院进行参观访问">马来西亚管理与科技大学校长一行对我院进行参观访问</a>2015-11-24</li>
+																			<li><a href="communication_view-214.html" title="天津中医药大学针灸学院院长郭义教授做客我校第六届仲景文化节暨百家论坛">天津中医药大学针灸学院院长郭义教授做客我校第六届仲景文化节暨百家论坛</a>2015-05-06</li>
+																			<li><a href="communication_view-213.html" title="香港方树福堂基金会秘书长陈德真先生一行来我院考察">香港方树福堂基金会秘书长陈德真先生一行来我院考察</a>2015-04-09</li>
+																			<li><a href="communication_view-212.html" title="我院首届“国医临证大讲堂”成功召开">我院首届“国医临证大讲堂”成功召开</a>2015-03-25</li>
+																			<li><a href="communication_view-211.html" title="我院肛肠科与郑州丰益肛肠医院肛肠技术合作单位揭牌">我院肛肠科与郑州丰益肛肠医院肛肠技术合作单位揭牌</a>2015-01-22</li>
+																			<li><a href="communication_view-210.html" title="热烈庆祝我院首届膏方节义诊惠民活动暨国家三级甲等中医医院、河南中医学院第三临床医院揭牌仪式成功举办">热烈庆祝我院首届膏方节义诊惠民活动暨国家三级甲等中医医院、河南中医学院第三临床医院揭牌仪式成功举办</a>2014-11-19</li>
+																			<li><a href="communication_view-209.html" title="秋季送爽好时节  义诊活动序展开">秋季送爽好时节  义诊活动序展开</a>2014-10-22</li>
+																			<li><a href="communication_view-208.html" title="我院举办“临床科室发展论坛”">我院举办“临床科室发展论坛”</a>2014-08-25</li>
+																			<li><a href="communication_view-206.html" title="我院与平煤八矿医院协作医院揭牌">我院与平煤八矿医院协作医院揭牌</a>2014-08-11</li>
+																</ul>
+						</div>
+					</div>
+					<div class="center">
+						<div class="commontop">
+							<p class="title2">中医养生</p><p class="more"><a href="news_list-19.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="zhongyiyangsheng">
+							<div class="center1">
+								<ul class="commonul">
+																			<li><a href="news_view-1020.html" title="过敏性鼻炎可以试下割治鼻丘法">过敏性鼻炎可以试下割治鼻丘法</a>2014-09-26</li>
+																			<li><a href="news_view-983.html" title="小儿脾虚的中医调理方法">小儿脾虚的中医调理方法</a>2014-07-07</li>
+																			<li><a href="news_view-974.html" title="泡脚出汗气虚肾寒 出汗部位暗示你健康问题">泡脚出汗气虚肾寒 出汗部位暗示你健康问题</a>2014-05-26</li>
+																			<li><a href="news_view-969.html" title="治落枕的特殊穴位">治落枕的特殊穴位</a>2014-05-20</li>
+																			<li><a href="news_view-960.html" title="山药胜过补药">山药胜过补药</a>2014-05-06</li>
+																			<li><a href="news_view-947.html" title="自我推拿保健小窍门">自我推拿保健小窍门</a>2014-02-14</li>
+																			<li><a href="news_view-598.html" title="盘点6类“颜色”养生食物 冷秋进补食物状元榜">盘点6类“颜色”养生食物 冷秋进补食物状元榜</a>2012-07-27</li>
+																			<li><a href="news_view-597.html" title="该吃什么、怎么吃对身体才有益">该吃什么、怎么吃对身体才有益</a>2012-04-23</li>
+																			<li><a href="news_view-596.html" title="太极拳对老年人有三大健身作用">太极拳对老年人有三大健身作用</a>2012-02-14</li>
+																	</ul>
+							</div>
+							<div class="center2">
+								<ul class="commonul">
+																			<li><a href="news_view-594.html" title="美丽在睡眠中绽放">美丽在睡眠中绽放</a>2011-12-09</li>
+																			<li><a href="news_view-593.html" title="气郁体质养生法">气郁体质养生法</a>2011-09-11</li>
+																			<li><a href="news_view-592.html" title="最方便的运动养生方法--步行健身">最方便的运动养生方法--步行健身</a>2011-07-07</li>
+																			<li><a href="news_view-590.html" title="中医专家教你合理吃粗粮">中医专家教你合理吃粗粮</a>2011-01-11</li>
+																			<li><a href="news_view-589.html" title="秋季中医养生的几大要点">秋季中医养生的几大要点</a>2011-01-08</li>
+																			<li><a href="news_view-588.html" title="错误的生活细节也伤身">错误的生活细节也伤身</a>2010-11-19</li>
+																			<li><a href="news_view-586.html" title="饮食养生：心情持续低落  补充三类食物">饮食养生：心情持续低落  补充三类食物</a>2010-05-07</li>
+																			<li><a href="news_view-585.html" title="《内经》中的情志养生">《内经》中的情志养生</a>2010-04-07</li>
+																			<li><a href="news_view-584.html" title="秋季养生以“和”为贵">秋季养生以“和”为贵</a>2010-02-02</li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="commontop">
+							<p class="title3">医疗政策</p><p class="more"><a href="communication_list-11.html">更多&gt;&gt;</a></p>
+						</div>
+						<div class="yiliaozhengce">
+							<ul class="commonul">
+																		<li><a href="communication_view-162.html" title="河南中医学院第三附属医院临床见习、实习和进修医师管理办法">河南中医学院第三附属医院临床见习、实习和进修医师管理办法</a>2013-01-11</li>
+																			<li><a href="communication_view-163.html" title="河南中医学院第三附属医院医师注册管理办法">河南中医学院第三附属医院医师注册管理办法</a>2013-01-10</li>
+																</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box2"></div>
+			</div>
+			<div id="footer">
+				<div class="bottom">
+					<div>
+						<ul>
+							<li><a href="#">关于我们</a></li>&nbsp;|
+							<li><a href="#">医院位置</a></li>&nbsp;|
+							<li><a href="#">版权声明</a></li>&nbsp;|
+							<li><a href="#">法律声明</a></li>&nbsp;|
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<br/>
+                    
+					<div class="link-m1">
+                    		<center>
+							<ul style="margin:0px auto; margin-top:-20px; margin-bottom:15px;">
+								<li>友情连接：</li>
+                                								<li><a href="http://www.hnzhy.com/" target="_new">河南中医学院第一附属医院</a></li>
+																<li><a href="http://hnszyy.com.cn/" target="_new">河南省中医院</a></li>
+																<li><a href="http://www.zysfy.com.cn/mygzs/index.html" target="_new">高体三名医工作室</a></li>
+																<li><a href="http://www.zhangleimingyigzs.com" target="_new">张磊名医工作室</a></li>
+																<li><a href="http://www.houshiliang.com/" target="_new">侯士良名医工作室</a></li>
+																<li><a href="www.zysfy.com.cn" target="_new">李发枝名医工作室</a></li>
+															</ul>
+						</center>
+					</div>
+					<div class="bottom_bottom">
+						<p>copyright&copy;2012&nbsp;
+							<a href="index.html">河南中医药大学第三附属医院</a>&nbsp;版权所有
+						</p>
+						<p>地址：郑州市东明路63号 邮政编号450008 电话：0371-65979292</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<!--悬浮广告部分开始-->
+		<div id="codefans_net" style="position:absolute; width:250px; height:60px; background:#FFFFFF;">
+			<div style="float:left; width:50px; height:60px;">
+				<a href="#" target="_blank">
+					<img src="images/icon.png" width="50px" height="60px" border="0">
+				</a>
+			</div>
+			<div style="float:left; width:200px; height:60px; background:rgb(25,124,102); vertical-align:middle">
+            				<p><a href="news_view-1355.html" target="_blank" style="line-height:20px; padding-left:5px; color:rgb(217,230,210); font-size:14px; font-weight:900; font-family:'楷体','隶书';">河南中医学院第三附属医院医疗器械采购招标公告...</a></p>
+                
+			</div>
+		</div>
+		<script> 
+		var x = 50,y = 60 
+		var xin = true, yin = true 
+		var step = 1 
+		var delay = 10 
+		var obj=document.getElementById("codefans_net") 
+		function float() { 
+		var L=T=0
+		var R= document.body.clientWidth-obj.offsetWidth
+		var B = document.body.clientHeight-obj.offsetHeight 
+		obj.style.left = x + document.body.scrollLeft 
+		obj.style.top = y + document.body.scrollTop 
+		x = x + step*(xin?1:-1) 
+		if (x < L) { xin = true; x = L} 
+		if (x > R){ xin = false; x = R} 
+		y = y + step*(yin?1:-1) 
+		if (y < T) { yin = true; y = T } 
+		if (y > B) { yin = false; y = B } 
+		} 
+		var itl= setInterval("float()", delay) 
+		obj.onmouseover=function(){clearInterval(itl)} 
+		obj.onmouseout=function(){itl=setInterval("float()", delay)} 
+		</script>
+		<!--悬浮广告部分结束-->
+</html>

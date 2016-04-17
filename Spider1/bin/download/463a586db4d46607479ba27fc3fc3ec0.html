@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="dns-prefetch" href="http://i.tq121.com.cn">
+<meta charset="utf-8" />
+<title>中国天气网-专业天气预报、气象服务门户</title>
+<meta  name="keywords" content="天气预报,天气,天气预报查询一周,天气预报15天查询,天气预报查询,北京天气,天气在线,气候,气象" />
+<meta name="description" content="中国天气网官方权威发布天气预报,逐三小时天气预报,提供天气预报查询一周,天气预报15天查询,空气质量,生活指数,旅游出行,交通天气等查询服务" />
+<meta name="msapplication-task" content="name=天气资讯;action-uri=http://news.weather.com.cn/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=生活天气;action-uri=http://www.weather.com.cn/life/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=气象科普;action-uri=http://www.weather.com.cn/science/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=灾害预警;action-uri=http://www.weather.com.cn/alarm/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="msapplication-task" content="name=旅游天气;action-uri=http://www.weather.com.cn/trip/index.shtml;icon-uri=http://www.weather.com.cn/favicon.ico" />
+<meta name="baidu_union_verify" content="144f0bd2406c0c7e66dcbdde0acc68e0">
+<script type="text/javascript" src="http://i.tq121.com.cn/j/core.js"></script>
+<script>W.css('c/weather2014/common.css','c/m_search.css')</script>
+<script type="text/javascript" src="http://i.tq121.com.cn/j/jquery-1.8.2.js" ></script>
+<script type="text/javascript" src="http://www.weather.com.cn/m2/j/public/tooltips201411.js?y=201408"></script>
+<!--[if lt IE 7]>
+<script>
+W.use('j/tool/DD_belatedPNG',function(DD_belatedPNG){
+  DD_belatedPNG.fix(".video dl dd i,.focusImg span i");
+});
+</script>
+<![endif]-->
+<style>
+.header-box{background:none;}
+.nav{display:none;}
+.menu-box{display:none;}
+
+#toolBar { height:30px; background-color:#e6e6e6; font-size:12px;  }
+.midBlock { width:1000px; margin:0 auto; }
+#toolBar .midBlock { height:30px; line-height:30px; color:#fff;background: #e6e6e6; }
+#toolBar .midBlock i{font-style:normal;}
+#time { display:block; height:30px; line-height:30px; float:left; }
+.midBlock span.leftLink a { color:#4d4d4d; padding-right:20px; }
+.mobile { display:block; width:20px; height:30px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat 0px 0px; float:left; margin:0px 5px; }
+#toolBar b { font-weight:normal; color:#f06600; cursor:pointer; display:block; height:30px; padding-right:20px; line-height:30px; position:relative; float:left; }
+#toolBar b i { border-top:6px solid #adadad; border-right:6px dashed transparent; border-bottom:6px dashed transparent; border-left:6px dashed transparent; display:block; width:0px; height:0px; overflow:hidden; position:absolute; right:0px; top:20px; }
+.links { display:block; height:30px; line-height:30px;  float: right; }
+.links a { color:##4d4d4d; display:block; height:30px; line-height:30px; float:left; padding:0px 10px; overflow:hidden; }
+.links #setIndex, .links #eg { border-right:0px solid #275885; }
+#provice { background-color:#fff; color:#252525; width:74px; position:relative; padding:0; text-indent:12px; }
+#provice .icon { display:block; width:40px; height:43px; position:absolute; left:10px; top:0px; }
+#provice .arrow { position:absolute; right:9px; top:14px; }
+*html { background-image:url(about:blank); background-attachment:fixed; }
+body { padding:0px; margin:0px; border:0; font: 14px/1.6 "Microsoft Yahei", "SimSun", "宋体", "Arial", "HELVETICA", "sans-serif", "Tahoma"; background-color:#fff; color:#252525; }
+* { padding:0px; margin:0px; border:0; }
+ul { list-style:none; }
+a { text-decoration:none; color:#252525; }
+a:hover { color:#ee842f; }
+.clear { clear:both; height:0px; overflow:hidden; }
+#search { height:72px; margin:16px auto; height:64px; }
+#search h1 { display:block; float:left; width:140px; height:35px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -160px 0px; margin-top:15px; margin-right:10px; overflow:hidden; }
+#search h1 a { display:block; width:140px; height:35px; text-indent:-9999px; }
+#search dl { width:88px; height:72px; border:1px solid #cfe0f3; float:left; margin-left:3px; background-color:#ebf4ff; color:#076ea8; font-size:14px; position:relative; }
+#search dl.hover{ border:1px solid #35A7DF;}
+#search dl dt { height:15px; line-height:15px; overflow: hidden; margin-top:2px; padding-left:10px; }
+#search dl.move { border:1px solid #68b1dc; }
+#search dl dd { line-height:16px; padding-top:0px; text-align: center; padding-left:10px; }
+#search dl.city dd { overflow: hidden; }
+#search dl dd span { display:block; float:left; font-size:13px; }
+#search dl dd .clearfix span { height:18px; line-height:18px; }
+#search dl dd span i { background-image:url(http://i.tq121.com.cn/i/weather2014/index_neweather/18x18.jpg); background-repeat:no-repeat; float:left; width:20px; height:20px; margin:0 1px; overflow:hidden; }
+#search dl dd i.d0 { background-position: -4px -3px; }
+#search dl dd i.d1 { background-position: -25px -3px; }
+#search dl dd i.d2 { background-position: -48px -3px; }
+#search dl dd i.d3 { background-position: -71px -3px; }
+#search dl dd i.d4 { background-position: -94px -3px; }
+#search dl dd i.d5 { background-position: -117px -3px; }
+#search dl dd i.d6 { background-position: -141px -3px; }
+#search dl dd i.d7 { background-position: -162px -3px; }
+#search dl dd i.d8 { background-position: -186px -3px; }
+#search dl dd i.d9 { background-position: -4px -27px; }
+#search dl dd i.d10 { background-position: -25px -27px; }
+#search dl dd i.d11 { background-position: -47px -27px; }
+#search dl dd i.d12 { background-position: -69px -27px; }
+#search dl dd i.d13 { background-position: -95px -24px; }
+#search dl dd i.d14 { background-position: -117px -27px; }
+#search dl dd i.d15 { background-position: -140px -27px; }
+#search dl dd i.d16 { background-position: -164px -27px; }
+#search dl dd i.d17 { background-position: -186px -27px; }
+#search dl dd i.d18 { background-position: -4px -52px; }
+#search dl dd i.d19 { background-position: -25px -52px; }
+#search dl dd i.d20 { background-position: -47px -52px; }
+#search dl dd i.d21 { background-position: -69px -52px; }
+#search dl dd i.d22 { background-position: -95px -52px; }
+#search dl dd i.d23 { background-position: -117px -52px; }
+#search dl dd i.d24 { background-position: -140px -52px; }
+#search dl dd i.d25 { background-position: -164px -52px; }
+#search dl dd i.d26 { background-position: -186px -52px; }
+#search dl dd i.d27 { background-position: -4px -79px; }
+#search dl dd i.d28 { background-position: -25px -79px; }
+#search dl dd i.d29 { background-position: -47px -76px; }
+#search dl dd i.d30 { background-position: -69px -78px; }
+#search dl dd i.d31 { background-position: -95px -79px; }
+#search dl dd i.d32 { background-position: -117px -79px; }
+#search dl dd i.d33 { background-position: -140px -79px; }
+#search dl dd i.d53 { background-position: -165px -79px; }
+#search dl dd i.n0 { background-position: -4px -115px; }
+#search dl dd i.n1 { background-position: -25px -113px; }
+#search dl dd i.n2 { background-position: -48px -113px; }
+#search dl dd i.n3 { background-position: -71px -113px; }
+#search dl dd i.n4 { background-position: -94px -115px; }
+#search dl dd i.n5 { background-position: -117px -115px; }
+#search dl dd i.n6 { background-position: -141px -115px; }
+#search dl dd i.n7 { background-position: -165px -113px; }
+#search dl dd i.n8 { background-position: -186px -115px; }
+#search dl dd i.n9 { background-position: -4px -27px; }
+#search dl dd i.n10 { background-position: -25px -27px; }
+#search dl dd i.n11 { background-position: -47px -27px; }
+#search dl dd i.n12 { background-position: -69px -27px; }
+#search dl dd i.n13 { background-position: -95px -137px; }
+#search dl dd i.n14 { background-position: -117px -27px; }
+#search dl dd i.n15 { background-position: -140px -27px; }
+#search dl dd i.n16 { background-position: -164px -27px; }
+#search dl dd i.n17 { background-position: -186px -27px; }
+#search dl dd i.n18 { background-position: -4px -52px; }
+#search dl dd i.n19 { background-position: -25px -52px; }
+#search dl dd i.n20 { background-position: -47px -52px; }
+#search dl dd i.n21 { background-position: -69px -52px; }
+#search dl dd i.n22 { background-position: -95px -52px; }
+#search dl dd i.n23 { background-position: -117px -52px; }
+#search dl dd i.n24 { background-position: -140px -52px; }
+#search dl dd i.n25 { background-position: -164px -52px; }
+#search dl dd i.n26 { background-position: -186px -52px; }
+#search dl dd i.n27 { background-position: -4px -79px; }
+#search dl dd i.n28 { background-position: -25px -79px; }
+#search dl dd i.n29 { background-position: -47px -76px; }
+#search dl dd i.n30 { background-position: -69px -78px; }
+#search dl dd i.n31 { background-position: -95px -79px; }
+#search dl dd i.n32 { background-position: -117px -79px; }
+#search dl dd i.n33 { background-position: -140px -79px; }
+#search dl dd i.n53 { background-position: -165px -79px; }
+#search dl.yj dt { height: 27px; line-height: 27px; }
+#search dl.yj dd { padding-top: 1px; }
+.lq_line{
+border-right: 1px solid #dee8f2;
+    float: left;
+    height: 37px;
+    position: relative;
+    top: 16px;
+    width: 1px;}
+#search dl.yj span { padding-bottom: 3px; }
+#search dl.yj div { background-color: red; clear: both; margin-left: -10px; }
+#search dl.yj div a { color: white; float: left; }
+#search dl.yj div span { padding: 0; }
+#search dl.yj div i { background: url(http://i.tq121.com.cn/i/index/img02.jpg) no-repeat; display: inline-block; width: 16px; height: 16px; float: left; margin-right: 5px; }
+#search .midBlock { position:relative; z-index:99; }
+#search .midBlock .selCity { position:absolute; width:210px; height:120px; top:0px; left:390px; background-color:#ebebeb; padding:0px 20px 20px 20px; display:none; }
+#search .midBlock .selCity p { text-align:left; }
+#search .midBlock .selCity p.droplist { line-height:25px; z-index:99; position:relative; }
+#search .midBlock .selCity p.title { color:#076EA8; }
+#search .selCity b { color:#076EA8; font-weight:bold; font-size:24px; cursor:pointer; }
+#search .selCity span { float:left; }
+#search .selCity span.province { width:78px; cursor:pointer; padding-left:0px; border:1px solid #d7d7d7; font-size:12px; padding:3px 5px 2px 10px; display:block; float:left; margin-right:20px; position:relative; background-color:#fff; }
+#search .selCity span.province b, #search .selCity span.city b { font-weight:normal; font-size:12px; color:#252525; line-height:16px; }
+#search .selCity .province .provinceItem { width:88px; padding:5px 10px; height:300px; overflow-y:auto; position:absolute; background-color:#fff; left:-1px; top:30px; z-index:99; border:1px solid #d7d7d7; color:#d7d7d7; font-size:12px; padding:3px 5px 2px 0px; float:left; margin-right:10px; display:none; }
+#search .selCity span.city { width:78px; margin-right:0px; padding-left:0px; border:1px solid #d7d7d7; font-size:12px; padding:3px 5px 2px 10px; display:block; float:left; position:relative; background-color:#fff; }
+#search .selCity .city .cityItem { width:93px; height:100px; padding-left:0px; border:1px solid #d7d7d7; color:#d7d7d7; font-size:12px; float:left; margin-right:10px; position:absolute; left:-1px; top:30px; background-color:#fff; overflow-y:auto; display:none; }
+#search .selCity .name { width:100px; height:30px; line-height:30px; float:left; padding:0px 10px; margin-right:29px; }
+#search .selCity .queryBtn { width:60px; height:30px; line-height:30px; text-align:center; color:#fff; background-color:#49b4e5; cursor:pointer; }
+#search .selCity span.province i, #search .selCity span.city i { border-top:6px solid #076EA8; border-right:6px dashed transparent; border-bottom:6px dashed transparent; border-left:6px dashed transparent; display:block; width:0px; height:0px; overflow:hidden; position:absolute; right:5px; top:12px; }
+#search .selCity .provinceItem a, #search .selCity .cityItem a { display:block; height:35px; line-height:35px; border-bottom:1px solid #d9d9d9; padding-left:10px; color:#252525; }
+#search .selCity .provinceItem a:hover, #search .selCity .cityItem a:hover { color:#fff; background-color:#98cb55; }
+.city div { position:absolute; top:54px; left:0; display:none; width: 100%; cursor:pointer; }
+.city div i { background: url(http://i.tq121.com.cn/i/index/img02.jpg) -6px 0; width: 18px; height: 18px; display: inline; float: left; }
+#search dl div { margin:0; }
+#search dl div a, #search dl div a:hover { padding:0; width:100%; text-align:center; color:#fff;height:18px;line-height:18px;}
+#search dl div a.blue { background:#1b54a4; }
+#search dl div a.yellow { background:#eec50b; }
+#search dl div a.orange { background:#ef7c1a; }
+#search dl div a.red { background:red; }
+#search .city.alarm div a { color: white; }
+/*#search .yj dd{padding-top:0px;margin-top:-5px;height:39px;}
+#search .ld dd{background:url(http://i.tq121.com.cn/i/index/img02.jpg) no-repeat left bottom;width:76px;}*/
+#search #addCity { cursor:pointer; padding-left:0; }
+#search #addCity dt { font-size:35px; text-align: center; padding:0; margin-top:9px; height:23px; line-height:23px;}
+#search .more_dz dt { padding-left: 28px; padding-top:15px; }
+#search .more_dz { overflow: initial; padding-left:0; }
+.more_dz { cursor: pointer; display: none }
+.more_dz dt { padding-top: 15px; }
+.more_dz dd { position: relative;  *zoom: 1;
+}
+.more_dz .arrow { position: absolute; right: 41px; top: 6px; }
+.more_dz dd i { font-size: 20px; font-style: normal; margin-left:-14px;}
+.more_dz dd ul { display: none; background-color: #ebf4ff; position: absolute; top: 22px; left: 0; }
+.more_dz dd ul li {line-height: 25px; text-indent:5px; *text-indent:0px; border: 1px solid #bbdae8; border-top:none; cursor:pointer; }
+.more_dz dd ul li.add{ border-top:1px solid #bbdae8}
+.more_dz dd ul li.hover{ border:1px solid #35A7DF}
+.more_dz dd ul li.hover1{ border-bottom:none;}
+.more_dz dd ul li b { float:left; font-weight:normal; *text-indent:5px; line-height:22px; *line-height:21px; }
+.more_dz dd ul li em { float:left; font-style:normal; text-indent:0; }
+#search dl a { color: #076ea8; z-index:999; cursor:pointer; font-size:13px; display:block; height:23px; line-height:23px; width:100%;}
+#search dl dt a { text-indent:4px; display:block; }
+#search .more_dz dd span { display: inline-block; float:left; vertical-align: -2px; margin-left:5px; }
+#search .pp { text-align:right; font-size:14px; height:32px; line-height:32px; padding-right:60px; }
+#search .pp a { color: #076EA8; padding: 0 5px; }
+#search .pp span { display:block; height:25px; float:right; position:relative; }
+#search .text { height:23px; width:254px; line-height:23px; border:1px solid #959595; position:absolute; right:0px; top:0px; padding:0px 49px 0px 5px; color:#9e9e9e; font-size:12px; }
+#search .button { height:23px; width:42px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat 0px -109px; text-indent:-9999px; position:absolute; right:1px; top:1px; cursor:pointer; }
+#nav { height:70px; border-bottom:1px solid #dee8f2; padding:0px; width:998px; line-height:24px; margin:0 auto 10px; overflow: hidden;position:relative;top:-13px;}
+#nav dl { float:left; height:48px; margin-top:10px; padding:0px 21px 0px 33px;border-right:1px solid #dee8f2; }
+#nav .last { border-right:none;padding-right:0;padding-left:34px;}
+#nav dl dt { height:48px; width:26px; float:left; overflow:hidden; }
+#nav dl dd { height:48px; float:left; font-size:12px; }
+#nav dl dd a { padding-right:11px; }
+#nav h3 { font-size:16px; font-weight:normal;width:17px; }
+#nav h3 a { color:#086faa; font-weight:bold; }
+#nav h3 a:hover{color:#ee842f;}
+#topNews, .block { margin:0px auto 15px; width:1000px; position:relative; }
+#topNews .news, .announcement { width:360px; position:absolute; top:0px; left:320px; }
+#topNews .news span { float: right; }
+#topNews .news h2 { font-size:18px; line-height:25px; padding:0px 0px 7px 10px; }
+#topNews .news h2 a { color:#043567; }
+#topNews .news h2 a:hover { color: #ee842f; }
+#topNews .news .topOne { padding-top:0px; }
+#topNews .news p { font-size:14px; line-height:30px; text-indent: 0px; color:#043567; margin-left:10px; }
+#topNews .news p a { padding: 0; }
+#topNews .news p a img {margin-right: 3px;position: relative;top: 1px;}
+#topNews .news ul { padding-left:10px; }
+#topNews .news ul li, .life ul li, .climate ul li, .international ul li { height:30px; line-height:30px; background: url("http://i.tq121.com.cn/i/index/index_icons.png") no-repeat -290px -147px; overflow:hidden; padding-left:10px; }
+#topNews .news ul li a, .life ul li a, .climate ul li a, .international ul li a { height:30px; line-height:30px; margin-right: 10px; }
+#topNews .news ul li a:hover, .life ul li a:hover, .climate ul li a:hover, .international ul li a:hover { background-position:-290px -184px; color: #ee842f; }
+#topNews .news .newsOne .topOne a{ margin-left:0px;}
+#topNews .leftBlock { width:300px; overflow:hidden; }
+.news ul li { color: #076ea8; }
+.news ul li i { font-style: normal; padding:0px 5px; }
+.news ul li a img { position: relative; top: 3px; margin-right: 5px; }
+.focusImg { width:300px; height:260px; overflow:hidden; position:relative; }
+.focusImg ul li { width:300px; height:260px; float:left; background-color:#043567; }
+.focusImg ul li a { display:block; width:300px; height:260px; }
+.focusImg ul li a img { width:300px; height:210px; overflow:hidden; float:left }
+.focusImg ul li a b { height:50px; line-height:50px; display:block; float:left; width:290px; padding-left:10px; color:#fff; font-size:18px; }
+.focusImg span { display:block; width:105px; height:15px; position:absolute; bottom:55px; right:5px; font-size:12px; }
+.focusImg span i { display:block; font-style:normal; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -282px -128px; _background:#fff; float:left; width:15px; height:15px; line-height:15px; text-align:center; margin:0px 3px; overflow:hidden; display:inline; cursor:pointer; }
+.focusImg span .on { background-position:-256px -129px; color:#fff; _background:#ec8735; }
+.topic { width:278px; background-color:#ebebeb; margin-top:10px; padding:10px; }
+.topic h4 { font-size:14px; line-height:20px; height:28px; border-bottom:1px dashed #b8d3e4; }
+.topic h4 a { font-size:15px; color: #076ea8; }
+.topic h4 a:hover { color: #ee842f; }
+.topic h2 { font-size:18px; padding-bottom:10px; line-height:30px; }
+.topic dl { width:278px; height:70px; padding-bottom:10px; }
+.topic dl img { width:93px; height:70px; }
+.topic dl dt { width:93px; float:left; }
+.topic dl dd { width:175px; padding-left:10px; float:left; color:#7d7d7d; font-size:12px; line-height:25px; margin-top: -5px; display: inline; }
+#topNews .rightBlock { width:300px; position:absolute; right:0px; top:0px; z-index:2; }
+.rightBlock h2 { font-size:12px; height:34px; line-height:34px; background-color:#fffac2; }
+.rightBlock h2 i { display:block; float:left; background:url(http://i.tq121.com.cn/i/index_icons.png) no-repeat -42px -110px; width:34px; height:34px; margin-right:10px; _margin-right:0; }
+.rightBlock h2 b { color:#ee842f; }
+.rightBlock p { font-size:12px; height:34px; line-height:34px; background-color:#ebebeb; overflow:hidden; }
+.knowledge dl dt p { width: 200px; }/*fixed ie 6*/
+.rightBlock p span { display:block; }
+.rightBlock p a { display:block; width:250px; height:34px; line-height:34px; padding-left:50px; }
+/*
+.rightBlock p .df{background:url(http://i.tq121.com.cn/i/index/img37.jpg) no-repeat 0px 0px;}
+*/
+.rightBlock .ad { width:300px; height:250px; margin-top:10px; }
+.myZS { width:300px; margin-top:10px; overflow:hidden; }
+.myZS h3 { font-size:16px; color:#076ea8; line-height:30px; }
+.myZS dl { float:left; width:72px; height:72px; margin-bottom:1px; position:relative; }
+.myZS dl dt { position:absolute; left:28px; top:8px; z-index:20; }
+.myZS dl dt a { display:block; color:#fff; text-align:center; height:15px; line-height:15px; }
+.myZS dl dt a:hover, .myZS dl dd a:hover { color:#ee842f; }
+.myZS dl dd { width:72px; height:72px; float:left; overflow:hidden; position:absolute; left:0; top:0; }
+.myZS dl dd a { display:block; width:72px; height:72px; font-size:18px; background-color:#076ea8; color:#fff; float:left; text-align:center; font-weight:bold; line-height:93px; overflow:hidden; }
+.myZS dl dd a b { display:block; width:80px; font-size:14px; line-height:20px; }
+.zs-loading .citys p { padding-left:35px; background:url(http://i.tq121.com.cn/i/index_neweather/zsys.png) no-repeat 6px 19px #ebebeb; width:77px; height:72px; float:left; margin-left:2px; }
+.zs-loading .citys p a { width:70px; color:#076ea8; padding-top:10px; padding-left:0; height:30px; line-height:30px; }
+.zs-loading .citys p b { width:70px; color:#076ea8; font-size:16px; color:#252525; height:20px; }
+.myZSs { width:300px; margin-top:5px; overflow:hidden; height:195px; }
+.myZSs h3 { font-size:16px; color:#076ea8; line-height:30px; position:relative;}
+.myZSs h3 span{ position:absolute; right:6px; top:4px;}
+.myZSs dl { float:left; width:72px; height:72px; margin-bottom:1px; position:relative; background:#076ea8; }
+.myZSs dl a { display:block; color:#fff; text-align:center; height:100%; }
+.myZSs dl a img { margin-top:10px; }
+.myZSs dl a i { display:block; white-space:nowrap; font-style:normal; font-size:18px; font-weight:bold; width:100%; overflow:hidden; }
+.myZSs dl dt { background:url('http://i.tq121.com.cn/i/weather2014/index_neweather/local.jpg'); position:absolute; left:28px; top:8px; z-index:20; }
+.myZSs dl dt a { display:block; color:#fff; text-align:center; height:15px; line-height:15px; }
+.myZSs dl dt a:hover, .myZS dl dd a:hover { color:#ee842f; }
+.myZSs dl dd { width:72px; height:72px; float:left; overflow:hidden; position:absolute; left:0; top:0; }
+.myZSs dl dd a { display:block; width:72px; height:72px; font-size:18px; background-color:#076ea8; color:#fff; float:left; text-align:center; font-weight:bold; line-height:93px; overflow:hidden; }
+.myZSs dl dd a b { display:block; width:80px; font-size:14px; line-height:20px; }
+.myZSs h3 span { float: right; }
+.zs-loadings .cityss p { line-height:16px; padding-left:35px; background:#ebebeb; width:77px; height:72px; float:left; margin-left:2px; }
+.zs-loadings .cityss p span { overflow:hidden; width:70px; color:#076ea8; padding-top:10px; padding-left:0; height:30px; line-height:30px; }
+.zs-loadings .cityss p b { width:70px; color:#076ea8; display: block; font-size:16px; color:#252525; height:20px; }
+.zs-loadings .cityss .gl { background:url('http://i.tq121.com.cn/i/weather2014/zs/gl.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .ct { background:url('http://i.tq121.com.cn/i/weather2014/zs/ct.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .gj { background:url('http://i.tq121.com.cn/i/weather2014/zs/gj.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .ac { background:url('http://i.tq121.com.cn/i/weather2014/zs/ac.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .ag { background:url('http://i.tq121.com.cn/i/weather2014/zs/ag.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .be { background:url('http://i.tq121.com.cn/i/weather2014/zs/be.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .cl { background:url('http://i.tq121.com.cn/i/weather2014/zs/cl.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .co { background:url('http://i.tq121.com.cn/i/weather2014/zs/co.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .dy { background:url('http://i.tq121.com.cn/i/weather2014/zs/dy.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .fs { background:url('http://i.tq121.com.cn/i/weather2014/zs/fs.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .gm { background:url('http://i.tq121.com.cn/i/weather2014/zs/gm.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .gz { background:url('http://i.tq121.com.cn/i/weather2014/zs/gz.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .hc { background:url('http://i.tq121.com.cn/i/weather2014/zs/hc.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .jt { background:url('http://i.tq121.com.cn/i/weather2014/zs/jt.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .lk { background:url('http://i.tq121.com.cn/i/weather2014/zs/lk.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .ls { background:url('http://i.tq121.com.cn/i/weather2014/zs/ls.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .mf { background:url('http://i.tq121.com.cn/i/weather2014/zs/mf.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .nl { background:url('http://i.tq121.com.cn/i/weather2014/zs/nl.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .pj { background:url('http://i.tq121.com.cn/i/weather2014/zs/pj.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .pk { background:url('http://i.tq121.com.cn/i/weather2014/zs/pk.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .pl { background:url('http://i.tq121.com.cn/i/weather2014/zs/pl.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .pp { background:url('http://i.tq121.com.cn/i/weather2014/zs/pp.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .sg { background:url('http://i.tq121.com.cn/i/weather2014/zs/sg.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .tr { background:url('http://i.tq121.com.cn/i/weather2014/zs/tr.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .uv { background:url('http://i.tq121.com.cn/i/weather2014/zs/uv.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .xc { background:url('http://i.tq121.com.cn/i/weather2014/zs/xc.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .xq { background:url('http://i.tq121.com.cn/i/weather2014/zs/xq.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .yd { background:url('http://i.tq121.com.cn/i/weather2014/zs/yd.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .yh { background:url('http://i.tq121.com.cn/i/weather2014/zs/yh.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .ys { background:url('http://i.tq121.com.cn/i/weather2014/zs/ys.jpg') no-repeat 1px 8px #ebebeb; }
+.zs-loadings .cityss .zs { background:url('http://i.tq121.com.cn/i/weather2014/zs/zs.jpg') no-repeat 1px 8px #ebebeb; }
+.announcement { border-top:3px solid #076ea8; }
+.announcement h3 { font-size:18px; height:27px; line-height:27px; padding-left:10px; border-bottom:1px solid #eee7e7; font-weight:normal; }
+.announcement li { width:276px; vertical-align:bottom; margin-bottom:0px; padding:7px 10px 16px 72px; position:relative; }
+.announcement li i { display:block; width:52px; height:52px; position:absolute; left:10px; top:10px; background:url(http://i.tq121.com.cn/i/index/index_icons2.png) no-repeat; }
+.announcement #announce1 i { background-position:0px -144px; }
+.announcement #announce2 i { background-position:-52px -144px; }
+.announcement #announce3 i { background-position:-104px -144px; }
+ .announcement #announce4 i { background-position:-156px -144px; }  /*空气污染*/
+/*.announcement #announce4 i { background-position:-443px -143px; }  烟花爆竹*/
+.announcement #announce5 i { background-position:-208px -144px; }
+.announcement #announce6 i { background-position:-322px -143px; }
+.announcement #announce7 i { background-position:-381px -143px; }
+.announcement li h4 { font-size:14px; line-height:15px; padding-bottom:5px; }
+.announcement li a { color:#043567; }
+.announcement li a:hover { color:#ee842f; }
+.announcement li p { color:#7d7d7d; font-size:12px; line-height:18px; height:36px; width:276px; position:relative; }
+.announcement li p a { position:absolute; right:0px; bottom:0px; }
+.video { width:300px; margin-bottom:1px; }
+.video h3 { height:30px; line-height:30px; background-color:#8abb4a; font-size:20px; font-weight:normal; }
+.video h3 a { color:#fff; padding-left:10px; }
+.video h3 a:hover{color:#ee842f;}
+.video h3 span a { font-size:14px; }
+.video h3 span { float: right; margin-right: 10px; }
+.topic h4 span a { font-size:14px; }
+.topic h4 span { float: right; }
+.video dl { width:300px; height:162px; overflow:hidden; margin-top:1px; position:relative; background:#ccc; }
+.video dl dt { height:30px; line-height:30px; width:300px; position:absolute; left:0px; bottom:0px; text-align:center; }
+.video dl dt i { display:block; width:300px; height:30px; background-color:#fff; opacity:0.5; filter:alpha(opacity=50); }
+.video dl dt a { color:#252525; display:block; width:300px; height:30px; line-height:30px; position:absolute; left:0px; top:0px; text-align:center; font-size:14px; }
+.video dl dd i { display:block; width:44px; height:44px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -70px -48px; position:absolute; left:128px; top:63px; }
+.video ul li { line-height:23px; height:23px; padding-left:20px; overflow:hidden; background:url(http://i.tq121.com.cn/i/index_neweather/v.jpg) no-repeat 0px 4px; }
+.emcee { width:280px; border:1px solid #eee7e7; padding:0px 0px 8px 18px; }
+.emcee h3 { font-size:14px; line-height:25px; }
+.emcee dl { width:105px; height:102px; overflow:hidden; float:left; position:relative; }
+.emcee dl dd, .emcee dl dd img { width:105px; height:102px; overflow:hidden; }
+.emcee dl dt { position:absolute; width:105px; height:22px; left:0px; bottom:0px; }
+.emcee dl dt i { width:105px; height:22px; display:block; position:absolute; left:0px; top:0px; background-color:#3a3635; opacity:0.9; filter:alpha(opacity=90); }
+.emcee dl dt a { display:block; width:85px; height:22px; line-height:22px; padding:0px 10px; position:absolute; left:0px; top:0px; color:#fff; }
+.emcee dl img { width:105px; height:102px; }
+.emcee p { height:52px; }
+.emcee p img { border-left:2px solid #fff; }
+.emcee p a { display:block; width:50px; height:50px; margin-left:2px solid #fff; float:left; }
+.block .ad { width:300px; height:250px; position:absolute; right:0px; }
+.l_ad { width:650px; height:90px; margin-left: 0px; }
+.life { width:680px; height:272px; overflow:hidden; border-top:3px solid #8abb4a; margin-top:10px; position:relative; }
+.life h3, .travel h3, .climate h3, .international h3, .products h3, .hdImgs h3, .service h3, .exploration h3 { height:42px; line-height:40px; font-size:20px; font-weight:normal; }
+.life dl { width:365px; height:106px; background-color:#8abb4a; margin: 0px 10px 10px 0px; float:left; overflow:hidden; }
+.life dl dd { width:128px; height:106px; float:left; }
+.life dl dt { width:217px; padding:10px; float:left; color:#fff; }
+.life h4 { font-size:16px; font-weight:normal; line-height:25px; }
+.life h4 a { color:#fff; }
+.life h4 a:hover { color:#ee842f; }
+.life p { line-height:30px; height: 60px; overflow: hidden; }
+.life ul { width:273px; position:absolute; right:0px; top:40px; border:1px solid #eee7e7; padding:5px 10px; overflow:hidden; }
+.travel h3 span { float: right; }
+.travel h3 span a { font-size: 14px; }
+.block .rightBlock { width:300px; position:absolute; right:0px; top:-10px; }
+.expert, .knowledge { width:300px; border-top:3px solid #076ea8; }
+.expert h3, .knowledge h3 { height:30px; line-height:30px; background-color:#e8e8e8; padding-left:10px; font-size:18px; font-weight:normal; }
+.expert h3 span, .knowledge h3 span { position:absolute; top:0px; right:10px; font-size:12px; }
+.expert h3 span a, .knowledge h3 span a { color:#076ea8; }
+.expert dl, .knowledge dl { width:280px; padding:15px 10px; height:68px; padding-bottom: 14px; }
+.expert dl img, .expert dl dd, .knowledge dl img, .knowledge dl dd { width:70px; height:68px; }
+.expert dl dd, .knowledge dl dd { float:left; }
+.expert dl dt, .knowledge dl dt { width:200px; padding-left:10px; float:left; margin-top:-5px; display:inline; }
+.expert dl dt a, .knowledge dl dt a { color:#076ea8; line-height:20px; }
+.expert dl dt a:hover, .knowledge dl dt a:hover { color:#ee842f; }
+.expert dl dt p, .knowledge dl dt p { font-size:12px; line-height:18px; background-color:#fff; height:auto; }
+.expert ul, .knowledge ul { background-color:#e8e8e8; padding:10px; background:none; padding-top:0px; }
+.s_ad { width:300px; height:100px; overflow:hidden; margin-bottom:10px; }
+.weibo { width:300px; height:28px; margin-top:10px; margin-bottom:10px; }
+.weibo #sina { display:block; width:148px; height:28px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -152px -72px; text-indent:-9999px; float:left; margin-right:4px; }
+.weibo #qq { display:block; width:148px; height:28px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -152px -100px; text-indent:-9999px; float:left; }
+.travel { width:680px; border-top:3px solid #8bbc47; height: 285px; overflow: hidden; }
+.content { width:657px; height:230px; position:relative; border:1px solid #eee7e7; padding:10px; }
+.travel dl { width:280px; height:230px; background-color:#076ea8; }
+.travel dl dd, .travel dl dd img { width:280px; height:197px; overflow:hidden; }
+.travel dl dt { height:33px; width:280px; line-height:33px; text-align:center; font-size:20px; }
+.travel dl dt a { color:#fff; }
+.travel dl dt a:hover { color:#ee842f; }
+.travel .content ul { width:335px; height:60px; position:absolute; right:10px; top:10px; }
+.travel .content ul li { height:30px; line-height:30px; }
+.travel .content ul li a { display:block; height:30px; width:147px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -290px -146px; float:left; padding:0px 10px; }
+.imgArea { width:336px; height:170px; position:absolute; right:10px; top:75px; }
+.imgArea a { display:block; width:108px; height:81px; float:left; border-bottom:4px solid #fff; border-left:4px solid #fff; overflow:hidden; position:relative; }
+.imgArea a img { width:108px; height:81px; }
+.imgArea a i { display:block; width:108px; height:81px; position:absolute; left:0px; top:0px; background-color:#076ea8; opacity:0.9; filter:alpha(opacity=90); display:none; }
+.imgArea a b { display:block; width:68px; height:52px; position:absolute; left:0px; top:0px; color:#fff; z-index:5; font-size:26px; font-weight:normal; line-height:26px; padding:14px 20px; text-align:center; display:none; }
+.hotSpot { width:298px; height:auto; }
+.hotSpot h3, .rank h3, .climateChange h3 { height:36px; line-height:36px; font-size:18px; font-weight:normal; padding-left:10px; font-weight:bold; overflow:hidden; position:relative; }
+.hotSpot h3 { font-size:16px; color:#076ea8; padding:0; }
+.hotSpot h3 b { margin-top:11px; display:inline; margin-right:10px; background:#076ea8; display:block; width:13px; height:15px; float:left; }
+.hotSpot h3 i { border-top: 1px solid #007bb9; height: 1px; margin-top: 20px; width: 197px; top:0; right:0; position:absolute; display:block; float:right; }
+.qhbh h1 { color: #076ea8; font-size: 16px; border:none; text-indent: 0; font-weight: bold; height: 30px; line-height: 23px; overflow: hidden; position: relative; padding: 0; }
+.qhbh h1 a{color: #076ea8;}
+.qhbh h1 a:hover{color: #ee842f;}
+.qhbh h1 b { margin-top:4px; display:inline; margin-right:6px; background:#076ea8; display:block; width:13px; height:15px; float:left; }
+.qhbh h1 i { border-top: 1px solid #007bb9; height: 1px; margin-top: 12px; width: 197px; top:0; right:0; position:absolute; display:block; float:right; }
+.hotSpot h3 span, .rank h3 span { padding-left:10px; font-size:14px; }
+.hotSpot h3 span a, .rank h3 span a { background-color:#076ea8; color:#fff; padding:6px 10px; border-right:1px solid #ebebeb; }
+.hotSpot h3 .on { background-color:#fff; color:#076ea8; }
+.rank h3 .on { background: #ebebeb; color: #007bb9; font-style: 13px; font-weight: normal; }
+.hotSpot ul { display:none; border:1px dashed #C5C5C5; height:256px;}
+.hotSpot ul.on { display:block; }
+.hotSpot ul li { height:42px; line-height:42px; border-bottom:1px solid #eee7e7; zoom:1; margin:0;vertical-align:top; overflow:hidden;}
+.hotSpot ul li:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.hotSpot ul li.on { background:#076ea8; color:#fff; }
+.hotSpot ul li.on a { color:#fff; }
+.hotSpot ul li.title { background:#ebebeb; }
+.hotSpot h4.title { background:#ebebeb; height: 42px; line-height: 42px; overflow: hidden; }
+.hotSpot h4.title span { display: block; text-align: center; float: left; }
+.hotSpot h4.title .name { color: #111; width: 65px; font-size: 14px; }
+.hotSpot h4.title .weather { width: 85px; }
+.hotSpot ul li.lasttitle { border-bottom:0; }
+.hotSpot ul .title .name { font-size:14px; color:#111111; }
+.hotSpot ul span {  text-align:center; float:left; }
+.hotSpot .name { width:65px;_width:59px; font-size:16px; }
+.hotSpot .name a { color:#076ea8; }
+.hotSpot .name a:hover { color:#ee842f; }
+.hotSpot .weather { width:85px; }
+.hotSpot .weather .legend { display:block; width:35px; height:35px; float:left; background-image:url(http://i.tq121.com.cn/i/index/legend35X35.gif); background-repeat:no-repeat; }
+.hotSpot .weather .d00 { background-position:0px 0px; }
+.hotSpot .weather .d01 { background-position:-35px 0px; }
+.hotSpot .weather .d02 { background-position:-70px 0px; }
+.hotSpot .weather .d03 { background-position:-105px 0px; }
+.hotSpot .weather .d04 { background-position:-140px 0px; }
+.hotSpot .weather .d05 { background-position:-175px 0px; }
+.hotSpot .weather .d06 { background-position:-210px 0px; }
+.hotSpot .weather .d07 { background-position:-245px 0px; }
+.hotSpot .weather .d08 { background-position:-280px 0px; }
+.hotSpot .weather .d09 { background-position:0px -35px; }
+.hotSpot .weather .d10 { background-position:-35px -35px; }
+.hotSpot .weather .d11 { background-position:-70px -35px; }
+.hotSpot .weather .d12 { background-position:-105px -35px; }
+.hotSpot .weather .d13 { background-position:-140px -35px; }
+.hotSpot .weather .d14 { background-position:-175px -35px; }
+.hotSpot .weather .d15 { background-position:-210px -35px; }
+.hotSpot .weather .d16 { background-position:-245px -35px; }
+.hotSpot .weather .d17 { background-position:-280px -35px; }
+.hotSpot .weather .d18 { background-position:0px -70px; }
+.hotSpot .weather .d19 { background-position:-35px -70px; }
+.hotSpot .weather .d20 { background-position:-70px -70px; }
+.hotSpot .weather .d21 { background-position:-105px -70px; }
+.hotSpot .weather .d22 { background-position:-140px -70px; }
+.hotSpot .weather .d23 { background-position:-175px -70px; }
+.hotSpot .weather .d24 { background-position:-210px -70px; }
+.hotSpot .weather .d25 { background-position:-245px -70px; }
+.hotSpot .weather .d26 { background-position:-280px -70px; }
+.hotSpot .weather .d27 { background-position:0px -105px; }
+.hotSpot .weather .d28 { background-position:-35px -105px; }
+.hotSpot .weather .d29 { background-position:-70px -105px; }
+.hotSpot .weather .d30 { background-position:-105px -105px; }
+.hotSpot .weather .d31 { background-position:-140px -105px; }
+.hotSpot .weather .d53 { background-position:-175px -105px; }
+.hotSpot .weather .n00 { background-position:0px -140px; }
+.hotSpot .weather .n01 { background-position:-35px -140px; }
+.hotSpot .weather .n02 { background-position:-70px -140px; }
+.hotSpot .weather .n03 { background-position:-105px -140px; }
+.hotSpot .weather .n04 { background-position:-140px -140px; }
+.hotSpot .weather .n05 { background-position:-175px -140px; }
+.hotSpot .weather .n06 { background-position:-210px -140px; }
+.hotSpot .weather .n07 { background-position:-245px -140px; }
+.hotSpot .weather .n08 { background-position:-280px -140px; }
+.hotSpot .weather .n09 { background-position:0px -175px; }
+.hotSpot .weather .n10 { background-position:-35px -175px; }
+.hotSpot .weather .n11 { background-position:-70px -175px; }
+.hotSpot .weather .n12 { background-position:-105px -175px; }
+.hotSpot .weather .n13 { background-position:-140px -175px; }
+.hotSpot .weather .n14 { background-position:-175px -175px; }
+.hotSpot .weather .n15 { background-position:-210px -175px; }
+.hotSpot .weather .n16 { background-position:-245px -175px; }
+.hotSpot .weather .n17 { background-position:-280px -175px; }
+.hotSpot .weather .n18 { background-position:0px -210px; }
+.hotSpot .weather .n19 { background-position:-35px -210px; }
+.hotSpot .weather .n20 { background-position:-70px -210px; }
+.hotSpot .weather .n21 { background-position:-105px -210px; }
+.hotSpot .weather .n22 { background-position:-140px -210px; }
+.hotSpot .weather .n23 { background-position:-175px -210px; }
+.hotSpot .weather .n24 { background-position:-210px -210px; }
+.hotSpot .weather .n25 { background-position:-245px -210px; }
+.hotSpot .weather .n26 { background-position:-280px -210px; }
+.hotSpot .weather .n27 { background-position:0px -245px; }
+.hotSpot .weather .n28 { background-position:-35px -245px; }
+.hotSpot .weather .n29 { background-position:-70px -245px; }
+.hotSpot .weather .n30 { background-position:-105px -245px; }
+.hotSpot .weather .n31 { background-position:-140px -245px; }
+.hotSpot .weather .n53 { background-position:-175px -245px; }
+.hotSpot .wd { width:74px;_width:81px; }
+.hotSpot .zs { width:65px; }
+.hotSpot .zs a { color:#ee842f; }
+.ad2 { width:300px; height:250px; margin-top:10px; overflow:hidden; }
+.climate, .international { width:680px; margin-top:15px; border-top:3px solid #d7d7d7; }
+.climate ul { width:320px; }
+.climate dl { width:310px; height:230px; position:absolute; right:10px; top:10px; background-color:#252525; }
+.climate dl dd, .climate dl dd img { width:310px; height:190px; overflow:hidden; }
+.climate dl dt { width:310px; height:40px; line-height:40px; font-size:20px; text-align:center; overflow:hidden; }
+.climate dl dt a { color:#fff; }
+.climate dl dt a:hover { color:#ee842f; }
+.international .imgs { border:1px solid #eee7e7; padding:20px 20px 20px 0px; width:280px; height:120px; float:left; }
+.international .imgs dl { width:120px; margin-left:20px; float:left; background-color:#076ea8; display:inline; }
+.imgs dl dd, .imgs dl dd img { width:120px; height:90px; overflow:hidden; }
+.imgs dl dt { height:30px; line-height:30px; width:120px; text-align:center; }
+.imgs dl dt a { color:#fff; }
+.imgs dl dt a:hover { color:#ee842f; }
+.international ul { width:343px; border:1px solid #eee7e7; float:left; padding:5px 10px; margin-left:3px; }
+.rank { width:300px; background-color:#ebebeb; margin-top:10px; position:relative; z-index: 10; }
+.rank h3 { background-color:#076ea8; color:#fff; }
+.rank h3 a { color:#fff; float: left; }
+.rank h3 span { font-size:12px; float: right; padding-left: 6px; }
+.rank h3 span a {  text-indent: 0; text-align:center; padding:0px 6px; float: left; display: block; height: 30px; line-height: 30px; margin-top: 6px; font-size:12px; font-weight: normal; background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/line.jpg) no-repeat right; border-right:none; }
+.rank ul { width:300px; display:none; }
+.rank ul.on { display:block; }
+.rank ul li { overflow:hidden; height:35px; line-height:35px; vertical-align:bottom; width:290px; padding:0px 10px; padding-right:0px; }
+.rank ul .on { background-color:#fff; }
+.rank ul li span { display:block; height:33px; float:left; text-align:center; }
+.rank ul li.on span a { color: #007bb9; }
+.rank .ord { width:30px; height:25px; padding-top:8px; float:left; }
+.rank .ord i { font-style:normal; font-size:12px; display:block; width:18px; height:18px; line-height:18px; text-align:center; background-color:#fff; margin-top:
+}
+.rank li.on i { background-color:#076ea8; color:#fff; }
+.rank .city { width:70px; float:left; }
+.rank .prov { width:50px; float:left; }
+.rank .wd { width:125px; float:left; color:#076ea8; }
+.rank .wd a { color:#076ea8; }
+.rank .detail { width:290px; border-top:1px solid #000;margin-left:-10px; height:40px; line-height:40px; display:block; text-align:right; font-size:12px; padding-right:10px;color:#464a4e; }
+.rank .detail.on { background-color: #e8e8e8; }
+.products { width:670px; border-top:3px solid #8abb4a; padding:0px 0px 10px 10px; margin-top:10px; }
+.products h3 { margin:0px 10px 0px 10px; margin-left:0; }
+.exploration h3 span { float:right; }
+.products h3 span { float:right; }
+.exploration h3 span a { font-size:14px; }
+.products h3 span a { font-size:14px; }
+.hdImgs span a { font-size:14px; }
+.products dl { width:209px; float:left; padding:0px 10px 0px 0px; float:left; text-align:center; _position:relative; }
+.products dl dt { font-size:18px; height:40px; line-height:40px; }
+.products h4 { font-weight:normal; }
+.products h4 a { color:#598527; }
+.products dd a { display:inline-block; width:207px; height:30px; line-height:30px; border:1px solid #8abb4a; margin-bottom:3px; color:#598527; float:
+}
+.products dd a:hover { color:#fff; background-color:#598527; }
+.ad3 { width:300px; height:250px; overflow:hidden; }
+.knowledge { margin-top:10px; position: relative; }
+.hdImgs { width:680px; height:297px; position:relative; margin-top:15px; border-top: 3px solid #076ea8; }
+.hdImgs a { display:block; position:absolute; overflow:hidden; cursor: pointer;}
+.hdImgs span { float:right; }
+.hdImgs span a { right: 0; }
+.hdImgs #img1 { width:167px; height:126px; top:40px; left:0px; }
+.hdImgs #img2 { width:167px; height:126px; top:170px; left:0px; }
+.hdImgs #img3 { width:338px; height:256px; top:40px; left:171px; }
+.hdImgs #img4 { width:167px; height:126px; top:40px; right:0px; }
+.hdImgs #img5 { width:167px; height:126px; top:170px; right:0px; }
+.hdImgs a i { display:block; position:absolute; right:0px; bottom:0px; height:42px; padding:0 10px; background-color:#000; opacity:0.6; filter:alpha(opacity=70); }
+.hdImgs #img1 i, .hdImgs #img2 i, .hdImgs #img4 i, .hdImgs #img5 i, .hdImgs #img1 b, .hdImgs #img2 b, .hdImgs #img4 b, .hdImgs #img5 b { width:147px; }
+.hdImgs #img3 i, .hdImgs #img3 b { width:338px; }
+.hdImgs #img3 b{ padding: 9px 10px;}
+.hdImgs a b { display:block; position:absolute; right:0px; bottom:0px; line-height:16px; padding:3px 10px; color:#fff; font-weight:normal; text-align:center; z-index:5; cursor: pointer;}
+.service { width:300px; background-color:#e8e8e8; }
+.service h3 { background-color:#fff; margin-bottom:15px; }
+.service h4, .service p { padding:0px 10px; font-size:12px; }
+.service h4 { font-weight:normal; color:#076ea8; }
+.service p { padding-bottom:17px; *padding-bottom:10px !important;
+_padding-bottom:14px; background-color:#e8e8e8; height:auto; line-height:20px; }
+.hotCities { background-color: #EDFAFF; display: none; left: 150px; padding: 10px; position: absolute; top: 70px; width: 302px; z-index: 10; }
+.hotCities p { height: 32px; line-height: 32px; margin-bottom: 10px; text-align: center; }
+.hotCities .inputTxt { font-family: "Microsoft Yahei", "Tahoma", "SimSun"; height: 32px; line-height: 32px; padding: 0 5px; width: 102px; }
+.hotCities .btn { background-color: #49B3E4; color: #FFFFFF; cursor: pointer; line-height: 22px; margin-top: 6px; padding: 5px 10px; text-align: center; width: 44px; }
+.hotCities #add { margin-left: 80px; margin-right: 20px; }
+.hotCities .show { background-color: #FFFFFF; border: 1px solid #D9D9D9; display: none; height: 165px; left: 10px; overflow-x: hidden; overflow-y: auto; padding: 5px; position: absolute; top: 42px; width: 250px; }
+.hotCities .show li { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border-bottom: 1px solid #D9D9D9; height: 32px; line-height: 32px; padding: 0 10px; width: 230px; }
+.hotCities .show li.on { background-color: #076EA8; color: #FFFFFF; }
+.hotCities .show li b { color: #FF6600; }
+.hotCitiesindex { background-color: #EDFAFF; display: none; left: -522px; padding: 10px; position: absolute; top: 350px; width: 502px; z-index: 99; }
+.hotCitiesindex p { height: 32px; line-height: 32px; margin-bottom: 10px; text-align: left; }
+.hotCitiesindex .inputTxt { font-family: "Microsoft Yahei", "Tahoma", "SimSun"; height: 32px; line-height: 32px; padding: 0 5px; width: 102px; }
+.hotCitiesindex .btn { background-color: #49B3E4; color: #FFFFFF; cursor: pointer; line-height: 22px; margin-top: 6px; padding: 5px 10px; text-align: center; width: 44px; }
+.hotCitiesindex .showindex { background-color: #FFFFFF; border: 1px solid #D9D9D9; display: none; height: 165px; left: 10px; overflow-x: hidden; overflow-y: auto; padding: 5px; position: absolute; top: 42px; width: 250px; }
+.hotCitiesindex .showindex li { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border-bottom: 1px solid #D9D9D9; height: 32px; line-height: 32px; padding: 0 10px; width: 230px; }
+.hotCitiesindex .showindex li.on { background-color: #076EA8; color: #FFFFFF; }
+.hotCitiesindex .showindex li b { color: #FF6600; }
+.zs-loadings { width:100%; height:72px; text-align: center; margin-bottom:3px; }
+.myZSs dl dd a span { display: inline-block; height: 15px; line-height:15px; overflow: hidden; }
+.formBox { height: 29px; position:absolute; z-index:100; top:30px; right:10px; }
+.show { display:none; }
+.suggest-additions { display:none;right:-2px;top:52px; }
+.searchInput { border: 1px solid #F9B919; display: block; float: left; font-size: 14px; height: 22px; line-height: 27px; padding: 5px 4px 0; width: 365px; }
+.searchButton { background: url("/m2/i/bt_search.gif") no-repeat scroll left top rgba(0, 0, 0, 0); border: medium none; cursor: pointer; display: block; float: right; height: 29px; width: 70px; }
+#show { background-color: #FFFFFF;  color: #000000; display: none; margin: 0; overflow-x: hidden; overflow-y: auto; padding: 0; position: absolute; right: 47px; top: 52px; width: 295px; z-index: 99; }
+#show ul { border: 1px solid #C2D0E7; }
+#show ul span { display: block; font-size: 14px; height: 28px; line-height: 28px; text-indent: 10px; }
+#show li {overflow:hidden; font-size: 15px; height: 28px; line-height: 28px; list-style-type: none; margin: 0; padding: 0; text-indent: 10px; }
+#show ul li b { color: #FF6600; font-weight: bold; }
+.select { background-color: #076EA8; color: #FFFFFF; margin: 0; padding: 0; text-align: left; }
+.unselect { margin: 0; padding: 0; }
+#topics { border-top: 3px solid #076EA8; }
+#topics dl { background:none; padding-left: 10px; }
+#topics dl dd{ color:#7d7d7d;}
+#topics h4 { background-color: #E8E8E8; font-size: 18px; font-weight: normal; height: 30px; line-height: 30px; padding-left: 10px; }
+.block .rightBlock3 { top:-67px; }
+.block .rightBlock4 { top:-205px; }
+.compere { height:152px; width:300px; }
+.compere p { float:left; width:120px; }
+.compere p a:hover img{opacity:0.7;filter:alpha(opacity=70); }
+.compere ul li a:hover img{opacity:0.7;filter:alpha(opacity=70); }
+.compere ul { float:right; width:177px; }
+.compere ul li { float:left; width:59px; display: inline; overflow: hidden; margin-bottom:3px; height:59px; }
+.compere h1 { font-size:14px; color:#8abb4a; height:30px; line-height:30px; overflow:hidden; }
+.compere h1 i { border-top:1px solid #8abb4a; width:160px; height:1px; display:block; margin-top: 16px; float:right; }
+.tralife {overflow:hidden; width:678px; height:139px; border:1px dashed #c5c5c5; clear:both; margin-bottom: 10px; margin-top:8px; }
+.tralife ul li a { padding-right:5px; padding-left:5px; }
+.tralife ul li { height:30px; overflow: hidden; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -284px -147px; padding:0px 10px; line-height:30px; }
+.tralife ul { float:left; margin-left:0px; padding-left: 17px; display:inline; border-right:1px dashed #C5C5C5; margin-top:10px; width:320px; }
+.tralife ul.tranone { border:none; }
+#alarm { margin-bottom:10px; min-height:34px; }
+.tongad { width:1000px; height:90px; background:#ccc; margin-top:15px; }
+.exploration { border-top: 3px solid #076ea9; width: 680px; height:380px; }
+.exleft { float:left; width:320px; }
+.exleft ul li { margin-bottom:4px; color:#fff; background:#6bb0d9; cursor:pointer; line-height:30px; text-align:center; }
+.exright { float:right; margin-left:20px; width:340px; }
+.exright h2 { height:30px; line-height:20px; }
+.exright h2 a { font-weight: normal; color: #043567; font-size:20px; }
+.exright h2 a:hover{color:#ee842f;}
+.exright .exiang p { color:#7d7d7d; width:330px; font-size:12px; }
+.exright .exiang { height:90px; margin-bottom:10px; position:relative; overflow:hidden; border-bottom:1px dashed #c9c8c8; }
+.exright .exiang p.details { text-align:right; position:absolute; bottom:5px; right:0; }
+.exright .exiang p.details a { font-size:12px; color:#076ea8; }
+.exright .exiang p.details a:hover{color:#ee842f;}
+.exright ul li { height:30px; overflow:hidden; line-height:30px; background:url(http://i.tq121.com.cn/i/index/index_icons.png) no-repeat -288px -147px; padding:0px 0px 0px 15px; }
+.tfleft { float:left; width:680px; }
+.tfright { width:300px; margin-top:4px; float:right; }
+.tfright .pic { margin-top:41px; }
+.climateChange h3 { font-size:20px; color:#076ea8; padding:0; height:52px; }
+.climateChange h3 p { margin-top:11px; display:inline; margin-right:10px; background:#076ea8; width:13px; height:15px; float:left; }
+.climateChange h3 i { border-top: 3px solid #007bb9; height: 3px; margin-top: 16px; width: 192px; display:block; position:absolute; top:0; right:0; float:right; }
+.exleft .jj { position:relative; height: 210px; overflow: hidden; display:none; }
+.exbg { position:absolute; left:0; display:none; top:0; }
+.exbg i { position:absolute; opacity:0.7; filter:alpha(opacity=70); background:#1770a3; width:320px; top:0; left:0; height:30px; display:block; }
+.exbg b { display:block; width:320px; text-align:center; height:30px; line-height:30px; color:#fff; font-weight:normal; position:absolute; top:0; left:0; z-index:10; }
+.ztpic dl dt { width:132px; float:left; }
+.ztpic dl dd { background:#6bb0da; height:100px; overflow:hidden; float:right; padding-left:8px; width:156px; }
+.ztpic dl dd a { display:block; height:16px; height:25px; width:150px; overflow: hidden; color:#fff; }
+.ztpic dl dd a:hover{color:#ee842f;}
+.ztpic dl dd p { width:150px; font-size:12px; color:#076ea8; line-height:18px; }
+.ztpic { height:100px; margin-top: 5px; margin-bottom:10px; }
+/* 焦点图 */
+.jctjs { width:300px; overflow:hidden; height:325px; border:1px solid #C1D1E8; margin-bottom:10px; }
+.jctjs h1 span { float:right; margin-right:15px; }
+.focus { width:300px; height:227px; margin:0 auto; margin-bottom:8px; position:relative; }
+.f426x240 li { display:none; }
+.f426x240 { width:300px; height:227px; overflow:hidden }
+.f426x240 img { width:300px; height:227px }
+.rslides { width:100%; position:relative; list-style:none; padding:0 }
+.rslides_nav { height:22px; width:14px; position:absolute; -webkit-tap-highlight-color:rgba(0,0,0,0); top:50%; left:0; opacity:1; text-indent:-9999px; overflow:hidden; text-decoration:none; background:url(http://www.weather.com.cn/m2/i/weather/forward.png) no-repeat 3px 0px; margin-top:-20px; _margin-top:-88px; }
+.rslides_nav:active { opacity:1.0 }
+.rslides_nav.next { left:auto; background-position:-17px 0px; right:0 }
+.rslides_tabs { margin:3px auto 8px; position:relative; top:-66px; width:115px; clear:both; text-align:center }
+.rslides_tabs li { display:inline; float:none; _float:left; *float:left;
+margin-right:5px }
+.rslides_tabs a { text-indent:-9999px; overflow:hidden; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; background:rgba(0,0,0, .2); background:#fff; display:inline-block; _display:block; *display:block;
+width:16px; height:4px }
+.rslides_tabs .rslides_here a { background:rgba(0,0,0, .6); background:#3365ba }
+.focus ul li span { width:300px; height:30px; line-height:30px; color:#fff; text-align:center; position:absolute; bottom:5px; left:0; z-index:11; }
+.focus ul li i { width:300px; height:30px; line-height:30px; opacity:0.7; filter:Alpha(Opacity=70); -moz-opacity: 0.7; display:block; background:#000; color:#fff; text-align:center; position:absolute; bottom:5px; left:0; }
+.focus p a { font-size:12px; }
+.tragdt { width:514px; float:left; }
+.trayin { float:right; width:158px; overflow:hidden; }
+.trayin a { display:block; margin-bottom:3px; height: 119px; overflow: hidden; position:relative; }
+.trayin a img { width:158px; height:119px; }
+.trayin a b { color: #FFFFFF; display: none; font-size: 18px; font-weight: normal; height: 119px; left: 0; line-height: 26px; position: absolute; text-align: center; top: 25px; width: 158px; z-index: 5; }
+.trayin a i { background-color: #6d7e88; display: none; height: 119px; left: 0; opacity: 0.9; position: absolute; top: 0; width: 158px; }
+.trayin a em { display:block; position:absolute; top:0; right:7px; background:#8cbc4f; font-style:normal; line-height:22px; text-align:center; z-index:6; width:51px; display:none; color:#fff; height:22px; }
+.trayin a b span { color:#d4d3d3; display:block; line-height:20px; text-align:left; width:132px; margin:0 auto; font-size:12px; }
+/*本例css*/
+.tq121 { width: 514px; height: 242px; position: relative; overflow:hidden; }
+/*数字按钮样式*/
+.tq121 .num { overflow:hidden; height: 4px; position: absolute; bottom:12px; left: 110px; zoom:1; z-index:3 }
+.tq121 .num li { text-indent:-9999px; width: 16px; height: 4px; text-align: center; font-weight: 400; color: #FFFFFF; background: #444444; margin-right: 10px; cursor:pointer; float: left; }
+.tq121 .num li.on { background: #8abb4a; } /*当前项*/
+/*上一个  下一个*/
+.tq121 .prev { opacity:0.3; filter:alpha(opacity=30); left: 0; width: 29px; height: 58px; background: url(http://i.tq121.com.cn/i/weather2014/index_neweather/forward_1.png) no-repeat; position: absolute; top: 85px; }
+.tq121 .next { opacity:0.3; filter:alpha(opacity=30); left: 290px; width: 29px; height: 58px; background: url(http://i.tq121.com.cn/i/weather2014/index_neweather/back_1.png) no-repeat; position: absolute; top: 85px; }
+.tq121 a.prev:hover { opacity:1; filter:alpha(opacity=100); }
+.tq121 a.next:hover { opacity:1; filter:alpha(opacity=100); }
+.tq121 ul li a { display:block; width:320px; color: #8abb4a; font-size: 12px; float:left; }
+.tq121 ul li div.jfs { float:right; overflow:hidden; background:#ebebeb; height:242px; width:192px; }
+.tq121 ul li div.jfs p a { position: absolute; right: -270px; top: 217px; }
+.tq121 ul li div.jfs p a:hover{color:#ee842f;}
+.tq121 ul li { width:514px; }
+.tq121 ul li div.jfs h1 { color:#8cb650; width:165px; clear:both; line-height:25px; border-bottom:1px dashed #aaa9b1; padding-bottom:5px; margin:0 auto;font-size:16px; }
+.tq121 ul li div.jfs h1 a { color:#8cb650; font-size:16px; float: none; width: auto; }
+.tq121 ul li div.jfs h1 a:hover{color:#ee842f;}
+.tq121 ul li div.jfs h2 { float:right; font-size:14px; background:#8ebe4e; text-align:center; line-height:22px; color:#fff; margin-right:10px; margin-bottom:10px; width:51px; height:22px; }
+.tq121 ul li div.jfs p {  width:165px; font-size: 12px; color: #7d7d7d; margin:0 auto; padding-top:10px; line-height:21px; }
+.myZSs ul { width:300px; overflow:hidden; height:90px; background:#ebebeb; }
+.myZSs ul li { padding-left:5px; margin:0 auto; height:46px; line-height:45px; border-bottom:1px dashed #d4d4d5; overflow:hidden; }
+.myZSs ul li span img { position:relative; top:8px; }
+.myZSs ul li span { padding:0px 5px; float:left; }
+.myZSs ul li span.img { width:62px; text-align:center; }
+.myZSs ul li span.tem { width:60px; text-align:center; }
+.myZSs ul li span.win { width:103px; text-align:center; }
+.ad { height:90px; }
+.ad .ad_p1 { background: none repeat scroll 0 0 #cccccc; height: 100%; width: 310px; }
+.ad .ad_p2 { background: none repeat scroll 0 0 #cccccc; height: 100%; margin-left: 10px; width: 680px; }
+.moreatlas { width:680px; float:left; }
+.moreatlas dl { width:330px; margin-bottom:10px; float:left; }
+.moreatlas dl dt { width:330px; height:220px; margin-bottom:5px; }
+.moreatlas dl dd span a { color:#076ea8; }
+.moreatlas dl dd { height:30px; line-height:30px; }
+.moreatlas dl dd a { color:#333333; }
+.dListPic { float:left; margin-right:20px; display:inline; width:320px; }
+.pic_list { height:auto; margin:0 auto; }
+.dList { float:left; }
+.dListPic h2 { font-size:14px; color:#056ea8; font-weight: normal; text-align:center; height:50px; line-height:25px; }
+.dList h1 { font-size:24px; color:#333333; width: 1000px; height:30px; line-height:30px; text-align:center; margin-bottom:10px; margin-top:20px; }
+.dList p { height:30px; text-align:center; margin-bottom:10px; color:#666666; font-size:12px; line-height:30px; }
+.dList p span { padding:0px 20px; }
+.jctj_pic { background:#f0f6fa; height:555px; width:300px; float:right; }
+.jctj_pic .pic h1 { height:43px; margin-bottom:10px; background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/rmtj.jpg) no-repeat; }
+.jc_ul p { height:34px; line-height:31px; border-bottom:1px dashed #bfd6ed; width:255px; padding-left:25px; margin:0 auto; overflow:hidden; }
+.jc_ul { background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/jctj.png) no-repeat 13px 6px; }
+.jc_ul p a { font-size:12px; color:#1c3f93; }
+.jc_ul p a:hover { color:#ee842f; }
+.jctj_pic .pic #scrollPic { margin-bottom:10px; }
+.pit_title { line-height:24px; margin-bottom:30px; }
+.ysyd h1 { background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/ysyd.jpg) no-repeat; border-top:1px solid #dcf1bf; font-size:18px; font-style:italic; color:#666666; text-indent:30px; }
+.ysyd h2 { font-size:18px; color:#333333; text-align:center; margin-bottom:15px; }
+.ysyd p { font-size:12px; color:#333333; line-height:24px; }
+.shensuo { width:1000px; margin-top:20px; background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/shensuo.jpg) no-repeat center bottom; height:30px; line-height:30px; border-top:1px solid #dcf1bf; text-align:center; }
+.shensuo span { cursor:pointer; }
+.func { position:relative; clear:both; height:50px; }
+.func i { position:absolute; display:block; width:64px; font-style:normal; left:445px; }
+.func em { color:#0570a6; padding:0px 5px; }
+.func span { float:right; }
+.func span b { font-weight:normal; display:block; margin:0px 10px; float:left; }
+.func span a { background:url(http://i.tq121.com.cn/i/weather2014/index_neweather/hunhe.jpg) no-repeat; padding-left:24px; display:block; float:left; height:20px; }
+.func span a.mrst { background-position:0px -146px; }
+.func span a.pl { background-position:0px -45px; }
+.func span a.fx { background-position:0px -95px; }
+.ggt { height: 90px; width: 960px; clear:both; margin:10px auto; }
+div#ab { left: 50%; margin-left: 500px; position:fixed; top: 370px; _position:absolute; }
+.newsOne { height: 102px; overflow: hidden; }
+#search dl#addCity dd { padding-left: 0; }
+.D1fBt a {
+    background:#444444;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-weight: 400;
+    height: 4px;
+    margin-right: 10px;
+    text-align: center;
+    text-indent: -9999px;
+    width: 16px;
+}
+.D1fBt {
+    bottom: 12px;
+    height: 4px;
+    left: 110px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+}
+
+.D1fBt a.current {
+    background: none repeat scroll 0 0 #8abb4a;
+}
+
+#fsD1 .prev {
+    background: url(http://i.tq121.com.cn/i/weather2014/index_neweather/forward_1.png) no-repeat;
+    height: 58px;
+    left: 0;
+   opacity:0.3; filter:alpha(opacity=30); 
+    position: absolute;
+    top: 85px;
+    width: 29px;
+}
+
+#fsD1 .next {
+    background: url(http://i.tq121.com.cn/i/weather2014/index_neweather/back_1.png) no-repeat;
+    height: 58px;
+    left: 290px;
+
+	 opacity:0.3; filter:alpha(opacity=30); 
+    position: absolute;
+    top: 85px;
+    width: 29px;
+}
+#fsD1 span:hover
+{
+	 opacity:1; filter:alpha(opacity=100); }
+#c_top .search #txtZip:hover{ border:1px solid #f68227}
+
+
+div.warp_sel {background: none repeat scroll 0 0 #ebebeb;height: 43px;line-height: 43px;padding: 13px 8px 0;width: 280px;border: 1px dashed #c5c5c5; border-top:none;}
+div.warp_sel span {float: left;line-height: 30px;margin: 0;padding: 0;}
+div.warp_sel select {border: 1px solid #ddd;line-height: 29px;margin: 0;padding: 5px;vertical-align: middle;width: 110px;}
+.warp_sel button{background: url("http://i.tq121.com.cn/i/radar/btn1.gif") no-repeat;border: 0 none;float: right;height: 29px;margin: 3px -4px 0 0;vertical-align: middle;width: 34px;}
+.form1{position:relative; width:70px; margin:3px 0px 0 0; _margin:3px 0px 0; float:left; z-index:100;}
+.form1 #List1{left:-5px;top:28px;}
+.form1 #List2{left:-2px;top:28px; width:60px;}
+#viewSearch{
+	cursor:pointer;
+	}
+.jqu{height: 29px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; width: 95px;	}
+.form1 .Menu{width:112px;position:absolute;left:0;top:29px;_top:30px;z-index:99999;_z-index:998;overflow:hidden;border:1px solid #7cace2;display:none}
+.form1 .list3_menu{overflow-x: hidden; overflow-y: scroll;height:191px;}
+.form1 .Menu ul{margin:0;padding:0;display:block; width:100px;}
+.form1 .Menu ul li{width:100%;height: auto;text-align:left;color:#000;cursor:pointer; border-bottom:0px solid #ccc;}
+.form1 .Menu ul li a{background:#fff;color:#000;display:block;width:100%;height: auto;font-size:13px;border-bottom: 1px solid #ccc;}
+.form1 .Menu ul li a:hover{color:#fff;background:#7cace2}
+.form1 .txt1{margin-left:-5px;DISPLAY:block;padding-left:4px;width:70px;CURSOR:pointer;font-size:13px;HEIGHT:29px;line-height:29px;background:url(http://i.tq121.com.cn/i/weather2014/gntq/select1.jpg) no-repeat;font-family:"微软雅黑";color:#252525}
+.form1 .txt2{DISPLAY:block;padding-left:4px;width:62px;CURSOR:pointer;font-size:13px;HEIGHT:29px;line-height:29px;background:url(http://i.tq121.com.cn/i/weather2014/gntq/select2.jpg) no-repeat;font-family:"微软雅黑";color:#252525;margin-left:-2px}
+.form1 .txt3{DISPLAY:block;padding-left:4px;width:114px;CURSOR:pointer;font-size:13px;HEIGHT:29px;line-height:29px;background:url(http://i.tq121.com.cn/i/weather2014/gntq/select3.jpg) no-repeat;font-family:"微软雅黑";color:#252525}
+
+.form1 .find_air input.sbt{ background:url(http://i.tq121.com.cn/i/weather2014/gntq/find.jpg) no-repeat; width:44px; height:23px; margin-top:3px; margin-left:8px; _margin-left:2px;}
+
+.a_hover_not:hover{ color:#2e8abb}
+
+/*body {background-attachment: unset; background: url(http://i.tq121.com.cn/i/weather2015/zt/sp2016/bg3y.jpg?4) no-repeat center top #fff; }
+#nav h3 a { color: #d53939; }
+#nav dl { border-right: 1px solid #f8b3b2; }
+#c_top .search .textinput { border: 1px solid #e9a2a0; }
+#c_top .logo { background: none; }
+#toolBar { background: #b92533; }
+#toolBar .midBlock { background: #b92533; }
+.leftLink { color: #fff; }
+.midBlock span.leftLink a { color: #fff; }
+.links #setIndex, .links #eg { color: #fff; }
+#nav h3 a { color: #b20a1a }
+#nav h3 a:hover { color: #fff }
+#nav dl dd a:hover { color: #fff; }
+#c_top .search .btn { background: url(http://www.weather.com.cn/pub/dz.jpg) no-repeat center center #df5a5b; }
+.search-box .search input#txtZip { border: 1px solid #ffa569; }
+.arrow { border-color: #b92533 transparent transparent }
+#topNews, .block { background: #fff; }
+.links a { height: 31px; }
+#nav{margin-bottom:-5px;}*/
+</style>
+</head>
+<body>
+<div id="toolBar">
+  <div class="midBlock">
+<script type="text/javascript" src="http://i.tq121.com.cn/j/weather2014/rili.js?id=2015"></script>
+  <span class="leftLink" style=" margin-right:20px;">今天是<script language="javascript">RunGLNL();</script></span>
+<span class="leftLink"><a href="javascript:setHomepage()" target="_self" title="设为首页">设为首页</a><a href="http://www.weather.com.cn/static/urls.php" target="_blank">保存至桌面</a></span> <span class="links"><!--<a class="blue" href="#" title="登录">登录</a>--><!--<a id="collect" target="_self" href="javascript:void(0);"  title="收藏">收藏</a>--><a id="provice" href="javascript:void(0);"  title="省级站">省级站<i class="arrow"></i></a><a id="eg" href="http://en.weather.com.cn" target="_blank" title="English Version">English</a><!--<a href="#"  id="dl_tw">繁體中文</a>--></span> </div>
+</div>
+
+<!--头start-->
+<!--include virtual="/pubm/header2015.htm"-->
+<style>
+body{background-color:#fff;background-position:center top;background-repeat:no-repeat;padding:0;margin:0;border:0;font:14px "Microsoft Yahei",Tahoma,SimSun}*{padding:0;margin:0;border:0}ul{list-style:none}a{text-decoration:none;color:#252525}a:hover{color:#ee842f;text-decoration:none}em{font-style:normal}.fl{float:left;display:inline}.fr{display:inline;float:right}.clear{clear:both}.line{border-bottom:1px solid #d7d7d7;height:0;overflow:hidden;width:1000px;clear:both;float:left}.bottom-box,.footer,.header-box,.menu-box,.sheng-show,.top-box{width:100%;min-width:1000px;clear:both}.bottom,.dl-box,.header,.main,.menu,.nav,.top{width:1000px;margin:0 auto}.top-box{line-height:25px;height:25px;border-bottom:2px solid #dbe7f3;background:#f5fafe;font-size:12px}.top a,.top span{color:#252525;margin-right:20px}.top a.en{margin-right:0}.header{height:45px; margin-bottom: 17px;}.bottom-top dl dd a:hover,.city a:hover,.menu a:hover,.top a:hover,.warning a:hover{color:#ee842f}.header-box{z-index:1005;padding-top:20px;position:relative}.menu{display:none}.menu a{font-size:15px}.menu a.color{color:#ee842f}.menu-box .sheng{display:block}.search-box{margin:0 50px;width:450px;position:relative;margin-right:0}.search{width:457px;position:relative}.search input#txtZip{font-family: 微软雅黑;margin:0;color:#aaa;text-indent:0;width:330px;padding:0 30px 0 10px;font-size:15px;height:35px;line-height:35px;background:url(http://i.tq121.com.cn/i/weather2015/city/jt-b.png) no-repeat 350px center #fff;border:1px solid #6eafd7;height:35px;border-radius:2px}.search input#txtZip:hover{border:1px solid #f68227;}.search input#btnZip{  font-family: 微软雅黑;text-indent:0;width:80px;height:37px;background:#f68227;color:#fff;margin-left:3px;cursor:pointer;font-size:16px}.search input:hover,.search.hover{border:1px solid #f68227;}.city-box{z-index:13;position:absolute;left:0;top:38px;border:1px solid #abaeaf;width:454px;display:none;background:#fff;box-shadow:4px 1px 9px -3px #888;height:auto}#wrapper{padding-top:10px}.weatherwapper{padding-top:10px}.weatherMain{margin-top:10px}.box{width:1000px;margin:0 auto;padding-top:10px}.city-tt{clear:both;position:relative;overflow:hidden;background:#f6fcff;border-bottom:1px solid #d4dde5}.city-tt a{width:95px;overflow:hidden;display:block;float:left;border-right:1px solid #d4dde5;font-size:15px;text-align:center;background:#f6fcff;color:#252525;line-height:30px}.weaper{margin-top:10px}.city-tt a:hover{color:#ee842f}.city-tt b{position:absolute;top:10px;display:block;cursor:pointer;right:10px;width:12px;height:12px;background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat -120px -561px}.city-tt a.cur{background:#fff;border-bottom:none;padding-bottom:0;color:#ff6400}.city-tt span{width:95px;overflow:hidden;display:block;float:left;border-right:1px solid #d4dde5;font-size:15px;text-align:center;background:#f6fcff;color:#252525;line-height:30px}.city-tt span.cur{background:#fff;border-bottom:none;padding-bottom:0;color:#ff6400}.w_city{overflow:hidden;clear:both;padding:10px 0;display:none}.w_city a{width:62px;height:20px;line-height:20px;padding:0;float:left;text-align:left;font-size:14px;margin-bottom:7px;color:#252525}.gn a{padding-right:30px;width:auto;float:left;text-align:left;font-size:14px;margin-bottom:7px;color:#252525}.city_guonei dl dd.diq a{padding:0;width:62px;float:left;text-align:left;margin-bottom:7px}.w_weather{float:right;width:auto;line-height:43px;position:relative;margin-top:5px}.w_weather span{color:#7b7b7b;display:block;float:left;font-size:17px;line-height:30px;height:30px;width:68px;margin-right:15px;overflow:hidden; text-align:right; position:relative;}.w_weather span em{ display:block; white-space:nowrap; position:relative; left:0; top:0px;}.w_weather span em:hover{ color:#ee842f}.w_weather em.s{line-height:30px;margin:0 10px;color:#0e70a1;font-size:16px}.w_weather a img{margin-top:14px}.w_weather a.add{background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat scroll 3px -593px;color:#0e70a1;font-size:25px;height:40px;margin-top:5px;padding:0 10px;text-indent:-9999px;width:20px}.w_weather a.dz_right{background-position:-54px -593px}.w_weather a.dz_down{background-position:-25px -593px}.w_weather .more{position:absolute;right:0;top:20px;width:278px;display:none}.nav{margin-top:20px;padding-bottom:10px;color:#252525}.nav a{padding:0 52px;font-size:20px;color:#252525}.nav a.sheng{background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat 94px -640px;color:#ee842f}.sheng-show{background:#ebebeb;display:none;position:absolute;top:118px;left:0}.dl-box dl{padding:10px 0}.dl-box dl dt{background:#076ea9;float:left;font-size:16px;height:40px;line-height:20px;margin-right:4px;padding:13px 10px;text-align:center;width:46px;border-radius:50%}.dl-box dl dt a{color:#fff}.dl-box dl dd{float:left;font-size:16px;height:56px;line-height:28px;padding:5px 0}.dl-box dl dd a{color:#076ea8;padding:0 16px}.menu-box{background:#e6f4ff;height:40px;line-height:40px;margin-top:1px;border-bottom:3px solid #c3daec}.menu{text-align:center;font-size:15px}.menu a{margin:0 37px;display:inline-block;color:#252525}.city_guonei dl{width:440px;height:auto;float:left;border-bottom:1px dotted #ccc;margin:0 auto;margin-left:4px;margin-bottom:8px}.city_guonei dl dt{float:left;text-align:center;font-size:14px;color:#252525;width:60px}.city_guonei dl dd{width:380px;float:right}.city_guonei dl dd a{font-size:12px;color:#6f6f6f;word-wrap:break-word}.city_guonei dl dd a:hover{color:#ee842f}.w_logo a{background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat 0 -838px;display:block;width:172px;height:43px}.w_yj{width:23px;height:18px;background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat -177px -501px;margin-top:6px}.w_weather .more{padding:0;z-index:999;border:1px solid #dcdada;position:absolute;right:0;top:44px;background:#fff;box-shadow:4px 1px 9px -3px #888;display:none}.w_weather .more li{height:20px;line-height:20px;position:relative;border-bottom:1px dashed #d6dbe1;width:260px;margin:0 auto;padding:10px 0}.w_weather .more li.on{background:none repeat scroll 0 0 #ebebeb;border:0}.w_weather .more li.on i{background-image:url(http://i.tq121.com.cn/i/weather2014/jpg/blue17d.jpg?v=1)}.w_weather .more li a{color:#669ec0;cursor:pointer;display:block;font-size:13px;height:40px;position:absolute;left:0;top:0;line-height:40px}.w_weather .more li span{float:left;text-align:left;display:block;overflow:hidden;height:39px;margin-right:6px;font-size:14px;color:#7b7b7b;width:70px;text-align:center}.w_weather .more li i{background-image:url(http://i.tq121.com.cn/i/weather2014/jpg/blue17.jpg?v=1);float:left;height:17px;margin:3px 2px;width:17px}.w_weather .more li em{float:left;text-align:right;width:69px;color:#076ea8;font-size:13px}.w_weather .more li b{background:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png) no-repeat scroll -155px -562px;font-size:0;cursor:pointer;float:left;height:12px;width:13px;position:absolute;right:10px;top:18px}.w_weather .more li.add{color:#076ea8;text-align:center;height:24px;width:100%;display:block}.w_weather .more li.add a{display:block;font-size:22px;padding:0;width:100%;color:#076ea8}.city_guonei p{height:25px;line-height:25px;border-bottom:1px dotted #97a5b5;width:410px;margin:0 auto;padding:0 10px}.w_weather .more li:hover{background:#f5fafe}.city_guonei p a{color:#6f6f6f;float:none;font-size:12px;margin-bottom:0;padding:0;text-align:left}.city_guonei p span{color:#d0d0d0;float:right}.w_weather .more li em.w_yj{width:25px;background-position:-177px -476px}.footer{border-top:1px solid #eee7e7;background:#eee;width:100%;clear:both;overflow:hidden}.footer .block{margin:0 auto 10px;position:relative;width:1000px;padding:20px 0 0;margin-bottom:0;height:auto;background:#eee}.footer h2{width:145px;height:38px;background:url(../i/index_icons.png) no-repeat -160px 3px;float:left;margin:10px 3px 3px 0;overflow:hidden}.footer h2 a{display:block;width:145px;height:38px;text-indent:-9999px}.footer .Lcontent{width:592px;height:130px;float:left}.footer dl{width:115px;padding:15px;float:left;margin:0 3px 3px 0;display:inline}.footer dl dt{line-height:30px;padding-bottom:5px}.footer dl dt h3,.friendLink h3{font-weight:400;font-size:20px}.footer dl dd p,.friendLink p{line-height:25px}.footer dl p a,.friendLink p a{padding-right:10px;color:#959595;font-size:14px}.footer dl p a:hover,.friendLink p a:hover{color:#ee842f}.friendLink{width:390px;float:right;padding:15px 0 13px 0}.friendLink h3{padding-bottom:5px;line-height:30px}.footer .last{border-top:1px solid #ebebeb;margin-top:5px;padding-top:5px}.serviceinfo{border-top:1px dashed #d5d4d4;padding:20px 0 20px 67px;font-size:12px;line-height:20px;clear:both}.serviceinfo p{height:20px}.serviceinfo p span{display:block;width:294px;float:left}.serviceinfo a,.serviceinfo b{color:#076ea8;font-weight:400}.serviceinfo b{color:#252525}.aboutUs{background-color:#7d7d7d;color:#fff;height:45px;line-height:45px;text-align:center;font-size:12px;width:100%;margin:0 auto}.aboutUs a{color:#fff}.search-box #show li{font-size:15px;height:28px;line-height:28px;list-style-type:none;margin:0;overflow:hidden;padding:0}.search-box #show ul li{text-indent:10px}.city_guonei dl dd.jind a{width:61px;overflow:hidden;height:20px}#show ul{border:1px solid #c2d0e7}#show ul li b{color:#f60;font-weight:700}#show ul .select{background-color:#36C;text-align:left;color:#fff;margin:0;padding:0}#show ul .unselect{padding:0;margin:0}.search-box #show ul{border:1px solid #c2d0e7}#show{display:none}#show{background-color:#FFF;color:#000;display:none;margin:0;overflow-x:hidden;overflow-y:auto;padding:0;position:absolute;top:45px;left:0;width:450px;z-index:99}#show ul{border:1px solid #C2D0E7}#show ul span{display:block;font-size:14px;height:28px;line-height:28px;text-indent:10px}#show li{overflow:hidden;font-size:15px;height:28px;line-height:28px;list-style-type:none;margin:0;padding:0;text-indent:10px}#show ul li b{color:#F60;font-weight:700}.select{background-color:#076EA8;color:#FFF;margin:0;padding:0;text-align:left}.unselect{margin:0;padding:0}big.icon{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue22.png);height:30px;width:23px;margin:0 2px;position:relative;top:5px;}big.ic{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue22.png);height:30px;margin-top:9px;width:28px;float:left}.around span.move,.greatEvent p.time,.livezs li i,.right .list li,.rollLeft,.rollRight,ul.botIcon li{background-image:url(http://i.tq121.com.cn/i/weather2015/city/iconall.png);background-repeat:no-repeat;display:block}big{margin:0 auto;background-repeat:no-repeat;background-position:-640px 240px;display:block}big.jpg30{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue30.png);height:30px;width:31px}big.png30{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue30.png);height:30px;width:31px}big.jpg50{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue50.png);height:50px;width:50px}big.jpg80{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue80.png);height:80px;width:80px}big.png40{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue30.png);height:30px;width:30px}big.png80{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue80.png);height:80px;width:80px}.around li:hover big.jpg30{background-image:url(http://i.tq121.com.cn/i/weather2015/png/white30.png);height:30px;width:31px}.on big.jpg50{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue50.png);height:50px;width:50px}.on big.jpg80{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue80.png);height:80px;width:80px}.sk big.jpg80{background-image:url(http://i.tq121.com.cn/i/weather2015/png/blue80.png);height:80px;width:80px}big.d0{background-position:0 0}big.d1{background-position:-80px 0}big.d2{background-position:-160px 0}big.d3{background-position:-240px 0}big.d4{background-position:-320px 0}big.d5{background-position:-400px 0}big.d6{background-position:-480px 0}big.d7{background-position:-560px 0}big.d8{background-position:-640px 0}big.d9{background-position:0 -80px}big.d00{background-position:0 0}big.d01{background-position:-80px 0}big.d02{background-position:-160px 0}big.d03{background-position:-240px 0}big.d04{background-position:-320px 0}big.d05{background-position:-400px 0}big.d06{background-position:-480px 0}big.d07{background-position:-560px 0}big.d08{background-position:-640px 0}big.d09{background-position:0 -80px}big.d10{background-position:-80px -80px}big.d11{background-position:-160px -80px}big.d12{background-position:-240px -80px}big.d13{background-position:-320px -80px}big.d14{background-position:-400px -80px}big.d15{background-position:-480px -80px}big.d16{background-position:-560px -80px}big.d17{background-position:-640px -80px}big.d18{background-position:0 -160px}big.d19{background-position:-80px -160px}big.d20{background-position:-160px -160px}big.d21{background-position:-240px -160px}big.d22{background-position:-320px -160px}big.d23{background-position:-400px -160px}big.d24{background-position:-480px -160px}big.d25{background-position:-560px -160px}big.d26{background-position:-640px -160px}big.d27{background-position:0 -240px}big.d28{background-position:-80px -240px}big.d29{background-position:-160px -240px}big.d30{background-position:-240px -240px}big.d31{background-position:-320px -240px}big.d32{background-position:-400px -240px}big.d33{background-position:-480px -240px}big.d53{background-position:-560px -240px}big.d57{background-position:-720px 0}big.d32{background-position:-720px -80px}big.d49{background-position:-720px -160px}big.d58{background-position:-720px -240px}big.d54{background-position:-800px 0}big.d55{background-position:-800px -80px}big.d56{background-position:-800px -160px}big.d301{background-position:-880px 0}big.d302{background-position:-880px -80px}big.n0{background-position:0 -320px}big.n1{background-position:-80px -320px}big.n2{background-position:-160px -320px}big.n3{background-position:-240px -320px}big.n4{background-position:-320px -320px}big.n5{background-position:-400px -320px}big.n6{background-position:-480px -320px}big.n7{background-position:-560px -320px}big.n8{background-position:-640px -320px}big.n9{background-position:0 -400px}big.n00{background-position:0 -320px}big.n01{background-position:-80px -320px}big.n02{background-position:-160px -320px}big.n03{background-position:-240px -320px}big.n04{background-position:-320px -320px}big.n05{background-position:-400px -320px}big.n06{background-position:-480px -320px}big.n07{background-position:-560px -320px}big.n08{background-position:-640px -320px}big.n09{background-position:0 -400px}big.n10{background-position:-80px -400px}big.n11{background-position:-160px -400px}big.n12{background-position:-240px -400px}big.n13{background-position:-320px -400px}big.n14{background-position:-400px -400px}big.n15{background-position:-480px -400px}big.n16{background-position:-560px -400px}big.n17{background-position:-640px -400px}big.n18{background-position:0 -480px}big.n19{background-position:-80px -480px}big.n20{background-position:-160px -480px}big.n21{background-position:-240px -480px}big.n22{background-position:-320px -480px}big.n23{background-position:-400px -480px}big.n24{background-position:-480px -480px}big.n25{background-position:-560px -480px}big.n26{background-position:-640px -480px}big.n27{background-position:0 -560px}big.n28{background-position:-80px -560px}big.n29{background-position:-160px -560px}big.n30{background-position:-240px -560px}big.n31{background-position:-320px -560px}big.n32{background-position:-400px -560px}big.n33{background-position:-480px -560px}big.n53{background-position:-560px -560px}big.n57{background-position:-720px -320px}big.n32{background-position:-720px -400px}big.n49{background-position:-720px -480px}big.n58{background-position:-720px -560px}big.n54{background-position:-800px -320px}big.n55{background-position:-800px -400px}big.n56{background-position:-800px -480px}big.n301{background-position:-880px -320px}big.n302{background-position:-880px -400px}.adposter_pos{background:transparent url(#) repeat scroll 0 0;left:-10000px;position:absolute;z-index:9}.ad{height:93px;overflow:hidden}.ad .ad1{height:90px;overflow:hidden;width:260px}.ad .ad2{float:right;height:100%;margin-left:10px;width:728px}.ad4{height:250px;margin-top:15px;width:300px}.ad3{height:94px;margin-top:15px;width:680px}#adposter_6287{z-index:1006}div#ab_yjfk{left:50%;margin-left:500px;position:fixed;top:370px}.topad_bg{background:#f5fafe}#duilian{z-index:1006}.nav a:hover{color:#ee842f}#ab_yjjy{margin-right:500px;position:fixed;right:50%;top:307px;}.w_weather em.s:hover{color:#ee842f;}</style>
+<div class="header-box">
+  <div class="header">
+    <div class="w_logo fl"><a href="http://www.weather.com.cn/"></a></div>
+    <div class="search-box fl">
+    
+
+<div class="search clearfix">
+		<input type="text" value="输入城市名、景点名 查天气" id="txtZip" class="textinput text fl">
+		<input type="button" value="搜天气" id="btnZip" class="btn ss fl">
+ <div class="clear"></div>
+	</div>
+<div class="inforesult"> </div>
+	<div id="show">
+		<ul>
+		</ul>
+	</div>
+
+      <div class="city-box">
+        <div class="city-tt">
+          <a href="javascript:void(0)" class="cur">正在热搜</a>
+          <a href="javascript:void(0)" >本地周边</a>
+           <b></b>
+        </div>
+        <div class="w_city city_guonei" style="display:block; padding-bottom:0">
+         <dl>
+         	<dt>国内</dt>
+            <dd>
+                   <a href="http://www.weather.com.cn/weather1d/101010100.shtml#search">北京</a>
+				  <a href="http://www.weather.com.cn/weather1d/101020100.shtml#search">上海</a>
+				  <a href="http://www.weather.com.cn/weather1d/101210101.shtml#search">杭州</a>
+				  <a href="http://www.weather.com.cn/weather1d/101280101.shtml#search">广州</a>
+				  <a href="http://www.weather.com.cn/weather1d/101200101.shtml#search">武汉</a>
+				  <a href="http://www.weather.com.cn/weather1d/101190101.shtml#search">南京</a>
+				  <a href="http://www.weather.com.cn/weather1d/101280601.shtml#search">深圳</a>
+				  <a href="http://www.weather.com.cn/weather1d/101190401.shtml#search">苏州</a>
+				  <a href="http://www.weather.com.cn/weather1d/101230201.shtml#search">厦门</a>
+				  <a href="http://www.weather.com.cn/weather1d/101220101.shtml#search">合肥</a>
+				  <a href="http://www.weather.com.cn/weather1d/101250101.shtml#search">长沙</a>
+				  <a href="http://www.weather.com.cn/weather1d/101270101.shtml#search">成都</a>                                                     
+             </dd>
+         </dl>
+         <dl>
+         	<dt>国际</dt>
+            <dd>
+                  <a href="http://www.weather.com.cn/weather1d/102010100.shtml#search">首尔</a> 
+				  <a href="http://www.weather.com.cn/weather1d/104010100.shtml#search">新加坡</a>
+				  <a href="http://www.weather.com.cn/weather1d/106010100.shtml#search">曼谷</a>
+				  <a href="http://www.weather.com.cn/weather1d/401110101.shtml#search">纽约</a>
+				  <a href="http://www.weather.com.cn/weather1d/124020100.shtml#search">迪拜</a>
+				  <a href="http://www.weather.com.cn/weather1d/103163100.shtml#search">大阪</a>
+				  <a href="http://www.weather.com.cn/weather1d/601020101.shtml#search">悉尼</a>
+				  <a href="http://www.weather.com.cn/weather1d/601060101.shtml#search">墨尔本</a>
+				  <a href="http://www.weather.com.cn/weather1d/401040101.shtml#search">洛杉矶</a>
+				  <a href="http://www.weather.com.cn/weather1d/105010100.shtml#search">吉隆坡</a>
+                                               
+                          </dd>
+         </dl>
+         <dl style="margin-bottom:5px;border:none;">
+         	<dt>景点</dt>
+            <dd>
+                  <a href="http://www.weather.com.cn/weather1d/10101010018A.shtml#search">故宫</a>
+		<a href="http://www.weather.com.cn/weather1d/10130051008A.shtml#search">阳朔漓江</a>
+		 <a href="http://www.weather.com.cn/weather1d/10118090107A.shtml#search">龙门石窟</a>
+		 <a href="http://www.weather.com.cn/weather1d/10109022201A.shtml#search">野三坡</a>
+		 
+		 <a href="http://www.weather.com.cn/weather1d/10101020015A.shtml#search">颐和园</a>
+		 <a href="http://www.weather.com.cn/weather1d/10127190601A.shtml#search">九寨沟</a> 
+		  <a href="http://www.weather.com.cn/weather1d/10102010007A.shtml#search">东方明珠</a>
+		   <a href="http://www.weather.com.cn/weather1d/10125150503A.shtml#search">凤凰古城</a>
+		    <a href="http://www.weather.com.cn/weather1d/10111010119A.shtml#search">秦始皇陵</a> 
+			<a href="http://www.weather.com.cn/weather1d/10125060301A.shtml#search">桃花源</a>
+                                               
+           
+            </dd>
+         </dl>
+         
+        </div>
+      
+         <div class="w_city city_guonei gn">
+        	 <dl>
+         	<dt>地区</dt>
+            <dd class="diq"></dd>
+         </dl>
+         <dl style="border:none;margin-bottom:5px;">
+         	<dt>景点</dt>
+            <dd class="jind"></dd>
+         </dl>
+        </div>
+      </div>
+    </div>
+    <div class="w_weather">	</div>
+    <div class="clear"></div>
+  </div>
+  
+  
+</div>
+
+
+
+<style>
+.header-box{background:none;}
+.header{margin-bottom:17px;}
+/*.w_logo a{
+background:none;
+}
+
+big.icon{background-image:url(http://i.tq121.com.cn/i/weather2015/png/white22.png);}
+.w_weather em.s
+{color:#b20a1a}
+.w_weather em.s:hover{
+color:#fff}
+.w_weather span em{
+color:#252525
+}
+.w_weather span em:hover{
+color:#fff}*/
+</style>
+
+
+
+<div id="nav">
+<div style="width:1000px;_width:1000px; margin:0 auto; margin-left:10px;">
+  <dl>
+    <dt>
+      <h3><a href="http://www.weather.com.cn/forecast/">天气</a></h3>
+    </dt>
+    <dd>
+      <p><a href="http://www.weather.com.cn/forecast/" style="padding-right:4px;">国内</a><a href="http://www.weather.com.cn/forecast/world.shtml">国际</a><a href="http://www.weather.com.cn/radar/">雷达</a><a href="http://www.weather.com.cn/live/">现在天气</a></p>
+      <p><a href="http://www.weather.com.cn/alarm/" style="padding-right:14px;">灾害预警</a><a href="http://www.weather.com.cn/satellite/">云图</a><a href="http://products.weather.com.cn/">专业产品</a></p>
+     
+    </dd>
+  </dl>
+    <dl>
+    <dt>
+      <h3><a href="http://news.weather.com.cn/">资讯</a></h3>
+    </dt>
+    <dd>
+      <p><a href="http://news.weather.com.cn/">新闻</a><a href="http://p.weather.com.cn/">图片</a></p>
+      <p><a href="http://www.weather.com.cn/video/">视频</a><a href="http://typhoon.weather.com.cn/" target="_blank">台风</a></p>
+    </dd>
+  </dl>
+  <dl>
+    <dt>
+      <h3><a href="http://www.weather.com.cn/life/">生活</a></h3>
+    </dt>
+    <dd>
+      <p><a href="http://www.weather.com.cn/air/">环境</a><a href="http://www.weather.com.cn/trip/">旅游</a></p>
+      <p><a href="http://www1.weather.com.cn/jt/">交通</a></p>
+    </dd>
+  </dl>
+  <dl>
+    <dt>
+      <h3><a href="http://www.weather.com.cn/science/">科普</a></h3>
+    </dt>
+    <dd>
+      <p><a href="http://www.weather.com.cn/science/">探索</a><a href="http://www.weather.com.cn/climate/">气候变化</a></p>
+      <p><a href="http://www.weather.com.cn/fzjz/">减灾</a><a href="http://www.weather.com.cn/space/">空间天气</a></p>
+    </dd>
+  </dl>
+<dl>
+    <dt>
+      <h3><a href="http://club.weather.com.cn/">互动</a></h3>
+    </dt>
+    <dd>
+      <p><a href="http://club.weather.com.cn/">社区</a></p>
+      <p><a target="_blank" href="http://club.weather.com.cn/forum.php?mod=forumdisplay&fid=118">投稿</a></p>
+    </dd>
+  </dl>
+  <dl class="last">
+    <dt>
+      <h3><a href="http://www.weatherdt.com/">应用</a></h3>
+    </dt>
+    <dd>
+            <p><a href="http://openweather.weather.com.cn/" style="padding-right:0">开放平台</a></p>
+<p><a href="http://www.weatherdt.com/" style="padding-right:0">产创平台</a></p>
+
+    </dd>
+  </dl>
+</div>
+</div>
+
+<!--头end-->
+
+
+
+<div id="topNews">
+  <!--要点新闻-->
+  <div class="news">
+    
+
+
+
+
+<div class="newsOne"><h2 class="topOne"><a href="http://news.weather.com.cn/2016/04/2498877.shtml" target="_blank" style="color:">南方强降雨一轮接一轮 北方春雨贵如油</a></h2><P><IMG style="BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid" alt="南方强降水一轮接一轮 北方春雨贵如油" src="http://i.weather.com.cn/images/cn/news/2016/04/09/DC414E91FE37C4AB57ABEF6EEB1A25AE.jpg"><A href="http://news.weather.com.cn/2016/04/2499054.shtml" target=_blank alt="">暴雨蓝色预警</A>&nbsp; <A href="http://news.weather.com.cn/2016/04/2499058.shtml" target=_blank alt="">强对流天气蓝色预警解除</A></P>
+<P><A href="http://www.weather.com.cn/life/2014/03/gdt/2076766.shtml?1460178500727" target=_blank alt="">阴雨天衣服总晒不干怎么办</A> <A href="http://www.weather.com.cn/life/2016/03/gdt/2485412.shtml?1460181169916" target=_blank alt="">如何缓解春燥</A></P></div><div class="newsOne"><h2><a href="http://p.weather.com.cn/2016/04/tqxc/2498469.shtml" target="_blank" style="color:"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/pic1.png">&nbsp;图片故事：他用千载光阴制一杯好茶</a></h2><P><A href="http://p.weather.com.cn/2016/04/zrds/2496196.shtml?1460179817383#p=1" target=_blank alt="">扬州瘦西湖春意惹人醉</A>&nbsp;<A href="http://p.weather.com.cn/2016/04/zrds/2494593.shtml?1460180005106#p=1" target=_blank alt="">春满泉城济南</A></P>
+<P><A href="http://p.weather.com.cn/2016/03/zrds/2492349.shtml?1460179545266#p=1" target=_blank alt="">后花园里的昆虫与花草</A>&nbsp;<A href="http://p.weather.com.cn/2016/03/zrds/2492261.shtml?1460179701301#p=1" target=_blank alt="">那些撩人的春色</A></P></div><h2><a href="http://p.weather.com.cn/2016/04/zrds/2498746.shtml" target="_blank" style="color:"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/pic1.png">&nbsp;北京箭扣长城峭壁间繁花朵朵</a></h2>
+
+    
+
+<ul>
+  <li><a href="http://news.weather.com.cn/2016/04/2499079.shtml"  target="_blank" style="color:">成都机场遭浓雾 上万旅客受阻</a><a href="http://p.weather.com.cn/2016/04/tqxc/2499123.shtml"  target="_blank" style="color:">“等风来”（图）</a></li><li><a href="http://news.weather.com.cn/2016/04/2499097.shtml"  target="_blank" style="color:">4月上旬湖南降水显著偏多</a><a href="http://news.weather.com.cn/2016/04/2499169.shtml"  target="_blank" style="color:">怀化209国道突发滑坡</a></li><li><a href="http://news.weather.com.cn/2016/04/2499165.shtml"  target="_blank" style="color:">河北省秦皇岛昌黎县突发山火 400余人参与扑救</a></li><li><a href="http://news.weather.com.cn/2016/04/2499105.shtml"  target="_blank" style="color:">内蒙古回暖桃花盛开 11日起迎降水降温西部有扬沙</a></li><li><a href="http://news.weather.com.cn/2016/04/2498538.shtml"  target="_blank" style="color:">中方推动二十国集团首次就气候变化专门发表声明</a></li><li><a href="http://www.weather.com.cn/science/2016/04/sciencenews/2498291.shtml"  target="_blank" style="color:">火星曾有生命？撞击盆地埋藏水冰</a><a href="http://www.weather.com.cn/life/2016/04/gdt/2498949.shtml"  target="_blank" style="color:">春季腹泻危害多</a></li>
+</ul>
+<span class="more"><a href="http://news.weather.com.cn/" target="_blank">更多>></a></span>
+
+  </div>
+  <!--要点新闻-->
+  <div class="leftBlock">
+    <div class="focusImg">
+      <ul style="width:1500px;">
+        <!--滚动图start-->
+       
+
+<li><a href="http://products.weather.com.cn/" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/10/A6B14048B3CC4F5FD98C803E3CB977BB.jpg" /><b>全国24小时降水量预报</b></a></li><li><a href="http://p.weather.com.cn/2016/04/tqxc/2499161.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/10/F5A7CFB01037F9D0376D32C942F2ACAD.jpg" /><b>广西多地遭风雹 大树被连根拔起</b></a></li><li><a href="http://p.weather.com.cn/2016/04/tqxc/2499123.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/10/15DB8DFF3BFB40EE1B96CAD282455C7A.jpg" /><b>成都机场遭浓雾 乘客“等风来”</b></a></li><li><a href="http://www.weather.com.cn/life/2016/04/gdt/2498949.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/09/73C4C99B43108762893C8AACE489F96C.jpg" /><b>春季腹泻危害多 三大药茶来止泻</b></a></li>
+ 
+       
+
+<li><a href="http://www.weather.com.cn/satellite/" target="_blank"  title="中国大陆区域彩色云图"><img src="http://i.weather.com.cn/i/product/pic/s/sevp_nsmc_wxcl_asc_e99_achn_lno_py_20160410084500000.jpg" /><b>中国大陆区域彩色云图</b></a></li>
+
+        <!--滚动图end-->
+      </ul>
+       <span><i class="on">1</i><i>2</i><i>3</i><i>4</i><i>5</i></span> </div>
+    <!--热点专题start-->
+    <div class="topic">
+<h4><span><a href="http://www.weather.com.cn/zt/index.shtml" target="_blank">>></a></span><a href="http://www.weather.com.cn/zt/">热点专题</a></h4>
+<h2><a href="http://p.weather.com.cn/2016/03/tqsh/2486755.shtml" target="_blank">强降水致涝面积十年增百万公顷</a></h2><dl><dt><a href="http://p.weather.com.cn/2016/03/tqsh/2486755.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/05/B2630CF5B44EF4A887A8C3F8F5A1F80A.jpg"/></a></dt><dd>近50多年来，洪涝导致的受灾面积呈显著上升趋势，致灾力有增高趋势。</dd></dl>
+      
+    
+    </div>
+
+    <!--热点专题end-->
+  </div>
+  <div class="rightBlock rightBlock1">
+    <!--灾害预警start-->
+    <div id="alarm"></div>
+    <!--灾害预警end-->
+    <div class="s_ad">
+      <div class="rightWeatherImg">
+<a href="http://photo.weather.com.cn/html/2016_spring/"target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/06/E5926A67FD7C7C1EB04482E40825BC4B.jpg"></a>
+</div>
+
+    </div>
+    <!--指数定制start-->
+    <div class="myZSs"></div>
+    <!--指数定制end-->
+    <div class="ad" id="adpos_r01">
+      <!--include virtual="/aposter/adposter_6083.htm"-->
+    </div>
+  </div>
+</div>
+<div class="block">
+  <div class="announcement">
+    <h3 class="clearfix">
+    	<span style="float:left">最新气象公告</span>
+        <a style="float:right" href="http://products.weather.com.cn/" target="_blank">&gt;&gt;</a>
+    </h3>
+    <ul>
+      <!--最新气象公告start-->
+      <li id="announce2"><h4><a target="_blank" href="http://www.weather.com.cn/index/zxqxgg1/wlstyb.shtml">04月10日：未来三天全国天气预报</a></h4><p>中央气象台2016年04月10日10时发布未来三天全国天气预报。<a target="_blank" title="04月10日：未来三天全国天气预报" href="http://www.weather.com.cn/index/zxqxgg1/wlstyb.shtml">详情</a></p><i></i></li>
+
+      <li id="announce3"><h4><a target="_blank" href="http://www.weather.com.cn/index/zxqxgg1/wlshtyb.shtml">04月10日：未来十天全国天气预报</a></h4><p>中央气象台2016年04月10日10时发布未来十天全国天气趋势预报。<a target="_blank" title="04月10日：未来十天全国天气预报" href="http://www.weather.com.cn/index/zxqxgg1/wlshtyb.shtml">详情</a></p><i></i></li>
+
+      <li id="announce6"><h4><a target="_blank" href="http://www.weather.com.cn/index/zxqxgg1/hjqxgb.shtml">04月10日：环境气象公报</a></h4><p>中央气象台2016年04月10日18时发布环境气象公报。<a target="_blank" title="04月10日：环境气象公报" href="http://www.weather.com.cn/index/zxqxgg1/hjqxgb.shtml">详情</a></p><i></i> </li>
+
+      <li id="announce4"><h4><a target="_blank" title="全国空气污染气象条件预报图" href="http://products.weather.com.cn/product/Index/index/procode/YB_KQWR_24">04月10日：全国空气污染气象条件预报图</a></h4><p>中央气象台2016年04月10日20时发布全国空气污染气象条件预报。<a target="_blank" title="全国空气污染气象条件预报图" href="http://products.weather.com.cn/product/Index/index/procode/YB_KQWR_24">详情</a></p><i></i></li>
+ <!--空气污染-->
+      <!--include virtual="/index/zxqxgg/yhbz_index.htm"-->   <!--烟花爆竹-->
+      <li id="announce7"><h4><a target="_blank" title="全国最低气温预报" href="http://products.weather.com.cn/product/Index/index/procode/YB_WD_ZD24">04月09日：全国最低气温预报</a></h4><p>中国气象局公共气象服务中心2016年04月09日20时发布全国最低气温预报。<a target="_blank" title="全国最低气温预报" href="http://products.weather.com.cn/product/Index/index/procode/YB_WD_ZD24">详情</a></p><i></i></li>
+
+
+      
+      <!--最新气象公告end-->
+    </ul>
+  </div>
+  <!--天气视频start-->
+  <div class="video">
+    <div class="video">
+    <h3><span><a href="http://www.weather.com.cn/video/" target="_blank">>></a></span><a href="http://www.weather.com.cn/video/index.shtml" target="_blank">天气视频</a></h3>
+    <dl>
+      <dt><i></i><a>新闻联播天气预报</a></dt>
+      <dd><a href="http://www.weather.com.cn/video/tqyb/05/508815.shtml" target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/img39_n.jpg"><i></i></a></dd>
+    </dl>
+  </div>
+
+    <!--大天气视频-->
+    
+      <ul>
+        <li> <a href="http://www.weather.com.cn/video/2016/04/lssj/2498389.shtml" target="_blank">强降雨袭南方 贵州丹寨冰雹直径达6厘米</a></li>
+      </ul>
+      
+      <ul>
+        <li> <a href="http://www.weather.com.cn/video/2016/04/lssj/2497963.shtml" target="_blank">气候变暖 北极熊被迫迁居南极</a></li>
+      </ul>
+      
+      <ul>
+        <li> <a href="http://www.weather.com.cn/video/2016/04/lssj/2497567.shtml" target="_blank">司机见山石滚落觉危险 及时倒车躲过滑坡</a></li>
+      </ul>
+       
+
+    <!--下三个列表-->
+  </div>
+  <!--天气视频end-->
+  <!--主持人start-->
+  <div class="compere">
+  <h1><i></i>天气预报主持人</h1>
+  <p><a  title="宋英杰" target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/syj.jpg" width="120" alt="宋英杰"></a></p>
+  <ul>
+    <li><a  title="王蓝一" target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/wly.jpg" alt="王蓝一"></a></li>
+    <li><a  title="冯殊"  target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/fs.jpg" alt="冯殊"></a></li>
+
+
+    <li><a  title="杨丹" target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/yd.jpg" alt="杨丹"></a></li>
+<li><a  title="张帅"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/pxh.jpg" alt="张帅"></a></li>
+
+        <li><a  title="赵红艳" target="_blank"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/zhy.jpg" alt="赵红艳"></a></li>
+    <li><a  title="徐鹏"><img src="http://i.tq121.com.cn/i/weather2014/index_neweather/xp.jpg" alt="徐鹏"></a></li>
+
+  </ul>
+</div>
+
+  <!--主持人end-->
+  <div class="rightBlock rightBlock2" style="top:190px;">
+    <!--排行start-->
+    <div class="rank">
+      <h3><a>排行</a><span><a class="on">今日最低气温</a><a>昼夜温差</a><a>24小时降水</a></span></h3>
+      <ul class="on">
+
+<li><span>排名</span><span class="city">城市</span><span class="prov">所属省</span><span>&nbsp;最低气温(出现时间)</span></li>
+<li class="on"><span class="ord"><i>1</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101081015.shtml" target="_blank">根河</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/neimenggu.shtml" target="_blank">内蒙古</a></span><span class="wd">-17℃(06时)</span></li><li><span class="ord"><i>2</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101081016.shtml" target="_blank">图里河</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/neimenggu.shtml" target="_blank">内蒙古</a></span><span class="wd">-17℃(04时)</span></li><li><span class="ord"><i>3</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101081102.shtml" target="_blank">阿尔山</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/neimenggu.shtml" target="_blank">内蒙古</a></span><span class="wd">-16℃(06时)</span></li><li><span class="ord"><i>4</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101140607.shtml" target="_blank">聂荣</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/xizang.shtml" target="_blank">西藏</a></span><span class="wd">-15℃(08时)</span></li><li><span class="ord"><i>5</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101140610.shtml" target="_blank">双湖</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/xizang.shtml" target="_blank">西藏</a></span><span class="wd">-13℃(03时)</span></li><li><span class="ord"><i>6</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101081010.shtml" target="_blank">满洲里</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/neimenggu.shtml" target="_blank">内蒙古</a></span><span class="wd">-13℃(06时)</span></li>
+<li><span class="detail">根据今日00时至16时整点实况资料统计</span></li>
+</ul>
+
+      <ul>
+<li><span>排名</span><span class="city">城市</span><span class="prov">所属省</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昼夜温差</span></li>
+
+<li class="on"><span class="ord"><i>1</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101050703.shtml" target="_blank">漠河</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/heilongjiang.shtml" target="_blank">黑龙江</a></span><span class="wd">23℃</span></li><li><span class="ord"><i>2</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101101003.shtml" target="_blank">五台县</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/shanxi.shtml" target="_blank">山西</a></span><span class="wd">22℃</span></li><li><span class="ord"><i>3</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101050705.shtml" target="_blank">呼中</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/heilongjiang.shtml" target="_blank">黑龙江</a></span><span class="wd">22℃</span></li><li><span class="ord"><i>4</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101081016.shtml" target="_blank">图里河</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/neimenggu.shtml" target="_blank">内蒙古</a></span><span class="wd">22℃</span></li><li><span class="ord"><i>5</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101140104.shtml" target="_blank">林周</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/xizang.shtml" target="_blank">西藏</a></span><span class="wd">22℃</span></li><li><span class="ord"><i>6</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101140208.shtml" target="_blank">仲巴</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/xizang.shtml" target="_blank">西藏</a></span><span class="wd">21℃</span></li>
+<li><span class="detail">根据10日18时发布的预报数据统计</span></li> 
+
+</ul>
+
+      <ul>
+<li><span>排名</span><span class="city">城市</span><span class="prov">所属省</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;降水量</span></li>
+
+<li class="on"><span class="ord"><i>1</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101300306.shtml" target="_blank">融安</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/guangxi.shtml" target="_blank">广西</a></span><span class="wd">108.6mm</span></li><li><span class="ord"><i>2</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101282101.shtml" target="_blank">汕尾</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/guangdong.shtml" target="_blank">广东</a></span><span class="wd">101mm</span></li><li><span class="ord"><i>3</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101282103.shtml" target="_blank">陆丰</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/guangdong.shtml" target="_blank">广东</a></span><span class="wd">75.4mm</span></li><li><span class="ord"><i>4</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101210709.shtml" target="_blank">苍南</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/zhejiang.shtml" target="_blank">浙江</a></span><span class="wd">70.1mm</span></li><li><span class="ord"><i>5</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101230809.shtml" target="_blank">尤溪</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/fujian.shtml" target="_blank">福建</a></span><span class="wd">66.6mm</span></li><li><span class="ord"><i>6</i></span><span class="city"><a href="http://www.weather.com.cn/weather1d/101230309.shtml" target="_blank">屏南</a></span><span class="prov"><a href="http://www.weather.com.cn/html/province/fujian.shtml" target="_blank">福建</a></span><span class="wd">64.9mm</span></li>
+<li><span class="detail">根据截至今日17时的累计24小时降水资料统计</span></li> 
+
+</ul>
+
+
+    </div>
+    <!--排行end-->
+    <div class="ad" id="adpos_r02"></div>
+  </div>
+</div>
+<div class="block">
+  <div class="l_ad" id="adpos_lm01"></div>
+  <!--高清图集start-->
+  <div class="hdImgs">
+    <h3><span><a href="http://p.weather.com.cn/" target="_blank">>></a></span><a href="http://p.weather.com.cn/" target="_blank">高清图集</a></h3>
+    <a id="img1" href="http://p.weather.com.cn/2016/04/tqxc/2499123.shtml"  target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2016/04/10/7D963CC0391BC8B443BE34016C6A9AE9.jpg" target="_blank" width="167"  height="126"/><b>成都机场遭遇浓雾 乘客席地而坐“等风来”</b><i></i></a>
+
+    <a id="img2" href="http://p.weather.com.cn/2016/04/zrds/2498746.shtml"  target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2016/04/09/DCB1344D04DDEEF9B253E9DEFA7A236B.jpg" target="_blank" width="167"  height="126"/><b>北京箭扣长城峭壁间繁花朵朵</b><i></i></a>
+
+    <a id="img3" href="http://p.weather.com.cn/2016/04/tqxc/2499161.shtml"  target="_blank"><img src="http://i.weather.com.cn/images/cn/sjztj/2016/04/10/624E1FD498CE9A8CF4E2612B64D3F589.jpg" target="_blank" width="338"  height="255"/><b>广西多地遭大风暴雨冰雹 大树被连根拔起</b><i></i></a>
+
+    <a id="img4" href="http://p.weather.com.cn/2016/04/txqg/2498227.shtml"  target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2016/04/08/2EEC2CEE47A524C097B12AA6B8A326A8.jpg" target="_blank" width="167"  height="126"/><b>盘点“最恐怖”酒店</b><i></i></a>
+
+    <a id="img5" href="http://p.weather.com.cn/2016/04/tqsh/2498260.shtml"  target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2016/04/08/7274B8CECC470789102E8106FE18266B.jpg" target="_blank" width="167"  height="126"/><b>广西柳州市区落花如雨缤纷</b><i></i></a>
+
+  </div>
+  <!--高清图集end-->
+</div>
+<div class="block">
+  <!--旅游天气start-->
+  <div class="travel">
+<script type="text/javascript" src="http://i.tq121.com.cn/j/weather2014/koala.min.1.5.js"></script>
+
+    <h3><span><a href="http://www.weather.com.cn/life/" target="_blank" >>></a></span><a href="http://www.weather.com.cn/life/" target="_blank" >生活旅游</a></h3>
+    <!--生活旅游左附带发布start-->
+    <div id="fsD1" class="focus tragdt">
+  <div id="D1pic1" class="fPic tq121">
+
+    <ul>     
+    <li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498949.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/09/73C4C99B43108762893C8AACE489F96C.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498949.shtml" target="_blank">春季腹泻危害多 三大药茶来止泻</a></h1><p>春季早晚温差较大，体质弱者容易出现一系列不适宜，导致胃肠功能紊乱。腹泻可引起贫血、营养不良、维生素缺乏、抵抗力降低等症状。人一着凉，就会对胃......</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498949.shtml" target="_blank">详细&gt;&gt;</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498555.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2015/04/09/C3151F896FD8BFF93C3380C4CA0C299C.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498555.shtml" target="_blank">吃鱼好时节 春季食鱼有诀窍</a></h1><p>春季，鱼类开始外出觅食，鱼肉鲜嫩，正是吃鱼好时节，不同的鱼的营养价值也不同。今天我们就介绍一下春季吃不同鱼的营养及做法。</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498555.shtml" target="_blank">详细&gt;&gt;</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498452.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/08/87EC8B732A63EE809BF1A46AF222CA17.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498452.shtml" target="_blank">醋泡葡萄干的养生功效</a></h1><p>醋泡葡萄干都有哪些神奇的养生功效？赶快随小编一起去看看吧。</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498452.shtml" target="_blank">详细&gt;&gt;</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498132.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/07/0668F1160D13559DCE4F7411F6300CD3.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498132.shtml" target="_blank">推荐8种提高免疫力的食物</a></h1><p>你有没有发现，生活中有的人动不动就容易感冒，这是为什么呢？原因在于其体内的免疫力低下，容易被病毒攻击，所以想要预防感冒首要的就是提高免疫力。......</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498132.shtml" target="_blank">详细&gt;&gt;</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498125.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/07/F18347F69317C3A5615A49502F35ACB3.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498125.shtml" target="_blank">四月天最舒爽 多吃这三种清热润肝菜</a></h1><p>进入四月，人体阳气遇到晚春自然界骤升的阳气，内外两阳碰撞，易引动内热而生肝火，诱发鼻腔出血、头痛晕眩、目赤眼花等疾患，此时要以防体内积热为主......</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498125.shtml" target="_blank">详细&gt;&gt;</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2016/04/gdt/2498114.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/2016/04/07/3A457416EF5F68800D4673C2B231B537.jpg" width="320" height="242" /></a><div class="jfs"><h2>生活</h2><h1><a href="http://www.weather.com.cn/life/2016/04/gdt/2498114.shtml" target="_blank">春季最刮油的八种食物</a></h1><p>三高、肥胖成为困扰越来越多人的问题，有些人甚至极端的人为所有的食物都是导致三高的元凶，其实并不是这样的，自然界很多食物是具有刮油功效的，能帮......</p><p><a href="http://www.weather.com.cn/life/2016/04/gdt/2498114.shtml" target="_blank">详细&gt;&gt;</a></p></div></li> 
+    </ul>
+  </div>
+  <div class="fbg">
+    <div class="D1fBt" id="D1fBt"> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a><a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>5</i></a><a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>6</i></a> </div>
+  </div>
+  <span class="prev"></span> <span class="next"></span> </div>
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "http://i.tq121.com.cn/j/weather2014/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script> 
+
+    <!--生活旅游左附带发布start-->
+    <!--生活旅游右附带发布上start-->
+    <div class="trayin"> 
+<a target="_blank" href="http://www.weather.com.cn/life/2016/03/lyxx/2493390.shtml"> <img src="http://i.weather.com.cn/images/cn/trip/2016/03/29/8A36D9CC9AC637A277F7A40302B11730_xm.jpg"> <em>旅游</em><b style="display: none;">春日里的京城 蓝天白云下的阳台山<br><span>静心聆听，山中花开的声音...</span></b><i style="display: none;"></i></a><a target="_blank" href="http://www.weather.com.cn/life/2016/03/lyxx/2476700.shtml"> <img src="http://i.weather.com.cn/images/cn/life/2016/03/03/2F3DFADC3D4BC28E447387C6B38C5A17_xm.jpg"> <em>旅游</em><b style="display: none;">也许爱就在洱海边 故事正在发生着<br><span>洱海是用来品味、用来看的。</span></b><i style="display: none;"></i></a>
+</div>
+
+
+
+
+
+    <!--生活旅游右附带发布start-->
+  </div>
+  <!--旅游天气end-->
+  <!--生活旅游列表start-->
+  <div class="tralife">
+    <!--生活旅游列表-->
+    <ul>
+    <li><a href="http://www.weather.com.cn/life/" target="_blank">生活</a>|<a href="http://www.weather.com.cn/life/2016/04/gdt/2496552.shtml" target="_blank"  >绿萝=净化器 盘点最吸毒的绿色植物</a></li><li><a href="http://www.weather.com.cn/life/" target="_blank">生活</a>|<a href="http://www.weather.com.cn/life/2016/04/gdt/2495695.shtml" target="_blank"  >春季减肥食物排行榜</a></li><li><a href="http://www.weather.com.cn/life/" target="_blank">生活</a>|<a href="http://www.weather.com.cn/life/2015/04/gdt/2495074.shtml" target="_blank"  >春风不温柔 别让春风吹坏脸</a></li><li><a href="http://www.weather.com.cn/life/" target="_blank">生活</a>|<a href="http://www.weather.com.cn/life/2016/03/gdt/2493843.shtml" target="_blank"  >山药进补注意九大事项</a></li>
+  </ul>
+
+    <ul class="tranone">
+      <!--生活旅游右附带发布下start-->
+      <li><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">旅游</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2016/01/lyxx/2473046.shtml">只想带他去看看这广阔的世界</a></li><li><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">旅游</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2016/03/lyxx/2492807.shtml">清明假期观赏油菜花最佳旅游地权威推荐</a></li><li><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">旅游</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2016/02/lyxx/2471679.shtml">春季赏樱花 七大好去处</a></li><li><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">旅游</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2016/03/lyxx/2483263.shtml">春暖花开 2016年最佳赏樱小众路线</a></li>
+
+      <!--生活旅游右附带发布start-->
+    </ul>
+  </div>
+  <!--生活旅游列表start-->
+  <div class="l_ad" id="adpos_lm02"></div>
+  <div class="rightBlock rightBlock3">
+    <!--热门景点start-->
+    <div class="hotSpot">
+      <h3><b></b>热门景点<i></i></h3>
+<h4 class="title"><span class="name">景区</span><span class="weather">天气</span><span class="wd">气温</span><span class="zs">旅游指数</span></h4>
+      <ul class="on">
+            <li><span class="name"><a href="http://www.weather.com.cn/weather1d/101310201.shtml" target="_blank">三亚</a></span><span class="weather"><a title="多云">多云</a></span><span class="wd">31℃/25℃</span><span class="zs">适宜</span></li><li><span class="name"><a href="http://www.weather.com.cn/weather1d/101271906.shtml" target="_blank">九寨沟</a></span><span class="weather"><a title="阵雨">阵雨</a></span><span class="wd">23℃/10℃</span><span class="zs">适宜</span></li><li><span class="name"><a href="http://www.weather.com.cn/weather1d/101290201.shtml" target="_blank">大理</a></span><span class="weather"><a title="多云">多云</a></span><span class="wd">23℃/10℃</span><span class="zs">适宜</span></li><li><span class="name"><a href="http://www.weather.com.cn/weather1d/101251101.shtml" target="_blank">张家界</a></span><span class="weather"><a title="多云转晴">多云转晴</a></span><span class="wd">27℃/15℃</span><span class="zs">适宜</span></li><li><span class="name"><a href="http://www.weather.com.cn/weather1d/101300501.shtml" target="_blank">桂林</a></span><span class="weather"><a title="多云">多云</a></span><span class="wd">26℃/18℃</span><span class="zs">适宜</span></li><li><span class="name"><a href="http://www.weather.com.cn/weather1d/101120201.shtml" target="_blank">青岛</a></span><span class="weather"><a title="晴">晴</a></span><span class="wd">15℃/9℃</span><span class="zs">适宜</span></li>
+   </ul>
+    </div>
+
+    <!--热门景点end-->
+    <div class="warp_sel">
+    <span id="city">
+      <div class="form1">
+        <div>
+
+          <p id="txt1" class="txt1" value="北京"  data-id="10101">北京</p>
+           </div>
+        <!--列表1-->
+        <div class="Menu list3_menu" id="List1" style="width:68px;">
+          <ul>
+              <li><a data-id="10101">北京</a></li>
+              <li><a data-id="10102">上海</a></li>
+              <li><a data-id="10103">天津</a></li>
+              <li><a data-id="10104">重庆</a></li>
+              <li><a data-id="10105">黑龙江</a></li>
+              <li><a data-id="10106">吉林</a></li>
+              <li><a data-id="10107">辽宁</a></li>
+              <li><a data-id="10108">内蒙古</a></li>
+              <li><a data-id="10109">河北</a></li>
+              <li><a data-id="10110">山西</a></li>
+              <li><a data-id="10111">陕西</a></li>
+              <li><a data-id="10112">山东</a></li>
+              <li><a data-id="10113">新疆</a></li>
+              <li><a data-id="10114">西藏</a></li>
+              <li><a data-id="10115">青海</a></li>
+              <li><a data-id="10116">甘肃</a></li>
+              <li><a data-id="10117">宁夏</a></li>
+              <li><a data-id="10118">河南</a></li>
+              <li><a data-id="10119">江苏</a></li>
+              <li><a data-id="10120">湖北</a></li>
+              <li><a data-id="10121">浙江</a></li>
+              <li><a data-id="10122">安徽</a></li>
+              <li><a data-id="10123">福建</a></li>
+              <li><a data-id="10124">江西</a></li>
+              <li><a data-id="10125">湖南</a></li>
+              <li><a data-id="10126">贵州</a></li>
+              <li><a data-id="10127">四川</a></li>
+              <li><a data-id="10128">广东</a></li>
+              <li><a data-id="10129">云南</a></li>
+              <li><a data-id="10130">广西</a></li>
+              <li><a data-id="10131">海南</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="form1" style="width:62px;">
+        <div>
+          <p id="txt2" class="txt2" name="txt2" data-id="">级别</p>
+         </div>
+         <div class="Menu" id="List2" >
+          <ul>
+            <li><a data-id="5A">5A</a></li>
+            <li><a data-id="4A">4A</a></li>
+            <li><a data-id="3A">3A</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="form1" style="width:114px;">
+        <div >
+          <p id="txt3" class="txt3" name="txt3" ><span class="jqu">景区</span></p>
+        </div>
+        <!--列表1-->
+        <div class="Menu list3_menu" id="List3">
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+      </span>
+      <button id="viewSearch"></button>
+    </div>
+
+
+    <div class="ad" id="adpos_r03"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="block">
+  <!--<div class="tongad"></div>-->
+  <div class="tfleft">
+    <!--气象探索start-->
+    <div class="exploration">
+      <h3><span><a href="http://www.weather.com.cn/science/" target="_blank" >>></a></span><a href="http://www.weather.com.cn/science/" target="_blank" >气象探索</a></h3>
+      <!--气象探索左侧页面推荐start-->
+      <div class="exleft">
+    <ul>
+         <li>冥王星发现疑似云层：无助恢复冥王星行星地位<div class="jj" style="display:block;"><a href="http://www.weather.com.cn/science/2016/04/sciencenews/2497895.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/science/2016/04/07/234108F0E91BBDAD67CDF62E1A48AA12.jpg" width="320" height="210" /></a><div class="exbg"> <b>冥王星发现疑似云层：无助恢复冥王星行星地位</b><i></i> </div></div></li><li>天文学家捕捉疑似小行星天体撞击木星罕见场景<div class="jj"><a href="http://www.weather.com.cn/science/2016/03/sciencenews/2494096.shtml" target="_blank" title="天文学家捕捉疑似小行星天体撞击木星罕见场景 "><img src="http://i.weather.com.cn/images/cn/science/2016/03/31/0E37E79215EFD6D65ADE047C9C183EC5.jpg" width="320" height="210" /></a><div class="exbg"> <b>天文学家捕捉疑似小行星天体撞击木星罕见场景</b><i></i> </div></div></li><li>英建最大水上太阳能发电站：输出功率6.3兆瓦<div class="jj"><a href="http://www.weather.com.cn/science/2016/03/sciencenews/2493731.shtml" target="_blank" title="英建最大水上太阳能发电站：输出功率6.3兆瓦 "><img src="http://i.weather.com.cn/images/cn/science/2016/03/30/DEB69BA0184163B985F832D5C8BDBD7B.jpg" width="320" height="210" /></a><div class="exbg"> <b>英建最大水上太阳能发电站：输出功率6.3兆瓦</b><i></i> </div></div></li><li>澳大利亚将研究风力发电站是否危害人体健康<div class="jj"><a href="http://www.weather.com.cn/science/2016/03/sciencenews/2493041.shtml" target="_blank" title="澳大利亚将研究风力发电站是否危害人体健康 "><img src="http://i.weather.com.cn/images/cn/science/2016/03/29/C38D300C5A56C9FB19D2970CB2D517B3.jpg" width="320" height="210" /></a><div class="exbg"> <b>澳大利亚将研究风力发电站是否危害人体健康</b><i></i> </div></div></li>
+    
+    </ul>
+  </div>
+
+      <!--气象探索左侧页面推荐end-->
+      <!--气象探索列表start-->
+      
+
+<div class="exright"> 
+
+<h2><a target="_blank" href="http://www.weather.com.cn/science/2016/04/sciencenews/2498291.shtml">火星曾经存在生命吗？</a></h2><div class="exiang"><p>北京时间4月7日消息，据英国《每日邮报》报道，大约39亿年前，一颗陨星撞击火星并在其表面形成一个巨大的撞击坑。</p><p class="details"><a target="_blank" href="http://www.weather.com.cn/science/2016/04/sciencenews/2498291.shtml">详细&gt;&gt;</a></p></div><ul><li><a target="_blank" href="http://www.weather.com.cn/science/2016/04/sciencenews/2497304.shtml">中国发射微重力科学实验卫星</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2493745.shtml">罕见绿彗星将光顾地球</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2491370.shtml">科学家发现火星甲烷或来自彗星</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2491124.shtml">“登月度假”20年内或成真</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2490524.shtml">科学家观测到最高速类星体喷流</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2488550.shtml">黑洞喷射闪光能量相当太阳千倍</a></li><li><a target="_blank" href="http://www.weather.com.cn/science/2016/03/sciencenews/2485874.shtml">中国将建新型太空望远镜 视野超哈勃</a></li>
+</ul>
+  </div>
+  
+  
+  
+
+      <!--气象探索列表页面推荐end-->
+    </div>
+    <!--气象探索end-->
+    <div class="clear"></div>
+    <!--气象服务产品start-->
+    <div class="products">
+  <h3><span><a href="http://products.weather.com.cn/" target="_blank">>></a></span><a href="http://products.weather.com.cn/" target="_blank">气象服务产品</a></h3>
+  <dl>
+    <dt>
+      <h4><a>全国气温预报实况</a></h4>
+    </dt>
+    <dd> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_WD_ZG24" target="_blank">最高气温预报分布图</a> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_WD_ZD24" target="_blank">最低气温预报分布图 </a> <a href="http://products.weather.com.cn/product/Index/index/procode/JC_WDSK_GW_24" target="_blank">全国最高气温实况分布图</a><a href="http://products.weather.com.cn/product/Index/index/procode/JC_WDSK_DW_24" target="_blank">全国最低气温实况分布图</a> </dd>
+  </dl>
+  <dl>
+    <dt>
+      <h4><a>专业监测查询</a></h4>
+    </dt>
+    <dd><a href="http://products.weather.com.cn/product/Index/index/procode/JC_LD_CHN" target="_blank">全国地闪监测</a> <a href="http://products.weather.com.cn/product/Index/index/procode/JC_LD_BJ" target="_blank">北京地闪监测</a><a href="http://products.weather.com.cn/product/Index/index/procode/JC_LD_SK" target="_blank">全国雷电分布</a><a href="http://products.weather.com.cn/product/Index/index/procode/JC_QH_CI" target="_blank">综合气象干旱指数</a></dd>
+  </dl>
+  <dl>
+    <dt>
+      <h4><a>专业监测预报产品</a></h4>
+    </dt>
+    <dd> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_HY_500Pha_24H" target="_blank">500hPa高度场预报</a> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_HY_HPM_24H" target="_blank">海平面气压场预报</a><a href="http://nyqx.xn121.com/gjzwclyb/index.shtml" target="_blank">国际作物产量预报</a><a href="http://nyqx.xn121.com/#jwcx" target="_blank">全国积温查询</a> </dd>
+  </dl>
+  <dl>
+    <dt>
+      <h4><a>全国降水量实况</a></h4>
+    </dt>
+    <dd><a href="http://products.weather.com.cn/product/Index/index/procode/JC_JSL_02405" target="_blank">全国24小时降水量实况</a> <a href="http://products.weather.com.cn/product/Index/index/procode/JC_JSL_10" target="_blank">全国近10天降水量实况</a> <a href="http://products.weather.com.cn/product/Index/index/procode/JC_JSL_JPL10" target="_blank">全国10天降水距平</a> </dd>
+  </dl>
+  <dl>
+    <dt>
+      <h4><a>全国降水量预报</a></h4>
+    </dt>
+    <dd> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_JSL_024" target="_blank">全国24小时降水量预报</a><a href="http://products.weather.com.cn/product/Index/index/procode/YB_JSL_048" target="_blank">全国48小时降水量预报</a> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_JSL_072" target="_blank">全国72小时降水量预报</a></dd>
+  </dl>
+  <dl>
+    <dt>
+      <h4><a>生活气象指数</a></h4>
+    </dt>
+    <dd> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_ZSLQ_KQWRKSTJ" target="_blank">空气污染物扩散指数</a> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_ZSLQ_CHY" target="_blank">穿衣气象指数</a> <a href="http://products.weather.com.cn/product/Index/index/procode/YB_ZSLQ_LY" target="_blank">旅游气象指数</a> </dd>
+  </dl>
+  <div class="clear"></div>
+</div>
+
+    <!--气象服务产品end-->
+    <div style="margin-top:15px;height:90px;width:680px;" id="adpos_lm03"></div>
+  </div>
+  <div class="tfright">
+    <!--气候变化滚动图start-->
+    <div class="pic qhbh">
+  <h1><b></b><a href="http://www.weather.com.cn/climate/" target="_blank">气候变化</a><i></i></h1>
+  <div id='scrollPic' class="m">
+    <ul class="bigImg clearfix">
+<li><a href="http://www.weather.com.cn/climate/2016/04/qhbhyw/2498334.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/climate/2016/04/08/517F87491BF3D9F1287234049F3D9527.jpg" alt="现实版“诺亚方舟”末日种子库" width="300" height="227"></a></li><li><a href="http://www.weather.com.cn/climate/2016/03/qhbhyw/2494186.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/climate/2016/03/31/C8BA87DF0CBCE460E86F7E620478468A.jpg" alt="人类祖先鼻子形状变化并非为适应气候" width="300" height="227"></a></li><li><a href="http://www.weather.com.cn/climate/2016/03/qhbhyw/2493074.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/climate/2016/03/29/CF2E8363BE2C6ED9178D1910C0BE31AB.jpg" alt="植物适应气候变暖的能力高于预期" width="300" height="227"></a></li>
+    </ul>
+    <ul class="botIcon clearfix">
+    </ul>
+    <p></p>
+    <div class="bottomBg"></div>
+    <div class="rollLeft"></div>
+    <div class="rollRight"></div>
+  </div>
+</div>
+
+    <!--气候变化滚动图end-->
+    <!--气候变化滚动图start-->
+    <div class="ztpic">
+      <dl>
+      <dt><a href="http://www.weather.com.cn/climate/2016/04/qhbhyw/2497931.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2016/04/07/026E232532EC3AA6450E826A554E3204.jpg" width="132" height="100" ></a></dt><dd><a href="http://www.weather.com.cn/climate/2016/04/qhbhyw/2497931.shtml" target="_blank">“行星X”或致恐龙灭绝</a><p>天文学界近期再次陷入关于太阳系边缘是否存在第九颗大行星的争论之中。</p></dd>
+      </dl>
+    </div>
+
+    <!--气候变化滚动图end-->
+    <div id="adpos_r04" class="ad2"></div>
+    <div class="weibo"> <a target="_blank" href="http://t.sina.com.cn/weather01/" id="sina">天气网新浪微博</a><a target="_blank" href="http://e.t.qq.com/chinaweather" id="qq">天气网腾讯微博</a> </div>
+    <!--气象服务start-->
+    <div id="topics" class="rightEl">
+                  <h4>气象服务</h4>							<dl>
+						<dt><a href="http://www.weather.com.cn/wzfw/kfzx/index.shtml">气象服务热线</a></dt>
+						<dd>拨打400-6000-121进行气象服务咨询、建议、合作与投诉</dd>
+						</dl>
+						<dl>
+						<dt><a class="a_hover_not">天气预报电话查询</a></dt>
+						<dd>拨打12121或96121进行天气预报查询</dd>
+						</dl>
+						<dl>
+						<dt><a href="http://www.weather.com.cn/wzfw/wapb/index.shtml">手机查询</a></dt>
+						<dd>随时随地通过手机登陆中国天气WAP版查看各地天气资讯</dd>
+						</dl>
+			</div>
+
+    <!--气象服务end-->
+  </div>
+</div>
+<div class="clear"></div>
+<!--页尾start-->
+<script>W.use('j/weather2015/publicHead.js');</script>
+<div class="footer">
+  <div class="block">
+    <div class="Lcontent" style="width:582px;">
+      <dl style="width:280px;margin-left: 50px; margin-right:22px;">
+        <dt>
+          <h3>网站服务</h3>
+        </dt>
+        <dd>
+          <p><a href="http://www.weather.com.cn/wzfw/gywm/">关于我们</a><a href="http://www.weather.com.cn/wzfw/lxwm/">联系我们</a><a href="http://www.weather.com.cn/wzfw/sybz/">帮助</a><a href="http://www.weather.com.cn/wzfw/ryzp/">人员招聘</a></p>
+          <p><a href="http://www.weather.com.cn/wzfw/kfzx/">客服中心</a><a href="http://www.weather.com.cn/wzfw/bqsm/">版权声明</a><a href="http://www.weather.com.cn/wzfw/wzls/">律师</a><a href="http://www.weather.com.cn/wzfw/wzdt/">网站地图</a></p>
+        </dd>
+      </dl>
+      <dl style="width:150px;">
+        <dt>
+          <h3>营销中心</h3>
+        </dt>
+        <dd>
+          <p><a href="http://marketing.weather.com.cn/">企业服务</a><a href="http://marketing.weather.com.cn/zyqxfw/">专业服务</a></p>
+          <p><a href="http://marketing.weather.com.cn/wxzdhz/">无线合作</a><a href="http://marketing.weather.com.cn/wzhz/">网站合作</a></p>
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class="friendLink" style="width:418px;">
+      <h3>相关链接</h3>
+      <p><a href="http://www.cma.gov.cn/" target="_blank">中国气象局</a><a href="http://pmsc.cma.gov.cn/" target="_blank">公共气象服务中心</a><a href="http://www.chinamsa.org" target="_blank">中国气象服务协会</a><a href="http://search.weather.com.cn/static/xxfb/" target="_blank">预警共享平台</a></p>
+      <p><a href="http://www.weathertv.cn/" target="_blank">中国气象频道</a><a href="http://www.tourweather.com.cn/" target="_blank">中国旅游天气网</a><a href="http://www.xn121.com/" target="_blank">中国兴农网</a><a href="http://www.welife100.com" target="_blank">微生活营销平台</a></p>
+      <p><a href="http://satellite.cma.gov.cn" target="_blank">风云卫星遥感数据服务网</a> <a href="http://data.cma.cn" target="_blank">中国气象数据网</a><a href="http://cwera.weather.com.cn/" target="_blank">风能太阳能资源中心</a></p>
+    </div>
+    <div class="serviceinfo">
+<p><span>客服邮箱：<a href="mailto:service@weather.com.cn">service@weather.com.cn</a></span><span>广告服务：<b>010-58991910</b></span><span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证010385号</a>　京公网安备11041400134号</span></p>
+      <p><span>客服热线：<b><a href="http://www.weather.com.cn/wzfw/kfzx/index.shtml" target="_blank">400-6000-121</a></b></span><span>  商务合作：<b>010-58991938</b></span><span>增值电信业务经营许可证B2-20050053</span></p>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="aboutUs"> Copyright&copy;<a href="http://pmsc.cma.gov.cn/" target="_blank">中国气象局公共气象服务中心</a> All Rights Reserved (2008-2016) 版权所有 复制必究 郑重声明：中国天气网版权所有，未经书面授权禁止使用 </div>
+</div>
+
+<div class="provinceLinks">
+  <div class="midBlock" style="margin:0 auto; width:1000px;">
+  <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/hb.shtml">华北地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://bj.weather.com.cn">北京</a><a target="_blank" href="http://tj.weather.com.cn">天津</a><a target="_blank" href="http://hebei.weather.com.cn">河北</a></p>
+        <p><a target="_blank" href="http://shanxi.weather.com.cn">山西</a><a target="_blank" href="http://nmg.weather.com.cn">内蒙古</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/hd.shtml">华东地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://sh.weather.com.cn">上海</a><a target="_blank" href="http://js.weather.com.cn">江苏</a><a target="_blank" href="http://zj.weather.com.cn">浙江</a></p>
+        <p><a target="_blank" href="http://ah.weather.com.cn">安徽</a><a target="_blank" href="http://fj.weather.com.cn">福建</a><a target="_blank" href="http://sd.weather.com.cn">山东</a></p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/hz.shtml">华中地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://hubei.weather.com.cn">湖北</a><a target="_blank" href="http://hunan.weather.com.cn">湖南</a></p>
+        <p><a target="_blank" href="http://henan.weather.com.cn">河南</a><a target="_blank" href="http://jx.weather.com.cn">江西</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/hn.shtml">华南地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://gd.weather.com.cn">广东</a><a target="_blank" href="http://gx.weather.com.cn">广西</a></p>
+        <p><a target="_blank" href="http://hainan.weather.com.cn">海南</a></p>
+      </dd>
+    </dl>
+    <div class="line"></div>
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/xb.shtml">西北地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://shaanxi.weather.com.cn">陕西</a><a target="_blank" href="http://gs.weather.com.cn">甘肃</a><a target="_blank" href="http://qh.weather.com.cn">青海</a></p>
+        <p><a target="_blank" href="http://nx.weather.com.cn">宁夏</a><a target="_blank" href="http://xj.weather.com.cn">新疆</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/xn.shtml">西南地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://cq.weather.com.cn">重庆</a><a target="_blank" href="http://sc.weather.com.cn">四川</a><a target="_blank" href="http://yn.weather.com.cn">云南</a></p>
+        <p><a target="_blank" href="http://gz.weather.com.cn">贵州</a><a target="_blank" href="http://xz.weather.com.cn">西藏</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a target="_blank" href="http://www.weather.com.cn/textFC/db.shtml">东北地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://ln.weather.com.cn">辽宁</a><a target="_blank" href="http://jl.weather.com.cn">吉林</a></p>
+        <p><a target="_blank" href="http://hlj.weather.com.cn">黑龙江</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt class="last"><a target="_blank" href="http://www.weather.com.cn/textFC/gat.shtml">港澳台地区</a></dt>
+      <dd>
+        <p><a target="_blank" href="http://www.weather.com.cn/html/province/xianggang.shtml">香港</a><a target="_blank" href="http://mo.weather.com.cn">澳门</a></p>
+        <p><a target="_blank" href="http://www.weather.com.cn/html/province/taiwan.shtml">台湾</a></p>
+      </dd>
+    </dl>
+  </div>
+</div>
+<div style="display:none;">
+<script src="http://s11.cnzz.com/z_stat.php?id=1257873453&web_id=1257873453" language="JavaScript"></script>
+</div>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080dabacb001ad3dc8b9b9049b36d43b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+<!-- START WRating v1.0 -->
+<script type="text/javascript" src="http://c.wrating.com/a1.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-1905010101";
+var wrUrl="http://c.wrating.com/";
+vjTrack("");
+</script>
+<noscript><img src="http://c.wrating.com/a.gif?a=&c=860010-1905010101" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+
+<!--页尾end-->
+<!--顶部省级end-->
+<div class="provinceLinks">
+  <div class="midBlock">
+  <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/hb.shtml" target="_blank">华北地区</a></dt>
+      <dd>
+        <p><a href="http://bj.weather.com.cn" target="_blank">北京</a><a href="http://tj.weather.com.cn" target="_blank">天津</a><a href="http://hebei.weather.com.cn" target="_blank">河北</a></p>
+        <p><a href="http://shanxi.weather.com.cn" target="_blank">山西</a><a href="http://nmg.weather.com.cn" target="_blank">内蒙古</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/hd.shtml" target="_blank">华东地区</a></dt>
+      <dd>
+        <p><a href="http://sh.weather.com.cn" target="_blank">上海</a><a href="http://js.weather.com.cn" target="_blank">江苏</a><a href="http://zj.weather.com.cn" target="_blank">浙江</a></p>
+        <p><a href="http://ah.weather.com.cn" target="_blank">安徽</a><a href="http://fj.weather.com.cn" target="_blank">福建</a><a href="http://sd.weather.com.cn" target="_blank">山东</a></p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/hz.shtml" target="_blank">华中地区</a></dt>
+      <dd>
+        <p><a href="http://hubei.weather.com.cn" target="_blank">湖北</a><a href="http://hunan.weather.com.cn" target="_blank">湖南</a></p>
+        <p><a href="http://henan.weather.com.cn" target="_blank">河南</a><a href="http://jx.weather.com.cn" target="_blank">江西</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/hn.shtml" target="_blank">华南地区</a></dt>
+      <dd>
+        <p><a href="http://gd.weather.com.cn" target="_blank">广东</a><a href="http://gx.weather.com.cn" target="_blank">广西</a></p>
+        <p><a href="http://hainan.weather.com.cn" target="_blank">海南</a></p>
+      </dd>
+    </dl>
+    <div class="line"></div>
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/xb.shtml" target="_blank">西北地区</a></dt>
+      <dd>
+        <p><a href="http://shaanxi.weather.com.cn" target="_blank">陕西</a><a href="http://gs.weather.com.cn" target="_blank">甘肃</a><a href="http://qh.weather.com.cn" target="_blank">青海</a></p>
+        <p><a href="http://nx.weather.com.cn" target="_blank">宁夏</a><a href="http://xj.weather.com.cn" target="_blank">新疆</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/xn.shtml" target="_blank">西南地区</a></dt>
+      <dd>
+        <p><a href="http://cq.weather.com.cn" target="_blank">重庆</a><a href="http://sc.weather.com.cn" target="_blank">四川</a><a href="http://yn.weather.com.cn" target="_blank">云南</a></p>
+        <p><a href="http://gz.weather.com.cn" target="_blank">贵州</a><a href="http://xz.weather.com.cn" target="_blank">西藏</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="http://www.weather.com.cn/textFC/db.shtml" target="_blank">东北地区</a></dt>
+      <dd>
+        <p><a href="http://ln.weather.com.cn" target="_blank">辽宁</a><a href="http://jl.weather.com.cn" target="_blank">吉林</a></p>
+        <p><a href="http://hlj.weather.com.cn" target="_blank">黑龙江</a></p>
+      </dd>
+    </dl>
+    <dl>
+      <dt class="last"><a href="http://www.weather.com.cn/textFC/gat.shtml" target="_blank">港澳台地区</a></dt>
+      <dd>
+        <p><a href="http://www.weather.com.cn/html/province/xianggang.shtml" target="_blank">香港</a><a href="http://mo.weather.com.cn" target="_blank">澳门</a></p>
+        <p><a href="http://www.weather.com.cn/html/province/taiwan.shtml" target="_blank">台湾</a></p>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<!--顶部省级end-->
+<script type="text/javascript" src="http://wgeo.weather.com.cn/ip/" ></script>
+<script>
+      //定制城市与指数 
+      //W.use('j/weather2014/index_cityZS');
+      W.use('j/weather2014/news');
+W.use('j/index/dzcity_index');
+      //页面普通模块
+      W.use('j/index/index_main140917_ljy.js');
+</script>
+<script type="text/javascript" src="http://i.tq121.com.cn/j/weather2014/ch_nation_jdSearch.js" ></script>
+<script>W.js("http://i.tq121.com.cn/j/ad/caoyu-min.js")</script>
+<div class="ad-container">
+  <div class="adposter_pos" data-posid="adpos_r01">
+    <div class="adposter_6083"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/15\/4915.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Fzt%2Ftqzt%2F2497020%2Eshtml%3F1459847268115&p=6083&pos=0&ch=9991&ck=16074","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"300","height":"250","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6083&pos=0&ch=9991&act=&order=&contract=&host=&ck=16074","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_r02">
+    <div class="adposter_6084"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/1\/4901.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Flife%2F2015%2F04%2F2304222%2Eshtml%20&p=6084&pos=0&ch=9991&ck=16075","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"300","height":"250","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6084&pos=0&ch=9991&act=&order=&contract=&host=&ck=16075","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_lm01">
+    <div class="adposter_6087"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/62\/4862.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Flife%2F&p=6087&pos=0&ch=9991&ck=16078","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"680","height":"90","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6087&pos=0&ch=9991&act=&order=&contract=&host=&ck=16078","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_r03">
+    <div class="adposter_6085"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/11\/4911.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Ftrip%2F2016%2F03%2Fjrjd%2F2492697%2Eshtml&p=6085&pos=0&ch=9991&ck=16076","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"300","height":"250","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6085&pos=0&ch=9991&act=&order=&contract=&host=&ck=16076","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_lm03">
+    <div class="adposter_6089"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/1\/4501.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Fwzfw%2Fkfzx%2Findex%2Eshtml&p=6089&pos=0&ch=9991&ck=16080","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"680","height":"90","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6089&pos=0&ch=9991&act=&order=&contract=&host=&ck=16080","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_r04">
+    <div class="adposter_6086"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/37\/4737.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fsoft%2Eimtt%2Eqq%2Ecom%2Fbrowser%2Fbd%2F317%2Fqqbrowser%5F5%2E8%2E1%2E1490%5F23075%2Eapk&p=6086&pos=0&ch=9991&ck=16077","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"300","height":"250","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6086&pos=0&ch=9991&act=&order=&contract=&host=&ck=16077","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+    <div class="adposter_pos" data-posid="adpos_r04">
+    <div class="adposter_6086"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/37\/4737.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fsoft%2Eimtt%2Eqq%2Ecom%2Fbrowser%2Fbd%2F317%2Fqqbrowser%5F5%2E8%2E1%2E1490%5F23075%2Eapk&p=6086&pos=0&ch=9991&ck=16077","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"300","height":"250","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6086&pos=0&ch=9991&act=&order=&contract=&host=&ck=16077","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+  <div class="adposter_pos" data-posid="adpos_lm02">
+    <div class="adposter_6088"> 
+ <script>WR_PARAMETER.WR_AD_DATA={"show":"true","type":"PIC","files":[{"file":"http:\/\/poster.weather.com.cn\/p_files\/63\/4863.jpg","link":"http:\/\/poster1.weather.com.cn\/r.php?url=http%3A%2F%2Fwww%2Eweather%2Ecom%2Ecn%2Ftrip%2F&p=6088&pos=0&ch=9991&ck=16079","IsFlash":"img"}],"code":"","closebutton":true,"closetime":false,"under_file":true,"under_or_up":true,"toppx":40,"width":"680","height":"90","width_under":20,"pagewidth":960,"min_screen_w":1024,"opacity":0.9,"staytime":5,"speed":2,"videotitle":"","bgcolor":"000","bdcolor":"000","filepath":"http:\/\/poster.weather.com.cn\/p_files\/player\/player.swf","autostart":true,"repeat":"none","ratingimg":"http:\/\/poster.weather.com.cn\/a.gif?i=&p=6088&pos=0&ch=9991&act=&order=&contract=&host=&ck=16079","direct":[]};WRATING.PLAY.ACTION(WR_PARAMETER.WR_AD_DATA);</script> 
+ </div> 
+
+  </div>
+</div>
+<div id="ab">
+
+<!--<a href="http://www.weather.com.cn/index/feedback_201409.shtml" target="_blank"><img border="0" src="http://i.tq121.com.cn/i/weather2015/jpg/dl.jpg" usemap="#Map"></a>-->
+<a href="http://www.weather.com.cn/index/feedback_201409.shtml" target="_blank"><img border="0" src="http://www.weather.com.cn/m2/i/fankui.png" usemap="#Map"></a>
+</div>
+<script>
+//高清图集
+		var $hdImg_I = $('.hdImgs i').show();
+		$.each($hdImg_I,function(i,v){
+			if(i==2){
+				$(v).height($(v).prev('b').height()+18);
+			}else{
+				var fontHei=$(v).prev('b').height()
+				
+					$(v).height(fontHei+6).prev('b');
+				
+				
+			}
+		})
+</script>
+
+<script type="text/javascript" src="http://c.wrating.com/a1.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2099030100";
+var wrUrl="http://c.wrating.com/";
+vjTrack("");
+</script>
+<noscript>
+<img src="http://c.wrating.com/a.gif?a=&c=860010-2099030100" width="1" height="1"/>
+</noscript>
+<script type="text/javascript" src="http://click.wrating.com/c3.js">
+</script>
+<script type="text/javascript">
+var vjClickAcc="860010-2099030100";
+var wrUrl="http://click.wrating.com/";
+initMouseClick();
+</script>
+</body>
+</html>

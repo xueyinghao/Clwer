@@ -1,0 +1,2223 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	河南省毕业生就业信息网
+</title><link href="Css/Index.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function Juge(theForm)
+{
+
+if (theForm.uid.value == "")
+   {
+   alert("请输入您的用户名!");
+   theForm.uid.focus();
+   return (false)
+   }
+
+if (theForm.pwd.value == "")
+   {
+   alert("请输入您的密码!");
+   theForm.pwd.focus();
+   return (false)
+   }
+}
+
+function hidePic() {
+	for (i=1; i<10; i++){
+		var allClips="Pic"+i;
+		var clipNum="clipPic"+i;
+		document.getElementById(allClips).style.display="none";
+		document.getElementById(clipNum).className="MenuOFF";
+		}
+	}
+	
+function clipPic(n) {
+	var curClip="Pic"+n;
+	var curClipNum="clipPic"+n;
+	hidePic();
+	document.getElementById(curClip).style.display="block";
+	document.getElementById(curClipNum).className="MenuON";
+	scrollNewsCt=n; 
+	}
+	
+function hideS() {
+	for (i=1; i<3; i++){
+		var allClips="S"+i;
+		var clipNum="clipS"+i;
+		document.getElementById(allClips).style.display="none";
+		document.getElementById(clipNum).className="s" + i + "_2" ;
+		}
+	}
+	
+function clipS(n) {
+	var curClip="S"+n;
+	var curClipNum="clipS"+n;
+	hideS();
+	document.getElementById(curClip).style.display="block";
+	document.getElementById(curClipNum).className="s" + n + "_1";
+	scrollNewsCt=n; 
+	}
+
+function MM_jumpMenu(targ,selObj,restore){  
+  if( selObj.options[selObj.selectedIndex].value != "") 
+  window.open( selObj.options[selObj.selectedIndex].value );
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+<body >
+    
+    <form name="aspnetForm" method="post" action="" id="aspnetForm" target="_blank">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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dHA6Ly93d3cuc3dqdHUuZWR1LmNuF2h0dHA6Ly93d3cuc3d1ZmUuZWR1LmNuGGh0dHA6Ly93d3cubndzdWFmLmVkdS5jbhVodHRwOi8vd3d3LndodS5lZHUuY24YaHR0cDovL3d3dy50b25namkuZWR1LmNuGGh0dHA6Ly93d3cudG9uZ2ppLmVkdS5jbhdodHRwOi8vd3d3LmJqcGV1LmVkdS5jbhdodHRwOi8vd3d3LnNoaXN1LmVkdS5jbhZodHRwOi8vd3d3LnNqdHUuZWR1LmNuF2h0dHA6Ly93d3cuc2h1ZmUuZWR1LmNuFmh0dHA6Ly93d3cuc25udS5lZHUuY24VaHR0cDovL3d3dy5zZHUuZWR1LmNuImh0dHA6Ly93d3cubmphdS5lZHUuY24vaW5kMTI4MC5waHAUKwMZZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAiAPEA8WAh8CZ2QQFQQaPT09PeS6uuaJjeacjeWKoee9keermT09PT0J55+l6YGH572RGOW6lOWxiuavleS4mueUn+axguiBjOe9kQ/nlLXlipvoi7HmiY3nvZEVBAAWaHR0cDovL3d3dy56aGl5dWhyLmNvbRRodHRwOi8vd3d3LnlqYnlzLmNvbRZodHRwOi8vd3d3LmVwam9iODguY29tFCsDBGdnZ2dkZAIiDxAPFgIfAmdkEBUHFj095pWZ6IKy6YOo6Zeo572R56uZPT0e5Lit5Y2O5Lq65rCR5YWx5ZKM5Zu95pWZ6IKy6YOoEuays+WNl+ecgeaVmeiCsuWOhSHkuK3lm73pq5jnrYnmlZnogrLlrabnlJ/kv6Hmga/nvZEq5Lit5Zu96auY5qCh5q+V5Lia55Sf5bCx5Lia5pyN5Yqh5L+h5oGv572REuS4reWbveaVmeiCsuWcqOe6vxjkuK3lm73mi5vnlJ/lsLHkuJrlnKjnur8VBwAVaHR0cDovL3d3dy5tb2UuZWR1LmNuF2h0dHA6Ly93d3cuaGFlZHUuZ292LmNuFmh0dHA6Ly93d3cuY2hzaS5jb20uY24WaHR0cDovL3d3dy5uY3NzLm9yZy5jbhFodHRwOi8vd3d3LmVvbC5jbhpodHRwOi8vd3d3LmNoaW5ham9iMTE0Lm9yZxQrAwdnZ2dnZ2dnZGQCJA8QDxYCHwJnZBAVHx7lkITnnIHmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5YyX5Lqs5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHuWkqea0peavleS4mueUn+WwseS4muS/oeaBr+e9kR7msrPljJfmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5bGx6KW/5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RIeWGheiSmeWPpOavleS4mueUn+WwseS4muS/oeaBr+e9kR7ovr3lroHmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5ZCJ5p6X5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RIem7kem+meaxn+avleS4mueUn+WwseS4muS/oeaBr+e9kR7kuIrmtbfmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5rGf6IuP5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHua1meaxn+avleS4mueUn+WwseS4muS/oeaBr+e9kSflronlvr3lpKfkuK3kuJPmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe56aP5bu65q+V5Lia55Sf5bCx5Lia5L+h5oGv572RIeaxn+ilv+ecgeWkp+WtpueUn+WwseS4muS6uuaJjee9kR7muZbljZfmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5rKz5Y2X5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHua5luWMl+avleS4mueUn+WwseS4muS/oeaBr+e9kR7lub/kuJzmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe6YeN5bqG5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHuW5v+ilv+avleS4mueUn+WwseS4muS/oeaBr+e9kR7mtbfljZfmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5Zub5bed5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHui0teW3nuavleS4mueUn+WwseS4muS/oeaBr+e9kR7kupHljZfmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe6KW/6JeP5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHumZleilv+avleS4mueUn+WwseS4muS/oeaBr+e9kR7nlJjogoPmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEe5a6B5aSP5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RHumdkua1t+avleS4mueUn+WwseS4muS/oeaBr+e9kR7mlrDnlobmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEVHwAXaHR0cDovL3d3dy5iamJ5cy5uZXQuY24UaHR0cDovL3d3dy50amJ5cy5jb20aaHR0cDovL3N0dWRlbnRzLmVkdWNhc3QuY24XaHR0cDovL3d3dy5zeGJ5cy5jb20uY24UaHR0cDovL3d3dy5ubWJ5cy5jb20YaHR0cDovL3d3dy5sbmJ5cy5jb20uY24+L2h0dHA6Ly93d3cueWJyYy5nb3YuY24vZ3JhZHVhdGUvbGluay9qaWxpbmcuaHRtFmh0dHA6Ly93d3cud29yay5nb3YuY24aaHR0cDovL3d3dy5maXJzdGpvYi5jb20uY24bd3d3LmpzYnlzLmNvbS5jbi9pbmRleC5hc3B4Fmh0dHA6Ly93d3cuZWpvYm1hcnQuY24UaHR0cDovL3d3dy5haGJ5cy5jb20XaHR0cDovL3d3dy5mamJ5cy5nb3YuY24VaHR0cDovL3d3dy5qeGpvYi5uZXQvFWh0dHA6Ly93d3cuaHVuYnlzLmNvbR1odHRwOi8vYml5ZXNoZW5nLmhhZG9lLmVkdS5jbhVodHRwOi8vam9iLmUyMS5lZHUuY24XaHR0cDovL3d3dy5nZGpvYi5jb20uY24faHR0cDovL3d3dy5jcWJ5cy5jb20vaW5kZXguYXNweBRodHRwOi8vd3d3Lmd4YnlzLmNvbRRodHRwOi8vd3d3LmhuYnlzLm5ldBdodHRwOi8vd3d3LnNjYnlzLmNvbS5jbhdodHRwOi8vanl6eC5nem5jLmVkdS5jbh9odHRwOi8vd3d3LnluankuY24vb2ZmaWNlYWxsL3hzGmh0dHA6Ly93d3cueHpqeXpkenguZ292LmNuJmh0dHA6Ly82MS4xODUuMjIxLjEwOS9TaHhieXMvbWFpbi5hc3B4K2h0dHA6Ly93d3cuZ3NlZHUuY24vZWRvYXMvd2Vic2l0ZS9pbmRleC5odG0UaHR0cDovL3d3dy5ueGJ5cy5jb20UaHR0cDovL3d3dy5xaGJ5cy5jb20TaHR0cDovL3d3dy54amJ5cy5jbhQrAx9nZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCJg8QDxYCHwJnZBAVBB7lnLDluILmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEh5Y2X6Ziz5biC5q+V5Lia55Sf5bCx5Lia5L+h5oGv572RIempu+mprOW6l+avleS4mueUn+WwseS4muS/oeaBr+e9kSrlvIDlsIHluILlpKfkuK3kuJPmr5XkuJrnlJ/lsLHkuJrkv6Hmga/nvZEVBAAUaHR0cDovL3d3dy5ueWJ5cy5jb20VaHR0cDovL3d3dy56bWRieXMuY29tF2h0dHA6Ly93d3cua2ZkenpqeS5jb20vFCsDBGdnZ2dkZAIoDxAPFgIfAmdkEBVbIeays+WNl+ecgeWQhOmrmOagoeWwseS4muS/oeaBr+e9kRLpg5Hlt57np5HmioDlrabpmaIP5ZWG5LiY5bel5a2m6ZmiDOWVhuS4mOWtpumZohjpg5Hlt57miJDlip/otKLnu4/lrabpmaIe6YOR5bee5Y2H6L6+57uP6LS4566h55CG5a2m6ZmiJOmDkeW3nua+jemdkuWMu+WtpumrmOetieS4k+enkeWtpuagoRjpg5Hlt57nu4/otLjogYzkuJrlrabpmaIY6YOR5bee5Lqk6YCa6IGM5Lia5a2m6ZmiJOmDkeW3nueUteWtkOS/oeaBr+iBjOS4muaKgOacr+WtpumZoh7ltanlsbHlsJHmnpfmrabmnK/ogYzkuJrlrabpmaIe6YOR5bee55S15Yqb6IGM5Lia5oqA5pyv5a2m6ZmiGOWRqOWPo+enkeaKgOiBjOS4muWtpumZohjmvK/msrPpo5/lk4HogYzkuJrlrabpmaIY6YOR5bee5Z+O5biC6IGM5Lia5a2m6ZmiGOeEpuS9nOW3pei0uOiBjOS4muWtpumZohjorrjmmIzpmbbnk7fogYzkuJrlrabpmaIY6YOR5bee55CG5bel6IGM5Lia5a2m6ZmiHumDkeW3nuS/oeaBr+W3peeoi+iBjOS4muWtpumZoh7plb/lnqPng7npparogYzkuJrmioDmnK/lrabpmaIe5L+h6Ziz5raJ5aSW6IGM5Lia5oqA5pyv5a2m6ZmiHum5pOWjgeaxvei9puW3peeoi+iBjOS4muWtpumZohLljZfpmLPogYzkuJrlrabpmaIe6YOR5bee5ZWG6LS45peF5ri46IGM5Lia5a2m6ZmiHumDkeW3num7hOays+aKpOeQhuiBjOS4muWtpumZoifnrKzkuIDmi5bmi4nmnLrliLbpgKDljoLmi5bmi4nmnLrlrabpmaIY5rSb6Ziz6L205om/6IGM5bel5aSn5a2mEuays+WNl+aVmeiCsuWtpumZohLlvIDlsIHmlZnogrLlrabpmaIV5bmz6aG25bGx5pWZ6IKy5a2m6ZmiFeeEpuS9nOiBjOW3peWMu+WtpumZohjljY7ljJfmsLTliKnmsLTnlLXlpKflraYM6YOR5bee5aSn5a2mIemDkeW3nuWkp+Wtpuilv+S6muaWr+WbvemZheWtpumZohLmsrPljZfnkIblt6XlpKflraYk5rKz5Y2X55CG5bel5aSn5a2m5LiH5pa556eR5oqA5a2m6ZmiEuays+WNl+W3peS4muWkp+WtphLmsrPljZfnp5HmioDlpKflraYS5rKz5Y2X5Yac5Lia5aSn5a2mDOays+WNl+Wkp+WtphjmsrPljZflpKflrabmsJHnlJ/lrabpmaIS5rKz5Y2X5biI6IyD5aSn5a2mHuays+WNl+W4iOiMg+Wkp+WtpuaWsOiBlOWtpumZohjmsrPljZfotKLnu4/mlL/ms5XlpKflraYS6ZOB6YGT6K2m5a+f5a2m6ZmiFemDkeW3nui9u+W3peS4muWtpumZog/kuK3ljp/lt6XlrabpmaIh5Lit5Y6f5bel5a2m6Zmi5L+h5oGv5ZWG5Yqh5a2m6ZmiEuays+WNl+enkeaKgOWtpumZohjmsrPljZfniafkuJrnu4/mtY7lrabpmaIS5rKz5Y2X5Lit5Yy75a2m6ZmiD+aWsOS5oeWMu+WtpumZohLkv6HpmLPluIjojIPlrabpmaIS5ZGo5Y+j5biI6IyD5a2m6ZmiEuWuiemYs+W4iOiMg+WtpumZogzorrjmmIzlrabpmaIS5Y2X6Ziz5biI6IyD5a2m6ZmiEua0m+mYs+W4iOiMg+WtpumZohLllYbkuJjluIjojIPlrabpmaIe6YOR5bee6Iiq56m65bel5Lia566h55CG5a2m6ZmiDOaWsOS5oeWtpumZogzpu4Tmt67lrabpmaIP5bmz6aG25bGx5a2m6ZmiEuS/oemYs+WGnOael+WtpumZog/lronpmLPlt6XlrabpmaIS5rSb6Ziz55CG5bel5a2m6ZmiEuays+WNl+W3peeoi+WtpumZohLljZfpmLPnkIblt6XlrabpmaIS5rKz5Y2X5Z+O5bu65a2m6ZmiEuays+WNl+itpuWvn+WtpumZohLpu4TmsrPnp5HmioDlrabpmaIS6YOR5bee56eR5oqA5a2m6ZmiEumDkeW3nuWNjuS/oeWtpumZohLpg5Hlt57luIjojIPlrabpmaIP5ZWG5LiY5bel5a2m6ZmiDOWVhuS4mOWtpumZohjpg5Hlt57miJDlip/otKLnu4/lrabpmaIe6YOR5bee5Y2H6L6+57uP6LS4566h55CG5a2m6ZmiHuays+WNl+acuueUtemrmOetieS4k+enkeWtpuagoSTmsrPljZfotKLmlL/nqI7liqHpq5jnrYnkuJPnp5HlrabmoKEk6YOR5bee5bm85YS/5biI6IyD6auY562J5LiT56eR5a2m5qChJOWuiemYs+W5vOWEv+W4iOiMg+mrmOetieS4k+enkeWtpuagoR7msrPljZfljLvlrabpq5jnrYnkuJPnp5HlrabmoKEk6YOR5bee5r6N6Z2S5Yy75a2m6auY562J5LiT56eR5a2m5qChHueEpuS9nOW4iOiMg+mrmOetieS4k+enkeWtpuagoR7mvK/msrPljLvlrabpq5jnrYnkuJPnp5HlrabmoKEe5Y2X6Ziz5Yy75a2m6auY562J5LiT56eR5a2m5qChHuWVhuS4mOWMu+WtpumrmOetieS4k+enkeWtpuagoRjmsrPljZfogYzkuJrmioDmnK/lrabpmaIY5ryv5rKz6IGM5Lia5oqA5pyv5a2m6ZmiG+S4iemXqOWzoeiBjOS4muaKgOacr+WtpumZohVbAC9odHRwOi8vd3d3Lnp6aXN0Lm5ldC9SZWFkTmV3czA0LmFzcD9OZXdzSUQ9NDcwODpodHRwOi8vd3d3LnNzdHZjLmNvbS9IdG1sL3hpYW95dWFuZmVuZ2d1YW5nL3h5c2gvNDA2OC5odG1sGmh0dHA6Ly93d3cuaG5oeWVkdS5uZXQvankvLGh0dHA6Ly93d3cuY2hlbmdnb25nLmVkdS5jbi9jaGFubmVscy8xMy5odG1sLWh0dHA6Ly93d3cuc2hlbmdkYS5lZHUuY24vaW5mby9zZGludHJvXzEuc2h0bS1odHRwOi8vd3d3LnNodXFpbmcub3JnL0NhdGVnb3J5XzE3L0luZGV4LmFzcHgdaHR0cDovL3d3dy56emptLmVkdS5jbi9hYm91dC8laHR0cDovL3d3dy56anR1LmVkdS5jbi9tYWluL3N1Yi94eWdrLydodHRwOi8vd3d3Lnp5ZmIuY29tL05ld3NJbmZvLmFzcHg/SUQ9MjMtaHR0cDovL3d3dy5zaGFvbGlua3VuZ2Z1LmVkdS5jbi94eGdrL3h4amouaHRtFmh0dHA6Ly9qaXV5ZS56emRsLmNvbS8WaHR0cDovL3d3dy56a2tqeHkubmV0LyRodHRwOi8vd3d3LmxzZ3guY29tLmNuL25ldy9pbmRleC5hc3A7aHR0cDovL3d3dy56Y3UuZWR1LmNuL2JyZW5kYVdlYi9pbmZvcmRldGFpbHMuYXNweD9DYXRJRD0xODEyaHR0cDovL3d3dy5qemdteHkuY29tL3h5Z2svbGlzdC5hc3A/RF9DYXRhSUQ9QTAwMDEtaHR0cDovL3d3dy54Y2N2Yy5jb20vTmV3c19WaWV3LmFzcD9OZXdzSUQ9MTE0K2h0dHA6Ly93d3cuenpsZ3h5Lm5ldC9odG1sL3h5Z2svaW5kZXguc2h0bWwkaHR0cDovL3d3dy56eHh5ZWR1LmNvbS9qaWdvdS9qeXpkengvFmh0dHA6Ly93d3cuY3lwcnh5LmNvbS8WaHR0cDovL3d3dy54eXN3eHkuY29tLz5odHRwOi8vd3d3LmhicWN4eS5jb20vaW5kZXgucGhwL3h1ZXhpYW9nYWlrdWFuZy94dWV4aWFvamlhbmppZRVodHRwOi8vd3d3Lm55enl4eS5jb20raHR0cDovL3d3dy56enZjY3QuY29tL0h0bWwvTGlzdC9MaXN0XzMuaHRtbBZodHRwOi8vd3d3Lnp5cm52Yy5jb20vKWh0dHA6Ly93d3cuc3dzOC5jb20vd3oveXRqeC9kZWZhdWx0MS5hc3A/H2h0dHA6Ly93d3cubHp6Z2R4LmNvbS9pbmRleC5hc3AeaHR0cDovL3d3dy5oYWllLmVkdS5jbi93ZWIvankvJmh0dHA6Ly93d3cua2ZpZS5jbi9WaWV3LmFzcHg/Y2xhc3NJZD02H2h0dHA6Ly93d3cucGRzanl4eS5jb20veHhnay5hc3AaaHR0cDovL3d3dy5qenpneXh5LmNvbS5jbi8oaHR0cDovL2pvYi5uY3d1LmVkdS5jbi9qaXV5ZS93ZWJpbmRleC5kbxZodHRwOi8vam9iLnp6dS5lZHUuY24vF2h0dHA6Ly9qb2Iuc2lhcy5lZHUuY24vFmh0dHA6Ly9qb2IuaHB1LmVkdS5jbi8eaHR0cDovL3d3dy53YW5mYW5nLmVkdS5jbi9qeXcvF2h0dHA6Ly9qb2IuaGF1dC5lZHUuY24vHmh0dHA6Ly96amMuaGF1c3QuZWR1LmNuL2ppdXllLx9odHRwOi8venNqeWMuaGVuYXUuZWR1LmNuL21haW4vF2h0dHA6Ly9qb2IuaGVudS5lZHUuY24vHWh0dHA6Ly9tc3piLmhlbnUuZWR1LmNuL2ppdVllHWh0dHA6Ly9qb2IuaHR1LmNuL2RlZmF1bHQuYXNwF2h0dHA6Ly9qb2IueGx4eS5lZHUuY24vF2h0dHA6Ly9qb2IuaHVlbC5lZHUuY24vG2h0dHA6Ly93d3cucnBjLmVkdS5jbi96c2p5LxhodHRwOi8vam9iLnp6dWxpLmVkdS5jbi8XaHR0cDovL2pvYi56enRpLmVkdS5jbi8caHR0cDovL3d3dy56Y2liLmNuL2p5Z3ouYXNweBhodHRwOi8vanl4eC5oaXN0LmVkdS5jbi8/aHR0cDovLzIxOC4yOC4yMjUuOTEvaml1eWV6aGlkYW8vU2l0ZUZpbGVzL0lubmVyL3BhZ2UuYXNweD9zPTQ0GWh0dHA6Ly9qb2IuaGFjdGNtLmVkdS5jbi8XaHR0cDovL3d3dy54eG11LmVkdS5jbi8UaHR0cDovL2pvYi54eW51Lm5ldC8XaHR0cDovL2pvYi56a251LmVkdS5jbi8XaHR0cDovL2J5cy5heW51LmVkdS5jbi8WaHR0cDovL2pvYi54Y3UuZWR1LmNuLyFodHRwOi8vemhhb3NoZW5nLm55bnUuZWR1LmNuL2p5dy8XaHR0cDovLzYxLjEzNi42OC44OS9qeS8YaHR0cDovL2p5emQuc3FuYy5lZHUuY24vHWh0dHA6Ly93d3cuenppYS5lZHUuY24vMjAwOC8jGGh0dHA6Ly9qaXV5ZS54eHUuZWR1LmNuLyZodHRwOi8vaW5mby5odWFuZ2h1YWkuZWR1LmNuL2diL2ppdXllLxhodHRwOi8vanl4eC5wZHN1LmVkdS5jbi8qaHR0cDovLzIxMS42Ny4xNjAuMjAwL3pzanljL2p5eHgvaW5kZXguYXNwGGh0dHA6Ly96c2p5LmF5aXQuZWR1LmNuLxpodHRwOi8vd3d3MS5saXQuZWR1LmNuL2p5Lx5odHRwOi8vaGF1ZS51bml2ZXJzaXR5LWhyLmNvbS8aaHR0cDovL2p5eHh3Lm55aXN0LmVkdS5jbi8WaHR0cDovL2p5LmhuY2ouZWR1LmNuLxZodHRwOi8veHNjLmhucC5lZHUuY24vGGh0dHA6Ly9qb2IuaGhzdHUuZWR1LmNuLxVodHRwOi8vd3d3Lnp6aXN0LmNvbS8daHR0cDovL2p5Lnp6aHh4eS5jb20vanl4eC5hc3AfaHR0cDovL3d3dy5qeXh4LmNvbS5jbi9raC96enNmLxZodHRwOi8vd3d3LnNzdHZjLmNvbS8jGmh0dHA6Ly93d3cuaG5oeWVkdS5uZXQvankvImh0dHA6Ly93d3cuY2hlbmdnb25nLmVkdS5jbi9qaXV5ZS8faHR0cDovL3d3dzIuc2hlbmdkYS5lZHUuY24vam9iLxdodHRwOi8vankuaG5lZXUuZWR1LmNuLxlodHRwOi8vaml1eWUuaGFjei5lZHUuY24vKWh0dHA6Ly93d3cuenllZHUub3JnL2h0bWwvenNqeS9pbmRleC5odG1sLWh0dHA6Ly93d3cuYXl5cy5uZXQuY24vQ2F0ZWdvcnlfNTIvSW5kZXguYXNweBlodHRwOi8venNqeWMuaGFtYy5lZHUuY24vFmh0dHA6Ly96ai5zaHVxaW5nLm9yZy8oaHR0cDovL3d3dy5qenN6LmNuL2h0bWwvenNqeWIvaW5kZXguaHRtbBZodHRwOi8vankubGhtYy5lZHUuY24vE2h0dHA6Ly9ieXMubnltYy5jbi8qaHR0cDovL3d3dy5zcXl4LmVkdS5jbi93d3cvaml1eWUvaW5kZXguYXNwIWh0dHA6Ly96c2p5LmhuemouZWR1LmNuL2luZGV4LmFzcBhodHRwOi8vd3d3LmxodnRjLmVkdS5jbi8TaHR0cDovL2p5LnNteHB0LmNuLxQrA1tnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFIWN0bDAwJFNlYXJjaENvbnRlbnRCb3gxJGJ0blNlYXJjaOwh2oan4YKGPirLHGMBqOKSoqmaMBrwQCkadH+6OYg8" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"zh-CN","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"￥","NaNSymbol":"非数字","CurrencyNegativePattern":2,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"负无穷大","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"正无穷大","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"上午","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402271999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"-","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027 H:mm:ss","LongDatePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027","LongTimePattern":"H:mm:ss","MonthDayPattern":"M\u0027月\u0027d\u0027日\u0027","PMDesignator":"下午","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"yyyy-M-d","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"yyyy\u0027年\u0027M\u0027月\u0027","AbbreviatedDayNames":["周日","周一","周二","周三","周四","周五","周六"],"ShortestDayNames":["日","一","二","三","四","五","六"],"DayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"AbbreviatedMonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"IsReadOnly":true,"NativeCalendarName":"公历","AbbreviatedMonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""]},"eras":[1,"公元",null,0]};//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=9Xgvysiyi2k_QxojARGhu35ukHFFGJdA1nxdIDTarQl9pFo5CG6iO13obbgORm9w2aelAvpkobHy68MMH4F239ypJFAoGaar3DUu1KNSXA_yj9pW04QxsNSlCpbrksd4ytwfEdRrcQ-TPLyZ3Zl_bzzRzpEcVFEZj8GtpfYZgXelfevLI6MXOGRBNfO2PL8r0&amp;t=5854e822" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+
+    <div >
+        
+        <div><!---->
+<table width="950" height="100" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="2">
+			<img src="images/top1_2016.jpg" width="512" height="100" alt=""/></td>
+		<td>
+			<a href="About.aspx?id=3" target="_blank"><img src="images/top2_2016.jpg" width="93" height="37" alt="联系我们" border="0"/></a></td>
+		<td>
+			<a href="javascript:void(0);" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.hnbys.gov.cn');"><img src="images/top3_2016.jpg" width="88" height="37" alt="设为首页" border="0"></a></td>
+		<td>
+			<a href="javascript:void(0);" onclick="window.external.AddFavorite(location.href, document.title);"><img src="images/top4_2016.jpg" width="82" height="37" alt="加入收藏" border="0"></a></td>
+		<td>
+			<a href="About.aspx?id=97558"><img src="images/top5_2016.jpg" width="82" height="37" alt="网站地图" border="0"/></a></td>
+		<td><img src="images/top6_2016.jpg" width="93" height="37" alt="" border="0"/></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<a href="http://yun.hnbys.gov.cn"><img src="images/top7_2016.jpg" width="438" height="63" alt="" border="0"/></a></td>
+	</tr>
+</table>
+<table width="950" border="0" cellspacing="0" align="center" cellpadding="0">
+  <tr>
+    <td width="35" height="28" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuON" id="clipPic1"><a href="/Default.aspx" onmouseover="clipPic(1); return false;">本站首页</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic2"><a href="About.aspx?id=1" onmouseover="clipPic(2); return false;">中心简介</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic3"><a href="/NewsIndex.aspx" onmouseover="clipPic(3); return false;">新闻中心</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic4"><a href="/Guide.aspx" onmouseover="clipPic(4); return false;">办事指南</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic5"><a href="/FaGuiIndex.aspx" onmouseover="clipPic(5); return false;">政策法规</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic6"><a href="/JiuYeIndex.aspx" onmouseover="clipPic(6); return false;">就业指导</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic7"><a href="/ChuangYeIndex.aspx" onmouseover="clipPic(7); return false;">创业园地</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+    <td width="84" align="center" class="MenuOFF" id="clipPic8"><a href="http://www.hnbys.gov.cn/wx" onmouseover="clipPic(0); return false;" target="_blank">培训测评</a></td><!--http://peixun.hnbys.gov.cn/-->
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>
+ <!--   <td width="84" align="center" class="MenuOFF" id="clipPic9"><a href="BookKeeper.aspx" onmouseover="clipPic(9); return false;">档案查询</a></td>
+    <td width="5" background="images/MenuTopBg.jpg">&nbsp;</td>-->
+    <td width="84" align="center" class="MenuOFF" id="clipPic9"><a href="http://job.hnbys.gov.cn" onmouseover="clipPic(9); return false;">高校联盟</a></td>
+    <td width="30" background="images/MenuTopBg.jpg">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="34" colspan="19" background="images/MenuBg1.jpg">
+    <div id="Pic1">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 10px" class="white">欢迎光临河南省毕业生就业信息网，河南大学生就业公共服务立体化平台。</td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic2">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 135px" class="white"><a href="About.aspx?id=97557" class="white">部门职能</a> ｜  <a href="About.aspx?id=3" class="white">联系我们</a>
+     ｜  <a href="About.aspx?id=2" class="white">关于网站</a> ｜  <a href="About.aspx?id=97558" class="white">网站地图</a> ｜  <a href="ShowContentList.aspx?cid=20" class="white">媒体关注</a></td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic3">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 225px" class="white"><a href="/ShowContentList.aspx?cid=4" class="white">
+        招聘快讯</a> ｜ <a href="/ShowContentList.aspx?cid=5" class="white">就业时讯</a> ｜ <a href="/ShowContentList.aspx?cid=1" class="white">
+        通知公告</a> ｜ <a href="/ShowContentList.aspx?cid=2" class="white">工作信息</a> ｜ <a href="/ShowContentList.aspx?cid=3" class="white">
+        生源信息</a></td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic4">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 230px" class="white"><a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=105731" class="white" target=_blank>
+        中专学历认证</a> ｜ <a href="/xlrz2/index2.html" class="white" target=_blank>
+        高等学历认证</a> ｜ <a href="/ViewContent.aspx?cid=19&id=5" class="white">档案代理</a> ｜ <a href="BookKeeper.aspx" class="white">档案查询</a> ｜ <a href="http://ceping.hnjycy.com" target="_blank" class="white">
+        职业测评</a> ｜ <a href="/ViewContent.aspx?cid=19&id=7" class="white">就业报到证办理程序</a> ｜ <a href="/ViewContent.aspx?cid=19&id=8" class="white">
+        省外院校毕业生调档须知</a></td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic5">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 400px" class="white"><a href="/ShowContentList.aspx?cid=6" class="white">
+        国家政策</a> ｜ <a href="/ShowContentList.aspx?cid=7" class="white">河南政策</a> ｜ <a href="/ShowContentList.aspx?cid=8" class="white">省外政策</a> ｜ <a href="/ShowContentList.aspx?cid=28" class="white">最新政策</a> ｜ <a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=107704" class="white">求职补贴</a></td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic6">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 350px" class="white"><a href="/ShowContentList.aspx?cid=9" class="white">
+        简历指导</a> ｜ <a href="/ShowContentList.aspx?cid=10" class="white">就业政策</a> ｜ <a href="/ShowContentList.aspx?cid=11" class="white">
+        就业指导专家</a> ｜ <a href="/ShowContentList.aspx?cid=21" class="white">专家评测</a> ｜ <a href="/ShowContentList.aspx?cid=22" class="white">
+        走进社会</a> ｜ <a href="/ShowContentList.aspx?cid=23" class="white">心理指导</a> ｜ <a href="/ShowContentList.aspx?cid=24" class="white">
+        就业测评</a><!-- ｜ <a href="http://Job.hnbys.gov.cn/ShowPostingList.aspx" target="_blank" class="white">
+        招聘信息</a></td>-->
+  </tr>
+</table>
+    </div>
+        <div id="Pic7">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 440px" class="white"><a href="/ShowContentList.aspx?cid=32" class="white">
+        创业政策</a> ｜ <a href="/ShowContentList.aspx?cid=12" class="white">创业指导</a> ｜ <a href="/ShowContentList.aspx?cid=13" class="white">创业案例</a> ｜ <a href="/ShowContentList.aspx?cid=33" class="white">创业成果</a> ｜ <a href="/ShowContentList.aspx?cid=34" class="white">
+        创业常识</a> ｜ <a href="/ShowContentList.aspx?cid=35" class="white">创业防骗</a> </td>
+  </tr>
+</table>
+    </div>
+        <div id="Pic8">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 640px" class="white"><a href="http://xmx.hnbys.gov.cn/module/px/2014/enrollnonlogin.php" class="white" target="_blank">培训专区</a> ｜ <a href="http://ceping.hnjycy.com/" class="white" target="_blank"> 职业测评</a> </td>
+  </tr>
+</table>
+    </div>
+  <!--      <div id="Pic9">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="padding:3px 0 0 10px" class="white">欢迎光临河南省毕业生就业信息网，河南大学生就业公共服务立体化平台。</td>
+  </tr>
+</table>
+    </div>-->
+        <div id="Pic9">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+      <td style="padding:3px 0 0 800px" class="white"><a href="League.aspx" class="white">学校联盟</a> ｜ <a href="http://job.hnbys.gov.cn/video/Index.aspx" class="white">远程视频</a></td>
+  </tr>
+</table>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td height="34" colspan="19" background="images/MenuBg2.jpg" style="padding:0 5px 0 10px">
+        
+        
+ <style type="text/css">
+     .style1
+     {
+         width: 54%;
+     }
+ </style>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="style1">今天是：<script src="/Js/calender.js"></script><span id="ctl00_SearchContentBox1_Label1">访问量：66421015</span></td>
+        <td width="9%"><img src="images/MenuSearchPic.jpg" width="88" height="34"></td>
+        <td width="15%" align="center">
+            <select name="ctl00$SearchContentBox1$lstChannel" id="ctl00_SearchContentBox1_lstChannel">
+	<option selected="selected" value="0">请选文章栏目...</option>
+	<option value="27">中心新闻</option>
+	<option value="28">政策法规</option>
+	<option value="29">就业指导</option>
+	<option value="30">创业园地</option>
+	<option value="31">其它栏目</option>
+
+</select></td>
+        <td width="17%" align="center">
+                        <input name="ctl00$SearchContentBox1$edtTitle" type="text" maxlength="10" id="ctl00_SearchContentBox1_edtTitle" class="Index_input" />
+                    </td>
+        <td width="5%">
+            <input type="image" name="ctl00$SearchContentBox1$btnSearch" id="ctl00_SearchContentBox1_btnSearch" src="images/SearchMenuButton.jpg" border="0" />
+          </td>
+      </tr>
+    </table>
+</td>
+  </tr>
+</table>
+</div><!---->
+      
+<link href="Css/tab.css" rel="stylesheet" type="text/css" />
+<link href="Css/tab_long.css" rel="stylesheet" type="text/css" />
+<DIV id=img1 style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+visibility: visible;"><a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108697" target="_blank"><img src="http://www.hnbys.gov.cn/images/hsspsxh.jpg" width="300" height="100" border="0"></a></DIV><!--
+<DIV id=img2 style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+visibility: visible;"><a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108364" target="_blank"><img src="images/top100web.jpg" width="300" height="100" border="0"></a></DIV>--><!---->
+<SCRIPT src="Js/float.js"></SCRIPT>
+<SCRIPT src="js/admove.js"></SCRIPT>
+<SCRIPT src="js/tab.js"></SCRIPT>
+<script type="text/javascript"> var img2=new AdMove("img2"); img2.Run();</script><!--img2 floating-->
+<!--地图
+<div style="position:fixed; right: 0px; top: 200px;" class="float_layer" id="miaov_float_layer1">
+  <div class="content"><a href="http://www.hnbys.gov.cn/map/show.php" target="_blank"><img src="images/ditu.png" width="129px" style="border:none"></a></div>
+</div>-->
+
+<!--微信二维码-->
+<div style="position:fixed; right: 0px; top: 200px;" class="float_layer" id="miaov_float_layer2">
+  <div class="content"><a href="http://www.hnbys.gov.cn"><img src="images/微信二维码.jpg" width="87px" style="border:none"></a></div>
+</div>
+<script type="text/javascript">
+    if (navigator.userAgent.indexOf("MSIE") != -1) {
+        oType = "IE";
+      //  document.getElementById("miaov_float_layer1").style.position = "absolute";
+        document.getElementById("miaov_float_layer2").style.position = "absolute";
+    }
+    else {
+        oType = "nonIE";
+    }
+</script>
+
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="2">
+                
+   <table width="950" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8" colspan="2"></td>
+  </tr>
+  <tr>
+    <td width="100"><img src="images/RollNewsPic.jpg" width="98" height="25"></td>
+    <td width="850"><DIV id=kx style="OVERFLOW: hidden; WIDTH: 850px; HEIGHT: 23px">
+      <TABLE cellPadding=0 align=left border=0 cellspace="0">
+        <TBODY>
+          <TR>
+            <TD id=kx1 vAlign=top><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <TBODY>
+                  <TR>
+                    <TD style="padding:0 0 5px 0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+     <td>
+     <NOBR>
+     · <a href="ViewContent.aspx?id=108694"
+                title='转发全国高等学校学生信息咨询与就业指导中心 关于开展创业类慕课建设工作的通知'n target="_blank">
+                转发全国高等学校学生信息咨询与就业指</a>[2016-04-08]
+
+     · <a href="ViewContent.aspx?id=108653"
+                title='关于举办大学生创业服务进校园活动启动仪式的通知'n target="_blank">
+                关于举办大学生创业服务进校园活动启动</a>[2016-03-24]
+
+     · <a href="ViewContent.aspx?id=108636"
+                title='关于我省推荐2016年度全国创新创业总结宣传高校的公示'n target="_blank">
+                关于我省推荐2016年度全国创新创业</a>[2016-03-18]
+
+     · <a href="ViewContent.aspx?id=108620"
+                title='关于举办全国高校毕业生就业网络联盟2016年新能源产业网络招聘会的通知'n target="_blank">
+                关于举办全国高校毕业生就业网络联盟2</a>[2016-03-14]
+
+     · <a href="ViewContent.aspx?id=108614"
+                title='关于开展大学生创业服务进校园活动的通知'n target="_blank">
+                关于开展大学生创业服务进校园活动的通</a>[2016-03-09]
+
+     · <a href="ViewContent.aspx?id=108606"
+                title='2015年河南省高校毕业生就业质量年度报告'n target="_blank">
+                2015年河南省高校毕业生就业质量年</a>[2016-03-08]
+
+    
+    </NOBR> 
+        </td>
+  </tr>
+</table>
+                        </TD>
+                  </TR>
+                </TBODY>
+            </TABLE></TD>
+            <TD id=kx2 vAlign=top></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </DIV>
+    <SCRIPT>  var speed=60;  kx2.innerHTML=kx1.innerHTML;  function Marqueekx(){  if(kx2.offsetWidth-kx.scrollLeft<=0)  kx.scrollLeft-=kx1.offsetWidth;  else{  kx.scrollLeft++;  }  }  var MyMarkx=setInterval(Marqueekx,speed);  kx.onmouseover=function()   {clearInterval(MyMarkx)};  kx.onmouseout=function()   {MyMarkx=setInterval(Marqueekx,speed)};</SCRIPT>    </td>
+  </tr>
+  <tr>
+    <td height="8" colspan="2"></td>
+  </tr>
+</table>
+            </td>
+        </tr>
+    </table>
+	<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+		<td>
+			<div class="lunbo">
+				<div class="div_lun" style="width:950; height:100; padding:0 0 0 0; margin:0; float:left;">
+					<a target="_blank" href="http://www.ncss.org.cn/wlzph/wllmzph/index.shtml"><img src="http://www.hnbys.gov.cn/images/jywllm.jpg" style="width:950;height:100" border="0"></a>
+				</div><!---->
+				<div class="div_lun" style="width:950; height:100; padding:0 0 0 0; margin:0; float:left; display:none">
+					<a target="_blank" href="http://www.hnbys.gov.cn/wx"><img src="http://www.hnbys.gov.cn/wx/images/henan.jpg" style="width:950;height:100" border="0"></a>
+				</div>
+				<script src="Js/jquery-1.6.2.min.js"></script>
+				<script>var index =0;var timer = setInterval(function(){index = (index == 1)?0:index + 1;$(".div_lun").hide().eq(index).show();},4000);</script>
+			</div>
+		</td>
+	</tr>
+	</table>
+<!--	<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+	<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+		<td>
+			<div style="width:950; height:100; padding:0 0 0 0; margin:0; float:left">
+			<a target="_blank" href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108582"><img src="images/免费师范生双选会.jpg" style="width:950;height:100" border="0" /></a>
+			</div>
+		</td>
+	</tr>
+	</table><!---->
+	<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+	<!---->
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0" >
+		<tr>
+            <td width="250">
+                <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="e7e7e7">
+                    <tr>
+                        <td height="218" bgcolor="f9f9f9">
+                            
+
+<script type="text/javascript">
+
+imgUrl1="/admin/uploadfiles/aapics/20160328085902.jpg";imgLink1="http://www.hnbys.gov.cn/ViewContent.aspx?id=108658";imgtext1="河南省第三届退役大学生士兵就业专场双选会";imgUrl2="/admin/uploadfiles/aapics/20160328090029.jpg";imgLink2="http://www.gfbzb.gov.cn/";imgtext2="2016年全国征兵网网上登记报名工作已开始 ";imgUrl3="/admin/uploadfiles/aapics/20160328091221.jpg";imgLink3="http://www.hnbys.gov.cn/ViewContent.aspx?id=108659";imgtext3="免费培训发放补贴结对帮扶贴息贷款创业服务进校园大学生创业福利多";imgUrl4="/admin/uploadfiles/aapics/20160401040325.jpg";imgLink4="http://www.ncss.org.cn/wlzph/brzp/";imgtext4="全国中小企业网上百日招聘";imgUrl5="/admin/uploadfiles/aapics/20160328085555.jpg";imgLink5="http://www.hnbys.gov.cn/ViewContent.aspx?id=108658";imgtext5="河南省第三届退役大学生士兵就业专场双选会";
+
+var focus_width=240
+var focus_height=188
+var text_height=21
+var swf_height = focus_height+text_height
+
+var pics=imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4+"|"+imgUrl5
+var links=imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4+"|"+imgLink5
+var texts=imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4+"|"+imgtext5
+
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase=http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6?0?0?0 width="'+ focus_width +'" height="'+ swf_height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="flashs/focus.swf"><param name="quality" value="high"> <param name="bgcolor" value="#F0F0F0">');//FLASH地址
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');   
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight=' +focus_height+'&textheight='+text_height+'">');
+document.write('<embed src="flashs/focus.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight= '+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#F0F0F0" quality="high" width ="'+ focus_width +'" height="'+ focus_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            
+            <td width="10">&nbsp;
+                
+            </td>
+
+            <td width="340" valign="top">
+                 <div class="nTab" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle"> 
+                    <ul id="myTab0"> 
+                    <li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=1">文件通知</a></li>
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent"> 
+                <div id="myTab0_Content0">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108694"
+                title='转发全国高等学校学生信息咨询与就业指导中心 关于开展创业类慕课建设工作的通知' target="_blank">
+                <font color="#585858">转发全国高等学校学生信息咨询与就业指</a>
+    </td>
+    <td align=right>[04-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108653"
+                title='关于举办大学生创业服务进校园活动启动仪式的通知' target="_blank">
+                <font color="#585858">关于举办大学生创业服务进校园活动启动</a>
+    </td>
+    <td align=right>[03-24]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108636"
+                title='关于我省推荐2016年度全国创新创业总结宣传高校的公示' target="_blank">
+                <font color="#585858">关于我省推荐2016年度全国创新创业</a>
+    </td>
+    <td align=right>[03-18]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108620"
+                title='关于举办全国高校毕业生就业网络联盟2016年新能源产业网络招聘会的通知' target="_blank">
+                <font color="#585858">关于举办全国高校毕业生就业网络联盟2</a>
+    </td>
+    <td align=right>[03-14]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108614"
+                title='关于开展大学生创业服务进校园活动的通知' target="_blank">
+                <font color="#585858">关于开展大学生创业服务进校园活动的通</a>
+    </td>
+    <td align=right>[03-09]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108606"
+                title='2015年河南省高校毕业生就业质量年度报告' target="_blank">
+                <font color="#585858">2015年河南省高校毕业生就业质量年</a>
+    </td>
+    <td align=right>[03-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div>
+                
+                </div> 
+                </div>          
+                <!--
+
+
+<table width="250" border="0" cellspacing="0" cellpadding="0" 
+    style="height: 200px">
+    <tr>
+        <td height="220" background="images/LoginBg.jpg" valign="bottom">
+            <table width="250" border="0" cellspacing="0" cellpadding="0" 
+                style="height: 80px">
+                <tr>
+                    <td height="200" align="center" valign="bottom">
+                        <table width="209" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center"> 
+                                    <iframe src=" http://job.hnbys.gov.cn/OutLogin.aspx" name="I6"  style="background-image:no-repreat images/LoginBg.jpg" width="242" marginwidth="0"
+                                        height="160" marginheight="0" frameborder="0" marginwidth="0" hspace="0" vspace="0" scrolling="no"
+                                        id="Iframe1"></iframe>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td> </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+-->
+            </td>
+
+            <td width="10">&nbsp;
+            </td>
+            <td width="340" valign="top">
+			
+			<div class="nTab" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle"> 
+                    <ul id="myTab1"> 
+                    <li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=5">就业时讯</a></li> 
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent" style="height:170"> 
+                    <div id="myTab1_Content0">
+                    
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108699"
+                title='我省首场高校毕业生网络视频双选会在郑州大学成功举办' target="_blank">
+                <font color="#585858">我省首场高校毕业生网络视频双选会在郑</a>
+    </td>
+    <td align=right>[04-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108658"
+                title='河南省第三届退役大学生士兵就业专场双选会暨2016年大学生征兵工作启动仪式举行' target="_blank">
+                <font color="#585858">河南省第三届退役大学生士兵就业专场双</a>
+    </td>
+    <td align=right>[03-25]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108634"
+                title='河南省“新梦想”大学生出国（境）就业工程' target="_blank">
+                <font color="#585858">河南省“新梦想”大学生出国（境）就业</a>
+    </td>
+    <td align=right>[03-18]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108630"
+                title='河南省第三届退役大学生士兵就业专场双选会将于3月25日在河南工业大学举办' target="_blank">
+                <font color="#585858">河南省第三届退役大学生士兵就业专场双</a>
+    </td>
+    <td align=right>[03-17]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108597"
+                title='“2016年“河南——教育部直属师范大学免费师范毕业生就业专场双选会”在河南师范大学举行' target="_blank">
+                <font color="#585858">“2016年“河南——教育部直属师范</a>
+    </td>
+    <td align=right>[02-29]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108568"
+                title='学习开道务实创新-促进会秘书处学习座谈会侧记' target="_blank">
+                <font color="#585858">学习开道务实创新-促进会秘书处学习座</a>
+    </td>
+    <td align=right>[02-15]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                    </div>
+                </div> 
+                </div>
+
+                
+            </td>
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="340" height="210" valign="top">
+                <div class="nTab" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle"> 
+                    <ul id="myTab2">      
+					<li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=39">高校动态</a></li>
+                  <li class="normal" onmouseover="nTabs(this,1);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=38">双选会</a></li><!--   -->
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent" style="height:170"> 
+				    <div id="myTab2_Content0">
+                    
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108698"
+                title='郑州轻工业学院成功举行2016年大学生创业项目资助 评审会' target="_blank">
+                <font color="#585858">郑州轻工业学院成功举行2016年大学</a>
+    </td>
+    <td align=right>[04-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108695"
+                title='濮阳职业教育集团和长江学院成立暨濮阳市第三届校企合作联席会议在濮阳职业技术学院举行' target="_blank">
+                <font color="#585858">濮阳职业教育集团和长江学院成立暨濮阳</a>
+    </td>
+    <td align=right>[04-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108687"
+                title='河南工程学院召开2015年毕业生就业创业工作总结表彰暨2016年毕业生就业创业工作会议' target="_blank">
+                <font color="#585858">河南工程学院召开2015年毕业生就业</a>
+    </td>
+    <td align=right>[04-06]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108686"
+                title='洛阳师范学院邀请自主创业人来校演讲' target="_blank">
+                <font color="#585858">洛阳师范学院邀请自主创业人来校演讲</a>
+    </td>
+    <td align=right>[04-06]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108689"
+                title='新乡学院成立大学生创新创业协会' target="_blank">
+                <font color="#585858">新乡学院成立大学生创新创业协会</a>
+    </td>
+    <td align=right>[04-01]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108676"
+                title='河南毕业生就业市场豫西分市场2016届毕业生春季双向选择洽谈会成功举办' target="_blank">
+                <font color="#585858">河南毕业生就业市场豫西分市场2016</a>
+    </td>
+    <td align=right>[03-31]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                    </div>
+                    <div id="myTab2_Content1" class="none">
+                    
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108697"
+                title='华北水利水电大学2016届毕业生网络视频双选会邀请函' target="_blank">
+                <font color="#585858">华北水利水电大学2016届毕业生网络</a>
+    </td>
+    <td align=right>[04-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108685"
+                title='河南省毕业生就业市场豫南分市场暨信阳师范学院2016届毕业生春季就业双选会邀请函' target="_blank">
+                <font color="#585858">河南省毕业生就业市场豫南分市场暨信阳</a>
+    </td>
+    <td align=right>[04-06]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108680"
+                title='河南工程学院2016届（春季）毕业生双向选择会 暨2017届毕业生实习见面会邀请函' target="_blank">
+                <font color="#585858">河南工程学院2016届（春季）毕业生</a>
+    </td>
+    <td align=right>[04-01]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108678"
+                title='河南工业大学2016届毕业生网络视频招聘会' target="_blank">
+                <font color="#585858">河南工业大学2016届毕业生网络视频</a>
+    </td>
+    <td align=right>[03-31]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108677"
+                title='郑州大学2016届毕业生网络视频招聘会邀请函' target="_blank">
+                <font color="#585858">郑州大学2016届毕业生网络视频招聘</a>
+    </td>
+    <td align=right>[03-31]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108649"
+                title='中原工学院信息商务学院2016届毕业生春季就业双选会邀请函' target="_blank">
+                <font color="#585858">中原工学院信息商务学院2016届毕业</a>
+    </td>
+    <td align=right>[03-24]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                    </div>
+                </div> 
+                </div>
+            </td>
+            <td width="10">&nbsp;
+                
+            </td>
+            <td width="340" valign="top">
+                <div class="nTab" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle"> 
+                    <ul id="myTab3"> 
+					<li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=4">招聘信息</a></li> 
+                    <li class="normal" onmouseover="nTabs(this,1);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=29">就业指导</a></li>
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent"> 
+                <div id="myTab3_Content0">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108690"
+                title='淮阳县2016年事业单位公开招聘工作人员简章' target="_blank">
+                <font color="#585858">淮阳县2016年事业单位公开招聘工作</a>
+    </td>
+    <td align=right>[04-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108691"
+                title='河南省国土资源科学研究院2016年公开招聘工作人员方案' target="_blank">
+                <font color="#585858">河南省国土资源科学研究院2016年公</a>
+    </td>
+    <td align=right>[04-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108692"
+                title='2016年灵宝市公开招聘事业单位工作人员实施方案' target="_blank">
+                <font color="#585858">2016年灵宝市公开招聘事业单位工作</a>
+    </td>
+    <td align=right>[04-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108693"
+                title='2016年淅川县卫生计生委面向高等院校公开招聘专业技术人员公告' target="_blank">
+                <font color="#585858">2016年淅川县卫生计生委面向高等院</a>
+    </td>
+    <td align=right>[04-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108688"
+                title='河南建筑职业技术学院2016年公开招聘教师方案' target="_blank">
+                <font color="#585858">河南建筑职业技术学院2016年公开招</a>
+    </td>
+    <td align=right>[04-06]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108684"
+                title='中文在线数字出版集团股份有限公司招聘启事' target="_blank">
+                <font color="#585858">中文在线数字出版集团股份有限公司招聘</a>
+    </td>
+    <td align=right>[04-05]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div> 
+                <div id="myTab3_Content1" class="none">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108681"
+                title='求职 ：外企面试必知的七原则' target="_blank">
+                <font color="#585858">求职 ：外企面试必知的七原则</a>
+    </td>
+    <td align=right>[04-01]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108663"
+                title='大学生求职中笔试的准备和注意事项' target="_blank">
+                <font color="#585858">大学生求职中笔试的准备和注意事项</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108665"
+                title='支招：大学生求职面试必知的10个“度”' target="_blank">
+                <font color="#585858">支招：大学生求职面试必知的10个“度</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108642"
+                title='毕业生求职简历的五大关键词' target="_blank">
+                <font color="#585858">毕业生求职简历的五大关键词</a>
+    </td>
+    <td align=right>[03-21]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108643"
+                title='第一次去面试，你该注意点什么？' target="_blank">
+                <font color="#585858">第一次去面试，你该注意点什么？</a>
+    </td>
+    <td align=right>[03-21]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108644"
+                title='面试攻略：怎样提高求职面试成功率' target="_blank">
+                <font color="#585858">面试攻略：怎样提高求职面试成功率</a>
+    </td>
+    <td align=right>[03-21]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div> 
+                </div> 
+                </div>
+            </td>
+            <td width="10">&nbsp;
+                
+            </td>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="7">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108697" target="_blank"><img src="/admin/uploadfiles/aapics/20160408050531.jpg" border="0" width="250" height="65" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="7">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://www.ncss.org.cn/wlzph/zdhy/" target="_blank"><img src="/admin/uploadfiles/aapics/20151028114909.jpg" border="0" width="250" height="65" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="7">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://www.ncss.org.cn/tbch/2016jjyyl/" target="_blank"><img src="/admin/uploadfiles/aapics/20150916045240.jpg" border="0" width="250" height="65" /></a>
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td height="7">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            
+            <td width="340" height="210" valign="top">
+                <div class="nTab" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle"> 
+                    <ul id="myTab4"> 
+                    <li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=30">创业园地</a></li>
+                    <li class="normal" onmouseover="nTabs(this,1);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=28">政策法规</a></li>
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent" style="height:170"> 
+                <div id="myTab4_Content0">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108683"
+                title='大学生创业六大“秘籍”' target="_blank">
+                <font color="#585858">大学生创业六大“秘籍”</a>
+    </td>
+    <td align=right>[04-01]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108682"
+                title='8大失误导致创业失败 创业时机需恰当' target="_blank">
+                <font color="#585858">8大失误导致创业失败 创业时机需恰当</a>
+    </td>
+    <td align=right>[04-01]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108664"
+                title='大学生创业几率最大的四大方向' target="_blank">
+                <font color="#585858">大学生创业几率最大的四大方向</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108659"
+                title='免费培训发放补贴结对帮扶贴息贷款创业服务进校园大学生创业福利多' target="_blank">
+                <font color="#585858">免费培训发放补贴结对帮扶贴息贷款创业</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108641"
+                title='如何打造一份含金量最高的商业计划书？' target="_blank">
+                <font color="#585858">如何打造一份含金量最高的商业计划书？</a>
+    </td>
+    <td align=right>[03-21]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108640"
+                title='李彦宏：给年轻创业者的七条忠告' target="_blank">
+                <font color="#585858">李彦宏：给年轻创业者的七条忠告</a>
+    </td>
+    <td align=right>[03-21]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div>
+                <div id="myTab4_Content1" class="none">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108662"
+                title='大学生创业可享哪些税收优惠？' target="_blank">
+                <font color="#585858">大学生创业可享哪些税收优惠？</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108661"
+                title='校园地国家助学贷款和生源地信用助学贷款有什么区别？' target="_blank">
+                <font color="#585858">校园地国家助学贷款和生源地信用助学贷</a>
+    </td>
+    <td align=right>[03-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108586"
+                title='2016年男青年兵役登记、应征报名相关政策' target="_blank">
+                <font color="#585858">2016年男青年兵役登记、应征报名相</a>
+    </td>
+    <td align=right>[02-25]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108439"
+                title='国务院关于积极推进“互联网+”行动的指导意见' target="_blank">
+                <font color="#585858">国务院关于积极推进“互联网+”行动的</a>
+    </td>
+    <td align=right>[11-05]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108303"
+                title='考上大学这些资助你可以申请！不为学费住宿费生活费发愁' target="_blank">
+                <font color="#585858">考上大学这些资助你可以申请！不为学费</a>
+    </td>
+    <td align=right>[08-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108302"
+                title='最新最全2015国家学生资助政策看过来！覆盖学前教育到研究生教育' target="_blank">
+                <font color="#585858">最新最全2015国家学生资助政策看过</a>
+    </td>
+    <td align=right>[08-07]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div>
+                </div>
+				</div>
+            </td>
+            <td width="10">&nbsp;
+                
+            </td>
+            <td width="340" valign="top">
+                <div class="nTab_long" style=" width:340"> 
+                <!-- 标题开始 --> 
+                <div class="TabTitle_long"> 
+                    <ul id="myTab5">
+                <!--    <li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=44">"互联网+"大赛</a></li>-->
+                    <li class="active" onmouseover="nTabs(this,0);"><a href="http://www.hnbys.gov.cn/ShowContentList.aspx?cid=42">就业创业工作动态</a></li> 
+                    </ul> 
+                </div> 
+                <!-- 内容开始 --> 
+                <div class="TabContent" style="height:170">
+                <div id="myTab5_Content0" class="none">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108386"
+                title='现场总决赛实施方案' target="_blank">
+                <font color="#585858">现场总决赛实施方案</a>
+    </td>
+    <td align=right>[10-13]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108377"
+                title='关于首届中国“互联网+”大学生创新创业大赛全国总决赛的通知' target="_blank">
+                <font color="#585858">关于首届中国“互联网+”大学生创新创</a>
+    </td>
+    <td align=right>[10-08]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108367"
+                title='关于首届中国“互联网+”大学生创新创业大赛全国总决赛“铜奖晋银奖”复活赛的通知' target="_blank">
+                <font color="#585858">关于首届中国“互联网+”大学生创新创</a>
+    </td>
+    <td align=right>[09-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108366"
+                title='大赛全国总决赛的预通知' target="_blank">
+                <font color="#585858">大赛全国总决赛的预通知</a>
+    </td>
+    <td align=right>[09-28]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108364"
+                title='全国总决赛入围项目名单的公示' target="_blank">
+                <font color="#585858">全国总决赛入围项目名单的公示</a>
+    </td>
+    <td align=right>[09-23]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108550"
+                title='首届中国“互联网+”大学生创新创业大赛报名情况（截止8月31日）' target="_blank">
+                <font color="#585858">首届中国“互联网+”大学生创新创业大</a>
+    </td>
+    <td align=right>[08-31]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div>  
+                <div id="myTab5_Content1">
+                
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108561"
+                title='《大学生就业创业工作动态》第4期' target="_blank">
+                <font color="#585858">《大学生就业创业工作动态》第4期</a>
+    </td>
+    <td align=right>[01-11]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108226"
+                title='《大学生就业创业工作动态》第3期' target="_blank">
+                <font color="#585858">《大学生就业创业工作动态》第3期</a>
+    </td>
+    <td align=right>[07-15]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108146"
+                title='《大学生就业创业工作动态》第2期' target="_blank">
+                <font color="#585858">《大学生就业创业工作动态》第2期</a>
+    </td>
+    <td align=right>[06-19]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="27">
+                · <a href="ViewContent.aspx?id=108100"
+                title='《大学生就业创业工作动态》第1期' target="_blank">
+                <font color="#585858">《大学生就业创业工作动态》第1期</a>
+    </td>
+    <td align=right>[06-05]</td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" background="/images/Dot.jpg"></td>
+  </tr>
+</table>
+        <div style="display: block">
+
+        </div>
+    
+    
+
+                </div>  
+                </div> 
+                </div>
+            </td>
+            <td width="10">&nbsp;
+                
+            </td>
+            <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <a href="http://www.chsi.com.cn/xlrz/" target="_blank"><img src="/admin/uploadfiles/aapics/20150130112047.jpg" border="0" width="250" height="65" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://zzxlrz.hnbys.gov.cn/xlrz/user/querynonlogin.php" target="_blank"><img src="/admin/uploadfiles/aapics/20160408051019.jpg" border="0" width="250" height="65" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108696" target="_blank"><img src="/admin/uploadfiles/aapics/20160408045817.jpg" border="0" width="250" height="65" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="7">
+                    </td>
+                </tr>
+            </table>
+            </td>
+            
+        </tr>
+    </table>
+	<!---->
+	<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+<SCRIPT>
+	var NowFrameDI1 = 1;
+	var MaxFrameDI1 = 2;
+	var bStartDI1 = 0;
+	function fnToggleDI1() {
+	var next = NowFrameDI1 + 1;
+	if(next == MaxFrameDI1+1) 
+	{
+	NowFrameDI1 = MaxFrameDI1;
+	next = 1;
+	}
+	if(bStartDI1 == 0)
+	{
+	bStartDI1 = 1;
+			  
+	setTimeout('fnToggleDI1()', 1000);
+	return;
+	}
+	else
+	{
+	oTransContainerDI1.filters[0].Apply();
+	document.images['oDIVDI1'+next].style.display = "";
+	document.images['oDIVDI1'+NowFrameDI1].style.display = "none"; 
+	oTransContainerDI1.filters[0].Play(duration=0.5);
+	if(NowFrameDI1 == MaxFrameDI1) 
+	NowFrameDI1 = 1;
+	else
+	NowFrameDI1++;
+	} setTimeout('fnToggleDI1()', 6000);
+	}
+	fnToggleDI1();
+</SCRIPT>
+<!--焦点图片开始-->
+<DIV id="oTransContainerDI1" style="FILTER: progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0, wipeStyle=0, motion='forward'); WIDTH: 950px; HEIGHT: 80px">
+<A href="http://xmx.hnbys.gov.cn/2016/sxh.php" target=_blank><IMG id=oDIVDI11 style="BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; DISPLAY: yes;  BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid" height=80 src="/admin/uploadfiles/aapics/20160111044540.jpg" width=950 border=0></A><A href="http://www.ncss.org.cn/wlzph/brzp/" target=_blank><IMG id=oDIVDI12 style="BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; DISPLAY: none;  BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid" height=80 src="/admin/uploadfiles/aapics/20160405090209.jpg" width=950 border=0></A>
+</DIV>
+<!--焦点图片结束-->
+            </td>
+        </tr>
+    </table>
+	<!---->
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <iframe src="http://www.hnbys.gov.cn/lnjy/index.html" name="img_upload2" width="700"
+                                height="365" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0"
+                                scrolling="no"></iframe>
+                        </td>
+                    </tr> 
+                </table>
+            </td>
+            <td width="250" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">                   
+                    <tr>
+                        <td height="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div style="float:left;"><a href="/xlrz2/index2.html" target="_blank"><img src="images/RightZ_1.jpg" width="120" height="38" border="0"></a></div>
+                        <div style="float:right;"><a href="/ViewContent.aspx?cid=19&amp;id=5" target="_blank"><img src="images/RightZ_2.jpg" width="120" height="38" border="0"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div style="float:left;"><a href="http://www.hnbys.gov.cn/BookKeeper.aspx" target="_blank"><img src="images/RightZ_5.jpg" width="120" height="38" border="0"></a></div>
+                        <div style="float:right;"><a href="/About.aspx?id=97557" target="_blank"><img src="images/RightTop_4.jpg" width="120" height="38" border="0"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div style="float:left;"><a href="/ViewContent.aspx?cid=19&amp;id=7" target="_blank"><img src="images/RightZ_7.jpg" width="120" height="38" border="0"></a></div>
+                        <div style="float:right;"><a href="/ViewContent.aspx?cid=19&amp;id=8" target="_blank"><img src="images/RightZ_8.jpg" width="120" height="38" border="0"></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="11">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <iframe height=230 width=250 src="http://player.youku.com/embed/XNjc0NjI0OTYw" frameborder=0 allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="230" height="60">
+                <a href="http://www.gfbzb.gov.cn/" target="_blank"><img src="/admin/uploadfiles/aapics/20150916045011.jpg" border="0" width="230" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="230">
+                <a href="http://www.hncjh.net" target="_blank"><img src="/admin/uploadfiles/aapics/20100910042705.gif" border="0" width="230" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="230">
+                <a href="http://www.hnjypg.com" target="_blank"><img src="/admin/uploadfiles/aapics/20140725045158.jpg" border="0" width="230" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="230">
+                <a href="http://www.hnbys.gov.cn/ViewContent.aspx?id=108357" target="_blank"><img src="/admin/uploadfiles/aapics/20150916045121.jpg" border="0" width="230" height="60" /></a>
+            </td>
+        </tr>
+    </table>
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="29" background="images/SchoolBar.jpg">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="94%" class="white" style="padding: 3px 0 0 22px">
+                            学校联盟
+                        </td>
+                        <td width="6%">
+                            <a href="/League.aspx" class="white">更多&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+    <div id="demo" style="overflow: hidden; width: 950px; height: 140px; margin: 0 AUTO 0 AUTO;">
+        <table width="950" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td id="demo1" height="10">
+                    <table width="950" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td height="10">
+                                <a href='http://zsjyc.henau.edu.cn/main/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415042026.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://120.194.53.39/jyw/' target='_blank' ><img src='/admin/uploadfiles/aapics/20120704121544.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://haue.university-hr.com/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110331100013.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.haie.edu.cn/web/jy/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415042232.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zzist.com/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021053717.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.lhmc.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021054034.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jyxx.hnjs.com.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20140319044445.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.hbzy.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101015103156.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.hpu.edu.cn/www/index.html' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021042920.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://zsjy.hnzj.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021052351.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.hncj.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021052420.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.jyvtc.com/zjbjy/index.asp' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021052711.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.sias.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101021053510.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zhzhu.edu.cn/jyzdzx/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415042402.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.hnpi.cn/webs/jiuye/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324064411.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.rpc.edu.cn/zsjy/' target='_blank' ><img src='/admin/uploadfiles/aapics/20140319115429.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://mszb.henu.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415042657.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.hnac.com.cn/jyzx/Main/index.asp' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415044718.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://zhaoban.sqnc.edu.cn/jyzd/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110415044833.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.hactcm.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101015103838.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.haut.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20101028024723.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zztc.com.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110331091843.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://info.huanghuai.edu.cn/gb/jiuye/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324064611.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zztrc.edu.cn/col/col52/index.html' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324064703.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jyzd.sqmc.edu.cn/index.aspx' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324064732.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jyxx.hist.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324064956.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.xlxy.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324065022.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www1.hnjc.org/zhaoSheng.do?method=index' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324065113.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.chenggong.edu.cn/cg_jy' target='_blank' ><img src='/admin/uploadfiles/aapics/20110329095512.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.pybys.com/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110407052434.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.xxmu.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110416085556.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://lsjy.hlxc.cn' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070105.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.hnjmxy.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324071819.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://202.196.151.18/jiuye/webindex.do' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070301.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zcib.edu.cn/jygz.aspx' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070331.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.huel.edu.cn' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070411.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.xzyjyw.com' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070509.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.hncc.edu.cn' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324070536.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.sstvc.com' target='_blank' ><img src='/admin/uploadfiles/aapics/20110506020337.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jiuye.xxu.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324071932.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.yczyxy.com/xbweb/jb/default.asp' target='_blank' ><img src='/admin/uploadfiles/aapics/20110329093438.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://bys.aynu.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072048.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.peczzu.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072058.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.zazy.cn/list.php?fid-34-page-1.htm' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072124.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www2.zzia.edu.cn/zsjyc/jiuye/index.asp' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072148.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.wanfang.edu.cn/jyw/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072150.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www2.zzjm.edu.cn/jyw/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072206.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://muzhuan.ar114.com.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072246.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://dep.zzrvtc.edu.cn/zsjyc/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072309.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.htu.cn/index2.asp' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072312.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.hnsfjy.net/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072352.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://job.zkvtc.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072400.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.hamc.com.cn/zsjy/index.htm' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072521.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www2.zlxy.cn/jyxxw/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072530.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.hnhyedu.net/jy/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110510041758.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.jzu.cn/jyb/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072608.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://www.jzsz.cn/html/zsjyb/index.html' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072623.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jyxxw.nyist.edu.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072639.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://bys.nymc.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110329095415.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://xszy.pdsu.edu.cn/job/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072719.jpg' width='106' height='136' border=0 /><a/>&nbsp;<a href='http://jy.smxpt.cn/' target='_blank' ><img src='/admin/uploadfiles/aapics/20110324072738.jpg' width='106' height='136' border=0 /><a/>&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="demo2" height="10">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script language="javascript"> 
+              var speed = 38
+              demo2.innerHTML = demo1.innerHTML
+              function Marquee() {
+                  if (demo2.offsetWidth - demo.scrollTop <= 0)
+                      demo.scrollLeft -= demo1.offsetWidth
+                  else {
+                      demo.scrollLeft++
+                  }
+              }
+              var MyMar = setInterval(Marquee, speed)
+              demo.onmouseover = function() { clearInterval(MyMar) }
+              demo.onmouseout = function() { MyMar = setInterval(Marquee, speed) }
+    </script>
+
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+        <tr>
+            <td width="150" height="60">
+                <a href="http://www.moe.edu.cn/" target="_blank"><img src="/admin/uploadfiles/aapics/20100427030652.jpg" border="0" width="150" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="150" height="60">
+                <a href="http://www.ncss.org.cn/" target="_blank"><img src="/admin/uploadfiles/aapics/20150130105755.jpg" border="0" width="150" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="150" height="60">
+                <a href="http://www.haedu.gov.cn/" target="_blank"><img src="/admin/uploadfiles/aapics/20140318054040.jpg" border="0" width="150" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="150" height="60">
+                <a href="http://hasi.haedu.gov.cn/" target="_blank"><img src="/admin/uploadfiles/aapics/20100427030347.jpg" border="0" width="150" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="150" height="60">
+                <a href="http://www.chsi.com.cn" target="_blank"><img src="/admin/uploadfiles/aapics/20140731053321.jpg" border="0" width="150" height="60" /></a>
+            </td>
+            <td width="10">
+                &nbsp;
+            </td>
+            <td width="150" height="60">
+                <a href="http://www.hnjycy.com/" target="_blank"><img src="/admin/uploadfiles/aapics/20140318054144.jpg" border="0" width="150" height="60" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+    <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList1" id="ctl00_ContentPlaceHolder1_DropDownList1" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">===国内高校链接===</option>
+	<option value="http://www.njtu.edu.cn">北京交通大学</option>
+	<option value="http://www.cqu.edu.cn/html/index.htm">重庆大学</option>
+	<option value="http://www.sysu.org.cn">中山大学</option>
+	<option value="http://www.csu.edu.cn">中南大学</option>
+	<option value="http://www.znufe.edu.cn">中南财经政法大学</option>
+	<option value="http://www.cupl.edu.cn">中国政法大学</option>
+	<option value="http://www.cpu.edu.cn">中国医科大学</option>
+	<option value="http://www.cau.edu.cn">中国农业大学</option>
+	<option value="http://www.cug.edu.cn">中国地质大学</option>
+	<option value="http://www.xmu.edu.cn">厦门大学</option>
+	<option value="http://www.swnu.edu.cn">西南师范大学</option>
+	<option value="http://www.swjtu.edu.cn">西南交通大学</option>
+	<option value="http://www.swufe.edu.cn">西南财经大学</option>
+	<option value="http://www.nwsuaf.edu.cn">西北农林科技大学</option>
+	<option value="http://www.whu.edu.cn">武汉大学</option>
+	<option value="http://www.tongji.edu.cn">同济大学</option>
+	<option value="http://www.tongji.edu.cn">天津大学</option>
+	<option value="http://www.bjpeu.edu.cn">石油大学</option>
+	<option value="http://www.shisu.edu.cn">上海外国语大学</option>
+	<option value="http://www.sjtu.edu.cn">上海交通大学</option>
+	<option value="http://www.shufe.edu.cn">上海财经大学</option>
+	<option value="http://www.snnu.edu.cn">陕西师范大学</option>
+	<option value="http://www.sdu.edu.cn">山东大学</option>
+	<option value="http://www.njau.edu.cn/ind1280.php">南京农业大学</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList2" id="ctl00_ContentPlaceHolder1_DropDownList2" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">====人才服务网站====</option>
+	<option value="http://www.zhiyuhr.com">知遇网</option>
+	<option value="http://www.yjbys.com">应届毕业生求职网</option>
+	<option value="http://www.epjob88.com">电力英才网</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList3" id="ctl00_ContentPlaceHolder1_DropDownList3" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">==教育部门网站==</option>
+	<option value="http://www.moe.edu.cn">中华人民共和国教育部</option>
+	<option value="http://www.haedu.gov.cn">河南省教育厅</option>
+	<option value="http://www.chsi.com.cn">中国高等教育学生信息网</option>
+	<option value="http://www.ncss.org.cn">中国高校毕业生就业服务信息网</option>
+	<option value="http://www.eol.cn">中国教育在线</option>
+	<option value="http://www.chinajob114.org">中国招生就业在线</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList4" id="ctl00_ContentPlaceHolder1_DropDownList4" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">各省毕业生就业信息网</option>
+	<option value="http://www.bjbys.net.cn">北京毕业生就业信息网</option>
+	<option value="http://www.tjbys.com">天津毕业生就业信息网</option>
+	<option value="http://students.educast.cn">河北毕业生就业信息网</option>
+	<option value="http://www.sxbys.com.cn">山西毕业生就业信息网</option>
+	<option value="http://www.nmbys.com">内蒙古毕业生就业信息网</option>
+	<option value="http://www.lnbys.com.cn>">辽宁毕业生就业信息网</option>
+	<option value="http://www.ybrc.gov.cn/graduate/link/jiling.htm">吉林毕业生就业信息网</option>
+	<option value="http://www.work.gov.cn">黑龙江毕业生就业信息网</option>
+	<option value="http://www.firstjob.com.cn">上海毕业生就业信息网</option>
+	<option value="www.jsbys.com.cn/index.aspx">江苏毕业生就业信息网</option>
+	<option value="http://www.ejobmart.cn">浙江毕业生就业信息网</option>
+	<option value="http://www.ahbys.com">安徽大中专毕业生就业信息网</option>
+	<option value="http://www.fjbys.gov.cn">福建毕业生就业信息网</option>
+	<option value="http://www.jxjob.net/">江西省大学生就业人才网</option>
+	<option value="http://www.hunbys.com">湖南毕业生就业信息网</option>
+	<option value="http://biyesheng.hadoe.edu.cn">河南毕业生就业信息网</option>
+	<option value="http://job.e21.edu.cn">湖北毕业生就业信息网</option>
+	<option value="http://www.gdjob.com.cn">广东毕业生就业信息网</option>
+	<option value="http://www.cqbys.com/index.aspx">重庆毕业生就业信息网</option>
+	<option value="http://www.gxbys.com">广西毕业生就业信息网</option>
+	<option value="http://www.hnbys.net">海南毕业生就业信息网</option>
+	<option value="http://www.scbys.com.cn">四川毕业生就业信息网</option>
+	<option value="http://jyzx.gznc.edu.cn">贵州毕业生就业信息网</option>
+	<option value="http://www.ynjy.cn/officeall/xs">云南毕业生就业信息网</option>
+	<option value="http://www.xzjyzdzx.gov.cn">西藏毕业生就业信息网</option>
+	<option value="http://61.185.221.109/Shxbys/main.aspx">陕西毕业生就业信息网</option>
+	<option value="http://www.gsedu.cn/edoas/website/index.htm">甘肃毕业生就业信息网</option>
+	<option value="http://www.nxbys.com">宁夏毕业生就业信息网</option>
+	<option value="http://www.qhbys.com">青海毕业生就业信息网</option>
+	<option value="http://www.xjbys.cn">新疆毕业生就业信息网</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList5" id="ctl00_ContentPlaceHolder1_DropDownList5" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">地市毕业生就业信息网</option>
+	<option value="http://www.nybys.com">南阳市毕业生就业信息网</option>
+	<option value="http://www.zmdbys.com">驻马店毕业生就业信息网</option>
+	<option value="http://www.kfdzzjy.com/">开封市大中专毕业生就业信息网</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td width="150">
+                <select name="ctl00$ContentPlaceHolder1$DropDownList6" id="ctl00_ContentPlaceHolder1_DropDownList6" name="menu" onchange="MM_jumpMenu(&#39;parent&#39;,this,0)" style="width: 150px; background-color: #FFF8E8;
+                    font-size: 9PT">
+	<option value="">河南省各高校就业信息网</option>
+	<option value="http://www.zzist.net/ReadNews04.asp?NewsID=4708">郑州科技学院</option>
+	<option value="http://www.sstvc.com/Html/xiaoyuanfengguang/xysh/4068.html">商丘工学院</option>
+	<option value="http://www.hnhyedu.net/jy/">商丘学院</option>
+	<option value="http://www.chenggong.edu.cn/channels/13.html">郑州成功财经学院</option>
+	<option value="http://www.shengda.edu.cn/info/sdintro_1.shtm">郑州升达经贸管理学院</option>
+	<option value="http://www.shuqing.org/Category_17/Index.aspx">郑州澍青医学高等专科学校</option>
+	<option value="http://www.zzjm.edu.cn/about/">郑州经贸职业学院</option>
+	<option value="http://www.zjtu.edu.cn/main/sub/xygk/">郑州交通职业学院</option>
+	<option value="http://www.zyfb.com/NewsInfo.aspx?ID=23">郑州电子信息职业技术学院</option>
+	<option value="http://www.shaolinkungfu.edu.cn/xxgk/xxjj.htm">嵩山少林武术职业学院</option>
+	<option value="http://jiuye.zzdl.com/">郑州电力职业技术学院</option>
+	<option value="http://www.zkkjxy.net/">周口科技职业学院</option>
+	<option value="http://www.lsgx.com.cn/new/index.asp">漯河食品职业学院</option>
+	<option value="http://www.zcu.edu.cn/brendaWeb/infordetails.aspx?CatID=181">郑州城市职业学院</option>
+	<option value="http://www.jzgmxy.com/xygk/list.asp?D_CataID=A0001">焦作工贸职业学院</option>
+	<option value="http://www.xccvc.com/News_View.asp?NewsID=114">许昌陶瓷职业学院</option>
+	<option value="http://www.zzlgxy.net/html/xygk/index.shtml">郑州理工职业学院</option>
+	<option value="http://www.zxxyedu.com/jigou/jyzdzx/">郑州信息工程职业学院</option>
+	<option value="http://www.cyprxy.com/">长垣烹饪职业技术学院</option>
+	<option value="http://www.xyswxy.com/">信阳涉外职业技术学院</option>
+	<option value="http://www.hbqcxy.com/index.php/xuexiaogaikuang/xuexiaojianjie">鹤壁汽车工程职业学院</option>
+	<option value="http://www.nyzyxy.com">南阳职业学院</option>
+	<option value="http://www.zzvcct.com/Html/List/List_3.html">郑州商贸旅游职业学院</option>
+	<option value="http://www.zyrnvc.com/">郑州黄河护理职业学院</option>
+	<option value="http://www.sws8.com/wz/ytjx/default1.asp?">第一拖拉机制造厂拖拉机学院</option>
+	<option value="http://www.lzzgdx.com/index.asp">洛阳轴承职工大学</option>
+	<option value="http://www.haie.edu.cn/web/jy/">河南教育学院</option>
+	<option value="http://www.kfie.cn/View.aspx?classId=6">开封教育学院</option>
+	<option value="http://www.pdsjyxy.com/xxgk.asp">平顶山教育学院</option>
+	<option value="http://www.jzzgyxy.com.cn/">焦作职工医学院</option>
+	<option value="http://job.ncwu.edu.cn/jiuye/webindex.do">华北水利水电大学</option>
+	<option value="http://job.zzu.edu.cn/">郑州大学</option>
+	<option value="http://job.sias.edu.cn/">郑州大学西亚斯国际学院</option>
+	<option value="http://job.hpu.edu.cn/">河南理工大学</option>
+	<option value="http://www.wanfang.edu.cn/jyw/">河南理工大学万方科技学院</option>
+	<option value="http://job.haut.edu.cn/">河南工业大学</option>
+	<option value="http://zjc.haust.edu.cn/jiuye/">河南科技大学</option>
+	<option value="http://zsjyc.henau.edu.cn/main/">河南农业大学</option>
+	<option value="http://job.henu.edu.cn/">河南大学</option>
+	<option value="http://mszb.henu.edu.cn/jiuYe">河南大学民生学院</option>
+	<option value="http://job.htu.cn/default.asp">河南师范大学</option>
+	<option value="http://job.xlxy.edu.cn/">河南师范大学新联学院</option>
+	<option value="http://job.huel.edu.cn/">河南财经政法大学</option>
+	<option value="http://www.rpc.edu.cn/zsjy/">铁道警察学院</option>
+	<option value="http://job.zzuli.edu.cn/">郑州轻工业学院</option>
+	<option value="http://job.zzti.edu.cn/">中原工学院</option>
+	<option value="http://www.zcib.cn/jygz.aspx">中原工学院信息商务学院</option>
+	<option value="http://jyxx.hist.edu.cn/">河南科技学院</option>
+	<option value="http://218.28.225.91/jiuyezhidao/SiteFiles/Inner/page.aspx?s=44">河南牧业经济学院</option>
+	<option value="http://job.hactcm.edu.cn/">河南中医学院</option>
+	<option value="http://www.xxmu.edu.cn/">新乡医学院</option>
+	<option value="http://job.xynu.net/">信阳师范学院</option>
+	<option value="http://job.zknu.edu.cn/">周口师范学院</option>
+	<option value="http://bys.aynu.edu.cn/">安阳师范学院</option>
+	<option value="http://job.xcu.edu.cn/">许昌学院</option>
+	<option value="http://zhaosheng.nynu.edu.cn/jyw/">南阳师范学院</option>
+	<option value="http://61.136.68.89/jy/">洛阳师范学院</option>
+	<option value="http://jyzd.sqnc.edu.cn/">商丘师范学院</option>
+	<option value="http://www.zzia.edu.cn/2008/#">郑州航空工业管理学院</option>
+	<option value="http://jiuye.xxu.edu.cn/">新乡学院</option>
+	<option value="http://info.huanghuai.edu.cn/gb/jiuye/">黄淮学院</option>
+	<option value="http://jyxx.pdsu.edu.cn/">平顶山学院</option>
+	<option value="http://211.67.160.200/zsjyc/jyxx/index.asp">信阳农林学院</option>
+	<option value="http://zsjy.ayit.edu.cn/">安阳工学院</option>
+	<option value="http://www1.lit.edu.cn/jy/">洛阳理工学院</option>
+	<option value="http://haue.university-hr.com/">河南工程学院</option>
+	<option value="http://jyxxw.nyist.edu.cn/">南阳理工学院</option>
+	<option value="http://jy.hncj.edu.cn/">河南城建学院</option>
+	<option value="http://xsc.hnp.edu.cn/">河南警察学院</option>
+	<option value="http://job.hhstu.edu.cn/">黄河科技学院</option>
+	<option value="http://www.zzist.com/">郑州科技学院</option>
+	<option value="http://jy.zzhxxy.com/jyxx.asp">郑州华信学院</option>
+	<option value="http://www.jyxx.com.cn/kh/zzsf/">郑州师范学院</option>
+	<option value="http://www.sstvc.com/#">商丘工学院</option>
+	<option value="http://www.hnhyedu.net/jy/">商丘学院</option>
+	<option value="http://www.chenggong.edu.cn/jiuye/">郑州成功财经学院</option>
+	<option value="http://www2.shengda.edu.cn/job/">郑州升达经贸管理学院</option>
+	<option value="http://jy.hneeu.edu.cn/">河南机电高等专科学校</option>
+	<option value="http://jiuye.hacz.edu.cn/">河南财政税务高等专科学校</option>
+	<option value="http://www.zyedu.org/html/zsjy/index.html">郑州幼儿师范高等专科学校</option>
+	<option value="http://www.ayys.net.cn/Category_52/Index.aspx">安阳幼儿师范高等专科学校</option>
+	<option value="http://zsjyc.hamc.edu.cn/">河南医学高等专科学校</option>
+	<option value="http://zj.shuqing.org/">郑州澍青医学高等专科学校</option>
+	<option value="http://www.jzsz.cn/html/zsjyb/index.html">焦作师范高等专科学校</option>
+	<option value="http://jy.lhmc.edu.cn/">漯河医学高等专科学校</option>
+	<option value="http://bys.nymc.cn/">南阳医学高等专科学校</option>
+	<option value="http://www.sqyx.edu.cn/www/jiuye/index.asp">商丘医学高等专科学校</option>
+	<option value="http://zsjy.hnzj.edu.cn/index.asp">河南职业技术学院</option>
+	<option value="http://www.lhvtc.edu.cn/">漯河职业技术学院</option>
+	<option value="http://jy.smxpt.cn/">三门峡职业技术学院</option>
+
+</select>
+                
+                &nbsp;
+            </td>
+        </tr>
+ <!--       <tr>    
+            <td style="width: 173px">部分高校一体化系统服务站点:</td>
+            <td colspan="10"><a href="http://zkkjxy.ncss.org.cn/login" target="_blank">周口科技职业学院</a>&nbsp;&nbsp;
+                <a href="http://www.hnbys.gov.cn/xlrz/" target="_blank">铁道警官高等专科学校</a>&nbsp;&nbsp;
+                <a href="http://www.hnbys.gov.cn/" target="_blank">漯河食品职业学院</a>&nbsp;&nbsp;
+                <a href="http://jobxlxy.ncss.org.cn/login" target="_blank">河南师范大学新联学院</a>
+            </td>
+         </tr>-->
+    </table>
+    </div> </div>
+ 
+<table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="35" align="center"><a href="About.aspx?id=1" target="_blank">关于就业指导中心</a> 
+        - <a href="About.aspx?id=2" target="_blank">关于网站</a> - <a href="About.aspx?id=97558" target="_blank">
+        网站地图</a> - <a href="About.aspx?id=3" target="_blank">联系我们</a> - <a href="/ShowContentList.aspx?cid=20">
+        媒体关注</a> </td>
+  </tr>
+  <tr>
+    <td height="5" bgcolor="#2B6BAB"></td><!--FF6600------#283d6a-->
+  </tr>
+  <tr>
+    <td height="80" align="center">Copyright (C) 2005. All Rights Reserved.<br>
+        地址：郑东新区金水东路39号（金水东路与农业南路交叉口），邮编：450016
+<br>
+        版权所有 河南省大中专毕业生就业指导工作领导小组办公室<br>
+      <!--  技术支持：<a href="http://www.hnjycy.com">沃科网</a>-->
+
+ 
+          
+</td>
+  </tr>
+</table>
+    </div>
+
+    </form>
+ <script src="http://tongji2.haedu.cn/mystat.asp?siteid=20"></script>
+ 
+</body>
+</html>

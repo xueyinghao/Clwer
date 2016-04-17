@@ -1,0 +1,140 @@
+    
+
+
+
+
+
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>河南中医药大学信息门户</title>
+	  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--jquery 如果用就不用连了-->
+
+    <!--要连的库-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script>
+	var jq=jQuery.noConflict()
+
+        jq(function() {
+            jq(".dialog-button").click(function(){
+                var id=jq(this).data("targetid");
+                
+               jq( "#"+id ).dialog({'position':{my: "center", at: "center top+38.2%", of: window},width:800});
+
+            });
+
+        });
+    </script>
+    <style>
+        .ui-dialog .ui-dialog-titlebar{ padding:5px 10px;}
+        .ui-dialog .ui-dialog-title{ font-size: 14px; font-family: "microsoft yahei"; color: #333;}
+		.dialog-button{ background:none;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="login/style/style.css">
+        <!--
+        <script type="text/javascript">
+        function getcookie(){
+        var temp=document.getElementById("checkbox");
+        var Days = 15;
+        var exp  = new Date();
+        exp.setTime(exp.getTime() + Days*24*60*60*1000);
+        var username= document.getElementById("username");
+        var password= document.getElementById("password");
+        var tempvalue="";
+        if(temp.checked==true){
+        tempvalue=password.value;
+        }
+
+        document.cookie = "username"+"="+escape(username.value)+";expires=" + exp.toGMTString();
+        document.cookie="password"+"="+escape(tempvalue)+";expires=" + exp.toGMTString();
+
+        }
+        function loadcookie(){
+        document.getElementById("checkbox").checked=false;
+        if(document.cookie.indexOf(";")!=-1){
+        var temp=document.cookie.indexOf("u");
+        if( document.cookie.substring(temp,temp+8) =="username"){
+        document.getElementById("username").value=decodeURI(document.cookie.split(";")[0].split("=")[1]);
+        }
+        var temp1=document.cookie.indexOf("p");
+        if(document.cookie.substring(temp1,temp1+8) =="password"&&document.cookie.substring(temp1+8,temp1+9)=="="){
+        document.getElementById("password").value=decodeURI(document.cookie.split(";")[1].split("=")[1]);
+        }else{
+        document.getElementById("password").value="";
+        }
+        }
+        }
+        </script>
+        -->
+
+        </head>
+<body>
+<div class="main">
+    <div class="wz"><a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://my.hactcm.edu.cn');">设为首页</a>|<a href="javascript:window.external.AddFavorite('http://http://my.hactcm.edu.cn', '河南中医学院')">加入收藏</a></div>
+    <div class="logobg">
+        <div class="bt"> 登陆</div>
+        <form id="loginForm" name="loginForm" method="post" action="">
+        <div style="padding-left: 40px; padding-bottom:20px;">
+		
+            <table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td height="25">
+					<div id="loginMsg" class="err-msg wjmm" style="visibility:hidden;float:left; color:#cf0000;"></div>
+				</td>
+			</tr>
+                <tr>
+                    <td>
+                        <input type="text" class="input" name="user" eMsg=""  id="username" tabindex="1"  style="border-bottom: none;background:url(login/images/1-1.gif) no-repeat; background-position: left center;width:265px; padding-left:40px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password"  name="pwd" id="password" tabindex="2" class="input" style="background:url(login/images/1-2.gif) no-repeat; background-position: left center;width:265px; padding-left:40px;" >
+                    </td>
+                </tr>
+				<tr id="captchaContent"> 				
+					<td class="wjmm">验&nbsp;证&nbsp;码：<input type="text" name="captcha" size="5" tabindex="3">
+						<img id="captchaImg" src="images/s.gif" title="" width="40" height="25" ></td>
+				</tr>
+               
+                <tr>
+                    <td height="70">
+                        <input type="submit" name="btn" value=""  tabindex="4" style="background: url(login/images/button.gif); width: 315px;height: 45px; border: none;" >
+                    </td>
+                </tr>
+				<tr>
+				<td style="font-size:12px;">
+				<button type="button" class="dialog-button" data-targetid="dialog_1">登录说明</button>
+
+					<div id="dialog_1" style="display: none;" title="登录说明">
+						<img src="login/images/登录说明.jpg" border=0>
+					</div>
+				</td>
+				</tr>
+					
+				<tr>
+			<td > 
+				
+				 <!--<input  style="float: left; margin-top: 3px; margin-left: 10px;" type="checkbox" id="checkbox" name="checkbox"  onmouseover="ddrivetip('为了您的信息安全，请不要在网吧或公用电脑上使用此功能！')"
+	onmouseout="hideddrivetip()"><font color="#333333" style="float: left; margin-top: 1px;*margin-top: 7px; margin-left: 6px;*margin-left: -3px;">记住用户名密码</font> -->
+			</td>
+            </table>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="bottom">
+2013-2014Copyright @ 2014-2018 Corporation,All Rights Reserved@河南中医药大学
+</div>
+
+
+        <script type="text/javascript">var Login = {forwardUrl:'http://my.hactcm.edu.cn/index.portal',loginURL:'userPasswordValidate.portal',nameField:'Login.Token1',pwdField:'Login.Token2',gotoUrl:'http://my.hactcm.edu.cn/loginSuccess.portal',gotoFailUrl:'http://my.hactcm.edu.cn/loginFailure.portal',hideCaptcha:true};</script>
+        <script type="text/javascript" src="script/portal-login.js"></script>
+        <!-- End ImageReady Slices -->
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\bin\Debug\SecondGetUrl.exe.config
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\bin\Debug\SecondGetUrl.exe
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\bin\Debug\SecondGetUrl.pdb
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\obj\Debug\SecondGetUrl.csprojResolveAssemblyReference.cache
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\obj\Debug\SecondGetUrl.exe
+C:\Users\UpdatusUser\Desktop\2016年毕业设计-薛英豪\Spider1\SecondGetUrl\obj\Debug\SecondGetUrl.pdb

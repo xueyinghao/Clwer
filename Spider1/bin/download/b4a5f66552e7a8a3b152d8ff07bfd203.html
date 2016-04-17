@@ -1,0 +1,1059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>高考志愿填报参考系统</title>
+<meta name="keywords" content="高考,志愿填报,大学,招生信息,招生简章,招生计划,本科专业,高职专业,录取分数线" />
+<meta name="description" content="高考志愿填报参考系统为考生提供最权威的高校2015年高考招生信息查询，内容包括：本科专业查询、高职专业查询、2015年高考招生计划和招生简章查询、各省及高校历年录取分数线查询、分专业录取分数线查询，并提供2015年高考招生咨询及招办主任政策解读服务。" />
+<meta name="copyright" content="www.eol.cn" />
+<meta content="all" name="robots" />
+<link rel="stylesheet" type="text/css" href="/static/css/basic.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/static/css/i_css.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/static/css/autoComplete.css" media="all" />
+<script src="/static/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="http://tool.i.eol.cn/ip/ipcookie.js" ignoreapd="false" language="javascript"></script>
+<script type="text/javascript" src="/static/js/ip_config.js" ignoreapd="false"></script>
+ <script src="/static/jquery/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/js/jQuery_tabs.js" ignoreapd="false"></script>
+<script type="text/javascript" src="/static/js/jQuery_picFocus.js" ignoreapd="false" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/jQuery_index.js" charset="UTF-8" ignoreapd="false"></script>
+<script type="text/javascript" src="/static/js/gkcx_ctrl.js" ignoreapd="false"></script>
+<script type="text/javascript" src="/static/js/index.js" ignoreapd="false"></script>
+<script type="text/javascript" src="/static/commonpage/search.js" ignoreapd="false"></script>
+<!-- 问答 相关引入 -->
+<script type="text/javascript" src="/static/jquery/jQSelect.js" charset="UTF-8" ignoreapd="false"></script>
+<script type="text/javascript" src="/static/js/school_wenda.js" charset="UTF-8" ignoreapd="false"></script>
+<style type="text/css">
+/*浮动广告的关闭按钮*/
+.closeBtn{display:block;cursor:pointer;color:#666666;line-height:18px;font-size:12px;text-align:center;padding:0;}
+.list_l li i {
+    float: left;
+    width: 110px;
+}
+/*对联广告*/
+#adleft{position:absolute; top:20px; left:2px;display:none;}
+#adright {position:absolute; top:20px;right:2px;display:none;}
+</style>
+<!--src是小图40x300，hover-img这个是大图100x300 不能加图片属性的宽和高 -->
+<!--<div id='adleft'>
+<a href="http://gz.zy.com/g4"><img src="http://img7.eol.cn/images/ed/gaokao/2013/gdzy150623-20-300.jpg" hover-img='http://img8.eol.cn/images/ed/gaokao/2013/gdzy150623-100-300.jpg' alt='' ></a>
+<a href="http://gkcx.eol.cn/schoolhtm/schoolTemple/school3073.htm"><img src="http://img5.eol.cn/images/index/ad2011/hnmyjjxy150521-20-300.jpg" hover-img='http://img6.eol.cn/images/index/ad2011/hnmyjjxy150521-100-300.jpg' alt=''border="0"></a>
+</div>-->
+<!--<div id='adright'>
+<a href="http://www.eol.cn/html/df/heilongjiang/gzzt/index.shtml"><img src="http://img9.eol.cn/images/ed/gaokao/2013/hljyxgzyxzsxz150423-40-300.jpg" hover-img='http://img1.eol.cn/images/index/ad2011/hljyxgzyxzsxz150423-100-300.jpg' alt='' border="0"></a> 
+<a href="http://www.cqytu.com/"><img src="http://img7.eol.cn/images/ed/gaokao/2013/cqyddxytxy20-300.jpg" hover-img='http://img8.eol.cn/images/ed/gaokao/2013/cqyddxytxy100-300.jpg' alt='' border="0"></a>
+</div>-->
+
+<style type="text/css">
+#small_adright{position:absolute; top:420px; left:2px;display:none;}
+#small_adleft {position:absolute; top:420px;right:2px;display:none;}
+</style>
+<!--浮标-->
+	<!--<div id='small_adleft'>
+	<a href="http://gkcx.eol.cn/schoolhtm/schoolTemple/school833.htm"><img src="http://img4.eol.cn/images/ed/gaokao/2013/hnsfdx150528-20-120.jpg" hover-img='http://img5.eol.cn/images/ed/gaokao/2013/hnsfdx150528-100-120.jpg' alt=''></a>
+	</div>
+	<div id='small_adright'>
+	<a href="http://www.cqeec.com"><img src="http://img6.eol.cn/images/ed/gaokao/20130609cqxxjszyxy40-120.gif" hover-img='http://img7.eol.cn/images/ed/gaokao/20130609cqxxjszyxy100-120.gif' alt=''></a>
+	</div>-->
+<!--伸缩右侧300x300的flash 开始 -->
+<!--  
+<style type="text/css">
+#flash_ad{display:block;position:absolute;right:0px;bottom:0px; z-index:99999;display:none;}
+</style>
+	<div id="flash_ad">
+	  <div style="height:20px;text-align:right;cursor: pointer;font-size:12px;color:#333;margin:0;overflow:hidden;line-height:20px;" onclick="jQuery(this).parent().hide();">关闭</div>
+
+		<object width="300" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param value="transparent" name="wmode"><param value="http://img8.eol.cn/images/ed/gaokao/2013/bjzc300-300-2015-3-19-09.swf" name="movie"><param value="high" name="quality"><param value="transparent" name="wmode"><embed width="300" height="300" wmode="transparent" type="application/x-shockwave-flash"  src="http://img9.eol.cn/images/ed/gaokao/2013/bjzc300-300-2015-3-19-09.swf"></embed></object>
+		
+		<object width="100" height="100" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="display:none"><param value="transparent" name="wmode"><param value="http://img1.eol.cn/images/ed/gaokao/2013/bjzc100-100-2015-3-19-09.swf" name="movie"><param value="high" name="quality"><param value="transparent" name="wmode"><embed width="100" height="100" wmode="transparent" type="application/x-shockwave-flash"  src="http://img2.eol.cn/images/ed/gaokao/2013/bjzc100-100-2015-3-19-09.swf"></embed></object>
+</div>
+-->
+<!--伸缩右侧300x300的flash结束-->
+
+﻿<!--和教育  iframe嵌套实现自适应高度添加代码 -->
+<div class="hejiaoyuIframe  test">	
+</div>
+<script type="text/javascript">
+var address = window.location.href;
+if(address.indexOf('http://10086.gkcx.eol.cn')>-1){
+	var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1 ;
+	$(".hejiaoyuIframe").html('<iframe src="http://edu.10086.cn/educloud/study/zq/agent.jsp"  id="snsIframe" width="0" height="0" style="display: none"></iframe>');
+	var urlC = "http://edu.10086.cn/educloud/study/zq/agent.jsp";
+	document.getElementById("snsIframe").src=urlC;
+    var oldHight=document.body.scrollHeight;
+    var i=1;
+    setInterval(function(){
+        var Hight = document.body.scrollHeight;
+        if(!isChrome){//非Chrome 浏览器
+        	Hight = Hight +100;
+        }
+            if(Hight<540){
+            	Hight = 540;
+            }
+        if(i==1){
+	         document.getElementById("snsIframe").src=urlC+"?ran="+Math.random()+"#"+Hight;
+	         oldHight=Hight;
+        	i++;
+        }else{
+	        if(oldHight!==Hight){
+	            document.getElementById("snsIframe").src=urlC+"?ran="+Math.random()+"#"+Hight;
+	            oldHight=Hight;
+	        }  
+        }
+             
+    },200);
+}
+jQuery(document).ready(function($){
+	if(address.indexOf('http://10086.gkcx.eol.cn')>-1){
+		if(!isChrome){//非Chrome 浏览器
+			$("a").live("focus",function(){
+				 $(this).attr("target","_self"); 
+				});	
+        }else{
+        	$("a").live("click",function(){
+				 $(this).attr("target","_self"); 
+				});	
+        }
+	 }
+});
+</script>
+<!--和教育  iframe嵌套实现自适应高度添加代码 end  -->
+
+</head>
+<body>
+<script type="text/javascript" src="/schoolhtm/sysindexHeader_index.js"></script>
+<div class="nav_bg">
+	<div class="gkcx_main">
+	<!-- 通栏 -->
+        <div class="nav left">
+        	<ul>
+
+            	<li><a target="_self" href="/soudaxue/queryschoolgufen.html" id="gfxdx">估分选大学</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <li><a target="_self" href="/soudaxue/querySchoolgufenSpecial.html" id="gfxzy">估分选专业</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <li><a target="_self" href="/soudaxue/querySchoolScore.html" id="xdxgkf">选大学估考分</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <li><a target="_self" href="/soudaxue/querySchoolSpecialty.html"  id="zyzdx">根据专业找大学</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <li><a target="_self" href="/schoolhtm/schoolTop100/max_0_0.htm"  id="dxphb">大学排行榜</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <li><a target="_self" href="/sphtm/click_ben_zhuan_top100.htm" id="zyrdb">专业热度榜</a></li>
+
+                <li class="mar_t_5">|</li>
+
+                <!-- 导航外链（非gkcx.eol.cn下链接）添加   class="daohang_outlink hide"   属性   合作单位不允许有外链显示-->
+                <!--  <li class="daohang_outlink hide"><a target="_blank" href="http://gaokao.eol.cn/html/g/qiuxue/">高考生求学平台</a></li>	-->			
+			   <!-- 高考问答 <li class="daohang_outlink "><a target="_blank" href="http://wen.eol.com.cn/">问答系统</a></li> -->
+            </ul>
+
+
+</div>
+<div class="admin right">
+		<div class="lrBtn beforeLogin">
+			<a class="logBtn"   href="http://gkcx.school.eol.cn/login.do" target="_blank" ><i class="dib"></i> 管理员登录</a>
+            <!-- 问答登录  <a class="logBtn login_schoolindex"   href="javascript:void(0);"><i class="dib"></i> 登录</a>
+            <a class="regBtn" target="_blank" href="http://i.wen.106.dev.eol.com.cn/user/regeister"><i class="dib"></i> 注册</a>-->
+        </div>
+		<!-- <div class="lrBtn afterLogin hide">
+            <a class="mesBtn left f-12 useNameMess"  href="#"><i class="dib pr"><em class="dot"></em></i> 信息</a>
+            <div class="useBtn left pr f-12" href="#">
+              <a class="dib pr grzxwd" href="#">
+                <div class="useHead dib pr">
+                  <img width="18" height="18" alt="" src="/static/images/userHead.jpg">
+                  <div class="shade shade18"></div> 
+                </div>
+                <div class="useName dib wot useNameWen">用户名</div>
+              </a>
+              <div class="useNav pa">
+                <a class="set useNameset" href="#">用户设置</a>
+                <a class="quit"  href="javascript:void(0);" target="_self">退出</a>
+              </div>
+            </div>
+          </div> -->
+</div>
+
+    </div>
+<div class="no_way"></div>
+</div>
+<div class="gkcx_main mar_t_20">
+	<div class="w_670 left">
+		<!-- 检索框 -->
+    	<div class="l_q overhidden">
+        <div id="Tabs_02">
+			<div class="tag_02_title left">
+             <a class="tabs_02 tag_02" style="cursor: pointer;">知分选大学</a>
+            <a class="tabs_02" style="cursor: pointer;">大学</a>
+            <a class="tabs_02" style="cursor: pointer;">专业</a>
+            <a class="tabs_02" style="cursor: pointer;">高考分数线</a>
+            <a class="tabs_02" style="cursor: pointer;">大学录取线</a>
+            <a class="tabs_02" style="cursor: pointer;">专业录取线</a>
+           
+            <!--
+            <a class="tabs_02" style="cursor: pointer;">录取人数</a>
+            <a class='tabs_02'>手机版</a>
+            -->
+            </div>
+            
+			<div class="box right pos_r">
+			 <!--估分选大学start-->
+            <div class="contenttabs_02" style="display: block;">
+             	  <form target='_blank'  action="/soudaxue/queryschoolgufen.html" method="get"  class="gfxdx_form">
+            
+            <div class="m_200 left">
+                	<div class="w_50 left font_14 mar_t_15">地区：</div>
+             <div class="input_140 y_bor left input_ty  mar_t_15 gfxdx_province">
+             	<!-- <em class="left gary">北京</em> -->
+             	<span class=' gfxdx_province_s'    style="margin-left:10px" >北京</span>
+             	<span class="right"><a href="javascript:void(0)" class="gfxdx_province"><img src="/static/images/rq.jpg" width="16" height="13" /></a></span>
+             </div>
+             <div class="gfxdx_div">
+	             	<input type="hidden" name="province" value=""/>
+             		<input type="hidden"  name='type' />
+             	</div>
+             <div class="no_way"></div>
+             <div class="w_50 left font_14 mar_t_15">类别：</div>
+             <div class="input_140 y_bor left input_ty mar_t_15 gfxdx_type">
+             	<!-- <em class="left gary">理科</em> -->
+             	<span class=' gfxdx_type_s'    style="margin-left:10px" >理科</span>
+             	<span style="margin-top:5px; padding-left:0" class="right"><a href="javascript:void(0)" class='gfxdx_type' ><img src="/static/images/g_dot.jpg" width="7" height="4" /></a></span>
+             </div>
+             <div class="no_way"></div>
+             <div class="w_50 left font_14 mar_t_15">成绩：</div>
+             	<input type="text"  class="gfxdx_mark input_480 mar_t_15" style=" width:140px;" value=""  name="mark" placeholder="550"/>
+             <div class="no_way"></div>
+             <div class="w_50 left font_14 mar_t_15"></div>
+            <div class=" btn_90 left mar_t_15"><a href="javascript:void(0)" class="gfxdx_search">搜索</a></div>
+             <div class="no_way"></div>
+             </div>
+             <div class="m_250 right line_24 mar_t_10">
+             <p><font color='red'>说明</font>：系统推荐的大学是依据往年数据计算所得，供广大考生填报志愿参考使用！</p>
+             <p align="center"><img src="http://img.eol.cn/images/ed/gaokao/2014/zsgk97-90.jpg" width="97" height="90" /></p>
+             <p align="center"><b>关注“掌上高考”，用手机选志愿！</b></p>
+             </div>
+             <div class="no_way"></div>
+
+
+             <div class="gfxdx_p div_floot df_lq pop pos_a p_a_20 hide" >
+        	<div class="close pos_a"><a href="javascript:void(0)"><img src="/static/images/cl.png" width="8" height="8" /></a></div>
+			<div id="Tabs_06"  class="df_tab">
+			<div class="df_title"><div class="tabs_06" style="cursor: pointer;">ABCFGH</div><div class="tabs_06" style="cursor: pointer;">JLNQ</div><div class="tabs_06" style="cursor: pointer;">STXYZ</div></div>
+    		<div class="no_way"></div>
+			<div class="box">
+			<div class="contenttabs_06" style="display: block;">
+                <ul>
+                <li><b>A</b><a href="javascript:void(0)">安徽</a></li>
+                <li><b>B</b><a href="javascript:void(0)">北京</a></li>
+                <li><b>C</b><a href="javascript:void(0)">重庆</a></li>
+                <li><b>F</b><a href="javascript:void(0)">福建</a></li>
+                <li><b>G</b><a href="javascript:void(0)">广东</a><a href="javascript:void(0)">广西</a><a href="javascript:void(0)">甘肃</a><a href="javascript:void(0)">贵州</a></li>
+                <li><b>H</b><a href="javascript:void(0)">河北</a><a href="javascript:void(0)">河南</a><a href="javascript:void(0)">湖南</a><a href="javascript:void(0)">湖北</a><a href="javascript:void(0)">海南</a><a href="javascript:void(0)">黑龙江</a></li>
+                </ul>
+			</div>
+        	<div class="contenttabs_06 hide" style="display: none;">
+             	<ul>
+                <li><b>J</b><a href="javascript:void(0)">吉林</a><a href="javascript:void(0)">江苏</a><a href="javascript:void(0)">江西</a></li>
+                <li><b>L</b><a href="javascript:void(0)">辽宁</a></li>
+                <li><b>N</b><a href="javascript:void(0)">内蒙古</a><a href="javascript:void(0)">宁夏</a></li>
+                <li><b>Q</b><a href="javascript:void(0)">青海</a></li>
+                </ul>
+			</div>
+        	<div class="contenttabs_06 hide" style="display: none;">
+            	<ul>
+                <li><b>S</b><a href="javascript:void(0)">上海</a><a href="javascript:void(0)">四川</a><a href="javascript:void(0)">山西</a><a href="javascript:void(0)">山东</a><a href="javascript:void(0)">陕西</a></li>
+                <li><b>T</b><a href="javascript:void(0)">天津</a></li>
+                <li><b>X</b><a href="javascript:void(0)">新疆</a><a href="javascript:void(0)">西藏</a><a href="javascript:void(0)">香港</a></li>
+                <li><b>Y</b><a href="javascript:void(0)">云南</a></li>
+                <li><b>Z</b><a href="javascript:void(0)">浙江</a></li>
+                </ul>
+       
+			</div>
+			</div>
+		</div>
+      </div>
+
+      
+
+      <div class="gfxdx_t w_l pos_a p_a_30 div_floot hide">
+      <p><a href="javascript:void(0)">文科</a></p>
+      <p><a href="javascript:void(0)">理科</a></p>
+      </div>
+     
+       </form>
+			</div>
+            <!--估分选大学end-->
+            
+			<div class="contenttabs_02 hide" style="display: none;">
+             <form target='_blank' action="/soudaxue/queryschool.html" method="get" >
+               	<input type="text"  id="keyWord1"  name="keyWord1"  autocomplete="off"  value="请输入院校名称" class="input_480 mar_b_10 sdxname"  onblur="if(this.value==''){this.value='请输入院校名称'}" onfocus="if(this.value=='请输入院校名称'){this.value=''}" >
+                <div class="w_385 left">
+                	<p><span>热门：</span><a href="http://www.eol.cn/html/g/2012xzzy.shtml">新增专业</a><a href="http://gaokao.eol.cn/html/g/gkzy_hz/">热门专业</a><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml">学科排名</a><a href="http://college.jybest.cn/">国外大学</a></p>
+</div>
+
+                <div class=" btn_90 right"><a class='sdx_search'  href="javascript:void(0)">搜索</a></div>
+                 </form>
+                <div class="no_way"></div>
+                <div class="h_lx"></div>
+                <div class="w_txt left">特殊属性：</div>
+                <div class="w_430 w_txt_r right">
+                	<ul>
+                    	<li><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag=985工程&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">985大学</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag= 211工程&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">211大学</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag=教育部直属&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">教育部直属大学</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag=自主招生试点  &recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">自主招生院校</a></li>
+                    </ul>
+                </div>                
+                <div class="no_way"></div>
+                 <div class="w_txt left">热门地区：</div>
+                <div class=" w_430 w_txt_r right">
+                	<ul>
+                    	<li><a href="/soudaxue/queryschool.html?argschtype=&argprovince=北京&argschoolname=&recomprovince=北京&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">北京</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=上海&argschoolname=&recomprovince=上海&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">上海</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=天津&argschoolname=&recomprovince=天津&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">天津</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=重庆&argschoolname=&recomprovince=重庆&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">重庆</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=广东&argschoolname=&recomprovince=广东&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">广东</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=浙江&argschoolname=&recomprovince=浙江&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">浙江</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=山东&argschoolname=&recomprovince=山东&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">山东</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=安徽&argschoolname=&recomprovince=安徽&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">安徽</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=福建&argschoolname=&recomprovince=福建&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">福建</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=江苏&argschoolname=&recomprovince=江苏&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">江苏</a></li>
+                        <li><a href="/soudaxue/queryschool.html?argschtype=&argprovince=湖北&argschoolname=&recomprovince=湖北&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">湖北</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=湖南&argschoolname=&recomprovince=湖南&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">湖南</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=辽宁&argschoolname=&recomprovince=辽宁&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">辽宁</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=全部&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">全部</a></li>
+                    </ul>
+                </div>
+                <div class="no_way"></div>
+                <div class="w_txt left">学校类别：</div>
+                <div class="w_430 w_txt_r right">
+                	<ul>
+                    	<li><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=综合&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">综合类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=理工&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">理工类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=农林&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">农林类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=医药&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">医药类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=师范&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">师范类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=语言&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">语言类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=财经&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">财经类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=政法&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">政法类</a></li>
+                        <li><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=体育&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">体育类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=艺术&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">艺术类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=民族&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">民族类</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=军事&recomschoolflag=全部&recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">军事类</a></li>
+                    </ul>
+                </div>
+
+                <div class="no_way"></div>
+			</div>
+        	<div class="contenttabs_02 hide" style="display: none;">
+             	 <div id="Tabs_07">
+			<div class="tag_07_title"><div class="tabs_07 tag_07" style="cursor: pointer;">本科专业</div><div class="tabs_07" style="cursor: pointer;">专科专业</div></div>
+    		<div class="no_way"></div>
+			<div class="box">
+			<div class="contenttabs_07" style="display: block;">
+               <form class="SpecialtyFromB"  target='_blank' action="/soudaxue/queryspecialty.html" method="get" >
+               	<input type="text"  id="keyWord2"  name="keyWord2"   autocomplete="off"   value="请输入专业名称" class="input_480 mar_b_10  zybxname"  onblur="if(this.value==''){this.value='请输入专业名称'}" onfocus="if(this.value=='请输入专业名称'){this.value=''}">
+                <input type="hidden"  name="zycengci"  value="本科"  />
+                <div class="w_385 left">
+                	<p><span>热门：</span><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=全部&argspecialtyname=&recomzycengci=本科&recomzytype=全部&recomschoolSortStr=&page=1&schoolSort=">本科专业</a><a href="http://gaokao.eol.cn/html/g/gkzy_hz/">热门专业</a><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml">学科排名</a></p>
+                </div>
+
+                <div class=" btn_90 right"><a class='zzyb_search'  href="javascript:void(0)">搜索</a></div>
+                 </form>
+                <div class="no_way"></div>
+                <div class="h_lx"></div>
+                 <p class="mar_t_15"><b>学科门类：</b></p>
+              <div class="no_way"></div>
+               <div class="w_txt_r mar_t_5">
+                	<ul>
+                    	<li><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=文学类&argspecialtyname=&recomzycengci=本科&recomzytype=文学类&recomschoolSortStr=&page=1&schoolSort=">文学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=理学类&argspecialtyname=&recomzycengci=本科&recomzytype=理学类&recomschoolSortStr=&page=1&schoolSort=">理学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=哲学类&argspecialtyname=&recomzycengci=本科&recomzytype=哲学类&recomschoolSortStr=&page=1&schoolSort=">哲学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=教育学类&argspecialtyname=&recomzycengci=本科&recomzytype=教育学类&recomschoolSortStr=&page=1&schoolSort=">教育学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=法学类&argspecialtyname=&recomzycengci=本科&recomzytype=法学类&recomschoolSortStr=&page=1&schoolSort=">法学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=管理学类&argspecialtyname=&recomzycengci=本科&recomzytype=管理学类&recomschoolSortStr=&page=1&schoolSort=">管理学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=经济学类&argspecialtyname=&recomzycengci=本科&recomzytype=经济学类&recomschoolSortStr=&page=1&schoolSort=">经济学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=农学类&argspecialtyname=&recomzycengci=本科&recomzytype=农学类&recomschoolSortStr=&page=1&schoolSort=">农学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=工学类&argspecialtyname=&recomzycengci=本科&recomzytype=工学类&recomschoolSortStr=&page=1&schoolSort=">工学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=医学类&argspecialtyname=&recomzycengci=本科&recomzytype=医学类&recomschoolSortStr=&page=1&schoolSort=">医学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=历史学类&argspecialtyname=&recomzycengci=本科&recomzytype=历史学类&recomschoolSortStr=&page=1&schoolSort=">历史学类</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=艺术学类&argspecialtyname=&recomzycengci=本科&recomzytype=艺术学类&recomschoolSortStr=&page=1&schoolSort=">艺术学类</a></li>
+
+                    </ul>
+</div>
+
+			</div>
+        	<div class="contenttabs_07 hide" style="display: none;">
+            	<form class="SpecialtyFromZ"  target='_blank' action="/soudaxue/queryspecialty.html" method="get" onsubmit="return checkSpecialty('专科');">
+               	<input type="text" id="keyWord3"  name="keyWord2"  autocomplete="off"   value="请输入专业名称" class="input_480 mar_b_10 zyzxname" onblur="if(this.value==''){this.value='请输入专业名称'}" onfocus="if(this.value=='请输入专业名称'){this.value=''}">
+                <input type="hidden"  name="zycengci"  value="专科"  />
+                <div class="w_385 left">
+                	<p><span>热门：</span><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argspecialtyname=">专科专业</a><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=全部&argspecialtyname=&recomzycengci=本科&recomzytype=全部&recomschoolSortStr=&page=1&schoolSort=">热门专业</a><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml">学科排名</a></p>
+                </div>
+
+                <div class=" btn_90 right"><a class='zzyz_search'  href="javascript:void(0)">搜索</a></div>
+                 </form>
+                <div class="no_way"></div>
+                <div class="h_lx"></div>
+                  <p class="mar_t_15"><b>学科门类：</b></p>
+              <div class="no_way"></div>
+               <div class="w_txt_r mar_t_5">
+                	<ul>
+                    	<li><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=交通运输类&argspecialtyname=&recomzycengci=专科&recomzytype=交通运输类&recomschoolSortStr=&page=1&schoolSort=">交通运输类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=生化与药品类&argspecialtyname=&recomzycengci=专科&recomzytype=生化与药品类&recomschoolSortStr=&page=1&schoolSort=">生化与药品类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=资源开发与测绘类&argspecialtyname=&recomzycengci=专科&recomzytype=资源开发与测绘类&recomschoolSortStr=&page=1&schoolSort=">资源开发与测绘类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=土建类&argspecialtyname=&recomzycengci=专科&recomzytype=土建类&recomschoolSortStr=&page=1&schoolSort=">土建类 </a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=水利类&argspecialtyname=&recomzycengci=专科&recomzytype=水利类&recomschoolSortStr=&page=1&schoolSort=">水利类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=制造类&argspecialtyname=&recomzycengci=专科&recomzytype=制造类&recomschoolSortStr=&page=1&schoolSort=">制造类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=电子信息类&argspecialtyname=&recomzycengci=专科&recomzytype=电子信息类&recomschoolSortStr=&page=1&schoolSort=">电子信息类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=环保、气象与安全类&argspecialtyname=&recomzycengci=专科&recomzytype=环保、气象与安全类&recomschoolSortStr=&page=1&schoolSort=">环保、气象与安全类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=财经类&argspecialtyname=&recomzycengci=专科&recomzytype=财经类&recomschoolSortStr=&page=1&schoolSort=">财经类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=医药卫生类&argspecialtyname=&recomzycengci=专科&recomzytype=医药卫生类&recomschoolSortStr=&page=1&schoolSort=">医药卫生类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=旅游类&argspecialtyname=&recomzycengci=专科&recomzytype=旅游类&recomschoolSortStr=&page=1&schoolSort=">旅游类</a>
+                        <a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=公共事业类&argspecialtyname=&recomzycengci=专科&recomzytype=公共事业类&recomschoolSortStr=&page=1&schoolSort=">公共事业类</a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=文化教育类&argspecialtyname=&recomzycengci=专科&recomzytype=文化教育类&recomschoolSortStr=&page=1&schoolSort=">文化教育类</a></li>
+                    </ul>
+</div>
+
+			</div>
+			</div>
+		</div>
+			</div>
+        	<div class="contenttabs_02 hide" style="display: none;">
+        	<!-- 大学录取线切包含 -->
+                <h3 class="left">各地近<em>10</em>年的高考分数线</h3>
+              <div class="no_way"></div>
+              <h4>年份：</h4>
+               <div class="w_txt_r">
+                	<ul>
+                    	<li><a href="/soudaxue/queryProvince.html?year3=2015">2015年</a><a href="/soudaxue/queryProvince.html?year3=2014">2014年</a><a href="/soudaxue/queryProvince.html?year3=2013">2013年</a><a href="/soudaxue/queryProvince.html?year3=2012">2012年</a><a href="/soudaxue/queryProvince.html?year3=2011">2011年</a><a href="/soudaxue/queryProvince.html?year3=2010">2010年</a><a href="/soudaxue/queryProvince.html?year3=2009">2009年</a><a href="/soudaxue/queryProvince.html?year3=2008">2008年</a><a href="/soudaxue/queryProvince.html?year3=2007">2007年</a></li>
+                    </ul>
+                </div>
+                <h4>地区：</h4>
+               <div class="w_txt_r">
+                	<ul>
+                    	<li><a href="/soudaxue/queryProvince.html?province3=北京">北京</a><a href="/soudaxue/queryProvince.html?province3=上海">上海</a><a href="/soudaxue/queryProvince.html?province3=天津"> 天津 </a><a href="/soudaxue/queryProvince.html?province3=重庆">重庆</a><a href="/soudaxue/queryProvince.html?province3=广东"> 广东 </a><a href="/soudaxue/queryProvince.html?province3=浙江">浙江 </a><a href="/soudaxue/queryProvince.html?province3=山东">山东 </a><a href="/soudaxue/queryProvince.html?province3=福建">福建 </a><a href="/soudaxue/queryProvince.html?province3=江苏">江苏 </a><a href="/soudaxue/queryProvince.html?province3=湖北">湖北</a><a href="/soudaxue/queryProvince.html?province3=黑龙江"> 黑龙江 </a><a href="/soudaxue/queryProvince.html?province3=陕西">陕西 </a></li>
+                        <li><a href="/soudaxue/queryProvince.html?province3=湖南">湖南</a><a href="/soudaxue/queryProvince.html?province3=辽宁"> 辽宁</a><a href="/soudaxue/queryProvince.html?province3=甘肃">甘肃</a><a href="/soudaxue/queryProvince.html?province3=河北"> 河北</a><a href="/soudaxue/queryProvince.html?province3=四川"> 四川</a><a href="/soudaxue/queryProvince.html?province3=安徽"> 安徽 </a><a href="/soudaxue/queryProvince.html?province3=山西">山西</a><a href="/soudaxue/queryProvince.html?province3=广西"> 广西</a><a href="/soudaxue/queryProvince.html?province3=海南"> 海南</a><a href="/soudaxue/queryProvince.html?province3=河南"> 河南 </a><a href="/soudaxue/queryProvince.html?province3=内蒙古">内蒙古</a><a href="/soudaxue/queryProvince.html"> 全部</a></li>
+                        
+                    </ul>
+                </div>
+
+			</div>
+            
+            <div class="contenttabs_02 hide" style="display: none;">
+            	<form target='_blank' action="/soudaxue/queryProvinceScore.html" method="get" >
+             <div class="input_bor y_bor mar_b_10">
+             	<span class='dxluq_province dxluq_province_s' >生源地</span>
+             	<div class="dxlux_div">
+             		<input type="hidden"  name='province' />
+             		<input type="hidden"  name='fstype' />
+             	</div>
+                <span><a class="dxluq_province_s" href="javascript:void(0)"><img width="16" height="13" src="/static/images/rq.jpg"></a></span>
+                <em>|</em>
+                <span class='dxluq_type dxluq_type_span' >类型</span>
+                <span style="margin-top:5px; padding-left:0">
+                <a class='dxluq_type_span' href="javascript:void(0)"><img width="7" height="4" src="/static/images/g_dot.jpg"></a></span>
+                <em>|</em>
+                <input type="text"  id= "provinceScoreKEY" autocomplete="off" name='keyWordForQueryparamsarraycore' value="请输入院校名称" class="left input_n dxluxname" onblur="if(this.value==''){this.value='请输入院校名称'}" onfocus="if(this.value=='请输入院校名称'){this.value=''}">
+             </div>
+             
+             <!--地区开始-->
+             <div class="dxlqx_p df_lq pop pos_a div_floot hide">
+        	<div class="close pos_a"><a class="df_lq_close" href="javascript:void(0)"><img width="8" height="8" src="/static/images/cl.png"></a></div>
+      		<div id="Tabs_10"  class="df_tab">
+			<div class="df_title"><div class="tabs_10" style="cursor: pointer;">ABCFGH</div><div class="tabs_10" style="cursor: pointer;">JLNOQ</div><div class="tabs_10" style="cursor: pointer;">STXYZ</div></div>
+    		<div class="no_way"></div>
+			<div class="box">
+			 <div class="contenttabs_10">
+                          <ul>
+                          <li><b>A</b><a href="javascript:void(0)">安徽</a></li>
+                          <li><b>B</b><a href="javascript:void(0)">北京</a></li>
+                          <li><b>C</b><a href="javascript:void(0)">重庆</a></li>
+                          <li><b>F</b><a href="javascript:void(0)">福建</a></li>
+                          <li><b>G</b><a href="javascript:void(0)">广东</a><a href="javascript:void(0)">广西</a><a href="javascript:void(0)">甘肃</a><a href="javascript:void(0)">贵州</a></li>
+                          <li><b>H</b><a href="javascript:void(0)">河北</a><a href="javascript:void(0)">河南</a><a href="javascript:void(0)">湖南</a><a href="javascript:void(0)">湖北</a><a href="javascript:void(0)">海南</a><a href="javascript:void(0)">黑龙江</a></li>
+                          </ul>
+                      </div>
+                      <div class="contenttabs_10 hide">
+                          <ul>
+                          <li><b>J</b><a href="javascript:void(0)">吉林</a><a href="javascript:void(0)">江苏</a><a href="javascript:void(0)">江西</a></li>
+                          <li><b>L</b><a href="javascript:void(0)">辽宁</a></li>
+                          <li><b>N</b><a href="javascript:void(0)">内蒙古</a><a href="javascript:void(0)">宁夏</a></li>
+                          <li><b>Q</b><a href="javascript:void(0)">青海</a></li>
+                          </ul>
+                      </div>
+                      <div class="contenttabs_10 hide">
+                          <ul>
+                          <li><b>S</b><a href="javascript:void(0)">上海</a><a href="javascript:void(0)">四川</a><a href="javascript:void(0)">山西</a><a href="javascript:void(0)">山东</a><a href="javascript:void(0)">陕西</a></li>
+                          <li><b>T</b><a href="javascript:void(0)">天津</a></li>
+                          <li><b>X</b><a href="javascript:void(0)">新疆</a><a href="javascript:void(0)">西藏</a><a href="javascript:void(0)">香港</a></li>
+                          <li><b>Y</b><a href="javascript:void(0)">云南</a></li>
+                          <li><b>Z</b><a href="javascript:void(0)">浙江</a></li>
+                          </ul>
+                      </div>
+			</div>
+		</div>
+      </div>
+     <!--地区结束-->
+      
+<!--文理科开始-->
+      <div class="dxlqx_t w_l pos_a p_a_51 div_floot hide">
+      <p><a href="javascript:void(0)">文科</a></p>
+      <p><a href="javascript:void(0)">理科</a></p>
+      </div>
+      <!--文理科结束-->
+      <div class="no_way"></div>
+       <div class="w_385 left">
+       <p><span>热门：</span><a href="http://www.eol.cn/html/g/2012xzzy.shtml">新增专业</a><a href="http://gaokao.eol.cn/html/g/gkzy_hz/">热门专业</a><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml">学科排名</a></p>
+       </div>
+
+       <div class="btn_90 right"><a class="dxlux_search " href="javascript:void(0)">搜索</a></div>
+       </form>
+       <div class="no_way"></div>
+                <div class="h_lx"></div>
+                <div class="w_t_30 left"><b>实用：</b></div>
+                <div class="w_430 w_txt_r left">
+                	<ul>
+                    	<li><a href="http://gkcx.eol.cn/z/sfbz.html">大学学费</a><a href="http://gkcx.eol.cn/z/txl.html">高校招办电话</a><a href="http://gaozhao.eol.cn/">高考志愿采集系统</a></li>
+                    </ul>
+                </div>
+                 <div class="no_way"></div>
+                 <div class="w_t_30 left"><b>地区：</b></div>
+                <div class="w_430 w_txt_r left">
+                	<ul>
+                    	<li><a href="/soudaxue/queryProvinceScore.html?recomprovince=北京&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">北京</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=上海&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">上海</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=天津&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">天津</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=重庆&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">重庆</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=广东&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">广东</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=浙江&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">浙江</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=山东&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">山东</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=安徽&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">安徽</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=福建&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">福建</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=江苏&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">江苏</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=黑龙江&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">黑龙江</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=吉林&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">吉林</a></li>
+                        <li><a href="/soudaxue/queryProvinceScore.html?recomprovince=四川&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">四川</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=辽宁&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">辽宁</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=海南&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">海南</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=河南&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">河南</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=湖南&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">湖南</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=陕西&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">陕西</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=湖北&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">湖北</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=江西&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">江西</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=河北&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">河北</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=山东&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">山东</a><a href="/soudaxue/queryProvinceScore.html?recomprovince=内蒙古&recomschtype=全部&recomschprop=全部&recomschoolflag=全部&recomschoolSortStr=&recomluqupici=全部&recomyear=全部&argprovince=北京&argyear=全部&argluqutype=理科&schoolSort=&page=1&scoreSign=3&keyWordForQueryparamsarraycore=">内蒙古</a><a href="/soudaxue/queryProvinceScore.html=">全部</a></li>
+						
+                    </ul>
+                </div>
+                 <div class="no_way"></div>
+                 <div class="u_list font_14 mar_t_10">
+                 	<em class="left"><a href="/soudaxue/schoolcompare.htm">高校对比</a></em>
+                    <i class="left"><a href="/soudaxue/queryschoolgufen.html">知分选大学</a></i>
+                    <span class="left"><a href="/soudaxue/queryschool.html">招生高校名单</a></span>
+                 <div class="no_way"></div>
+                 </div>
+
+			</div>
+            <div class="contenttabs_02 hide" style="display: none;">
+            	<form target='_blank'  action="/soudaxue/querySpecialtyScore.html" method="get" >
+             <div class="input_200 y_bor left input_ty mar_r_20 mar_b_10">
+             	<em class="left gary">生源地</em>
+             	<div class="zylqx_div">
+             		<input type="hidden"  name='province' />
+             		<input type="hidden"  name='fstype' />
+             	</div>             	
+                <i class="zylqx_province zylqx_province_open" >全部</i>
+             	<span class="right"><a class="zylqx_province_open" href="javascript:void(0)"><img width="16" height="13" src="/static/images/rq.jpg"></a></span>
+             </div>
+             <div class="input_200 y_bor left input_ty mar_b_10">
+             	<em class="left gary">类别</em>
+                <i class="zylqx_type zylqx_type_open" style="padding-left:50px;">全部</i>
+             	<span style="margin-top:5px; padding-left:0" class="right"><a class="zylqx_type_open" href="javascript:void(0)"><img width="7" height="4" src="/static/images/g_dot.jpg"></a></span>
+             </div>
+             <div class="no_way"></div>
+             <input type="text" name="keyWord" id="specialtyScoreKEY"  value="专业或院校名称关键字" style="width:320px;" class="input_480 mar_b_10 left mar_r_20 zylq_name" onfocus="if(this.value=='专业或院校名称关键字'){this.value=''}" onblur="if(this.value==''){this.value='专业或院校名称关键字'}">
+             <div class=" btn_90 left mar_t_5"><a class="zylq_search" href="javascript:void(0)">搜索</a></div>
+             <div class="no_way"></div>
+
+             <!--地方开始-->
+             <div class="zyluqx_p df_lq pop pos_a div_floot hide">
+        	<div class="close pos_a"><a class="zylq_province_close" href="javascript:void(0)"><img width="8" height="8" src="/static/images/cl.png"></a></div>
+      		<div id="Tabs_04"  class="df_tab">
+			<div class="df_title"><div class="tabs_04" style="cursor: pointer;">ABCFGH</div><div class="tabs_04" style="cursor: pointer;">JLNOQ</div><div class="tabs_04" style="cursor: pointer;">STXYZ</div></div>
+    		<div class="no_way"></div>
+			<div class="box">
+			<div class="contenttabs_04" style="display: block;">
+                <ul>
+                <li><b>A</b><a href="javascript:void(0)">安徽</a></li>
+                <li><b>B</b><a href="javascript:void(0)">北京</a></li>
+                <li><b>C</b><a href="javascript:void(0)">重庆</a></li>
+                <li><b>F</b><a href="javascript:void(0)">福建</a></li>
+                <li><b>G</b><a href="javascript:void(0)">广东</a><a href="javascript:void(0)">广西</a><a href="javascript:void(0)">甘肃</a><a href="javascript:void(0)">贵州</a></li>
+                <li><b>H</b><a href="javascript:void(0)">河北</a><a href="javascript:void(0)">河南</a><a href="javascript:void(0)">湖南</a><a href="javascript:void(0)">湖北</a><a href="javascript:void(0)">海南</a><a href="javascript:void(0)">黑龙江</a></li>
+                </ul>
+			</div>
+        	<div class="contenttabs_04 hide" style="display: none;">
+             	<ul>
+                <li><b>J</b><a href="javascript:void(0)">吉林</a><a href="javascript:void(0)">江苏</a><a href="javascript:void(0)">江西</a></li>
+                <li><b>L</b><a href="javascript:void(0)">辽宁</a></li>
+                <li><b>N</b><a href="javascript:void(0)">内蒙古</a><a href="javascript:void(0)">宁夏</a></li>
+                <li><b>Q</b><a href="javascript:void(0)">青海</a></li>
+                </ul>
+			</div>
+        	<div class="contenttabs_04 hide" style="display: none;">
+            	<ul>
+                <li><b>S</b><a href="javascript:void(0)">上海</a><a href="javascript:void(0)">四川</a><a href="javascript:void(0)">山西</a><a href="javascript:void(0)">山东</a><a href="javascript:void(0)">陕西</a></li>
+                <li><b>T</b><a href="javascript:void(0)">天津</a></li>
+                <li><b>X</b><a href="javascript:void(0)">新疆</a><a href="javascript:void(0)">西藏</a><a href="javascript:void(0)">香港</a></li>
+                <li><b>Y</b><a href="javascript:void(0)">云南</a></li>
+                <li><b>Z</b><a href="javascript:void(0)">浙江</a></li>
+                </ul>
+       
+			</div>
+			</div>
+		</div>
+      </div>
+      <!--地方结束-->
+      
+<!--文理科开始-->
+      <div class="zylqx_t w_l pos_a p_a_310 div_floot hide">
+      <p><a href="javascript:void(0)">文科</a></p>
+      <p><a href="javascript:void(0)">理科</a></p>
+      </div>
+      <!--文理科结束-->
+       </form>
+       <div class="no_way"></div>
+      			<div class="h_lx"></div>
+                <p class="gary mar_t_20">大家都在查的专业</p>
+              <div class="no_way"></div>
+               <div class="w_txt_r mar_t_10">
+                	<ul>
+                    	<li><a href="http://www.eol.cn/html/g/2014nvzy/shihenansheng.shtml">男生专业</a><a href="http://www.eol.cn/html/g/2014nvzy/shihenvsheng.shtml">女生专业</a><a href="http://www.eol.cn/html/g/2014nvzy/wenkesheng.shtml">文科生专业</a><a href="http://www.eol.cn/html/g/2014nvzy/likesheng.shtml">理科生专业</a><a href="http://www.eol.cn/html/g/pdgkzy/gaokaozhuangyuanql.shtml">状元专业</a><a href="http://www.eol.cn/html/g/pdgkzy/jiuyelv.shtml">就业率最高的专业</a></li>
+                        <li><a href="http://www.eol.cn/html/g/2012xzzy.shtml">新增专业</a><a href="http://gaokao.eol.cn/html/g/gkzy_hz/">热门专业</a><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml">重点学科</a><a href="http://gkcx.eol.cn/ads/gaokao/tszy.shtml">特色专业</a></li>
+                    </ul>
+                </div>
+
+		</div>
+			
+			</div>
+		</div>
+      </div>      
+      <div class="mar_t_20 title"><h2>热门高校</h2></div>
+      <div class="t_col left mar_t_15">本科院校</div>
+      <div class="no_way"></div>
+      <div class="img_130 overhidden">
+      <ul>
+      <!--<li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/tj.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/211.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke01.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/985.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke02.jpg"></a></li>
+           <li><a href="http://www.eol.cn/html/g/report/2013/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke03.jpg"></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/html/g/gkfsx.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke04.jpg"></a></li>
+      </ul>
+      </div>
+<div class="no_way"></div>
+<div class="img_130 overhidden">
+      <ul>
+      <li><a href="http://www.eol.cn/html/g/gkgglx/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke05.jpg" /></a></li>
+      <li><a href="http://gkcx.eol.cn/ads/gaokao/tszy.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke23.jpg"></a></li>
+      <li><a href="http://daxue.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke21.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke08.jpg"></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/html/g/hotu.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke09.jpg"></a></li>
+      </ul>
+</div>
+<div class="no_way"></div>
+<div id="god" class="img_130 overhidden">
+      <ul>
+      <li><a href="http://www.class.cn/shtml/zt/2015hz_book/index.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zytb.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/ge_di_gao_kao_2931/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke10.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke11.jpg" /></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/qiuxue/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke12.jpg"></a></li>
+      <li class="end"><a href="http://gkcx.eol.cn/z/sfbz.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke13.jpg"></a></li>
+	  </ul>
+	  <ul>
+      <li><a href="http://www.eol.cn/html/g/zizhao/zjx/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zzzs.jpg"></a></li>
+      <li><a href="http://www.hopeschool.com.cn/gaokao.htm" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke14.jpg"></a></li>
+      <li><a href="http://gkcx.eol.cn/soudaxue/queryschool.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke15.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke16.jpg"></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/gkjy_2912/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke17.jpg"></a></li>
+      </ul>--><li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/tj.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/211.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke01.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/985.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke02.jpg"></a></li>
+           <li><a href="http://www.eol.cn/html/g/report/2015/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke03.jpg"></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/html/g/gkfsx.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke04.jpg"></a></li>
+      </ul>
+      </div>
+<div class="no_way"></div>
+<div class="img_130 overhidden">
+      <ul>
+      <li><a href="http://www.eol.cn/html/g/gkgglx/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke05.jpg" /></a></li>
+      <li><a href="http://gkcx.eol.cn/ads/gaokao/tszy.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke23.jpg"></a></li>
+      <li><a href="http://daxue.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke21.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke08.jpg"></a></li>
+       <li class="end"><a href="http://gaokao.eol.cn/html/g/hotu.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke09.jpg"></a></li>
+      </ul>
+      </ul>
+</div>
+<div class="no_way"></div>
+<div id="god" class="img_130 overhidden">
+      <ul>
+      <li><a href="http://www.class.cn/shtml/zt/2015hz_book/index.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zytb.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/ge_di_gao_kao_2931/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke10.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke11.jpg" /></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/qiuxue/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke12.jpg"></a></li>
+      <li class="end"><a href="http://gkcx.eol.cn/z/sfbz.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke13.jpg"></a></li>
+	  </ul>
+	  <ul>
+      <li><a href="http://www.eol.cn/html/g/zizhao/zjx/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zzzs.jpg"></a></li>
+      <li><a href="http://www.hopeschool.com.cn/gaokao.htm" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke14.jpg"></a></li>
+      <li><a href="http://gkcx.eol.cn/soudaxue/queryschool.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke15.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke16.jpg"></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/gkjy_2912/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke17.jpg"></a></li>
+      </ul>
+         <!--   <li><a href="http://gkcx.eol.cn/ads/gaokao/tszy.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke23.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/fsx/2013.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke24.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zxdk.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke25.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gufen/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke26.jpg"></a></li>
+      <li class="end"><a href="http://www.eol.cn/html/g/yikao/ykrl/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke27.jpg"></a></li>
+      </ul>-->
+</div>
+<div class="no_way"></div>
+<script type="text/javascript">
+            myGod('god', 1500)
+        </script>
+<div class="img_130 overhidden font_14 mar_t_15">
+      <dl>
+      <!--<dd><a href="/schoolhtm/schoolTemple/school31.htm" target="_blank">北京大学</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1217.htm" target="_blank">北京大学医学部</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school46.htm" target="_blank">中国人民大学</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school140.htm" target="_blank">清华大学</a></dd>
+      <dd class="end"><a href="/schoolhtm/schoolTemple/school38.htm" target="_blank">北京交通大学</a></dd>-->
+      <dd><a href="/schoolhtm/schoolTemple/school2275.htm" target="_blank">贵州大学科技学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1139.htm" target="_blank">南京森林警察学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1148.htm" target="_blank">河南理工大学万...</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school191.htm" target="_blank">长江师范学院</a></dd>
+      <dd class="end"><a href="/schoolhtm/schoolTemple/school459.htm" target="_blank">河南大学</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1129.htm" target="_blank">中国矿业大学徐...</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school463.htm" target="_blank">河南理工大学</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1324.htm" target="_blank">河南大学民生学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school198.htm" target="_blank">重庆三峡学院</a></dd>
+      <dd class="end"><a href="/schoolhtm/schoolTemple/school490.htm" target="_blank">河南财经政法大学</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1398.htm" target="_blank">燕京理工学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1941.htm" target="_blank">新乡医学院三全...</a></dd>
+      <dd><a href="http://gkcx.eol.cn/schoolhtm/schoolTemple/school659.htm" target="_blank">河北美术学院</a></dd>
+      <dd class="end"><a href="http://zsb.dlemc.edu.cn/" target="_blank">大连装备制造...</a></dd>
+      
+      </dl>
+</div>
+  <div class="no_way"></div>   
+      <div class="t_col left mar_t_15">专科院校</div>
+      <div class="no_way"></div>
+      <div class="img_130 overhidden">
+      <ul>
+      <!--<li><a href="http://www.eol.cn/html/g/gkdzh/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img2.eol.cn/images/ed/gaokao/2014/zhuanke50.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gkzw/2014/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img3.eol.cn/images/ed/gaokao/2014/zhuanke51.jpg" /></a></li>
+      <li><a href="http://gaokao.eol.cn/gkzw_2905/" target="_blank"><img border="0" width="130" height="60" src="http://img4.eol.cn/images/ed/gaokao/2014/zhuanke52.jpg"></a></li>
+      <li><a href="http://daxue.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img5.eol.cn/images/ed/gaokao/2014/zhuanke65.jpg"></a></li>
+      <li class="end"><a href="http://www.eol.cn/html/g/report/2014/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img6.eol.cn/images/ed/gaokao/2014/zhuanke54.jpg"></a></li>--><li><a href="http://www.eol.cn/html/g/gkdzh/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img2.eol.cn/images/ed/gaokao/2014/zhuanke50.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gkzw/2015/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img3.eol.cn/images/ed/gaokao/2014/zhuanke51.jpg" /></a></li>
+      <li><a href="http://gaokao.eol.cn/gkzw_2905/" target="_blank"><img border="0" width="130" height="60" src="http://img4.eol.cn/images/ed/gaokao/2014/zhuanke52.jpg"></a></li>
+      <li><a href="http://daxue.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img5.eol.cn/images/ed/gaokao/2014/zhuanke65.jpg"></a></li>
+      <li class="end"><a href="http://www.eol.cn/html/g/report/2015/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img6.eol.cn/images/ed/gaokao/2014/zhuanke54.jpg"></a></li>
+      </ul>
+      </div>
+<div class="no_way"></div>
+<div class="img_130 overhidden">
+      <ul>
+      <li><a href="http://yikao.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zhuanke55.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zxdk.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke25.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gufen/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke26.jpg" /></a></li>
+      <li><a href="http://gkcx.eol.cn/z/txl.html" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke20.jpg"></a></li>
+      <li class="end"><a href="http://daxue.eol.cn/" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/zhuanke59.jpg"></a></li>
+      </ul>
+</div>
+<div class="no_way"></div>
+<div id="god_01" class="img_130 overhidden" >
+      <ul>
+      <li><a href="http://gaokao.eol.cn/html/g/gkfsx.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img.eol.cn/images/ed/gaokao/2014/benke04.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/gufen/" target="_blank"><img border="0" width="130" height="60" src="http://img9.eol.cn/images/ed/gaokao/2014/zhuanke61.jpg" /></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/hotu.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img1.eol.cn/images/ed/gaokao/2014/zhuanke62.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/qiuxue/" target="_blank"><img border="0" width="130" height="60" src="http://img2.eol.cn/images/ed/gaokao/2014/zhuanke63.jpg"></a></li>
+      <li class="end"><a href="http://www.eol.cn/html/g/zyzxpt/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img3.eol.cn/images/ed/gaokao/2014/zhuanke64.jpg"></a></li>
+	  </ul>
+	  <ul>
+      <li><a href="http://daxue.eol.cn/" target="_blank"><img width="130" height="60" src="http://img4.eol.cn/images/ed/gaokao/2014/zhuanke65.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/qiuxue/" target="_blank"><img width="130" height="60" src="http://img5.eol.cn/images/ed/gaokao/2014/zhuanke66.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/2012xzzy.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img6.eol.cn/images/ed/gaokao/2014/benke07.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img7.eol.cn/images/ed/gaokao/2014/benke08.jpg"></a></li>
+      <li class="end"><a href="http://www.eol.cn/html/uc/mgaokao/index.shtml" target="_blank"><img width="130" height="60" src="http://img8.eol.cn/images/ed/gaokao/2014/zhuanke69.jpg"></a></li>
+      </ul>
+      
+      <!--<ul>
+      <li><a href="http://www.eol.cn/html/g/2013gktj/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img9.eol.cn/images/ed/gaokao/2014/tj.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/211.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img1.eol.cn/images/ed/gaokao/2014/benke01.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/gxmd/985.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img2.eol.cn/images/ed/gaokao/2014/benke02.jpg"></a></li>
+      <li><a href="http://www.eol.cn/html/g/report/2013/index.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img3.eol.cn/images/ed/gaokao/2014/benke03.jpg" /></a></li>
+      <li class="end"><a href="http://gaokao.eol.cn/html/g/gkfsx.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img4.eol.cn/images/ed/gaokao/2014/benke04.jpg"></a></li>
+      <li><a href="http://www.class.cn/shtml/zt/2015hz_book/index.html" target="_blank"><img border="0" width="130" height="60" src="http://img5.eol.cn/images/ed/gaokao/2014/zytb.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/ge_di_gao_kao_2931/" target="_blank"><img border="0" width="130" height="60" src="http://img6.eol.cn/images/ed/gaokao/2014/benke10.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/zhongdxk07.shtml" target="_blank"><img border="0" width="130" height="60" src="http://img7.eol.cn/images/ed/gaokao/2014/benke11.jpg"></a></li>
+      <li><a href="http://gaokao.eol.cn/html/g/qiuxue/" target="_blank"><img border="0" width="130" height="60" src="http://img8.eol.cn/images/ed/gaokao/2014/benke12.jpg"></a></li>
+      <li class="end"><a href="http://gkcx.eol.cn/z/sfbz.html" target="_blank"><img border="0" width="130" height="60" src="http://img9.eol.cn/images/ed/gaokao/2014/benke13.jpg"></a></li>
+      </ul>-->
+</div>
+<div class="no_way"></div>
+<script type="text/javascript">
+            myGod('god_01', 1500)
+        </script>
+<div class="img_130 overhidden font_14 mar_t_15">
+      <dl>
+      <dd><a href="/schoolhtm/schoolTemple/school1542.htm" target="_blank">连云港师范高等...</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school2690.htm" target="_blank">重庆旅游职业学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1388.htm" target="_blank">苏州卫生职业技...</a></dd>
+<dd><a href="/schoolhtm/schoolTemple/school2818.htm" target="_blank">重庆艺术工程职...</a></dd>
+      <dd class="end"><a href="/schoolhtm/schoolTemple/school1921.htm" target="_blank">焦作师范高等专...</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school2821.htm" target="_blank">重庆电信职业学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school2221.htm" target="_blank">江苏建康职业学院</a></dd>
+      <dd><a href="/schoolhtm/schoolTemple/school1301.htm" target="_blank">平顶山工业职业...</a></dd>
+      <dd class="end"><a href="/schoolhtm/schoolTemple/school1132.htm" target="_blank">内蒙古化工职业...</a></dd>      
+      </dl>
+</div>
+  <div class="no_way"></div>   
+
+      <div class="mar_t_20 title"><h2>高考生必备资料</h2></div>
+      <div class="mar_t_20 d_h overhidden">
+      	<ul>
+        	<li><em>大学</em><a href="http://gkcx.eol.cn/soudaxue/queryschool.html?keyWord1=&schooltype=%E6%99%AE%E9%80%9A%E6%9C%AC%E7%A7%91&1=1">各地大学</a><a href="http://college.jybest.cn/">国外大学</a><a href="http://www.eol.cn/html/g/gxmd/211.shtml">211高校</a><a href="http://www.eol.cn/html/g/gxmd/985.shtml">985高校</a><a href="http://gkcx.eol.cn/soudaxue/queryschool.html?&keyWord1=&schoolflag=%E6%95%99%E8%82%B2%E9%83%A8%E7%9B%B4%E5%B1%9E&province=&1=1">教育部直属大学</a><a href="/soudaxue/queryschool.html?argschtype=&argprovince=&argschoolname=&recomprovince=全部&recomschtype=全部&recomschprop=全部&recomschoolflag=自主招生试点  &recomschoolSortStr=&schoolSign=2&schoolSort=&page=1&keyWord1=">自主招生院校</a><!--<a href="http://gkcx.eol.cn/z/sfbz.html">大学学费</a>--></li>
+        </ul>
+      </div>
+ <div class="no_way"></div>
+<div class="mar_t_10 d_h overhidden">
+      	<ul>
+        	<li><em>专业</em><a href="/soudaxue/queryspecialty.html?argzycengci=本科&argzytype=全部&argspecialtyname=&recomzycengci=本科&recomzytype=全部&recomschoolSortStr=&page=1&schoolSort=">本科专业 </a><a href="/soudaxue/queryspecialty.html?argzycengci=专科&argzytype=全部&argspecialtyname=&recomzycengci=专科&recomzytype=全部&recomschoolSortStr=&page=1&schoolSort="> 专科专业</a><a href="http://gkcx.eol.cn/ads/gaokao/tszy.shtml">特色专业</a><a href="http://www.eol.cn/html/g/2012xzzy.shtml">新增专业</a><a href="http://gaokao.eol.cn/html/g/gkzy_hz/">热门专业</a><a href="http://zhuanye.eol.cn/">专业咨询</a><a href="http://gaokao.eol.cn/zyjs_2924/20100312/t20100312_456607.shtml">精品课程名单</a></li>
+        </ul>
+      </div>
+  <div class="no_way"></div>
+  <div class="mar_t_10 d_h overhidden">
+      	<ul>
+        	<li><em>报考</em><a href="http://gaokao.eol.cn/ge_di_gao_kao/">各地志愿填报指南</a><a href="http://gaokao.eol.cn/gaozhi/cjwt/">高职高专报考指导</a><a href="http://gaokao.eol.cn/gkdg/">高考大纲解读</a><a href="http://gaozhao.eol.cn/">高考志愿信息采集系统</a></li>
+        </ul>
+      </div>
+<div class="no_way"></div>
+      
+    </div>
+    <div class="right w_310">
+    <!--焦点图开始310x200-->
+		<div class="picfocus" id='player'>
+		<p class="play_list">
+						<a target="_blank" href="http://gaokao.eol.cn/html/g/2012xzzy.shtml"><img src="/upload/2016031516351819875319839160.jpg" alt="新增及撤销专业名单" />新增及撤销专业名单</a>
+			<a target="_blank" href="http://www.eol.cn/html/g/2016gkgg/index.shtml"><img src="/upload/201603151636121478358079939.jpg" alt="全国高考改革方案盘点" />全国高考改革方案盘点</a>
+			<a target="_blank" href="http://www.eol.cn/html/g/zizhao/jianzhang/"><img src="/upload/201603151637597201721987073.jpg" alt="全国高校自主招生简章" />全国高校自主招生简章</a>
+			<a target="_blank" href="http://gaokao.eol.cn/huodong/ge_di_gao_kao/"><img src="/upload/201603151653113151392754464.jpg" alt="各地高考志愿填报指南" />各地高考志愿填报指南</a>
+		</p>
+</div>
+
+	<!--焦点图结束-->
+        
+        <div id="Tabs_08">
+			<div class="tag_08_title"><div class='tabs_08'>
+			<a target="_blank" href="http://gaokao.eol.cn">高考资讯</a></div><div class='tabs_08'>
+			<a target="_blank" href="/newChangeAll.html">高校信息</a></div></div>
+    		<div class="no_way"></div>
+			<div class='box'>
+			<!--高考快讯-->
+			<div class='contenttabs_08' id="gkzx" >
+			</div>
+			<!-- 高校最新-->
+        	<div class='contenttabs_08 hide' style="display: none;">
+            	<ul>
+            	            	<li>
+            		<a href="/schoolhtm/schoolInfo/3209/10070/459455.htm" target="_blank">
+            			特许金融分析师好考吗？难不难？
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3208/10070/458591.htm" target="_blank">
+            			浙江特殊教育职业学院2016年三位一体招...
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3207/10070/452497.htm" target="_blank">
+            			上海外国语大学博华国际学校1月10日招生...
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3206/10071/452053.htm" target="_blank">
+            			常青藤国际学校招生简章
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3202/10070/443391.htm" target="_blank">
+            			香港中文大学（深圳）校长致辞
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3200/10078/439423.htm" target="_blank">
+            			201５年西南航空职业学院考生问答
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3197/10071/434564.htm" target="_blank">
+            			贵州建设职业技术学院2015年招生章程
+            		</a>
+            	</li>
+            	<li>
+            		<a href="/schoolhtm/schoolInfo/3198/10071/438940.htm" target="_blank">
+            			北外国际教育学院美国本科预科课程2015...
+            		</a>
+            	</li>
+           		</ul>
+</div>
+
+			</div>
+		</div>
+        <!--<div class="mar_t_20">
+        <p align="center"><a href="http://www.eol.cn/html/g/tjgk/08.shtml"><img border="0" width="310" height="90" src="http://img8.eol.cn/images/ed/gaokao/2014/17.jpg"></a></p>
+</div>--><div class="mar_t_20">
+        <p align="center"><a href="http://www.eol.cn/html/g/tjgk/08.shtml"><img border="0" width="310" height="90" src="http://img8.eol.cn/images/ed/gaokao/2014/17.jpg"></a></p>
+</div>
+<iframe src='http://ct.img.eol.cn/pv/410_MDExNTIz.html' style='visibility: hidden' width="0" height="0"></iframe>
+        <div id="Tabs_09">
+			<div class="tag_09_title">
+			<div class='tabs_09'><a href="/schoolhtm/schoolTop100/max_0_0.htm" target="_blank">大学人气榜</a></div>
+			<div class='tabs_09'><a href="/sphtm/click_ben_zhuan_top100.htm" target="_blank">专业热度榜</a></div></div>
+    		<div class="no_way"></div>
+			<div class='box'>
+				<div class="contenttabs_09" style="display: none;">
+                <ul>
+                				<li class="list_01"><span>17683085</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/102/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school102.htm" tile='厦门大学'>
+			         厦门大学
+			         </a>
+         		</li>
+				<li class="list_02"><span>15041307</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/42/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school42.htm" tile='武汉大学'>
+			         武汉大学
+			         </a>
+         		</li>
+				<li class="list_03"><span>14068395</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/99/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school99.htm" tile='四川大学'>
+			         四川大学
+			         </a>
+         		</li>
+				<li class="list_04"><span>12508508</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/31/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school31.htm" tile='北京大学'>
+			         北京大学
+			         </a>
+         		</li>
+				<li class="list_05"><span>12484493</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/104/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school104.htm" tile='中山大学'>
+			         中山大学
+			         </a>
+         		</li>
+				<li class="list_06"><span>11455726</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/140/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school140.htm" tile='清华大学'>
+			         清华大学
+			         </a>
+         		</li>
+				<li class="list_07"><span>10607508</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/126/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school126.htm" tile='山东大学'>
+			         山东大学
+			         </a>
+         		</li>
+				<li class="list_08"><span>10584512</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/114/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school114.htm" tile='浙江大学'>
+			         浙江大学
+			         </a>
+         		</li>
+				<li class="list_09"><span>10570793</span><i><a   target="_blank" href="/schoolhtm/schoolInfo/123/10071/list_1.htm">章程</a></i><a  target="_blank"  href="/schoolhtm/schoolTemple/school123.htm" tile='中南大学'>
+			         中南大学
+			         </a>
+         		</li>
+			<li class="list_10"><span>10145285</span><i><a target="_blank" href="/schoolhtm/schoolInfo/51/10071/list_1.htm">章程</a></i><a target="_blank"  href="/schoolhtm/schoolTemple/school51.htm" title="西南交通大学">
+	         西南交通大学
+	        </a></li>
+		</ul>
+	</div>
+
+        		<div class="contenttabs_09" style="display: block;">
+                <ul>
+				<li class="list_01"><span>495266</span><i><a target="_blank" href="/schoolhtm/specialty/10033/list.htm">专科</a></i><a target="_blank" href="/schoolhtm/specialty/10033/specialtyDetail50498.htm"  title="临床医学">
+         临床医学
+		</a></li>
+		<li class="list_02"><span>332138</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail50740.htm"  title="商务经济学">
+         商务经济学
+		</a></li>
+		<li class="list_03"><span>291337</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail51068.htm"  title="信息与通信工程">
+         信息与通信工程
+		</a></li>
+		<li class="list_04"><span>212505</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail50741.htm"  title="金融数学">
+         金融数学
+		</a></li>
+		<li class="list_05"><span>185542</span><i><a target="_blank" href="/schoolhtm/specialty/10033/list.htm">专科</a></i><a target="_blank" href="/schoolhtm/specialty/10033/specialtyDetail50500.htm"  title="中医学">
+         中医学
+		</a></li>
+		<li class="list_06"><span>179203</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail51067.htm"  title="电气工程与智能控制">
+         电气工程与智能
+		</a></li>
+		<li class="list_07"><span>129571</span><i><a target="_blank" href="/schoolhtm/specialty/10033/list.htm">专科</a></i><a target="_blank" href="/schoolhtm/specialty/10033/specialtyDetail50614.htm"  title="应用心理学">
+         应用心理学
+		</a></li>
+		<li class="list_08"><span>107441</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail51134.htm"  title="航空航天工程">
+         航空航天工程
+		</a></li>
+		<li class="list_09"><span>105939</span><i><a target="_blank" href="/schoolhtm/specialty/10032/list.htm">本科</a></i><a target="_blank" href="/schoolhtm/specialty/10032/specialtyDetail51192.htm"  title="临床医学">
+         临床医学
+		</a></li>
+		<li class="list_10"><span>96024</span><i><a target="_blank" href="/schoolhtm/specialty/10033/list.htm">专科</a></i><a target="_blank" href="/schoolhtm/specialty/10033/specialtyDetail50499.htm"  title="口腔医学">
+         口腔医学
+		</a></li>
+		</ul>
+	</div>
+
+			</div>
+		</div>
+      <div class="bule_bor bule_bg mar_t_20 bor_rad overhidden font_14">
+      	<!--右下角微信 -->
+          <!--右下角微信 -->
+          <h2>关注我们</h2>
+        <div class="left">
+        <p align="center"><img width="280" height="125" src="http://img4.eol.cn/images/ed/gaokao/2014/xdxbzy.jpg"></p>
+        
+        </div>
+<div class="no_way"></div>
+
+      </div>
+    </div>
+<div class="no_way"></div>
+</div>
+<!-- 问答登录浮窗-->
+<div class="alert_box  error hide"><!--弹窗：请您输入问题后再进行提交-->
+  <div class="alert_c">
+    <div class="alert">
+      <div class="popTit">提示<a target="_self" class="popClose dib" href="javascript:;"></a></div>
+      <div class="popCon">
+        <div class="popTxt f-16 m-c3">请您输入问题后再进行提交！</div>
+        <div><a target="_self" class="btn dib popClose" href="javascript:;">确定</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="alert_box successful hide"><!--弹窗：您的提问已经提交成功-->
+  <div class="alert_c">
+    <div class="alert">
+      <div class="popTit">提示<a target="_self" class="popClose dib" href="javascript:;"></a></div>
+      <div class="popCon">
+        <div class="popTxt f-16 m-c3">您的提问已经提交成功！</div>
+        <div><a target="_self" class="btn dib popClose" href="javascript:;">确定</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="alert_box hide"><!--弹窗：问题少于5个字，请您把问题描述清楚后再提问！-->
+  <div class="alert_c">
+    <div class="alert">
+      <div class="popTit">提示<a target="_self" class="popClose dib" href="javascript:;"></a></div>
+      <div class="popCon">
+        <div class="popTxt f-16 m-c3">问题少于5个字，请您把问题<br>描述清楚后再提问！</div>
+        <div><a target="_self" class="btn dib popClose" href="javascript:;">确定</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="login_div alert_box hide"><!--弹窗：欢迎登录！-->
+  <div class="alert_c">
+    <div class="alert loginPop">
+      <div class="popTit">欢迎登录<a target="_self" class="popClose dib" href="javascript:;"></a></div>
+      <div class="popCon">
+        <div class="lbCon">
+          <div class="formBox mno">
+            <form>
+              <div class="iptBox clearfix">
+                <div class="iptCon">
+                <input type="text" id="username" name ="username" onblur="if (value ==''){value='邮箱 / 手机号'}" onfocus="if (value =='邮箱 / 手机号'){value =''}" value="邮箱 / 手机号" class="iw300"> 
+                <p class="prompt hide">您输入的邮箱/手机号不存在</p>
+                </div>
+              </div>
+              
+              <div class="iptBox clearfix">
+                <div class="iptCon hauto">
+                  <input type="password" style="display:none;" class="iw300" id="password" name="password">
+                  <input type="text"  value="密码" class="iw300" name="hidenpassword" id="password3_$loginhash">
+                  <p class="prompt hide">这里是报错提示文字</p>
+                </div>
+              </div>
+              <div class="iptBox clearfix">
+                                    <div class="iptCon">
+                                        <input type="text" name="code1" id="code1" class="iw215" value="验证码" onblur="if (value ==''){value='验证码'}" onfocus="if (value =='验证码'){value =''}" />
+                                        <a href="javascript:;" target="_self" class="code"><img class="code1img" src="http://i.wen.eol.cn/user/code" onclick="this.src='http://i.wen.eol.cn/user/code?'+Math.random()" /></a>
+                                    </div>
+              </div>
+              
+              <div class="rfBox m-c3 clearfix">
+                <a class="m-c3 fr" href="http://i.wen.eol.cn/user/forget" target="_blank">忘记密码？</a> 还没有账号？ <a class="m-c1" href="http://wen.eol.cn/user/register">立即注册</a> 
+              </div>
+              
+              <div class="iptBtn regBtn"><a class="wendalogin wauto btn db" href="javascript:void(0);">登录</a></div>
+            </form>
+          </div>
+      
+          <div class="third-party wauto">
+            <div class="tac m-c3">个人用户可通过第三方账号直接登录</div>
+            <div class="tpBtn mno">
+              <a class="tp-wb" href="https://api.weibo.com/oauth2/authorize?client_id=1889820698&response_type=code&redirect_uri=http://i.wen.gophper.com/user/loginjump?type=weibo"><span class="hide">新浪微博</span></a>
+              <a class="tp-qq" href="https://graph.qq.com/oauth2.0/authorize?client_id=101279673&response_type=code&redirect_uri=http://i.wen.gophper.com/user/loginjump?type=qq"><span class="hide">腾讯QQ</span></a>
+              <a class="tp-wx" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx8461e664b4d99986&redirect_uri=http://i.wen.gophper.com/user/loginjump?type=weixin&response_type=code&scope=snsapi_login&state=weixin#wechat_redirect"><span class="hide">微信</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部广告-->
+<div style="height:0; overflow:hidden;">
+<noscript>
+	<img src="http://pv.img.eol.cn/images/cer.net/log/gkcx.png" width="0" height="0" />
+	<img src="http://stat.eol.cn/mysql.php?idsite=85" style="border:0" alt="" />
+</noscript>
+</div>
+<!-- zyl -->
+<!--系统简介-->
+<script type="text/javascript" src="/schoolhtm/sysindexFooter_index.js"></script>
+</body>
+</html>
+

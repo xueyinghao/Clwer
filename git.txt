@@ -1,0 +1,1 @@
+%HOMEDRIVE%%HOMEPATH% 起始的值  Git GUI属性里面

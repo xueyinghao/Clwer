@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\bin\Debug\DNSAnalysis.exe.config
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\bin\Debug\DNSAnalysis.exe
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\bin\Debug\DNSAnalysis.pdb
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\obj\Debug\DNSAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\obj\Debug\DNSAnalysis.exe
+C:\Users\Administrator\Desktop\2016-薛英豪\Spider1\Spider1\DNSAnalysis\obj\Debug\DNSAnalysis.pdb

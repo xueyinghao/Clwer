@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>云窗2.0校园版-云窗是空间无限</title>
+<meta name="keywords" id="keys" content="云窗,高清视频,零流量占用,共享知识,高清享受,下载平台,极速下载脱胎换骨,曲奇客,疼爱学生小腰包" />
+<meta name="description" content="便捷校园网络生活，100%艳惊小伙伴。" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<!--<link href="css/main.css" rel="stylesheet" type="text/css">-->
+<style>
+*{margin:0; padding:0;overflow-x:hidden;}
+img{ border:none;}
+#banben{width:300px; height:200px; margin-left:50%; padding-top:10px; padding-left:260px; }
+#banben2{width:300px; height:144px; margin-left:50%; padding-left:260px;font-weight:bold; color:#7D5C95;}
+#xiazai1{padding-top:20px; margin-top:90px;}
+#xiazai2{padding-top:20px; line-height:30px;}
+#yun{color:#7D5C95; font-weight:bold; font-size:32px; font-family:宋体;}
+
+#daohang{width:100%;height:89px;border:none;margin:0; padding:0; float:left; background:url(images/channel_bg.jpg) repeat-x;}
+
+#main{margin:auto;}
+.channel{width:19%; height:89px; float:left; text-align:center;overflow-y:hidden;}
+.dao_tiao{width:1%; height:89px; float:left; text-align:center;}
+.channel2{width:19%; height:89px; float:left; text-align:center;overflow-y:hidden;}
+
+#xygqsp{width:100%;  height:353px; background:url(images/xygq_bg.jpg) repeat-x; margin-top:89px;}
+#gqsp{width:1069px; height:353px;margin:auto; }
+#xywenzi{width:470px; height:260px;  float:left; margin-top:40px;}
+#xypic{width:554px; height:353px; float:left;}
+
+.spanxiaoyuan{color:#575656; font-size:40px; font-weight:bold;}
+.spanliuliang{color:#7F7F7F;font-weight:bold; font-size:16px; line-height:5px;}
+.spanwen{color:#7F7F7F; line-height:30px; font-size:16px;}
+
+#yczxpt{width:100%;  height:358px; background:url(images/ycxz_bg.jpg) repeat-x; }
+#ycxz{width:1069px; height:358px;margin:auto; }
+#ycpic{width:554px; height:358px; float:left;}
+#ycwenzi{width:470px; height:220px;  float:left; margin-top:130px;}
+
+.splr{color:#7F7F7F;font-weight:bold; font-size:16px; line-height:5px;}
+.jjkf{color:#FF0000;font-weight:bold; font-size:20px; line-height:5px;}
+
+#quqike{width:100%; height:358px; background:url(images/quqike_bg.jpg) repeat-x;}
+#qqk{width:1097px; height:358px;margin:auto; }
+#quqikewenzi{width:480px; height:280px; float:left; margin-top:60px;}
+#quqikepic{width:617px; height:358px; float:left; padding-left:}
+
+#foot{width:100%; height:100px; line-height:26px;background:url(images/foot_bg1.jpg) repeat-x;text-align:center; color:#FFF; font-size:12px; padding-top:25px;}
+</style>
+<script>
+function copyToClipboard() 
+{ 
+var d = location.href; 
+window.clipboardData.setData('text', d); 
+document.getElementById("cons").style.display="block";
+
+} 
+
+
+
+function createXMLHTTPRequest(){
+if(typeof XMLHttpRequest!="undefined") {
+    return new XMLHttpRequest();
+}else if(typeof ActiveXObject!="undefined"){
+    var xmlHttp_ver = false;
+    var xmlHttp_vers = ["MSXML2.XmlHttp.6.0","MSXML2.XmlHttp.5.0","MSXML2.XmlHttp.4.0","MSXML2.XmlHttp.3.0","MSXML2.XmlHttp","Microsoft.XmlHttp"];
+    if(!xmlHttp_ver){
+        for(var i=0;i<xmlHttp_vers.length;i++){
+            try{
+                new ActiveXObject(xmlHttp_vers[i]);
+                xmlHttp_ver = xmlHttp_vers[i];
+                break;
+            }catch(oError){;}
+        }
+    }
+    if(xmlHttp_ver){
+        return new ActiveXObject(xmlHttp_ver);
+    }else{
+      	//throw new Error("Could not create XML HTTP Request.");
+    }
+}else{
+    //throw new Error("Your browser doesn't support an XML HTTP Request.");
+}
+}
+
+function getRequest(sMethod,URL){
+    var oXmlHttp = createXMLHTTPRequest();
+    oXmlHttp.open(sMethod,URL, true);
+    oXmlHttp.onreadystatechange = function () {
+        if (oXmlHttp.readyState == 4) {
+             if (oXmlHttp.status == 200) {
+
+                 var xmlname=oXmlHttp.responseText;
+
+						var url1=location.href.substring(location.href.length-1);
+						//alert(url1);
+						if(url1=="/"){
+							url1=location.href.substring(0,location.href.length-1);
+						}
+						//alert(url1);
+						if(location.href.indexOf("/index.html")<=0){
+							location.href=url1+":7412/"+xmlname+".exe";
+						}else{
+							location.href=location.href.replace("/index.html","")+":7412/"+xmlname+".exe";
+						}
+						
+
+             }else{
+                       return false;
+             }
+
+		}else{
+                  //throw new Error("有一个错误产生！错误代码:\""+oXmlHttp.readyState+"\"");
+
+        }    
+    }
+    oXmlHttp.send(null); 
+} 
+
+function xiazai(){
+var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        var s;
+        (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+        (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+        //以下进行测试
+//        if (Sys.ie) alert('IE: ' + Sys.ie);
+//        if (Sys.firefox) alert('Firefox: ' + Sys.firefox);
+//        if (Sys.chrome) alert('Chrome: ' + Sys.chrome);
+//        if (Sys.opera) alert('Opera: ' + Sys.opera);
+//        if (Sys.safari) alert('Safari: ' + Sys.safari);
+
+	if (isIE()){
+           var dyxmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+			dyxmlDoc.async="false";
+			dyxmlDoc.load("db/barname.xml");
+			var ting=dyxmlDoc.getElementsByTagName("n");
+     		var xuename="";
+		 if(ting.length>0){
+	
+			 window.open(ting[0].childNodes[0].text);
+		 }
+    }else{
+	//getRequest("Get","help/xiazai.asp?r="+new Date().getTime());
+		$.get("db/barname.xml", function(data){
+			$(data).find('n').each(function(index, ele){
+				var titles = $(ele).find('a').text();
+				var xmlname = $(ele).find('b').text();
+				location.href=titles;
+				
+			})
+		});
+	}
+}
+ function isIE() { //ie?
+	if (!!window.ActiveXObject || "ActiveXObject" in window)
+		return true;
+	else
+		return false;
+}
+</script>
+</head>
+<body>
+<div style="width:100%;background:url(images/top_01.jpg) center; height:286px;"></div>
+<div style="width:100%;background:url(images/top_02.jpg) center; height:224px;">
+<div id="banben">
+<div id="xiazai1"><a onfocus="this.blur()" onClick="xiazai()" style="cursor:pointer"><img src="images/down_chang.jpg" onmouseover="this.src='images/down_hua.jpg'" onmouseout="this.src='images/down_chang.jpg'" /></a></div>
+</div>
+</div>
+<div style="width:100%;background:url(images/top_03.jpg) center; height:144px;">
+<div id="banben2">
+<div ><span id="yun">云窗2.0校园版</span><br /><span id="xiazai2">温馨提示：下载非本校云窗客户端将无法正常使用。如果您不知道本校云窗下载地址，请<a href="http://update.netkuu.com/school.asp">点击查询</a></span></div>
+</div>
+</div>
+<div id="main">
+    <div id="daohang">
+    <div id="daoh" class="channel" onmouseover="xuanting()" onmouseout="outting()"><img id="tu1" src="images/yc_chang.jpg" /></div>
+    <div class="dao_tiao"><img  src="images/channel_tiao.jpg"/></div>
+    <div id="daoq" class="channel" onmouseover="qxuanting()" onmouseout="qoutting()"><a href="javascript:update_gaoqing()" onfocus="this.blur()"><img id="tu2" src="images/gq_chang.jpg" border="0" /></a></div>
+    <div class="dao_tiao"><img  src="images/channel_tiao.jpg"/></div>
+    <div id="daox" class="channel" onmouseover="xzxuanting()" onmouseout="xzoutting()"><a href="javascript:update_xiazai()" onfocus="this.blur()"><img id="tu3" src="images/xz_chang.jpg" border="0" /></a></div>
+    <div class="dao_tiao"><img  src="images/channel_tiao.jpg"/></div>
+    <div id="daoquqi" class="channel" onmouseover="qkxuanting()" onmouseout="qkoutting()"><a href="javascript:update_quqi()" onfocus="this.blur()"><img id="tu4" src="images/qk_chang.jpg" border="0"/></a></div>
+    <div class="dao_tiao"><img  src="images/channel_tiao.jpg"/></div>
+    <div id="daolx" class="channel2" onmouseover="lxxuanting()" onmouseout="lxoutting()"><a target="_blank" onfocus="this.blur()" href="http://bizapp.qq.com/webc.htm?new=0&sid=800018819&o=b.qq.com&q=7"><img id="tu5" src="images/lx_chang.jpg" /></a></div>
+    </div>
+    <div id="xygqsp">
+		<a name="yc1"></a>
+        <div id="gqsp">
+            <div id="xywenzi"><span class="spanxiaoyuan">校园高清视频</span><br /><br /><span class="spanliuliang">零流量占用</span>&nbsp;<span class="spanwen">视频网看视频不占用外网流量，再也不用担心包月流</span><br /><span class="spanwen">量不够用了！</span><br /><span class="spanliuliang">共享知识</span>&nbsp;<span class="spanwen">有大量公开课、名人演讲、纪录片等知识类视频，学习</span><br /><span class="spanwen">新知识不停歇！</span><br /><span class="spanliuliang">高清享受</span>&nbsp;<span class="spanwen">大部分视频资源为720P蓝光级清晰度，极致高清享受！</span></div>
+            <div id="xypic"><img src="images/gaoqing.jpg" /></div>
+        </div>
+    </div>
+  <div id="yczxpt">
+     <a name="yc2"></a>
+    <div id="ycxz">
+        <div id="ycpic"><img src="images/ycxz.jpg" /></div>
+        <div id="ycwenzi"><span class="spanxiaoyuan">云窗下载平台</span><span class="splr">（</span><span class="jjkf">即将开放</span><span class="splr">）</span><br /><br /><span class="spanliuliang">极速下载脱胎换骨。</span><span class="spanwen">汇集时下流行应用，每日添加时时更新。</span><br /><span class="spanwen">各类常用软件，学习课件，休闲娱乐，手机应用，随你挑选。</span></div>
+    </div>
+  </div>
+    <div id="quqike">
+     <a name="yc3"></a>
+    <div id="qqk">
+        <div id="quqikewenzi"><span class="spanxiaoyuan">曲奇客</span><br /><br /><br /><span class="spanliuliang">疼爱学生小腰包。</span>&nbsp;<span class="spanwen">国内首家针对高校学生的导购平台。随时网罗各</span><br /><span class="spanwen">时尚品牌，特价产品和全网最全的9.9元包邮宝贝。专业的编辑选宝贝，职业的买手砍价格，提供[独享][超级给力][划算]的商品！更有云豆兑换，兑换您所钟爱的商品！</span><br /><br /><span class="spanwen">我们就是疼爱您的小腰包，需要时永远在您身边。</span></div>
+            <div id="quqikepic"><img src="images/quqi.jpg" /></div>
+      </div>
+    </div>
+    
+</div>
+<div id="foot">
+<div id="content">Copyright<font size="4">&copy;</font> 2009-2012 netkuu.com All rights reserved. 出品方：星辰在线 光音网视 技术提供：光音网视 <br />增值电信业务许可证 湘B-2-4-20060058 文网文（2009）292号 信息网络传播视听许可证号：1808294 <br />央视网 搜狐网 ku6网 激动集团 乐视网 骄阳文化 版权提供</div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+var Sys1 = {};
+        var ua1 = navigator.userAgent.toLowerCase();
+        var s1;
+        (s1 = ua1.match(/msie ([\d.]+)/)) ? Sys1.ie = s1[1] :
+        (s1 = ua1.match(/firefox\/([\d.]+)/)) ? Sys1.firefox = s1[1] :
+        (s1 = ua1.match(/chrome\/([\d.]+)/)) ? Sys1.chrome = s1[1] :
+        (s1 = ua1.match(/opera.([\d.]+)/)) ? Sys1.opera = s1[1] :
+        (s1 = ua1.match(/version\/([\d.]+).*safari/)) ? Sys1.safari = s1[1] : 0;
+if (isIE()){
+	var xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async="false";
+	if(xmlDoc.load("db/barname.xml")==false){   //判断该影片文件夹是否存在
+	
+	}else{
+		var mitem=xmlDoc.getElementsByTagName("n");
+	
+		var names=mitem[0].childNodes[1].text;
+		document.title="云窗2.0校园版-云窗是空间无限_"+names;
+		document.getElementById("keys").value="云窗,高清视频,零流量占用,共享知识,高清享受,下载平台,极速下载脱胎换骨,曲奇客,疼爱学生小腰包,"+names;
+		document.getElementById("yun").innerHTML=names;
+	
+	}    
+}else{
+//getRequest1("Get","help/inname.asp?r="+new Date().getTime());
+//$(function(){
+	$.get("db/barname.xml", function(data){
+		$(data).find('n').each(function(index, ele){
+			var titles = $(ele).find('a').text();
+			var xmlname = $(ele).find('b').text();
+			document.title="云窗2.0校园版-云窗是空间无限_"+xmlname;
+			document.getElementById("keys").value="云窗,高清视频,零流量占用,共享知识,高清享受,下载平台,极速下载脱胎换骨,曲奇客,疼爱学生小腰包,"+xmlname;
+			document.getElementById("yun").innerHTML=xmlname;
+		})
+	});
+//});
+
+}
+
+document.oncontextmenu=new Function("event.returnValue=false;");
+document.onselectstart=new Function("event.returnValue=false;");
+
+function xuanting(){
+   document.getElementById("daoh").style.backgroundImage="url(images/channel_tiao_hua.jpg)";
+   document.getElementById("tu1").src="images/yc_hua.jpg"; 
+}
+function outting(){
+   document.getElementById("daoh").style.backgroundImage="url(images/channel_bg.jpg)";
+   document.getElementById("tu1").src="images/yc_chang.jpg"; 
+}
+function qxuanting(){
+	document.getElementById("daoq").style.backgroundImage="url(images/channel_tiao_hua.jpg)";
+   document.getElementById("tu2").src="images/gq_hua.jpg"; 
+}
+function qoutting(){
+	document.getElementById("daoq").style.backgroundImage="url(images/channel_bg.jpg)";
+   document.getElementById("tu2").src="images/gq_chang.jpg"; 
+}
+function xzxuanting(){
+	document.getElementById("daox").style.backgroundImage="url(images/channel_tiao_hua.jpg)";
+   document.getElementById("tu3").src="images/xz_hua.jpg"; 
+}
+function xzoutting(){
+	document.getElementById("daox").style.backgroundImage="url(images/channel_bg.jpg)";
+   document.getElementById("tu3").src="images/xz_chang.jpg"; 
+}
+function qkxuanting(){
+	document.getElementById("daoquqi").style.backgroundImage="url(images/channel_tiao_hua.jpg)";
+   document.getElementById("tu4").src="images/qk_hua.jpg"; 
+}
+function qkoutting(){
+	document.getElementById("daoquqi").style.backgroundImage="url(images/channel_bg.jpg)";
+   document.getElementById("tu4").src="images/qk_chang.jpg"; 
+}
+function lxxuanting(){
+	document.getElementById("daolx").style.backgroundImage="url(images/channel_tiao_hua.jpg)";
+   document.getElementById("tu5").src="images/lx_hua.jpg"; 
+}
+function lxoutting(){
+	document.getElementById("daolx").style.backgroundImage="url(images/channel_bg.jpg)";
+   document.getElementById("tu5").src="images/lx_chang.jpg"; 
+}
+function update_gaoqing(){
+	location.href="#yc1";
+}
+function update_xiazai(){
+	location.href="#yc2";
+}
+function update_quqi(){
+	location.href="#yc3";
+}
+function getRequest1(sMethod,URL){
+	
+    var oXmlHttp = createXMLHTTPRequest();
+    oXmlHttp.open(sMethod,URL, true);
+	oXmlHttp.setRequestHeader("Content-Type","text/html;charset=gb2312");
+
+    oXmlHttp.onreadystatechange = function () {
+        if (oXmlHttp.readyState == 4) {
+             if (oXmlHttp.status == 200) {
+
+                var xmlname=oXmlHttp.responseText;
+				document.title="云窗2.0校园版-云窗是空间无限_"+xmlname;
+				document.getElementById("keys").value="云窗,高清视频,零流量占用,共享知识,高清享受,下载平台,极速下载脱胎换骨,曲奇客,疼爱学生小腰包,"+xmlname;
+				document.getElementById("yun").innerHTML=xmlname;
+											
+
+             }else{
+                       return false;
+             }
+
+		}else{
+                  //throw new Error("有一个错误产生！错误代码:\""+oXmlHttp.readyState+"\"");
+
+        }    
+    }
+    oXmlHttp.send(null); 
+} 
+
+</script>
+</html>

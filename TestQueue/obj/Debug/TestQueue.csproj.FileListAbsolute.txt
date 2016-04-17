@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\bin\Debug\TestQueue.exe.config
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\obj\Debug\TestQueue.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\bin\Debug\TestQueue.exe
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\bin\Debug\TestQueue.pdb
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\obj\Debug\TestQueue.exe
+C:\Users\Admin\Desktop\2016-薛英豪\Spider1\Spider1\TestQueue\obj\Debug\TestQueue.pdb

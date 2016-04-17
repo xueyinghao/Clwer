@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中华医学会--首页</title>
+<link href="http://www.cma.org.cn/style/head.css" rel="stylesheet" type="text/css" />
+<link href="http://www.cma.org.cn/style/index.css" rel="stylesheet" type="text/css" />
+<link href="http://www.cma.org.cn/style/footer.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="http://www.cma.org.cn/script/index.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.cma.org.cn/script/tshow.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.cma.org.cn/script/tshow3.js"></script>
+<script type="text/javascript" language="javascript" src="http://www.cma.org.cn/script/jquery-core.js"></script>
+	<script language="javascript" type="text/javascript">
+			function argFilter(arg){
+			 	arg = arg.replace(/\+/g, " ");
+				arg = arg.replace(/\-/g, " ");
+				arg = arg.replace(/\(/g, " ");
+				arg = arg.replace(/\)/g, " ");
+				arg = arg.replace(/\[/g, " ");
+				arg = arg.replace(/\]/g, " ");
+				arg = arg.replace(/\{/g, " ");
+				arg = arg.replace(/\}/g, " ");
+				arg = arg.replace(/\*/g, " ");
+				arg = arg.replace(/\?/g, " ");
+				arg = arg.replace(/\./g, " ");
+				arg = arg.replace(/\:/g, " ");
+				return arg;
+			 }
+			 
+			 function checkForm(){
+		
+			 	var defaultArg = document.getElementById("args");
+				var arg = argFilter(defaultArg.value);
+				var args = arg.replace(/^\s*/g, "").replace(/\s*$/g, "");
+				if(args.length < 2){
+					alert("检索条件过于简单！");
+					return false;
+				}
+				defaultArg.value = arg;
+				return true;
+			 }
+
+		</script>
+
+</head>
+
+<body> 
+<!--head-->
+<!--<div id="img" style="position:absolute; left:35px; top:556px; width:120; background-color:#FFFFFF;" class="fudong">
+<A href="http://www.cma.org.cn/184/index.html" target=_blank><img src="http://www.cma.org.cn/image/18da/2014102901.jpg" align="top">
+</a></div> 
+<SCRIPT LANGUAGE="JavaScript"> 
+var xPos = 15; 
+var yPos = document.body.clientHeight; 
+var step = 1; 
+var delay = 30; 
+var height = 0; 
+var Hoffset = 0; 
+var Woffset = 0; 
+var yon = 0; 
+var xon = 0; 
+var pause = true; 
+var interval; 
+img.style.top = yPos; 
+function changePos() { 
+width = document.body.clientWidth; 
+height = document.body.clientHeight; 
+Hoffset = img.offsetHeight; 
+Woffset = img.offsetWidth; 
+img.style.left = xPos + document.body.scrollLeft; 
+img.style.top = yPos + document.body.scrollTop; 
+if (yon) { 
+yPos = yPos + step; 
+} 
+else { 
+yPos = yPos - step; 
+} 
+if (yPos < 0) { 
+yon = 1; 
+yPos = 0; 
+} 
+if (yPos >= (height - Hoffset)) { 
+yon = 0; 
+yPos = (height - Hoffset); 
+} 
+if (xon) { 
+xPos = xPos + step; 
+} 
+else { 
+xPos = xPos - step; 
+} 
+if (xPos < 0) { 
+xon = 1; 
+xPos = 0; 
+} 
+if (xPos >= (width - Woffset)) { 
+xon = 0; 
+xPos = (width - Woffset); 
+} 
+} 
+function start() { 
+img.visibility = "visible"; 
+interval = setInterval('changePos()', delay); 
+} 
+start(); 
+</script>-->
+<div class="head">
+<div id="box_head">
+
+	<div class="left logo"></div>
+	<dl class="right">
+		<dt>
+			 <script language="JavaScript" type="text/javascript">
+				
+				var d=new Date();
+				var monthname=new Array("1","2","3","4","5","6","7","8","9","10","11","12");
+				var dayname=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+				var TODAY = d.getFullYear() + "年" + monthname[d.getMonth()] + "月" + d.getDate() + "日 " + dayname[d.getDay()];
+				document.write(TODAY);
+				</script>
+			<a href="http://en.cma.org.cn/"><img src="http://www.cma.org.cn/image/hico2.gif" alt=""/>English Web Site</a>
+			<a onclick="favorCma(this,'http://www.cma.org.cn')" href="#"><img src="http://www.cma.org.cn/image/hico3.gif" alt=""/>设为首页</a>
+			<a onClick="window.external.AddFavorite(document.location.href,document.title)" href="#"><img src="http://www.cma.org.cn/image/hico4.gif" alt=""/>加入收藏</a>
+		</dt>
+	</dl>
+</div>
+</div>
+<!--head-->
+
+
+
+<!--menu-->
+<div id="box_menu">
+	<div class="menu">
+		<!--<div class="left"></div>-->
+		<div class="left" style=" width:182px"></div>
+		<ul id="index_menu">
+				<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/index/index.html">首页</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/gyxh/index.html">关于学会</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/dangjian/index.html">党建工作</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/ywzx/index.html">业务中心</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/xshd/index.html">学术活动</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/jxjy_jjsbtz/index.html">继续教育</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/kjps/index.html">科技评审</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/hyzq/index.html">会员社区</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/dwjl/index.html">对外交流与合作</a></li>	
+<!--首页横向改变显示条数-->
+					<li><a href="http://www.cma.org.cn/quanjiwei/index.html">全继委办公室</a></li>	
+		</ul>
+		<!--<div class="right"></div>-->
+	</div>
+	
+	<form id="searchForm" action="http://us.cma.org.cn/interact/search.service" method="post" onsubmit="return checkForm();">
+	<div class="serch">
+		<div class="serchl">
+		<img src="http://www.cma.org.cn/image/hico5.gif" alt=""/>请输入关键字
+			<input type="text" id="args" name="args"/>
+			<input type="hidden" name="site" value="cma"/>
+			<!--<input type="submit" class="btn" value="搜索"/>-->
+			<input name="submit1" type="button" class="btn" onclick="document.getElementById('searchForm').submit();"/>
+				</div>
+	</div>
+		</form>
+<!--	<form id="searchForm" action="http://search.cma.org.cn/cma2-search/defaultSearch.do" method="post" onsubmit="document.getElementById('searchForm').submit()" target="_blank">
+<input type="hidden" name="siteid" value="1">	
+<div class="serch">
+		<div class="serchl">
+		<img src="http://www.cma.org.cn/image/hico5.gif" alt=""/>请输入关键字：
+			<input  type="text" id="defaultArg" name="defaultArg"/>
+			<select name="type">
+				<option value="allRes">全部类型</option>
+				<option value="textRes">普通文章</option>
+				<option value="imgRes">图片</option>
+				<option value="avRes">音视频</option>
+			</select>
+			<input name="" type="button" class="btn" onclick="document.getElementById('searchForm').submit();"/>
+		</div>
+	</div>
+	</form>  -->
+</div>
+<!--menu-->
+<!--main-->
+<div class="main">
+	<!--left-->
+	<div class="box_left left">
+		<!--登录-->
+			<iframe src="http://us.cma.org.cn/uservice/login.jsp" width="242" height="148" frameborder="0" scrolling="no"></iframe>
+		<!--登录end-->
+		<div class="box_clear"></div>
+ <dt>
+   <span><a href='http://zz.cma.org.cn/cma2-zz/welcome.ndl '><img src="http://www.cma.org.cn/image/sqhy.png"/></a></span>
+   <div class="box_clear"></div>
+   <span><a href='http://mbl.cma.org.cn'><img src="http://www.cma.org.cn/templates/style/images/dfhy.png"/></a></span>
+  
+</dt>
+		<div class="box_clear"></div>
+		<dt>
+			<span><a href='http://www.cma.org.cn/bainian/index.html'><img src="http://www.cma.org.cn/image/bainian_zticon.png"/></a></span>
+			<div class="box_clear"></div>
+		</dt>
+		<!--<div class="box_clear"></div>-->
+				<!--通知公告-->
+		<dl class="til">
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico1.png" alt=""/>最新公告</dt>
+			<dd><a href="http://www.cma.org.cn/index/tztg" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+		</dl>
+	         <div class="con" id="ggcon">
+		<marquee scrollAmount='2' width='100%' onmouseover='this.stop()' onmouseout='this.start()' direction="up">
+			<ul id="scrollmessage">
+					<li><a href="http://www.cmaph.org/new_zhyxhxlzz/xlzzxx/2016331/1459414366798_1.html" target="_blank">《中国医师杂志》严正声明</a>(<span>2016-04-01</span>)</li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/2016330/1459321070196_1.html" target="_blank">关于公布2016年第二批国家级继续医学教育项目和国家级继续医学教育基地项目的通知</a>(<span>2016-03-31</span>)</li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/2016330/1459320456530_1.html" target="_blank">中华医学会关于推荐第七届“全国优秀科技工作者”人选的通知</a>(<span>2016-03-30</span>)</li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/2016328/1459149375862_1.html" target="_blank">关于申报2016年中华医学会第二批I类学分继续医学教育项目的通知</a>(<span>2016-03-29</span>)</li>		
+					<li><a href="http://www.cmaph.org/new_zhyxhxlzz/xlzzxx/2016324/1458784992367_1.html" target="_blank">《中国基层医药》关于投稿等事宜的声明</a>(<span>2016-03-24</span>)</li>		
+					<li><a href="http://www.cmaph.org/new_zhyxhxlzz/xlzzxx/2016323/1458718642503_1.html" target="_blank">《国际泌尿系统杂志》编辑部郑重声明</a>(<span>2016-03-23</span>)</li>		
+					<li><a href="http://www.cmaph.org/new_index/zzsdt/2016225/1456390231387_1.html" target="_blank">《中华医学杂志》社有限责任公司招聘启事（财务主管岗）</a>(<span>2016-02-26</span>)</li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/2016218/1455782065134_1.html" target="_blank">中华医学会关于2016年中华医学科技奖推荐工作的通知</a>(<span>2016-02-22</span>)</li>		
+					<li><a href="http://www.cmaph.org/new_index/zzsdt/20151229/1451377997103_1.html" target="_blank">《中华医学杂志》社有限责任公司招聘启事</a>(<span>2016-01-08</span>)</li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/201622/1454390869906_1.html" target="_blank">关于第十七届吴阶平-保罗˙杨森医学药学奖报名通知</a>(<span>2016-02-02</span>)</li>		
+			</ul>
+		</marquee>
+		<!--<script>scroll();</script>-->
+		</div>
+		<!--通知公告-->
+		<div class="box_clear"></div>
+	
+
+		
+		<!--继续教育-->
+		<dl class="til">
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico2.png" alt=""/>继续教育通知</dt>
+			<dd><a href="http://www.cma.org.cn/index/jjsbtz" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+		</dl>
+		<div class="con ">
+
+<ul>
+					<li><a href="http://www.cma.org.cn/index/jjsbtz/201646/1459910191596_1.html">中华医学会肿瘤消融规范化治疗培训班2016年招生简章<img src="http://www.cma.org.cn/image/new.gif" alt=""/></a></li>		
+					<li><a href="http://www.cma.org.cn/index/tztg/2016328/1459149375862_1.html">关于申报2016年中华医学会第二批I类学分继续医学教育项目的通知</a></li>		
+					<li><a href="http://www.cma.org.cn/index/jjsbtz/2016214/1455427382879_1.html">2016年中华医学会重症医学专科资质培训班招生简章</a></li>		
+					<li><a href="http://www.cma.org.cn/index/jjsbtz/2016127/1453880763680_1.html">2016年中华医学会继续医学教育项目学分证书申领须知</a></li>		
+					<li><a href="http://www.cma.org.cn/index/jjsbtz/20151019/1445224095822_1.html">关于申报2016年中华医学会第一批I类学分继续医学教育项目的通知</a></li>		
+			</ul>
+			
+			<div class="sclear"></div>
+		</div>
+		<!--继续教育-->
+		<div class="box_clear"></div>
+		<!--科普信息-->
+		<dl class="til">
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico4.png" alt=""/>科普信息</dt>
+			<dd><a href="http://www.cma.org.cn/index/kpxx" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+		</dl>
+		<div class="con ">
+			<ul>
+					<li><a href="http://www.cma.org.cn/index/kpxx/201645/1459836749245_1.html">2016年世界卫生日：打败糖尿病</a></li>		
+					<li><a href="http://www.cast.org.cn/n35081/n35096/n10225918/16987000.html">《中国科协科普发展规划（2016-2020年）》发布</a></li>		
+					<li><a href="http://www.cma.org.cn/index/xhdt/2016324/1458781377435_1.html">中华医学会“生殖健康边区行”大型公益项目在革命圣地延安启动</a></li>		
+					<li><a href="http://www.cma.org.cn/index/kpxx/2016323/1458701268502_1.html">精准健康传播——助力“健康中国”的重要力量</a></li>		
+					<li><a href="http://www.cma.org.cn/index/kpxx/2016315/1458006585644_1.html">“中国中青年骨科医师学术交流及义诊活动”走进云南安宁</a></li>		
+			</ul>
+			<div class="sclear"></div>
+		</div>
+		<!--科普信息-->
+		<div class="box_clear"></div>
+		<!--学会建设-->
+		<dl class="til">
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico2.png" alt=""/>组织管理</dt>
+			<dd><a href="http://www.cma.org.cn/hyzq/zzgl" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+		</dl>
+		<div class="con ">
+			<ul>
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/20111027/1319680214507_1.html">中华医学会专科分会换届选举情况一览表</a></li>		
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/2016317/1458195502710_1.html">中华医学会举行2016年第一期专科分会新任主任委员就职仪式</a></li>		
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/2016224/1456296565582_1.html">中华医学会2016年专科分会主任委员、秘书长工作会议召开</a></li>		
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/2015124/1449194906193_1.html">中华医学会举行2015年第一期专科分会新任主任委员就职仪式</a></li>		
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/20151023/1445566475107_1.html">破茧化蝶 舞动辉煌——忆中华医学会骨质疏松和骨矿盐疾病分会的成立</a></li>		
+					<li><a href="http://www.cma.org.cn/hyzq/zzgl/2015115/1421302755776_1.html">中华医学会2014年第三期专科分会新任主任委员就职仪式在京举行</a></li>		
+			</ul>
+			<div class="sclear"></div>
+		</div>
+
+		<!--学会建设-->
+		<div class="box_clear"></div>
+		<!--医疗鉴定-->
+		<dl class="til">
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico3.png" alt=""/>医疗鉴定通知</dt>
+			<dd><a href="http://www.cma.org.cn/index/yljd" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+		</dl>
+		<div class="con1" id="yljd">
+			<ul>
+					<li><a href="http://www.cma.org.cn/index/yljd/2015824/1440375802351_1.html">2015年中国科协“抓党建、促...</a></li>		
+					<li><a href="http://www.cma.org.cn/index/yljd/201614/1451879080187_1.html">坚守原则  制度创新——山东...</a></li>		
+					<li><a href="http://www.cma.org.cn/index/yljd/201614/1451876821532_1.html">甘于奉献  刻苦钻研——四川...</a></li>		
+					<li><a href="http://www.cma.org.cn/index/yljd/2015116/1446797174771_1.html">提高鉴定质量 强化服务能力...</a></li>		
+					<li><a href="http://www.cma.org.cn/index/yljd/2015116/1446797009565_1.html">恪守职业准则 强化医鉴管理...</a></li>		
+			</ul>
+			
+		</div>
+		<!--医疗鉴定-->
+			<div class="box_clear"></div>
+		<!--纪检监察-->
+		<dl class="til">
+
+			<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico3.png" alt=""/>纪检监察举报热线</dt>
+			
+		</dl>
+		<div class="con2" id="jjjc">
+			<ul>
+				
+					<li><a href="#">举报热线是6512.3241</a></li>	
+					<li><a href="#">举报邮箱是jijianshen@cma.org.cn</a></li>		
+				
+			</ul>
+			
+		</div>
+		<!--纪检监察-->
+		
+	</div>
+	<!--left-->
+	<!--right-->
+	<div class="box_right right">
+		<!--topmain-->
+		<!-百年专题入口-->
+		<!--<div><a href="http://www.cma.org.cn/bainian/index.html" title="点击此图片浏览更多信息"><img src="http://www.cma.org.cn/image/bainianqingdian.jpg" alt="点击此图片浏览更多信息"></a></div>-->
+				
+		<div id="top">
+			<div class="bleft left">
+				<!--学会动态、视频报道-->
+				<dl class="xhdttil">
+					<dd id="tabtr1" class="biaoti" onmouseover="TabCenter1('xhdt','yadz','bnhd');bianb('tabtr1');test(1);"><span class="">学会动态</span></dd>
+				 <DD id=tabtr2 class="" 
+				onmouseover="TabCenter1('bnhd','xhdt','yadz');bianb('tabtr2');test(0);"><SPAN>百年纪念专题</SPAN> </DD>
+
+					<dt><a id="moreA" href="http://www.cma.org.cn/bainian/renwu" class="white">更多<img src="http://www.cma.org.cn/image/more2.gif" alt=""/></a></dt>
+				</dl>
+				<div id="xhdt" class="xhdtcon">
+					<div class="bimg left"  id="flash_show">
+						        <div id="flash_img"></div>
+						        <div id="flash_btn">
+													<div><a onclick="javascript:showImage(0);return false;" href="#"><img alt="第1幅" src="http://www.cma.org.cn/image/flash_btn_1.gif"/></a></div>
+													<div><a onclick="javascript:showImage(1);return false;" href="#"><img alt="第2幅" src="http://www.cma.org.cn/image/flash_btn_2.gif"/></a></div>
+													<div><a onclick="javascript:showImage(2);return false;" href="#"><img alt="第3幅" src="http://www.cma.org.cn/image/flash_btn_3.gif"/></a></div>
+													<div><a onclick="javascript:showImage(3);return false;" href="#"><img alt="第4幅" src="http://www.cma.org.cn/image/flash_btn_4.gif"/></a></div>
+						         </div>
+						
+						<!--flash幻灯展示控制开始-->
+						      <div id="flash_show_ctl">
+						           <div id="flash_show_ctl_msg"><span class="li_dot"></span><a id="flash_title" href="#" target="_blank"></a> </div>
+						      </div>
+						                <div id="dynimg1" style="display: none">
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/201623/1454485460896.jpg" />
+																				<a href="http://www.cma.org.cn/index/xhdt/201623/1454484619564_1.html" target="_blank">中华医学会2016年学术年会在京举行</a>
+																			</li>		
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/20151216/1450235326355.jpg" />
+																				<a href="http://www.cma.org.cn/index/xhdt/20151215/1450132649413_1.html" target="_blank">陈竺会长在中华医学会第二十五次全...</a>
+																			</li>		
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/20151216/1450235118133.jpg" />
+																				<a href="http://www.cma.org.cn/index/xhdt/20151215/1450138971385_1.html" target="_blank">授予巴德年等30位资深医学科学工作...</a>
+																			</li>		
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/20151216/1450230073040.jpg" />
+																				<a href="http://www.cma.org.cn/index/xhdt/20151214/1450098698948_1.html" target="_blank">中华医学会第25次全国会员代表大会...</a>
+																			</li>		
+														</div>
+																				<script type="text/javascript">
+
+																		
+																				var fImgs = new Array();
+																				
+																		    	$("#dynimg1").find("li").each(function(i) {
+																		    	
+																					fImgs[i] = {title:$(this).find("a").html(),img:$(this).find("img")[0].src,href:$(this).find("a")[0].href};
+																				});
+																				
+																				imagePlay();
+																		
+																		    
+																		    </script>
+						<!--flash幻灯展示控制结束-->
+						
+										</div>
+					        <ul>
+							<li><a href="http://www.cma.org.cn/index/xhdt/2016324/1458781377435_1.html"  target="_blank">中华医学会“生殖健康边区行”大型公益...</a></li>	
+							<li><a href="http://www.cma.org.cn/index/kpxx/2016315/1458006585644_1.html"  target="_blank">“中国中青年骨科医师学术交流及义诊活...</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/2016216/1455588862704_1.html"  target="_blank">国家卫生计生委党组第三巡视组向学会通...</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/201623/1454484619564_1.html"  target="_blank">中华医学会2016年学术年会在京举行</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/201623/1454463771482_1.html"  target="_blank">中巴医学专家在第一届中巴医学大会期间...</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/2016129/1454033294197_1.html"  target="_blank">第一届中巴医学大会在巴基斯坦举行</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/2016120/1453271009895_1.html"  target="_blank">中华医学会第25届理事会常务理事会第一...</a></li>	
+							<li><a href="http://www.cma.org.cn/index/xhdt/20151229/1451375428961_1.html"  target="_blank">中国科协关于印发李源潮同志在科普信息...</a></li>	
+						
+					    </ul>
+				</div>
+				
+				
+<div id="bnhd" class="xhdtcon" style="display: none;">
+					<div class="bimg left"  id="flash_show2">
+						        <div id="flash_img2"></div>
+						        <div id="flash_btn">
+													<div><a onclick="javascript:showImage2(0);return false;" href="#"><img alt="第1幅" src="http://www.cma.org.cn/image/flash_btn_1.gif"/></a></div>
+													<div><a onclick="javascript:showImage2(1);return false;" href="#"><img alt="第2幅" src="http://www.cma.org.cn/image/flash_btn_2.gif"/></a></div>
+													<div><a onclick="javascript:showImage2(2);return false;" href="#"><img alt="第3幅" src="http://www.cma.org.cn/image/flash_btn_3.gif"/></a></div>
+													<div><a onclick="javascript:showImage2(3);return false;" href="#"><img alt="第4幅" src="http://www.cma.org.cn/image/flash_btn_4.gif"/></a></div>
+						         </div>
+						
+						<!--flash幻灯展示控制开始-->
+						      <div id="flash_show_ctl2">
+						           <div id="flash_show_ctl_msg2"><span class="li_dot"></span><a id="flash_title2" href="#" target="_blank"></a> </div>
+						      </div>
+						                <div id="dynimg2" style="DISPLAY: none">
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/2014718/1405645370423.jpg" />
+																				<a href="http://www.cma.org.cn/xiliezazhi/rdxw/201473/1404372170685_1.html" target="_blank">探求百年医学精神，再寻伍连德先驱...</a>
+																			</li>		
+																			<li>
+																				<img src="http://www.cma.org.cn/attachment/2014718/1405647991475.jpg" />
+																				<a href="http://www.cma.org.cn/bainian/renwu/2014716/1405473615795_1.html" target="_blank">颜福庆小传</a>
+																			</li>		
+														</div>
+																				<script type="text/javascript">
+																		
+																				var fImgs2 = new Array();
+																				
+																		    	$("#dynimg2").find("li").each(function(i) {
+																		    	
+																					fImgs2[i] = {title:$(this).find("a").html(),img:$(this).find("img")[0].src,href:$(this).find("a")[0].href};
+																				});
+																				
+																				imagePlay2();
+																		
+																		    
+																		    </script>
+						<!--flash幻灯展示控制结束-->
+						
+										</div>
+					        <ul>
+						
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201571/1435717794327_1.html"  target="_blank">中华医学会第七任会长刘瑞恒</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201558/1431051230775_1.html"  target="_blank">颜福庆在湖南（1910.02-1927.01）</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201558/1431050111272_1.html"  target="_blank">誉满杏林情系佑安—记首都医科大学附属...</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201557/1430983715165_1.html"  target="_blank">以健康梦托起中国梦的医院领航人—记首...</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201557/1430983385557_1.html"  target="_blank">永远的母校——中华医学会</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201557/1430969374542_1.html"  target="_blank">倾心检验事业，书写精彩人生—记丛玉隆...</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201557/1430968215766_1.html"  target="_blank">王宝恩教授与中华医学会</a></li>	
+							<li><a href="http://www.cma.org.cn/bainian/renwu/201555/1430794749162_1.html"  target="_blank">追思大医陈弘道大师—访安徽省精神卫生...</a></li>	
+						
+					    </ul>
+				</div>
+
+				<div id="yadz" class="xhdtcon2" style="display: none;">
+				<ul>
+							<li><a href="http://www.cma.org.cn/index/kpxx/2013425/1366853522234_1.html"  target="_blank">灾难救助“八个一”</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366857459007_1.html"  target="_blank">第六节 地震灾难后传染病防治与卫生保障策略</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366857163412_1.html"  target="_blank">第五节 地震灾难造成传染病流行的原因</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366856331445_1.html"  target="_blank">第四节 地震灾难不同阶段常见精神卫生问题及其处理</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366856037339_1.html"  target="_blank">第三节 正确认识灾难医学，科学开展救援工作</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366855526252_1.html"  target="_blank">第二节 地震中挤压伤、软组织损伤的康复治疗问题</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366854466263_1.html"  target="_blank">第一节 地震避险与救助常识</a>(<span>2013-04-25</span>)</li>	
+							<li><a href="http://www.cma.org.cn/index/yaan/2013425/1366855288739_1.html"  target="_blank">中华医学会系列杂志积极开展抗震救灾活动</a>(<span>2013-04-25</span>)</li>	
+						
+				  </ul>
+				</div>
+				<!--学会动态、视频报道-->
+				<div class="box_clear"></div>
+				<!--学术活动-->
+				<dl class="pubtil gzdttil">
+					<dt id="tiltext" class="biaoti">学术活动</dt>
+					<dd id="tabb1" class="tabon1" onmouseover="TabCenter1('jhcx','cgal','zwtz');bianb('tabb1');">会议通知</dd>
+					<dd class="line">|</dd>
+					<dd id="tabb2" class="tabon2" onmouseover="TabCenter1('cgal','jhcx','zwtz');bianb('tabb2');">计划查询</dd>
+
+<dd class="line"> </dd>
+					<dt><a href="http://www.cma.org.cn/xshd" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+				</dl>
+				<div id="jhcx" class="pubcon">
+					<ul>
+							<li><a href="http://www.cmaph.org/new_index/zzsdt/201648/1460100991903_1.html" target="_blank">中华医学会关于举办2016年5月全国医药卫生期刊编辑业务培训班...<img src="http://www.cma.org.cn/image/new.gif" alt=""/></a>(<span>2016-04-08</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xshytz/2015108/1444271014776_1.html" target="_blank">中华医学会第十四届全国临床流行病学和循证医学学术会议暨临床...</a>(<span>2015-10-08</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2015917/1442484478273.pdf" target="_blank">中华医学会第十五次全国医学科学研究管理学学术会议通知</a>(<span>2015-09-21</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2015818/1439861487236.pdf" target="_blank">中华医学会第四次全国公共卫生学术会议通知</a>(<span>2015-08-18</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2015619/1434671836701.pdf" target="_blank">中华医学会第十七次全国行为医学学术会议会议通知</a>(<span>2015-06-19</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xshytz/201556/1430891089214_1.html" target="_blank">中华医学会第二十一次全国皮肤性病学术年会会议通知</a>(<span>2015-05-06</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2015430/1430362904889.pdf" target="_blank">中华医学会第十七次全国行为医学学术会议征文通知</a>(<span>2015-04-30</span>)</li></li>
+							<li><a href="http://cms.cma.org.cn/cms/preview/cma/xshd/zhengwen/2015430/1430355763553_1.html" target="_blank">中华医学会烧伤外科分会2015年学术年会征文通知</a>(<span>2015-04-30</span>)</li></li>
+					</ul>	
+				</div>
+				<div id="cgal" class="pubcon" style="display: none;">
+					<ul>
+							<li><a href="http://www.cma.org.cn/attachment/201641/1459474174703.pdf" target="_blank">中华医学会2016年学术会议计划</a>(<span>2016-04-01</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/201536/1425610435081.pdf" target="_blank">中华医学会2015年学术会议计划</a>(<span>2015-03-06</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2013318/1363588723722.pdf" target="_blank">中华医学会2013年学术会议计划</a>(<span>2013-03-18</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/attachment/2014211/1392078143867.pdf" target="_blank">中华医学会2014年学术会议计划</a>(<span>2014-02-12</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xsjhcx/2012221/1329793239778_1.html" target="_blank">中华医学会2012年学术会议计划</a>(<span>2012-02-21</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xsjhcx/2011729/1311910895200_1.html" target="_blank">中华医学会2011年学术会议计划</a>(<span>2011-03-28</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xsjhcx/20101115/1289827493356_1.html" target="_blank">中华医学会2010年学术会议计划</a>(<span>2010-07-27</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/xsjhcx/20101115/1289827460497_1.html" target="_blank">2009年三类会议计划(杂志社)</a>(<span>2009-12-14</span>)</li></li>
+					</ul>		
+				</div>
+
+				<div id="zwtz" class="pubcon" style="display: none;">
+					<ul>
+							<li><a href="http://www.cma.org.cn/attachment/2015917/1442484203628.pdf" target="_blank">中华医学会第十五次全国医学科学研究管理学学术会议征文通知</a>(<span>2015-09-21</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900090142_1.html" target="_blank">中华医学会第10次全国消化系疾病学术会议征文通知</a>(<span>2010-05-06</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900102735_1.html" target="_blank">中华医学会2010’全国临床微生物与感染免疫学术会征文通知</a>(<span>2010-05-07</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900112480_1.html" target="_blank">第16届国际制药医学大会暨第3届中国制药医学大会参会征文通知</a>(<span>2010-05-11</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900123265_1.html" target="_blank">第十七届全国泌尿外科学术会议征文通知</a>(<span>2010-05-11</span>)</li></li>
+							<li><a href="http://conf.cma.org.cn/cma-conf/meeting/content.service?language=cn&leftPage=leftCn.service&meetingId=2c96818c2278f0a10123df855e700805&path=cn&css=blue" target="_blank">中华医学会第十六次全国医学信息学术会议征文通知</a>(<span>2010-05-17</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900147348_1.html" target="_blank">中华医学会第十一次全国呼吸病学术会议征文通知</a>(<span>2010-05-21</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xshd/zhengwen/20101116/1289900157709_1.html" target="_blank">中华医学会第三届全国间质性肺病暨弥漫性泛细支气管炎学术会议...</a>(<span>2010-05-21</span>)</li></li>
+					</ul>		
+				</div>
+
+
+				<!--学术活动-->
+				<div class="box_clear"></div>
+				<div class="box_clear"></div>
+				<!--全继委办公室-->
+				<div class="box_clear"></div>
+				<dl class="pubtil dffhtil">
+					<dt id="tiltext" class="biaoti">全继委办公室</dt>
+					<dd id="tabc1" class="tabon1 white">信息动态</dd>
+										<dt><a href="http://www.cma.org.cn/quanjiwei/quanjiban01" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+				</dl>
+				<div id="ztbd" class="pubcon">
+					<ul>
+							<li><a href="http://www.cma.org.cn/index/tztg/2016330/1459321070196_1.html" target="_blank">关于公布2016年第二批国家级继续医学教育项目和国家级继续医学...</a>(<span>2016-03-31</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/2016128/1453944397034_1.html" target="_blank">关于公布2016年中华医学会等第一批Ⅰ类学分继续医学教育项目的...</a>(<span>2016-02-26</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/quanjiwei/quanjiban01/20151231/1451511228157_1.html" target="_blank">关于公布2016年第一批国家级继续医学教育项目的通知</a>(<span>2015-12-31</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/2015731/1438308686258_1.html" target="_blank">关于公布2015年中华医学会等第二批Ⅰ类学分继续医学教育项目的...</a>(<span>2015-08-03</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/2015715/1436939501941_1.html" target="_blank">关于申报2016年国家级继续医学教育项目的通知</a>(<span>2015-07-15</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/2015331/1427780898657_1.html" target="_blank">关于公布2015年第二批国家级继续医学教育项目和国家级继续医学...</a>(<span>2015-03-31</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/2015331/1427770538778_1.html" target="_blank">关于建立继续医学教育管理信息库的通知</a>(<span>2015-03-31</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/index/tztg/201514/1420350306287_1.html" target="_blank">关于公布2015年第一批国家级继续医学教育项目的通知</a>(<span>2015-01-04</span>)</li></li>
+					</ul>	
+				</div>
+				<!--全继委办公室-->
+				
+
+
+				<!--期刊动态-->
+				<div class="box_clear"></div>
+				<dl class="pubtil dffhtil">
+					<dt id="tiltext" class="biaoti">期刊动态</dt>
+					<dd id="tabc1" class="tabon1 white">热点新闻</dd>
+										<dt><a href="http://www.cma.org.cn/xiliezazhi/rdxw" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+				</dl>
+				<div id="ztbd" class="pubcon">
+					<ul>
+							<li><a href="http://www.cmaph.org/new_zhyxhxlzz/xlzzxx/201253/1336037996879_1.html" target="_blank"><font color='#FF0000'>中华医学会系列杂志一览表(截至2016年1月）</font></a>(<span>2016-01-13</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xiliezazhi/dzbxl/index.html" target="_blank"><font color='#FF0000'>中华医学会电子版杂志一览表</font></a>(<span>2016-01-08</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xiliezazhi/rdxw/201274/1341368457493_1.html" target="_blank">中华医学会杂志社网站调查</a>(<span>2012-07-04</span>)</li></li>
+							<li><a href="http://www.cmaph.org/new_zhyxhxlzz/xlzzml/index.html" target="_blank">中华医学会杂志社简介</a>(<span>2012-06-25</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xiliezazhi/rdxw/20151211/1449822066384_1.html" target="_blank">《中华妇产科杂志》第十二届编辑委员会第一次会议在北京成功召开</a>(<span>2015-12-11</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xiliezazhi/rdxw/20151211/1449821251078_1.html" target="_blank">《中华消化外科杂志》第三届编辑委员会第一次会议在重庆成功召开</a>(<span>2015-12-11</span>)</li></li>
+							<li><a href="http://www.cma.org.cn/xiliezazhi/rdxw/2015114/1446601298862_1.html" target="_blank">勤耕细作 修炼内功—2015年全国医药卫生期刊编辑业务培训班在...</a>(<span>2015-11-04</span>)</li></li>
+							<li><a href="http://www.cmaph.org/new_index/zzsdt/2015928/1443407903850_1.html" target="_blank">新常态 新融合 新发展——2015中国（武汉）期刊交易博览会成功...</a>(<span>2015-09-29</span>)</li></li>
+					</ul>	
+				</div>
+				<!--期刊动态-->
+			</div>
+			<div class="bright right">
+
+
+
+
+				
+                                 <!--<img src="http://www.cma.org.cn/image/24da/24da.jpg" alt=""/></a>-->
+				<!--业务办理-->
+		<div class="ywbltil" style="width:200px;"><img src="http://www.cma.org.cn/image/lico14.gif" alt=""/>快速入口</div>
+		<div class="ywblcon">
+		<div class="btop">		
+		<div class="bottom" style="height:170px;">		
+			<ul>
+					<li><a href="http://www.cma.org.cn/html/main/ywzx.html"><font color='#FF0000'><font color='#FF0000'>业务中心</font></font></a></li>		
+					<li><a href="http://mem.cma.org.cn/zscx/index.do">肿瘤消融规范化治疗与重症医学专科资质培训合格证查询</a></li>		
+					<li><a href="http://mem.cma.org.cn/ywzscx/index.do">2011-2013年医用设备使用人员业务能力培训证书查询</a></li>		
+					<li><a href="http://uip.cma.org.cn/main.do">继续教育学分项目申报</a></li>		
+					<li><a href="http://mem.cma.org.cn/cjcx/index.do">2010-2012年医用设备使用人员业务能力考评合格证书...</a></li>		
+			</ul>
+		</div>
+		</div>		
+		</div>
+		
+		<!--三严三实-->
+		<div class="box_clear"></div>
+		<div class="box_clear"></div>
+				<!--热点专题-->
+				<!--<dl class="rdzt">-->
+					<img src="http://www.cma.org.cn/image/sstitle1.png" alt=""/>
+				<!--	<dt><a href="http://www.cma.org.cn/sanyansanshi">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>-->
+				<!--</dl>-->
+				<div class="rdztcon" style="height:140px;">
+					<ul>
+						<div align="right"><a href="http://www.cma.org.cn/sanyansanshi">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></div>
+							<li><a href="http://www.cma.org.cn/sanyansanshi/20151111/1447207924403_1.html">中华医学会举办“三严...</a></li>
+							<li><a href="http://www.cma.org.cn/sanyansanshi/20151023/1445559877780_1.html">中华医学会举行“三严...</a></li>
+							<li><a href="http://www.cma.org.cn/sanyansanshi/20151023/1445559947969_1.html">中华医学会举行“三严...</a></li>
+							<li><a href="http://www.cma.org.cn/sanyansanshi/20151023/1445559988130_1.html">马晓伟副主任作“三严...</a></li>
+							<li><a href="http://www.cma.org.cn/sanyansanshi/20151023/1445559963157_1.html">金小桃作“三严三实”...</a></li>
+					</ul>
+				</div>
+		<!--三严三实-->
+		
+		<!--业务办理-->
+		<div class="box_clear"></div>
+				<!--热点专题-->
+				<dl class="rdzt">
+					<dd class="biaoti"><img src="http://www.cma.org.cn/image/rico15.gif" alt=""/>分会动态</dd>
+					<dt><a href="http://www.cma.org.cn/index/gzdt/fhzxdt">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+				</dl>
+				<div class="rdztcon" style="height:255px;">
+					<ul>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/2016328/1459150799067_1.html">促进学术繁荣 展现皮...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/2016314/1457925999640_1.html">眼阔四海 光耀八方—...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/201637/1457334864506_1.html">2015年麻醉学领域年度...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/201634/1457056819491_1.html">2015年我国疼痛医学新...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/2016216/1455590565635_1.html">开创中国肾脏病事业新...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/2016216/1455587631866_1.html">无怨无悔 只为儿童健康</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/201623/1454466439706_1.html">不忘初心 方得始终—...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/2016111/1452478190608_1.html">协同创新促发展 规范...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/201615/1451959017543_1.html">我国消化内镜发展30年</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/201615/1451958248356_1.html">七十年激流勇进 三十...</a></li>
+							<li><a href="http://www.cma.org.cn/index/gzdt/fhzxdt/20151221/1450684837108_1.html">中国胸外科的现状和未...</a></li>
+					</ul>
+				</div>
+		<!--热点专题-->
+		<div class="box_clear"></div>
+
+				<!--地方医学会-->
+				<dl class="rdzt">
+				<dd class="biaoti"><img src="http://www.cma.org.cn/image/lico9.gif" alt=""/>地方医学会</dd>
+				<dt><a href="http://www.cma.org.cn/index/dfyxh/zxdt">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+				</dl>
+				<div class="zjzlcon">
+					<ul>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/201645/1459841287019_1.html">中华医学会神经病学分...<img src="http://www.cma.org.cn/image/new.gif" alt=""/></a></li>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/2016113/1452652022719_1.html">加强医学科研管理学术...</a></li>
+							<li><a href="http://www.cqma.cn/html/xhdt/xhdt/15/11/1450.html">精彩卓越，构筑辉煌—...</a></li>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/20151016/1444963927159_1.html">中华医学会第十一届全...</a></li>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/2015928/1443407890902_1.html">热烈庆祝2015年华南重...</a></li>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/2015924/1443060198691_1.html">增进友谊、共商发展新...</a></li>
+							<li><a href="http://www.cma.org.cn/index/dfyxh/zxdt/2015911/1441953372748_1.html">中华医学会第十四次全...</a></li>
+							<li><a href="http://www.cqma.cn/html/xhdt/xhdt/15/08/1311.html">重庆市医学会皮肤性病...</a></li>
+							<li><a href="http://www.jsma.net.cn/xkdt/2014/11/14140812105.html">中华医学会第十一次医...</a></li>
+							<li><a href="http://cdschina.org/x_uploadfiles/1031.pdf">热烈祝贺 “西藏医学...</a></li>
+							<li><a href="http://www.hbma.org.cn/Article/ShowInfo.asp?InfoID=1490">中华医学会百年华诞“...</a></li>
+							<li><a href="http://www.jsma.net.cn/xkdt/2014/10/29104536504.html">2014年全国耳鼻咽喉头...</a></li>
+					</ul>
+				</div>
+				<!--地方医学会-->
+			</div>
+		</div>
+		<!--topmain-->
+		<div class="box_clear"></div>
+		<!--centermain-->
+		<div id="center">
+			<!--期刊杂志-->
+			<div class="qkzz" >
+				<div class="bleft" >
+
+				<div class="bright" >
+					<dl class="til">
+						<dd></dd>
+						<dt><a href="http://www.cma.org.cn/xiliezazhi/zhxl" class="gray" target="_blank">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dt>
+					</dl>
+					<div id="box_l"><img src="http://www.cma.org.cn/image/btn/btnleft2.png" alt=""/></div>
+					<div id="box_c">
+						<marquee scrollAmount='2' width='100%' onmouseover='this.stop()' onmouseout='this.start()'>
+							<ul id="dynimg" >
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220609178.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2014626/1403763883814_1.html">中华解剖与临床杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452217735120.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2014425/1398402232470_1.html">中华微生物学和免...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220731248.jpg" /></span>
+										<span class="text"><a href="http://www.cjoovs.com">中华眼视光学与视...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220529314.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/201363/1370243037519_1.html">药物不良反应杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220444199.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2013423/1366703042348_1.html">中华实用儿科临床...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452218778725.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/201272/1341196860563_1.html">中华临床营养杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219477941.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012626/1340678049085_1.html">中华医学教育探索...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220411441.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012626/1340677867604_1.html">中华眼外伤职业眼...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220366651.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012626/1340677544749_1.html">中华实验眼科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219436673.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012626/1340677234595_1.html">中华内分泌外科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452218702827.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012626/1340676537332_1.html">中华口腔正畸学杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219745237.png" /></span>
+										<span class="text"><a href="http://www.cma.org.cn/xiliezazhi/zhxl/2012216/1329352337873_1.html">中华核医学与分子...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452216711216.png" /></span>
+										<span class="text"><a href="http://www.zhjkgl.org.cn/">中华健康管理学杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220851577.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/69.htm">中华全科医师杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220807529.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/301tangniaobing.htm">中华糖尿病杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220262703.png" /></span>
+										<span class="text"><a href="http://www.cjbme.org/">中华生物医学工程...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220234104.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/70.htm">中华神经医学杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220177842.png" /></span>
+										<span class="text"><a href="http://www.cjot.org/">中华创伤骨科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220152553.png" /></span>
+										<span class="text"><a href="http://www.china-gisj.com/">中华胃肠外科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220109083.png" /></span>
+										<span class="text"><a href="http://www.cjn.org.cn/CN/volumn/current.shtml">中华肾脏病杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220075100.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/43.htm">中华显微外科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220050166.png" /></span>
+										<span class="text"><a href="http://www.coretina.com/zhydbzz/CN/volumn/current_abs.shtml">中华眼底病杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452220022038.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/47.htm">中华医学遗传学杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219961374.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/36.htm">中华实验外科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219938329.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/25.htm">中华器官移植杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219917991.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/24.htm">中华小儿外科杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219895954.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/21.htm">中华物理医学与康...</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219870927.png" /></span>
+										<span class="text"><a href="http://www.zhgrb.com/">中华临床感染病杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219843190.png" /></span>
+										<span class="text"><a href="http://www.cmaph.org/jiemian/68.htm">中华急诊医学杂志</a></span>
+									</li>			
+									<li>
+										<span class="bimg"><img src="http://www.cma.org.cn/attachment/201618/1452219708591.png" /></span>
+										<span class="text"><a href="http://gaojian.xhnj.com/Web/CommonPage.aspx?Id=13">中华消化内镜杂志</a></span>
+									</li>			
+							</ul>
+
+						</marquee>
+					</div>
+					<div id="box_r"><img src="http://www.cma.org.cn/image/btn/btnright2.png" alt=""/></div>					
+				</div>
+				</div>
+			</div>
+			<!--期刊杂志-->
+			<div class="box_clear"></div>
+			<!--培训快车-->
+			<div class="sec right">
+				<dl class="til">
+					<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico6.gif" alt=""/>培训快车</dt>
+					<dd><a href="http://www.cma.org.cn/index/pxkc" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+				</dl>
+				<div class="con">
+					<dl class="pxkcimg" tagid="$focus" cid="57" type="TOP">
+					</dl>
+					<ul class="pxkc">
+								<li><a href="http://www.cma.org.cn/index/jjsbtz/201646/1459910191596_1.html">中华医学会肿瘤消融规范化治疗培训班2016年招生简章<img src="http://www.cma.org.cn/image/new.gif" alt=""/></a></li>
+								<li><a href="http://www.cmaph.org/new_index/zzsdt/2016315/1458025287143_1.html">中华医学会关于举办2016年度全国医药卫生期刊编辑业务...</a></li>
+								<li><a href="http://www.medline.org.cn/new_index/zzsdt/2015525/1432539569095_1.html">中华医学会关于举办2015年度全国医药卫生期刊编辑业务...</a></li>
+								<li><a href="http://www.medline.org.cn/new_index/zzsdt/2014415/1397525203203_1.html">中华医学会关于举办2014年国际生物医学期刊学术研讨会...</a></li>
+								<li><a href="http://www.cma.org.cn/attachment/2014423/1398241425153.doc">关于举办“医学侦探与现场流行病学调查案例分析”培训...</a></li>
+								<li><a href="http://www.cma.org.cn/index/jjsbtz/201444/1396590420917_1.html">中华医学会肿瘤消融规范化治疗培训班2014年招生简章</a></li>
+								<li><a href="http://www.cma.org.cn/index/pxkc/20131030/1383097176973_1.html">中华医学会2013年“全国内分泌学诊疗技术新进展学习班...</a></li>
+								<li><a href="http://www.cma.org.cn/index/pxkc/20131030/1383096953993_1.html">中华医学会2013年“全国神经内科学诊疗技术新进展学习...</a></li>
+								<li><a href="http://www.cma.org.cn/index/pxkc/2013913/1379036567372_1.html">中华医学会2013年第二期“全国大内科学诊疗技术新进展...</a></li>
+								<li><a href="http://www.cma.org.cn/index/tztg/2013821/1377047547095_1.html">中华医学会关于举办2013年度全国医药卫生期刊编辑业务...</a></li>
+					
+					</ul>
+				</div>
+			</div>
+			<!--培训快车-->
+			<!--科技评审-->
+			<div class="sec left">
+				<dl class="til">
+					<dt class="biaoti"><img src="http://www.cma.org.cn/image/lico8.gif" alt=""/>科技评审</dt>
+					<dd><a href="http://www.cma.org.cn/index/kjpstz" class="gray">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></dd>
+				</dl>
+				<div class="con kpxx">
+					<ul class="pxkc" >
+							<li><a href="http://www.cma.org.cn/index/kjpstz/2016224/1456296395901_1.html">中华医学科技奖（2015）颁奖大会召开</a></li>		
+							<li><a href="http://www.cma.org.cn/index/kjpstz/2016224/1456283877046_1.html">2015年中华医学科技奖一等奖项目简介</a></li>		
+							<li><a href="http://www.cma.org.cn/index/tztg/201616/1452047533422_1.html">中华医学会关于2015年中华医学科技奖奖励的决定</a></li>		
+							<li><a href="http://www.cma.org.cn/index/kjpstz/20151218/1450425119621_1.html">中华医学会临床医学科研专项资金—默沙东侵袭性真菌感...</a></li>		
+							<li><a href="http://www.cma.org.cn/index/kjpstz/20151113/1447396042888_1.html">中华医学会临床医学科研专项资金-施维雅肾脏病青年研...</a></li>		
+							<li><a href="http://www.cma.org.cn/index/kjpstz/20151022/1445483333468_1.html">中华医学会临床医学科研专项资金-扬子江镇痛研究与发...</a></li>		
+							<li><a href="http://www.cma.org.cn/index/kjpstz/2015626/1435296262881_1.html">中华医学会临床医学科研专项资金-默沙东慢性肝病研究...</a></li>		
+							<li><a href="http://www.cma.org.cn/kjps/lcyxkyzx/2015526/1432614965711_1.html">中华医学会临床医学科研专项资金—施维雅肾脏病青年研...</a></li>		
+							<li><a href="http://www.cma.org.cn/index/xhdt/2014710/1404956834502_1.html">中华医学会承办国家临床重点专科建设项目组织评估工作</a></li>		
+							<li><a href="http://www.cma.org.cn/index/xhdt/201478/1404782737307_1.html">搭建攀登科技高峰的阶梯</a></li>		
+					</ul>
+				</div>
+			</div>
+			<!--科技评审-->
+			<div class="box_clear"></div>
+ 		</div>
+	</div>
+<div class="box_clear"></div>
+</div>
+
+<!--frilink-->
+<div class="boxfrilink">
+	<div class="frilink">
+		<dl class="shortcut">
+			<dt class="blue"><img src="http://www.cma.org.cn/image/bico1.gif" alt=""/>快速通道</dt>
+			<dd class="gray">
+			<span class="blue">地方</span>医学会
+			<select onchange="if(this.options[this.selectedIndex].value !='0'){window.open(this.options[this.selectedIndex].value);}">
+						
+						    <option value="http://www.gxma.org.cn/">广西医学会</option>
+						    <option value="http://www.nmgyxh.com/">内蒙古自治区医学会</option>
+						    <option value="http://www.cqma.cn/">重庆市医学会</option>
+						    <option value="http://www.gzma.org/">贵州省医学会</option>
+						    <option value="http://www.sma.org.cn:81/">四川省医学会</option>
+						    <option value="http://www.hnyxh.cn/">海南省医学会</option>
+						    <option value="http://gdma.cc:8080/masite.do">广东省医学会</option>
+						    <option value="http://www.jsma.net.cn/">江苏省医学会</option>
+						    <option value="http://www.jxma.org/">江西省医学会</option>
+						    <option value="http://www.hnma.org.cn/index.asp">湖南省医学会</option>
+						    <option value="http://www.hebma.com/">河北省医学会</option>
+						    <option value="http://www.sxma.org.cn/">山西省医学会</option>
+						    <option value="http://www.hljsyxh.org/index.asp">黑龙江省医学会</option>
+						    <option value="http://www.ahyxh.org.cn/">安徽省医学会</option>
+						    <option value="http://www.nxyxh.com.cn">宁夏医学会</option>
+						    <option value="http://www.njyxh.org/">南京医学会</option>
+						    <option value="http://www.bjyxh.org.cn/">北京医学会</option>
+						    <option value="http://www.shsma.org.cn/">上海医学会</option>
+						    <option value="http://www.shdma.com/">山东省医学会</option>
+						    <option value="http://www.hbma.org.cn/">湖北医学会</option>
+				
+			</select>
+			<span class="blue">专科</span>分会
+			<select onchange="if(this.options[this.selectedIndex].value !='0'){window.open(this.options[this.selectedIndex].value);}">
+					
+							<option value="http://www.cceweb.org/">医学工程学分会</option>
+							<option value="http://www.china-virology.fudan.edu.cn/CN/Default.aspx">医学病毒学分会</option>
+							<option value="http://csc.cma.org.cn/">心血管病学分会</option>
+							<option value="http://csmi.cma.org.cn/">医学信息学分会</option>
+							<option value="http://cmedu.ccmu.edu.cn">医学教育分会</option>
+							<option value="http://www.cadm.org.cn/">灾难医学分会</option>
+							<option value="http://csd.cma.org.cn/">皮肤性病学分会</option>
+							<option value="http://csrm.cma.org.cn">生殖医学分会</option>
+							<option value="http://csp.cma.org.cn">精神病学分会</option>
+							<option value="http://www.cmao.org.cn/">眼科学分会</option>
+							<option value="http://www.orlhns.org.cn/">耳鼻咽喉-头颈分会</option>
+							<option value="http://www.chinaradiology.org/csr/cn/">放射学分会</option>
+							<option value="http://www.cmapathology.cn">病理学分会</option>
+							<option value="http://www.csprm.org/index.aspx">物理医学与康复学分会</option>
+							<option value="http://www.csaol.cn/">麻醉学分会</option>
+							<option value="http://www.cslmnet.org">检验分会</option>
+							<option value="http://www.orthonline.com.cn">骨科学分会</option>
+							<option value="http://www.csrd.org.cn/">呼吸病学分会</option>
+							<option value="http://www.csh-cma.org.cn">血液学分会</option>
+							<option value="http://www.china-endo.org">内分泌学分会</option>
+							<option value="http://www.infectcma.org.cn">感染病学分会</option>
+							<option value="http://cmfpa.cma.org.cn">计划生育学分会</option>
+							<option value="http://www.cstcvs.com">胸心血管外科分会</option>
+							<option value="http://burns.cma.org.cn">烧伤外科学分会</option>
+							<option value="http://www.cem.org.cn/">急诊医学分会</option>
+							<option value="http://medicalethics.cma.org.cn">医学伦理学分会</option>
+							<option value="http://www.traumahotline.com/">创伤学分会</option>
+							<option value="http://172.22.1.5/jsc/index.htm">教育技术分会</option>
+							<option value="http://xwyx.jnmc.edu.cn/">行为医学分会</option>
+							<option value="http://www.cmasit.org/csit/cn">影像技术分会</option>
+							<option value="http://www.csde.org.cn/main/">消化内镜学分会</option>
+							<option value="http://cdschina.org/">糖尿病学分会</option>
+							<option value="http://www.heporg.com/">肝病学分会</option>
+							<option value="http://www.cscb.org.cn/ weiyuanhui6.html">医学细胞生物学分会</option>
+							<option value="http://www.cmaqk.cn/">全科医学分会</option>
+					
+			</select>
+			</dd>
+		</dl>
+		<div class="box_clear"></div>
+		<dl class="link">
+			<dd>
+					<span><a href=' http://www.nhfpc.gov.cn/'><img src="http://www.cma.org.cn/attachment/2013731/1375230496368.jpg"/></a></span>
+					<span><a href=' http://www.cast.org.cn/'><img src="http://www.cma.org.cn/attachment/20101116/1289881191806.gif"/></a></span>
+					<span><a href=' http://www.who.int/en/'><img src="http://www.cma.org.cn/attachment/20101116/1289882612850.gif"/></a></span>
+					<span><a href=' http://www.medline.org.cn/'><img src="http://www.cma.org.cn/attachment/2011629/1309339806794.bmp"/></a></span>
+					<span><a href=' http://www.cma-cmc.com.cn'><img src="http://www.cma.org.cn/attachment/20101116/1289882673825.jpg"/></a></span>
+				
+			</dd>
+			<dt><a href="http://www.cma.org.cn/yqljkstd/yqljsyxs/index.html">更多<img src="http://www.cma.org.cn/image/more.gif" alt=""/></a></a></dt>
+		</dl>
+	</div>
+	<div class="box_clear"></div>
+</div>
+<!--frilink-->
+<!--footer-->
+<div class="box_footer">
+	<div class="footer">
+	<div class="bleft">
+	<div class="bright">
+		<div class="con">
+		地址：中国北京东四西大街42号    电话：010-85158515     邮编：100710     中华医学会版权所有<br />
+		<a href="http://www.miibeian.gov.cn" target="_blank">ICP备案：05052599</a> Copyright @2009 Chinese Medical Association.All rights reserved
+		<br/>京公网安备:110402450015 号 
+                   </div>
+	</div>
+	</div>
+	</div>
+</div>
+<!--footer-->
+<script>
+function MM_jumpMenu(targ,selObj,restore){
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+addLine();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17445267-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+ </body>
+</html>

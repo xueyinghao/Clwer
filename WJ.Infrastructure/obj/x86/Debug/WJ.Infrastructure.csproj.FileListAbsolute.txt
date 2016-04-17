@@ -1,0 +1,8 @@
+F:\公司项目\WJ.Infrastructure\bin\x86\Debug\WJ.Infrastructure.dll
+F:\公司项目\WJ.Infrastructure\bin\x86\Debug\WJ.Infrastructure.pdb
+F:\公司项目\WJ.Infrastructure\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\公司项目\WJ.Infrastructure\bin\x86\Debug\Microsoft.Practices.Unity.Configuration.dll
+F:\公司项目\WJ.Infrastructure\bin\x86\Debug\Microsoft.Practices.Unity.dll
+F:\公司项目\WJ.Infrastructure\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\公司项目\WJ.Infrastructure\obj\x86\Debug\WJ.Infrastructure.dll
+F:\公司项目\WJ.Infrastructure\obj\x86\Debug\WJ.Infrastructure.pdb

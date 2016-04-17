@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="baidu_union_verify" content="9d6bf86599e5d073500bc7acd5ca0339">
+<title>Dr.eye 译典通</title>
+<link type="text/css" rel="stylesheet" href="http://www.dreye.com.cn/ews/css/index_qwz_new1.css" />
+<link type="text/css" rel="stylesheet" href="http://www.dreye.com.cn/ews/commons/css/head.css" />
+<script type="text/javascript" src="http://www.dreye.com.cn/ews/js/jquery.js"></script>
+<script language="javascript">
+var dict_path="http://www.dreye.com.cn/dict_new/";
+</script>
+<script language="javascript" type="text/javascript" src="http://www.dreye.com.cn/ews/js/js_dict1.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.dreye.com.cn/ews/js/jquery.scroll-follow.js"></script>
+<script language="javascript">
+var kt="";
+var char1 = "关闭交叉查询";
+var char2 = "交叉查询已开启";
+var char3 = "启动交叉查询";
+var char4 = "交叉查询已关闭";
+var char5 = "打开";
+var char6 = "关闭";
+var char7 = "正在加载数据……";
+var char8 = "";
+var char9 = "";
+var char10 = "";
+var char11 = "关闭显示例句";
+var char12 = "例句已显示";
+var char13 = "启动显示例句";
+var char14 = "例句已关闭";
+var char15 = "";
+var php_url = "";
+var dict_address = "http://www.dreye.com.cn/dict_new/dict_search_new.php";
+//var wordstr = "";
+</script>
+
+<script language="javascript">
+function MM_reloadPage(init) {	//reloads the window if Nav4 resized
+	if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+		document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage;}}
+	else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;
+	if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+jQuery(function() {
+	jQuery("#producthref").mouseover(function(){
+		var left=jQuery("#producthref").offset().left-4;
+		var top=jQuery("#producthref").offset().top+28;
+		jQuery("#pix_menu").show();
+		jQuery("#pix_menu").offset({top:top,left:left});
+	});
+	jQuery("#producthref").mouseout(function(){
+		jQuery("#pix_menu").hide();
+	});
+	jQuery("#pix_menu").mouseover(function(){
+		var left=jQuery("#producthref").offset().left-4;
+		var top=jQuery("#producthref").offset().top+28;
+		jQuery("#pix_menu").show();
+		jQuery("#pix_menu").offset({top:top,left:left});
+	});
+	jQuery("#pix_menu").mouseout(function(){
+		jQuery("#pix_menu").hide();
+	});
+	var $index = 0;
+	var max=kt.length-1;
+	var imagearray=new Array();
+	var linkarray=new Array();
+	var $nav = jQuery("#adchange img");
+	var imagearray=new Array();
+	var linkarray=new Array();
+	//初始化
+	for(var i=0;i<kt.length;i++){
+		imagearray[i]=kt[i]['image_path'];
+		linkarray[i]=kt[i]['link'];
+	}
+	if(max>=0){
+		jQuery("#showimage").attr("src",imagearray[0]);
+		if(linkarray[0]!=''){
+			jQuery("#showhref").attr("target","_blank");
+			var urlad="insert_ad.php?type=ad"+"&adid="+kt[0]['id']+"&abid="+kt[0]['ab_id']+"&url="+linkarray[0];
+			jQuery("#showhref").attr("href",urlad)
+		}
+	}
+	jQuery("#next").click(function(){
+		if($index<max){
+			$index++
+		}else if($index==max){ 
+			$index=0
+		}
+		showimage($index);
+	});
+	jQuery("#prev").click(function(){
+		if($index>0){
+			$index--
+		}else if($index==0){
+			$index=max
+		}
+		showimage($index);
+	});
+	function showimage(i){
+		jQuery("#showimage").attr("src",imagearray[i]);
+		if(linkarray[0]!=''){
+			jQuery("#showhref").attr("target","_blank");
+			var urlad="insert_ad.php?type=ad"+"&adid="+kt[i]['id']+"&abid="+kt[i]['ab_id']+"&url="+linkarray[i];
+			jQuery("#showhref").attr("href",urlad);
+		}else{
+			jQuery("#showhref").attr("target","_self");
+			jQuery("#showhref").attr("href","#");
+		}
+		$nav.attr("src","images/icon01.jpg");
+		$nav.eq(i).attr("src","images/icon03.png");
+	}
+	//3秒切换
+	DLYTime =setInterval(function(){
+		jQuery("#next").trigger("click");
+	}, 3000);
+	jQuery(".showimage").mouseover(function(){
+		if(DLYTime){clearInterval(DLYTime);}
+	});
+	jQuery(".showimage").mouseout(function(){
+		DLYTime =setInterval(function(){
+			jQuery("#next").trigger("click");
+		},3000);
+	});
+})
+</script>
+<style type="text/css">
+.marquee{height:50px;line-height:50px;overflow:hidden;}
+.marquee ul{margin:0 0;padding:0 0;font-family:微软雅黑;font-size:28px;color:#546676;}
+</style>
+
+</head>
+
+<body>
+
+<!-- 页眉 -->
+
+<script language="javascript">
+function layout(){
+	alert("layout");
+}
+</script>
+
+<div class="top" id="top">  
+<div class="headtable" >
+<div class="headrow">
+<!--[if lte IE 7 ]>  
+<div class="headcell1_ie7" width="129px"> 
+<![endif]-->
+<!--[if gte IE 8]>
+<div class="headcell1" > 
+<![endif]--> 
+<!--[if !IE]><!--> 
+<div class="headcell1" >  
+<!--<![endif]-->
+
+	<div class="top_img"><img width="129" height="38" src="http://www.dreye.com.cn/ews/images/title_02.gif"></div>
+</div>
+<div class="headcell2">
+	<div class="top_left"><ol class="tl_ol">
+        <li class="tl_li"><a href="http://www.dreye.com.cn/ews/index_dict.php">&nbsp;&nbsp;首 页&nbsp;&nbsp;</a></li>
+        <li class="tl_li">|</li>
+        <li class="tl_li" id="producthref"><a href="http://www.dreye.com.cn/product/index.php">&nbsp;&nbsp;产品专区&nbsp;&nbsp;</a></li>
+		<li class="tl_li">|</li>
+		<li class="tl_li"><a href="http://www.dreye.com.cn/addservice/index.php">&nbsp;&nbsp;加值服务&nbsp;&nbsp;</a></li>
+		 <li class="tl_li">|</li>
+		<li class="tl_li" id="servicehref"><a href="http://www.dreye.com.cn/service/index.php">&nbsp;&nbsp;客户服务&nbsp;&nbsp;</a></li>
+		 <li class="tl_li">|</li>
+         <li class="tl_li" id="companyhref"><a href="http://www.dreye.com.cn/product/enterprise.php">&nbsp;&nbsp;企业专区&nbsp;&nbsp;</a></li>
+            </ol> </div>
+</div>
+<div class="headcell3" >	
+<div class="top_right">
+		
+		<div class="top_right_logout">
+
+	
+		
+		 <table width="233" border="0" align="center" cellpadding="0" cellspacing="0">
+	 <tr> 
+	 
+	    <td width="150" ><img   src="http://www.dreye.com.cn/ews/images/title_14.gif"  style="vertical-align:middle"><span> <a id="login_link" href="http://www.dreye.com.cn/ews/forum/ucp.php?mode=login&dr_url=" target="_parent" class="link_title_b" >登录/注册</a></span></td>
+         <td width="83" style="vertical-align:middle"> <div align="right"><a href="http://www.dreye.com.cn" target="_parent" ><span ><img src="http://www.dreye.com.cn/ews/images/title_1801.gif" hspace="2" align="absmiddle" style="border:none;"></span></a><a href="http://www.dreye.com" target="_parent" ><img src="http://www.dreye.com.cn/ews/images/title_19.gif" width="25" height="25" hspace="2" align="absmiddle" style="border:none;"></a></div></td>
+	 </tr>
+     </table>
+		</div>
+		</div>
+		  
+</div>
+</div>
+</div>	
+	
+</div>
+<img src="http://www.dreye.com.cn/ews/images/line.jpg" width="100%" style="display:block;"/>
+
+<div class="p_menu" id="pix_menu">
+<table width="251" border="0" cellspacing="0" cellpadding="0" class="table04">
+     <tr>
+       <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td width="252"><strong>家用产品</strong></td>
+  </tr>
+   
+     <tr>
+<td><a href="http://www.dreye.com.cn/product/dreyeX.php">Dr.eye 译典通 X </a></td>
+  </tr>
+   <tr>
+<td><a href="http://www.dreye.com.cn/product/365.php">Dr.eye 365 </a></td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>移动产品</strong></td>
+  </tr>
+  <tr>
+ <td><a href="http://www.dreye.com.cn/product/dreye_iphone2.php">Dr.eye译典通IOS</a></td>
+  </tr>
+  <tr>
+ <td><a href="http://www.dreye.com.cn/product/oxchild.php">Oxford牛津幼儿英语</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.dreye.com.cn/product/fitness.php">我爱瘦身</a></td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+ </tr>
+</table> 
+</div>
+
+<!-- <div class="service_menu" id="service_menu">
+<table width="110"  cellspacing="0" cellpadding="0" class="table08">
+  <tr>
+  <td ><a href="#">产品示范</a></td>
+  </tr>
+    <tr>
+  <td><a href="#">自主服务</a></td>
+  </tr>
+    <tr>
+  <td><a href="http://www.dreye.com.cn/ews/forum/viewforum.php?f=8">论坛交流</a></td>
+  </tr>
+</table>
+</div> -->
+
+<!-- <div class="p_company" id="p_company">
+<table width="220"  cellspacing="0" cellpadding="0" class="table08">
+  <tr>
+  <td ><a href="http://www.dreye.com.cn/product/dreye_businessX.php">Dr.eye X 企业授权版</a></td>
+  </tr>
+    <tr>
+  <td><a href="http://www.dreye.com.cn/product/dreye_business90.php">Dr.eye 9.0 企业授权版</a></td>
+  </tr>
+    <tr>
+  <td><a href="http://www.dreye.com.cn/product/dreye_education90.php">Dr.eye 9.0 校园授权版</a></td>
+  </tr>
+</table>
+</div> --><!--
+<div class="yun_left" id="yun_left">
+	<a href="/product/web_cloud.php"><img src="images/download_cloud.png" style="border:none;"/></a>
+</div>
+-->
+<!-- 页眉 -->
+<div style="width:100%;background:url(images/1_bg004.jpg) top;"><div class="main">
+<!-- 主页面 -->
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td height="642" valign="top">
+			<table width="740" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr><td height="40"></td></tr>
+				<tr><td height="180" valign="middle" align="center"><img src="images/logo_dreye.png" width="351" height="108"></td></tr>
+				<tr><td height="77" valign="top" align="left">
+						<form id="search_uw_form_id" style="margin:0;padding:0;" action="http://www.dreye.com.cn/dict_new/dict.php" method="post" name="search_form">
+						<div id="search_div" width="620px" style="height:40px;overflow:hidden;position:absolute;margin-left:50px;z-index:1000;">
+						<div class="search_bar_3">
+						<input id="w_id" class="input03" type="text" value="" autocomplete="off" onkeyup="javascript:showmenu(event)" maxlength="200" name="w">
+						<!--input class="button04" type="submit" value="搜 索" name=""-->
+						<input class="imagebut" type="image" src="images/search01.jpg">
+						</div>
+						<div id="ID_WORD_MENU" style="cursor:pointer;border:1px solid #D0EAD7;z-index:1000;position:absolute;width:614px;background-color:#ffffff; filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;">&nbsp;</div>
+						<input id="divName_selected" type="hidden" value="">
+						<input id="hidden_codepage_id" type="hidden" name="hidden_codepage" value="">
+						</div>
+						</form>
+						<form name="hidden_search_form" method="" action="http://www.dreye.com.cn/dict_new/dict.php" onSubmit="checkinputtype_hidden('');">
+						<input type="hidden" name="w" id="w_id_hidden" value=""	/>
+						<input type="hidden" name="hidden_codepage" id="hidden_codepage_id_hidden"	/>
+						<input type="hidden" name="record_showinfotab" id="record_showinfotab_id" value="1" />
+						</form>
+					</td></tr>
+					<tr>
+						<td width="799" height="82">
+              <table width="533" border="0" align="center" cellpadding="5" cellspacing="1" style="table-layout:fixed">
+                <tr> 
+                  <td width="143" valign="top" background="images/bg05.png"> 
+                    	<a href="../product/everyday.php"><img src="images/icon05.png" width="137" height="68" border="0"></a>
+                  </td>
+                  <td width="324" background="images/bg05.png" valign="center" class="wd">
+                  	<div id="marquee" class="marquee" ></div>
+				  				</td>
+               <td width="34" background="images/bg05.png">
+                  	<a href="../product/everyday.php"><img src="images/arrow02.png" width="33" height="54" border="0"></a>
+                  </td>
+                </tr>
+                <!--
+                <tr> 
+                  <td height="1" colspan="3">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td background="images/bg05.png"> 
+                  	<a href="../product/gonggao.php"><img src="images/icon07.png" width="137" height="68" border="0"></a>
+                  </td>
+                  <td background="images/bg05.png" class="ed">
+                  	<ul>
+                  		                  		<li><img src="images/icon04.png" width="3" height="3" hspace="5" vspace="0" align="absmiddle">
+	                  	<a href="dreye_android.php" target="_blank">Dr.eye译典通停止对WindowsXP用户技术支持</a></li>
+	                  	                  		<li><img src="images/icon04.png" width="3" height="3" hspace="5" vspace="0" align="absmiddle">
+	                  	<a href="http://file.dreye.com/pub/DreyePC/DreyeX/Patch/RegXt01.exe" target="_blank">Dr.eye译典通7.0（含）之前版本停止咨询服务公告</a></li>
+	                                    </ul>
+                  </td>
+                  <td background="images/bg05.png">
+                  	<a href="../product/gonggao.php"><img src="images/arrow02.png" width="33" height="54" border="0"></a>
+                  	</td>
+                </tr>
+                -->
+              </table>
+            </td>
+				</tr>
+			</table>
+<!--
+			<table border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr><td align="center">
+						<a href="http://www.dreye.com.cn/product/index.php" onMouseOver="MM_swapImage('Image1','','images/1_icon0101.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/1_icon01.png" name="Image1" width="150" hspace="5" border="0" id="Image1"></a>
+						<a href="http://www.dreye.com.cn/addservice/index.php" onMouseOver="MM_swapImage('Image2','','images/1_icon0201.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/1_icon02.png" name="Image2" width="150" hspace="5" border="0" id="Image2"></a>
+						<a href="http://www.dreye.com.cn/service/index.php" onMouseOver="MM_swapImage('Image3','','images/1_icon0301.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/1_icon03.png" name="Image3" width="150" hspace="5" border="0" id="Image3"></a>
+						<a href="http://www.dreye.com.cn/product/enterprise.php" onMouseOver="MM_swapImage('Image4','','images/1_icon0401.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/1_icon04.png" name="Image4" width="150" hspace="5" border="0" id="Image4"></a>
+					</td></tr>
+			</table>
+-->			
+		</td>
+	</tr>
+</table>
+<!--
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td bgcolor="#3d3d3d" width=100% align="center" height="90">
+			<div align="center" style="height:70px;">
+			<span id="prev" onMouseOver="MM_swapImage('Image5','','images/arrow01_up.png',1)" onMouseOut="MM_swapImgRestore()"><img width="42" name="Image5" hspace="15" height="53" align="absmiddle" src="images/arrow01.png" /></span>			<a href="#" target="_blank" id="showhref"><img src="<b>[phpBB Debug] PHP Notice</b>: in file <b>/www/http/ews/smarty/templates_c/%%2A^2A0^2A09D783%%index_qwz_new.tpl.html.php</b> on line <b>315</b>: <b>Illegal string offset 'image_path'</b><br />
+" align="absmiddle" id="showimage" style="border:none;" width="580" height="60" valign="middle;"></a>
+			<span id="next" onMouseOver="MM_swapImage('Image6','','images/arrow02_up.png',1)" onMouseOut="MM_swapImgRestore()"><img width="33" name="Image6" hspace="15" height="54" valign="middle;" align="absmiddle" src="images/arrow02.png" /></span>			<br>
+			<span id="adchange">
+ 
+<img src="images/icon01_up.jpg" width="6" height="6" hspace="5" vspace="10" >
+</span>
+			</div>
+		</td>
+	</tr>
+</table>-->
+<!-- 主页面 -->
+</div>
+</div>	
+
+
+<!-- 页脚 -->
+<div class="bottom" id="bottom" align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#EBEBEB" class="font1">
+	<tr class="font" >
+		<td height="60px" bgcolor="#000000" >
+			<table width="600px" border="0" align="center" cellpadding="0" cellspacing="0" class="font1" style="margin-left:auto;margin-right:auto">			
+			<tr class="font" style="color:#ffffff">
+			<td width="49%">
+			<strong>
+			<font>
+			<img src="/ews/images/gb/kefu.png" width="40px" height="39px" style="margin-right:5px;" align="left">
+			</font>
+			
+			<font>
+			<br>
+			客服专线:(021)5426-1272
+			</font>
+			</strong>
+			</td>
+			<td width="51%" height="60px">
+				<strong>
+			<font>
+			<img src="/ews/images/gb/kefu01.png" width="40px" height="39px" style="margin-right:5px;" align="left">
+			</font>
+			
+			<font>
+			<br>
+			客服信箱:service@dreye.com.cn
+			</font>
+			</strong>
+			</td>
+			</tr>
+			
+			</table>
+			<hr size="0" style="border-style:solid;border-top-width:1px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;margin-bottom:0px;border-top-color:#a1a1a1;">
+		</td>	
+	
+	</tr>
+	<tr class="font">
+	     <td>
+		<table width="837"  align="center" border="0" style="margin-left:auto;margin-right:auto">
+		<td width ="63%" height="48" colspan="3"><div align="left">
+			
+			<img src="http://www.dreye.com.cn/product/images/bomlogo.jpg" width="69" height="30" hspace="8" align="left">
+			<span class="12"><font color="#666666">CopyRight© Inventec (Shanghai) Corporation All Rights Reserved <br />英业达(上海)有限公司版权所有 沪ICP备05012665号</font></span>
+			
+		</div></td>
+		<td width ="37%">
+			<font><a href="http://www.zx110.org" target="_blank">
+			<img src="/ews/images/gb/police.png" width="104px" height="35px" hspace="5px">
+			</a>
+			<a href="http://www.zx110.org" target="_blank">
+			<img src="/ews/images/gb/zx110.png" width="80px" height="35px" hspace="5px">
+			</a>
+			<a href="http://www.zx110.org" target="_blank">
+
+			<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120619103313179" target="_blank">
+			<img src="/ews/images/gb/sgs.gif" width="36px" height="36px" hspace="5px">
+			</a></font>
+		</td>
+		</table>
+	        </td>
+	</tr>
+</table>
+</div>
+<div class="bottomadd" id="bottomadd"></div>
+<!-- 页脚 -->
+
+<script language="javascript">	
+var t_img;
+var t_word;
+var t_explain;
+var t_url;
+var left = (window.screen.availWidth-650)/2;
+//jQuery("#top").css("width",window.screen.availWidth);
+//jQuery("#bottom").css("width",window.screen.availWidth);
+jQuery("#index").css("margin-left",left);
+jQuery("#banner01").css("margin-left",left);
+</script>
+
+<script type=text/javascript>
+//單詞輪換
+var txts = [
+						    	"SEF",
+	    	   						    	"GM food",
+	    	   						    	"car-crash TV",
+	    	   						    	"社保费率&hidden_codepage=02",
+	    	   						    	"问题疫苗&hidden_codepage=02",
+	    	   						    	"假装锻炼族&hidden_codepage=02"
+	    		
+];
+//alert(txts.length);
+/*
+for(var i = 0; i < txts.length; i++) 
+{
+    alert(txts[i]);
+}
+*/
+function marquee(height, speed, delay){
+	var scrollT;
+    var pause = false;
+    var ScrollBox = document.getElementById("marquee");
+    //if(document.getElementById("holder").offsetHeight <= height) return;
+    
+    //var txts = wordstr.split(",");
+    var _tmp = "<div id=\"holder\"><ul>";
+    for (i = 1; i <= txts.length; i++) 
+	{ 
+		var encodestr, headword;
+		var pos = txts[i-1].indexOf("&hidden_codepage");
+		if (pos > 1)
+		{
+			headword = txts[i-1].substring(0, pos);
+			encodestr = txts[i-1].substring(pos);
+		}
+		else
+		{
+			headword = txts[i-1];
+			encodestr = "";
+		}
+		
+		_tmp += "<li><img src=\"images/icon04.png\" width=\"3\" height=\"3\" hspace=\"5\" vspace=\"0\" align=\"absmiddle\"><a href=\"";
+		_tmp += dict_path;
+		_tmp += "dict.php?w=";
+		_tmp += encodeURI(headword);
+		_tmp += encodestr;
+		_tmp += "\" target=\"_blank\">";
+		_tmp += headword;
+		_tmp += "</a></li>";
+	}
+    _tmp += "</ul></div>";
+    ScrollBox.innerHTML = _tmp;
+    _tmp = ScrollBox.innerHTML.replace('holder', 'holder2')
+    ScrollBox.innerHTML += _tmp;
+    ScrollBox.onmouseover = function(){pause = true}
+    ScrollBox.onmouseout = function(){pause = false}
+    ScrollBox.scrollTop = 0;
+    function start(){
+       scrollT = setInterval(scrolling,speed);
+       if(!pause) ScrollBox.scrollTop += 2;
+    }
+    function scrolling(){
+        if(ScrollBox.scrollTop % height != 0)
+        {
+            ScrollBox.scrollTop += 2;
+            if(ScrollBox.scrollTop >= ScrollBox.scrollHeight/2) 
+            	ScrollBox.scrollTop = 0;
+        }
+        else{
+            clearInterval(scrollT);
+            setTimeout(start,delay);
+        }
+      }
+	setTimeout(start,delay);
+}
+marquee(50,30,3000);
+</script>
+
+
+
+</script>
+</body>
+</html>
