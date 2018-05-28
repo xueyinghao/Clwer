@@ -98,7 +98,8 @@ namespace Spider1
 
             
             
-            string Starturl = "http://www.hactcm.edu.cn/";
+            //string Starturl = "http://www.hactcm.edu.cn/";
+            string Starturl = txt_url.Text;
             service(Starturl); //获取首页面上的链接地址
             int Newnum = NewQueue.Count();
             for (int i = 0; i < Newnum; i++)
